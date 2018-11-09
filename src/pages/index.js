@@ -22,21 +22,23 @@ const IndexPage = () => (
 
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
+//import { Link } from 'gatsby'
 //import Image from '../components/image'
 import Background from '../images/bfinverted.png'
-import MKeller from '../images/keller-manuel.jpg'
+import MKeller from '../images/cheerful-young-businessman.jpg'
 import RSchlaefli from '../images/schlaefli-roland.jpg'
 import {
+    Card,
     Button,
     Container,
     Divider,
+    Message,
     Grid,
     Header,
     Icon,
     Image,
     List,
-    Menu,
+    //Menu,
     Responsive,
     Segment,
     Sidebar,
@@ -72,8 +74,11 @@ const HomepageHeading = ({ mobile }) => (
             }}
         />
         {/*<Image />*/}
-        <img src={Background}></img>
-        <div style={{backgroundImage: "url(" + { Background } + ")"}}></div>
+        {/*<div style={{size:"100%", "background-image":"url(" + { Background } + ")"}}>
+            <h1>lol</h1>
+        </div>*/}
+        {/*<img width={"100%"} align="left" src={Background}></img>
+        <div style={{backgroundImage: "url(" + { Background } + ")"}}></div>*/}
     </Container>
 )
 
@@ -133,6 +138,10 @@ class DesktopContainer extends Component {
                             </Container>
                         </Menu>*/}
                         <HomepageHeading />
+                        <div style={{size:"5px", "backgroundImage":"url(" + { Background } + ")"}}>
+                            <h1>lol</h1>
+                        </div>
+                        {/*<img width={"100%"} align="left" src={Background}/>*/}
                     </Segment>
                 </Visibility>
 
@@ -202,6 +211,9 @@ class MobileContainer extends Component {
                                 </Menu>
                             </Container>*/}
                             <HomepageHeading mobile />
+                            <div style={{size:"100%", backgroundImage: "url(" + Background + ")"}}>
+                                <h1>lol</h1>
+                            </div>
                         </Segment>
 
                         {children}
@@ -229,50 +241,57 @@ ResponsiveContainer.propTypes = {
 
 const IndexPage = () => (
     <ResponsiveContainer>
-        <Segment style={{ padding: '8em 0em' }} vertical>
-            <Grid container stackable verticalAlign='middle'>
+        <Segment style={{padding: '8em 0em'}} vertical>
+            <Grid container stackable verticalAlign='top'>
                 <Grid.Row>
-                    <Header as='h2' textAlign='center' style={{ fontSize: '2.5em', width:"100%"}}>
+                    <Header as='h2' textAlign='center' style={{fontSize: '2.5em', width: "100%"}}>
                         Hear what our employees have to say:
                     </Header>
                 </Grid.Row>
                 <Grid.Row>
-                    <Grid.Column width={13}>
-                        <Header as='h3' style={{ fontSize: '2em' }}>
-                            Am Insti zu arbeiten ist sooo toll.
-                        </Header>
-                        <p style={{ fontSize: '1.33em' }}>
-                            Ich lerne jeden Tag Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus lectus, aliquet a pellentesque ac, eleifend quis magna. Aliquam vitae felis augue.
-                            Cras vitae velit ex. Integer at convallis felis. Donec est mauris, accumsan ut sollicitudin ac, efficitur non sapien. Suspendisse a lorem erat. Integer a feugiat metus.
-                        </p>
-                        <p style={{ fontSize: '1.33em' }}>
-                            <i>- Manuel Keller, Senior Software Engineer</i>
-                        </p>
+                    <Grid.Column width={9}>
+                        {/*<Message color='white'>*/}
+                            <Header as='h3' style={{fontSize: '2em'}}>
+                                Am Insti zu arbeiten ist sooo toll.
+                            </Header>
+                            <p style={{fontSize: '1.33em'}}>
+                                Ich lerne jeden Tag Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                                risus lectus, aliquet a pellentesque ac, eleifend quis magna. Aliquam vitae felis augue.
+                                Cras vitae velit ex. Integer at convallis felis. Donec est mauris, accumsan ut sollicitudin
+                                ac, efficitur non sapien. Suspendisse a lorem erat. Integer a feugiat metus.
+                            </p>
+                            <p style={{fontSize: '1.33em'}}>
+                                <i>- Manuel Keller, Senior Software Engineer</i>
+                            </p>
+                        {/*</Message>*/}
                     </Grid.Column>
-                    <Grid.Column width={3}>
-                        <Image bordered rounded size='small' src={MKeller} />
+                    <Grid.Column width={7}>
+                        <Image bordered rounded size='medium' src={MKeller}/>
                     </Grid.Column>
                 </Grid.Row>
+                <Grid.Row/>
                 <Grid.Row>
-                    <Grid.Column width={3}>
-                        <Image bordered rounded size='small' src={RSchlaefli} />
+                    <Grid.Column width={7}>
+                        <Image bordered rounded size='medium' src={MKeller}/>
                     </Grid.Column>
-                    <Grid.Column width={13}>
-                        <Header as='h3' style={{ fontSize: '2em' }}>
+                    <Grid.Column width={9}>
+                        <Header as='h3' style={{fontSize: '2em'}}>
                             Am Insti zu arbeiten ist das beste.
                         </Header>
-                        <p style={{ fontSize: '1.33em' }}>
-                            Ich lerne jeden Tag Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus lectus, aliquet a pellentesque ac, eleifend quis magna. Aliquam vitae felis augue.
-                            Cras vitae velit ex. Integer at convallis felis. Donec est mauris, accumsan ut sollicitudin ac, efficitur non sapien. Suspendisse a lorem erat. Integer a feugiat metus.
+                        <p style={{fontSize: '1.33em'}}>
+                            Ich lerne jeden Tag Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                            risus lectus, aliquet a pellentesque ac, eleifend quis magna. Aliquam vitae felis augue.
+                            Cras vitae velit ex. Integer at convallis felis. Donec est mauris, accumsan ut sollicitudin
+                            ac, efficitur non sapien. Suspendisse a lorem erat. Integer a feugiat metus.
                         </p>
-                        <p style={{ fontSize: '1.33em' }}>
+                        <p style={{fontSize: '1.33em'}}>
                             <i>- Roland Schläftli, Mr. Devops</i>
                         </p>
                     </Grid.Column>
                 </Grid.Row>
-                <Divider />
+                <Divider/>
                 <Grid.Row>
-                    <Header as='h2' textAlign='center' style={{ fontSize: '2.5em', width:"100%"}}>
+                    <Header as='h2' textAlign='center' style={{fontSize: '2.5em', width: "100%"}}>
                         So many benefits!
                     </Header>
                 </Grid.Row>
@@ -282,10 +301,10 @@ const IndexPage = () => (
                         <div style={{margin: "0 auto", width: "120px"}}>
                             <Icon circular inverted size='huge' name='code branch'/>
                         </div>
-                        <Header as='h3' textAlign='center' style={{ fontSize: '2em' }}>
+                        <Header as='h3' textAlign='center' style={{fontSize: '2em'}}>
                             Learn to code
                         </Header>
-                        <p style={{ fontSize: '1.33em' }}>
+                        <p style={{fontSize: '1.33em'}}>
                             We are very good at coding and so will you be after working at the DBF.
                         </p>
                     </Grid.Column>
@@ -294,10 +313,10 @@ const IndexPage = () => (
                         <div style={{margin: "0 auto", width: "120px"}}>
                             <Icon circular inverted color='green' size='huge' name='yen sign'/>
                         </div>
-                        <Header as='h3' textAlign='center' style={{ fontSize: '2em' }}>
+                        <Header as='h3' textAlign='center' style={{fontSize: '2em'}}>
                             Earn some cash
                         </Header>
-                        <p style={{ fontSize: '1.33em' }}>
+                        <p style={{fontSize: '1.33em'}}>
                             Best salary in Switzerland.
                         </p>
                     </Grid.Column>
@@ -306,10 +325,10 @@ const IndexPage = () => (
                         <div style={{margin: "0 auto", width: "120px"}}>
                             <Icon circular inverted color='brown' size='huge' name='coffee'/>
                         </div>
-                        <Header as='h3' textAlign='center' style={{ fontSize: '2em' }}>
+                        <Header as='h3' textAlign='center' style={{fontSize: '2em'}}>
                             Drink coffee
                         </Header>
-                        <p style={{ fontSize: '1.33em' }}>
+                        <p style={{fontSize: '1.33em'}}>
                             We have the greatest coffee machine.
                         </p>
                     </Grid.Column>
@@ -318,67 +337,147 @@ const IndexPage = () => (
                         <div style={{margin: "0 auto", width: "120px"}}>
                             <Icon circular inverted color='orange' size='huge' name='users'/>
                         </div>
-                        <Header as='h3' textAlign='center' style={{ fontSize: '2em' }}>
+                        <Header as='h3' textAlign='center' style={{fontSize: '2em'}}>
                             Make friends
                         </Header>
-                        <p style={{ fontSize: '1.33em' }}>
+                        <p style={{fontSize: '1.33em'}}>
                             Our team is sooooo great.
                         </p>
                     </Grid.Column>
                 </Grid.Row>
                 <Divider/>
                 <Grid.Row>
-                    <Header as='h2' textAlign='center' style={{ fontSize: '2.5em', width:"100%"}}>
+                    <Header as='h2' textAlign='center' style={{fontSize: '2.5em', width: "100%"}}>
                         You could work on projects like these!
                     </Header>
                 </Grid.Row>
                 <Grid celled='internally'>
                     <Grid.Row>
                         <Grid.Column width={5}>
-                            <Header as='h3' style={{ fontSize: '1em'}}>
+                            <Header as='h3' textAlign='center' style={{fontSize: '2em', width: "100%"}}>
+                                Klicker
                             </Header>
-                            <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
+                            <p> Roli developed a website that does x, using y and z. Klicker is now used by 1000000000
+                                people all around the world. <a
+                                    href={"https://www.klicker.uzh.ch/"}>https://www.klicker.uzh.ch/</a>
+                            </p>
                         </Grid.Column>
                         <Grid.Column width={5}>
-                            <Image src='https://react.semantic-ui.com/images/wireframe/centered-paragraph.png' />
+                            <Header as='h3' textAlign='center' style={{fontSize: '2em', width: "100%"}}>
+                                Klicker
+                            </Header>
+                            <p> Roli developed a website that does x, using y and z. Klicker is now used by 1000000000
+                                people all around the world. <a
+                                    href={"https://www.klicker.uzh.ch/"}>https://www.klicker.uzh.ch/</a>
+                            </p>
                         </Grid.Column>
                         <Grid.Column width={5}>
-                            <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
+                            <Header as='h3' textAlign='center' style={{fontSize: '2em', width: "100%"}}>
+                                Klicker
+                            </Header>
+                            <p> Roli developed a website that does x, using y and z. Klicker is now used by 1000000000
+                                people all around the world. <a
+                                    href={"https://www.klicker.uzh.ch/"}>https://www.klicker.uzh.ch/</a>
+                            </p>
                         </Grid.Column>
                     </Grid.Row>
 
                     <Grid.Row>
                         <Grid.Column width={5}>
-                            <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
+                            <Header as='h3' textAlign='center' style={{fontSize: '2em', width: "100%"}}>
+                                Klicker
+                            </Header>
+                            <p> Roli developed a website that does x, using y and z. Klicker is now used by 1000000000
+                                people all around the world. <a
+                                    href={"https://www.klicker.uzh.ch/"}>https://www.klicker.uzh.ch/</a>
+                            </p>
                         </Grid.Column>
                         <Grid.Column width={5}>
-                            <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
+                            <Header as='h3' textAlign='center' style={{fontSize: '2em', width: "100%"}}>
+                                Klicker
+                            </Header>
+                            <p> Roli developed a website that does x, using y and z. Klicker is now used by 1000000000
+                                people all around the world. <a
+                                    href={"https://www.klicker.uzh.ch/"}>https://www.klicker.uzh.ch/</a>
+                            </p>
                         </Grid.Column>
                         <Grid.Column width={5}>
-                            <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
+                            <Header as='h3' textAlign='center' style={{fontSize: '2em', width: "100%"}}>
+                                Klicker
+                            </Header>
+                            <p> Roli developed a website that does x, using y and z. Klicker is now used by 1000000000
+                                people all around the world. <a
+                                    href={"https://www.klicker.uzh.ch/"}>https://www.klicker.uzh.ch/</a>
+                            </p>
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
-
+                <Divider/>
+                <Grid.Row>
+                    <Header as='h2' textAlign='center' style={{fontSize: '2.5em', width: "100%"}}>
+                        Unsere drei Teams:
+                    </Header>
+                </Grid.Row>
+                <Grid.Row>
+                    <Grid.Column width={5}>
+                        <Header as='h3' style={{fontSize: '2em'}}>
+                            ?ATP?
+                        </Header>
+                        <Card>
+                            <Image src='https://react.semantic-ui.com/images/avatar/large/daniel.jpg'/>
+                            <Card.Content>
+                                <Card.Header>René</Card.Header>
+                                <Card.Meta>Managing Director, Head of Administration</Card.Meta>
+                                <Card.Description>Join my team! You will get to know everything about X and Y and furthermore you can z.</Card.Description>
+                            </Card.Content>
+                        </Card>
+                    </Grid.Column>
+                    <Grid.Column width={5} >
+                        <Header as='h3' style={{fontSize: '2em'}}>
+                            Teaching Center
+                        </Header>
+                        <Card>
+                            <Image src='https://react.semantic-ui.com/images/avatar/large/daniel.jpg'/>
+                            <Card.Content>
+                                <Card.Header>Daniel</Card.Header>
+                                <Card.Meta>Joined in 2016</Card.Meta>
+                                <Card.Description>Daniel is a comedian living in Nashville.</Card.Description>
+                            </Card.Content>
+                        </Card>
+                    </Grid.Column>
+                    <Grid.Column width={5}>
+                        <Header as='h3' style={{fontSize: '2em'}}>
+                            Weiterbildung
+                        </Header>
+                        <Card>
+                            <Image src='https://react.semantic-ui.com/images/avatar/large/daniel.jpg'/>
+                            <Card.Content>
+                                <Card.Header>Daniel</Card.Header>
+                                <Card.Meta>Joined in 2016</Card.Meta>
+                                <Card.Description>Daniel is a comedian living in Nashville.</Card.Description>
+                            </Card.Content>
+                        </Card>
+                    </Grid.Column>
+                </Grid.Row>
                 <Grid.Row>
                     <Grid.Column width={8}>
-                        <Header as='h3' style={{ fontSize: '2em' }}>
+                        <Header as='h3' style={{fontSize: '2em'}}>
                             We Help Companies and Companions
                         </Header>
-                        <p style={{ fontSize: '1.33em' }}>
+                        <p style={{fontSize: '1.33em'}}>
                             We can give your company superpowers to do things that they never thought possible.
                             Let us delight your customers and empower your needs... through pure data analytics.
                         </p>
-                        <Header as='h3' style={{ fontSize: '2em' }}>
+                        <Header as='h3' style={{fontSize: '2em'}}>
                             We Make Bananas That Can Dance
                         </Header>
-                        <p style={{ fontSize: '1.33em' }}>
+                        <p style={{fontSize: '1.33em'}}>
                             Yes that's right, you thought it was the stuff of dreams, but even bananas can be
                             bioengineered.
                         </p>
                     </Grid.Column>
                     <Grid.Column floated='right' width={6}>
-                        <Image bordered rounded size='large' src='/images/wireframe/white-image.png' />
+                        <Image bordered rounded size='large' src='/images/wireframe/white-image.png'/>
                     </Grid.Column>
                 </Grid.Row>
                 <Grid.Row>
@@ -389,21 +488,21 @@ const IndexPage = () => (
             </Grid>
         </Segment>
 
-        <Segment style={{ padding: '0em' }} vertical>
+        <Segment style={{padding: '0em'}} vertical>
             <Grid celled='internally' columns='equal' stackable>
                 <Grid.Row textAlign='center'>
-                    <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-                        <Header as='h3' style={{ fontSize: '2em' }}>
+                    <Grid.Column style={{paddingBottom: '5em', paddingTop: '5em'}}>
+                        <Header as='h3' style={{fontSize: '2em'}}>
                             "What a Company"
                         </Header>
-                        <p style={{ fontSize: '1.33em' }}>That is what they all say about us</p>
+                        <p style={{fontSize: '1.33em'}}>That is what they all say about us</p>
                     </Grid.Column>
-                    <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-                        <Header as='h3' style={{ fontSize: '2em' }}>
+                    <Grid.Column style={{paddingBottom: '5em', paddingTop: '5em'}}>
+                        <Header as='h3' style={{fontSize: '2em'}}>
                             "I shouldn't have gone with their competitor."
                         </Header>
-                        <p style={{ fontSize: '1.33em' }}>
-                            <Image avatar src='/images/avatar/large/nan.jpg' />
+                        <p style={{fontSize: '1.33em'}}>
+                            <Image avatar src='/images/avatar/large/nan.jpg'/>
                             <b>Nan</b> Chief Fun Officer Acme Toys
                         </p>
                     </Grid.Column>
@@ -411,12 +510,12 @@ const IndexPage = () => (
             </Grid>
         </Segment>
 
-        <Segment style={{ padding: '8em 0em' }} vertical>
+        <Segment style={{padding: '8em 0em'}} vertical>
             <Container text>
-                <Header as='h3' style={{ fontSize: '2em' }}>
+                <Header as='h3' style={{fontSize: '2em'}}>
                     Breaking The Grid, Grabs Your Attention
                 </Header>
-                <p style={{ fontSize: '1.33em' }}>
+                <p style={{fontSize: '1.33em'}}>
                     Instead of focusing on content creation and hard work, we have learned how to master the
                     art of doing nothing by providing massive amounts of whitespace and generic content that
                     can seem massive, monolithic and worth your attention.
@@ -429,15 +528,15 @@ const IndexPage = () => (
                     as='h4'
                     className='header'
                     horizontal
-                    style={{ margin: '3em 0em', textTransform: 'uppercase' }}
+                    style={{margin: '3em 0em', textTransform: 'uppercase'}}
                 >
                     <a href='#'>Case Studies</a>
                 </Divider>
 
-                <Header as='h3' style={{ fontSize: '2em' }}>
+                <Header as='h3' style={{fontSize: '2em'}}>
                     Did We Tell You About Our Bananas?
                 </Header>
-                <p style={{ fontSize: '1.33em' }}>
+                <p style={{fontSize: '1.33em'}}>
                     Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but
                     it's really true. It took years of gene splicing and combinatory DNA research, but our
                     bananas can really dance.
@@ -448,12 +547,12 @@ const IndexPage = () => (
             </Container>
         </Segment>
 
-        <Segment inverted vertical style={{ padding: '5em 0em' }}>
+        <Segment inverted vertical style={{padding: '5em 0em'}}>
             <Container>
                 <Grid divided inverted stackable>
                     <Grid.Row>
                         <Grid.Column width={3}>
-                            <Header inverted as='h4' content='About' />
+                            <Header inverted as='h4' content='About'/>
                             <List link inverted>
                                 <List.Item as='a'>Sitemap</List.Item>
                                 <List.Item as='a'>Contact Us</List.Item>
@@ -462,7 +561,7 @@ const IndexPage = () => (
                             </List>
                         </Grid.Column>
                         <Grid.Column width={3}>
-                            <Header inverted as='h4' content='Services' />
+                            <Header inverted as='h4' content='Services'/>
                             <List link inverted>
                                 <List.Item as='a'>Banana Pre-Order</List.Item>
                                 <List.Item as='a'>DNA FAQ</List.Item>
@@ -483,6 +582,7 @@ const IndexPage = () => (
             </Container>
         </Segment>
     </ResponsiveContainer>
-)
+);
+
 
 export default IndexPage

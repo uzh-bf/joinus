@@ -232,6 +232,11 @@ const IndexPage = () => (
         <Segment style={{ padding: '8em 0em' }} vertical>
             <Grid container stackable verticalAlign='middle'>
                 <Grid.Row>
+                    <Header as='h2' textAlign='center' style={{ fontSize: '2.5em', width:"100%"}}>
+                        Hear what our employees have to say:
+                    </Header>
+                </Grid.Row>
+                <Grid.Row>
                     <Grid.Column width={13}>
                         <Header as='h3' style={{ fontSize: '2em' }}>
                             Am Insti zu arbeiten ist sooo toll.
@@ -267,7 +272,7 @@ const IndexPage = () => (
                 </Grid.Row>
                 <Divider />
                 <Grid.Row>
-                    <Header as='h2' textAlign='center' style={{ fontSize: '2.5em' }}>
+                    <Header as='h2' textAlign='center' style={{ fontSize: '2.5em', width:"100%"}}>
                         So many benefits!
                     </Header>
                 </Grid.Row>
@@ -323,31 +328,33 @@ const IndexPage = () => (
                 </Grid.Row>
                 <Divider/>
                 <Grid.Row>
-                    <Header as='h2' textAlign='left' style={{ fontSize: '2.5em' }}>
+                    <Header as='h2' textAlign='center' style={{ fontSize: '2.5em', width:"100%"}}>
                         You could work on projects like these!
                     </Header>
                 </Grid.Row>
                 <Grid celled='internally'>
                     <Grid.Row>
-                        <Grid.Column width={3}>
+                        <Grid.Column width={5}>
+                            <Header as='h3' style={{ fontSize: '1em'}}>
+                            </Header>
                             <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
                         </Grid.Column>
-                        <Grid.Column width={10}>
+                        <Grid.Column width={5}>
                             <Image src='https://react.semantic-ui.com/images/wireframe/centered-paragraph.png' />
                         </Grid.Column>
-                        <Grid.Column width={3}>
+                        <Grid.Column width={5}>
                             <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
                         </Grid.Column>
                     </Grid.Row>
 
                     <Grid.Row>
-                        <Grid.Column width={3}>
+                        <Grid.Column width={5}>
                             <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
                         </Grid.Column>
-                        <Grid.Column width={10}>
+                        <Grid.Column width={5}>
                             <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
                         </Grid.Column>
-                        <Grid.Column width={3}>
+                        <Grid.Column width={5}>
                             <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
                         </Grid.Column>
                     </Grid.Row>

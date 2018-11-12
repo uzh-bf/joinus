@@ -38,13 +38,15 @@ import {
     Icon,
     Image,
     List,
-    //Menu,
     Responsive,
     Segment,
     Sidebar,
     Visibility,
 } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css';
+import BurgerMenu from '../components/burgermenu.js'
+import { slide as Menu } from 'react-burger-menu'
+
 
 /* eslint-disable react/no-multi-comp */
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
@@ -101,52 +103,58 @@ class DesktopContainer extends Component {
         const { fixed } = this.state
 
         return (
-            <Responsive minWidth={Responsive.onlyTablet.minWidth}>
-                <Visibility
-                    once={false}
-                    onBottomPassed={this.showFixedMenu}
-                    onBottomPassedReverse={this.hideFixedMenu}
-                >
-                    <Segment
-                        inverted
-                        textAlign='center'
-                        style={{ minHeight: 700, padding: '1em 0em' }}
-                        vertical
-                    >
-                        {/*<Menu
-                            fixed={fixed ? 'top' : null}
-                            inverted={!fixed}
-                            pointing={!fixed}
-                            secondary={!fixed}
-                            size='large'
-                        >
-                            <Container>
-                                <Menu.Item as='a' active>
-                                    Home
-                                </Menu.Item>
-                                <Menu.Item as='a'>Work</Menu.Item>
-                                <Menu.Item as='a'>Company</Menu.Item>
-                                <Menu.Item as='a'>Careers</Menu.Item>
-                                <Menu.Item position='right'>
-                                    <Button as='a' inverted={!fixed}>
-                                        Log in
-                                    </Button>
-                                    <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
-                                        Sign Up
-                                    </Button>
-                                </Menu.Item>
-                            </Container>
-                        </Menu>*/}
-                        <HomepageHeading />
-                        <div style={{size:"5px", "backgroundImage":"url(" + { Background } + ")"}}>
-                            <h1>lol</h1>
-                        </div>
-                        {/*<img width={"100%"} align="left" src={Background}/>*/}
-                    </Segment>
-                </Visibility>
+            <div id="outerPageId">
 
-                {children}
-            </Responsive>
+              <BurgerMenu/>
+
+              <div id="page-wrap">
+                <Responsive minWidth={Responsive.onlyTablet.minWidth}>
+                    <Visibility
+                        once={false}
+                        onBottomPassed={this.showFixedMenu}
+                        onBottomPassedReverse={this.hideFixedMenu}
+                    >
+                        <Segment
+                            inverted
+                            textAlign='center'
+                            style={{ minHeight: 700, padding: '1em 0em' }}
+                            vertical
+                        >
+                            {/*<Menu
+                                fixed={fixed ? 'top' : null}
+                                inverted={!fixed}
+                                pointing={!fixed}
+                                secondary={!fixed}
+                                size='large'
+                            >
+                                <Container>
+                                    <Menu.Item as='a' active>
+                                        Home
+                                    </Menu.Item>
+                                    <Menu.Item as='a'>Work</Menu.Item>
+                                    <Menu.Item as='a'>Company</Menu.Item>
+                                    <Menu.Item as='a'>Careers</Menu.Item>
+                                    <Menu.Item position='right'>
+                                        <Button as='a' inverted={!fixed}>
+                                            Log in
+                                        </Button>
+                                        <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
+                                            Sign Up
+                                        </Button>
+                                    </Menu.Item>
+                                </Container>
+                            </Menu>*/}
+                            <HomepageHeading />
+                            <div style={{size:"5px", "backgroundImage":"url(" + { Background } + ")"}}>
+                                <h1>lol</h1>
+                            </div>
+                            {/*<img width={"100%"} align="left" src={Background}/>*/}
+                        </Segment>
+                    </Visibility>
+                    {children}
+                </Responsive>
+              </div>
+            </div>
         )
     }
 }
@@ -240,6 +248,7 @@ ResponsiveContainer.propTypes = {
 }
 
 const IndexPage = () => (
+
     <ResponsiveContainer>
         <Segment style={{padding: '8em 0em'}} vertical>
             <Grid container stackable verticalAlign='top'>

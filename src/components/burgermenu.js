@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { slide as Menu } from 'react-burger-menu'
 
 const BurgerMenu = () => (
-  <Menu >
+  <Menu>
     <a className="menu-item" href="www.google.com">
       Home
     </a>

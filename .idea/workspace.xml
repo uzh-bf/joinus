@@ -29,13 +29,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="9" />
-          <entry key="js" value="2483" />
+          <entry key="js" value="3702" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="9" />
-          <entry key="JavaScript" value="2483" />
+          <entry key="JavaScript" value="3702" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -83,8 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="967">
-              <caret line="267" column="26" lean-forward="true" selection-start-line="267" selection-start-column="26" selection-end-line="267" selection-end-column="26" />
+            <state relative-caret-position="17">
+              <caret line="136" column="196" selection-start-line="136" selection-start-column="196" selection-end-line="136" selection-end-column="196" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#739#801#0" expanded="true" />
@@ -164,8 +164,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>inverted</find>
-      <find>&lt;ima</find>
       <find>Background</find>
       <find>src=</find>
       <find>Backgrou</find>
@@ -194,6 +192,8 @@
       <find>form</find>
       <find>label</find>
       <find>image</find>
+      <find>grid.column</find>
+      <find>list</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -303,18 +303,18 @@
       <workItem from="1541516098111" duration="7022000" />
       <workItem from="1541757006974" duration="13855000" />
       <workItem from="1542036607998" duration="282000" />
-      <workItem from="1542099595980" duration="6215000" />
+      <workItem from="1542099595980" duration="10236000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27374000" />
+    <option name="totallyTimeSpent" value="31395000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18715525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25026342" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -343,8 +343,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/pages/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="967">
-          <caret line="267" column="26" lean-forward="true" selection-start-line="267" selection-start-column="26" selection-end-line="267" selection-end-column="26" />
+        <state relative-caret-position="17">
+          <caret line="136" column="196" selection-start-line="136" selection-start-column="196" selection-end-line="136" selection-end-column="196" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#739#801#0" expanded="true" />

@@ -95,34 +95,34 @@ const IndexPage = () => (
                             <Icon circular inverted size='huge' name='code branch'/>
                         </div>
                         <Header as='h3' textAlign='center' style={{fontSize: '2em'}}>
-                            Learn to code
+                            #code
                         </Header>
                         <p style={{fontSize: '1.33em'}}>
-                            We are very good at coding and so will you be after working at the DBF.
+                            Wende deine Programmierkenntnisse in einem praktischen Umfeld an und sammle Erfahrung für spätere Berufe.
                         </p>
                     </Grid.Column>
                     <Grid.Column width={4}>
                         {/*TODO: center without ugly hacking*/}
                         <div style={{margin: "0 auto", width: "120px"}}>
-                            <Icon circular inverted color='green' size='huge' name='yen sign'/>
+                            <Icon circular inverted color='green' size='huge' name='dollar sign'/>
                         </div>
                         <Header as='h3' textAlign='center' style={{fontSize: '2em'}}>
-                            Earn some cash
+                            #cash
                         </Header>
                         <p style={{fontSize: '1.33em'}}>
-                            Best salary in Switzerland.
+                            Bei uns verdienst du mehr als bei Promotion-Jobs oder an der Kasse im Supermarkt.
                         </p>
                     </Grid.Column>
                     <Grid.Column width={4}>
                         {/*TODO: center without ugly hacking*/}
                         <div style={{margin: "0 auto", width: "120px"}}>
-                            <Icon circular inverted color='brown' size='huge' name='coffee'/>
+                            <Icon circular inverted color='brown' size='huge' name='clock outline'/>
                         </div>
                         <Header as='h3' textAlign='center' style={{fontSize: '2em'}}>
-                            Drink coffee
+                            #cflexibility
                         </Header>
                         <p style={{fontSize: '1.33em'}}>
-                            We have the greatest coffee machine.
+                            Dein Studium geht vor! Dementsprechend kannst du bei uns auch deine Arbeitszeiten so anpassen, dass dir die Arbeit nicht in die Quere kommt.
                         </p>
                     </Grid.Column>
                     <Grid.Column width={4}>
@@ -131,10 +131,10 @@ const IndexPage = () => (
                             <Icon circular inverted color='orange' size='huge' name='users'/>
                         </div>
                         <Header as='h3' textAlign='center' style={{fontSize: '2em'}}>
-                            Make friends
+                            #crew
                         </Header>
                         <p style={{fontSize: '1.33em'}}>
-                            Our team is sooooo great.
+                            Sei Teil von einem ambitionierten Team von Studenten. Neben regelmässigen Events wie z.B. einem Schlitteltag in Engelberg, grillen wir auch gerne oder besetzen das BQM.
                         </p>
                     </Grid.Column>
                 </Grid.Row>
@@ -264,18 +264,41 @@ const IndexPage = () => (
                         Was du mitbringen sollst:
                     </Header>
                 </Grid.Row>
-                <Grid.Row style={{width:"100%"}}>
-                    <Grid.Column>
-                        <Header as='h3' textAlign='center' style={{fontSize: '2em', width: "100%"}}>
-                            Allgemein
-                        </Header>
-                    </Grid.Column>
-                    <Grid.Column>
-                        <Header as='h3' textAlign='center' style={{fontSize: '2em', width: "100%"}}>
-                            Informatik
-                        </Header>
-                    </Grid.Column>
-                </Grid.Row>
+                <Grid celled='internally'>
+                    <Grid.Row style={{width:"100%"}}>
+                        <Grid.Column width={8}>
+                            <Header as='h3' textAlign='center' style={{fontSize: '2em', width: "100%"}}>
+                                Allgemein
+                            </Header>
+                            <List as='ul'>
+                                <List.Item as='li'>Du studierst etwa im 3. Semester (Informatik oder Wirtschaftsinformatik)</List.Item>
+                                <List.Item as='li'>Teamfähigkeit</List.Item>
+                                <List.Item as='li'>Eigenständiges Arbeiten</List.Item>
+                            </List>
+                            <Header as='h3' textAlign='center' style={{fontSize: '1.5em', width: "100%"}}>
+                                Fakultativ
+                            </Header>
+                            <List as='ul'>
+                                <List.Item as='li'>Interesse am Finanzplatz Schweiz</List.Item>
+                            </List>
+                        </Grid.Column>
+                        <Grid.Column width={8}>
+                            <Header as='h3' textAlign='center' style={{fontSize: '2em', width: "100%"}}>
+                                Informatik
+                            </Header>
+                            <List as='ul'>
+                                <List.Item as='li'>Du bist interessiert an den neusten Technologien</List.Item>
+                                <List.Item as='li'>Du kannst dich schnell einarbeiten in neue Programmiersprachen und Frameworks</List.Item>
+                            </List>
+                            <Header as='h3' textAlign='center' style={{fontSize: '1.5em', width: "100%"}}>
+                                Fakultativ
+                            </Header>
+                            <List as='ul'>
+                                <List.Item as='li'>Erfahrung im Webdevelopment</List.Item>
+                            </List>
+                        </Grid.Column>
+                    </Grid.Row>
+                </Grid>
                 <Divider/>
                 <Grid.Row>
                     <Header as='h2' textAlign='center' style={{fontSize: '2.5em', width: "100%"}}>

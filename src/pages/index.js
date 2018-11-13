@@ -24,7 +24,8 @@ import React from 'react'
 //import { Link } from 'gatsby'
 //import Image from '../components/image'
 import MKeller from '../images/cheerful-young-businessman.jpg'
-import {Button, Card, Container, Divider, Grid, Header, Icon, Image, List, Segment,} from 'semantic-ui-react'
+import TeamBild from '../images/team.jpg'
+import {Button, Card, Container, Divider, Form, Grid, Header, Icon, Image, Label, List, Segment,} from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css';
 import {ResponsiveContainer} from "../components/ContainerComponents";
 
@@ -250,6 +251,64 @@ const IndexPage = () => (
                             </Card.Content>
                         </Card>
                     </Grid.Column>
+                </Grid.Row>
+                <Divider/>
+                <Grid.Row>
+                    <Header as='h2' textAlign='center' style={{fontSize: '2.5em', width: "100%"}}>
+                        ...
+                    </Header>
+                </Grid.Row>
+                <Divider/>
+                <Grid.Row>
+                    <Header as='h2' textAlign='center' style={{fontSize: '2.5em', width: "100%"}}>
+                        Was du mitbringen sollst:
+                    </Header>
+                </Grid.Row>
+                <Grid.Row style={{width:"100%"}}>
+                    <Grid.Column>
+                        <Header as='h3' textAlign='center' style={{fontSize: '2em', width: "100%"}}>
+                            Allgemein
+                        </Header>
+                    </Grid.Column>
+                    <Grid.Column>
+                        <Header as='h3' textAlign='center' style={{fontSize: '2em', width: "100%"}}>
+                            Informatik
+                        </Header>
+                    </Grid.Column>
+                </Grid.Row>
+                <Divider/>
+                <Grid.Row>
+                    <Header as='h2' textAlign='center' style={{fontSize: '2.5em', width: "100%"}}>
+                        Unser Institut:
+                    </Header>
+                </Grid.Row>
+                <Grid.Row>
+                    <Image style={{width:"100%", height:"100%"}} src={TeamBild}/>
+                    <p style={{fontSize: '1.33em'}}>
+                        Am Institut arbeiten insgesamt rund 25 studentische Mitarbeiter. Diese werden von sechs Festangestellten unter Kontrolle gehalten.
+                    </p>
+                </Grid.Row>
+                <Divider/>
+                <Grid.Row>
+                    <Header as='h2' textAlign='center' style={{fontSize: '2.5em', width: "100%"}}>
+                        Bewirb dich jetzt:
+                    </Header>
+                </Grid.Row>
+                <Grid.Row>
+                    <Form style={{width:"100%"}}>
+                        <Form.Group widths='equal'>
+                            <Form.Input fluid label='Vorname' placeholder='Vorname' />
+                            <Form.Input fluid label='Nachname' placeholder='Nachname' />
+                            <Form.Input label='Email' placeholder='Email' />
+                        </Form.Group>
+                        <Form.Group>
+                            <Label as="label" htmlFor="upload" basic>{/*todo: why has label a border?*/}
+                                Lebenslauf
+                            </Label>
+                            <input id="upload" type="file"/>
+                        </Form.Group>
+                        <Button type='submit'>Bewerben</Button>
+                    </Form>
                 </Grid.Row>
                 <Grid.Row>
                     <Grid.Column width={8}>

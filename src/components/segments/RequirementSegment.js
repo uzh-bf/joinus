@@ -6,12 +6,6 @@ const RequirementSegment = ({backgorundColor}) => (
         <Grid celled='internally' columns='equal' stackable>
             <Grid.Row>
                 <Header as='h2' textAlign='center' style={{fontSize: "2.5em", width: "100%"}}>
-                    ...
-                </Header>
-            </Grid.Row>
-            <Divider/>
-            <Grid.Row>
-                <Header as='h2' textAlign='center' style={{fontSize: "2.5em", width: "100%"}}>
                     Was du mitbringen sollst:
                 </Header>
             </Grid.Row>

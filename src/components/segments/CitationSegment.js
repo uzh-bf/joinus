@@ -12,53 +12,46 @@ const CitationSegment = ({backgroundColor}) => (
                 </Header>
             </Grid.Row>
             <Grid.Row>
-                <Grid.Column width={9}>
-                    <Container style={{marginTop: 70}}>
+                <Grid.Column width={4} />
+                <Grid.Column width={7}>
+                    <Container style={{marginTop: 20}}>
                         {/*<Message color='white'>*/}
-                        <Header as='h3' style={{fontSize: "2em"}}>
-                            Am Insti zu arbeiten ist sooo toll.
+                        <Header as='h3'>
+                            Flexibilität ist Trumpf
                         </Header>
                         <p style={{fontSize: "1.33em"}}>
-                            Ich lerne jeden Tag Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Pellentesque
-                            risus lectus, aliquet a pellentesque ac, eleifend quis magna. Aliquam vitae felis
-                            augue.
-                            Cras vitae velit ex. Integer at convallis felis. Donec est mauris, accumsan ut
-                            sollicitudin
-                            ac, efficitur non sapien. Suspendisse a lorem erat. Integer a feugiat metus.
+                            Mir gefällt, dass ich sehr flexible Arbeitszeiten habe.
+                            Vor Prüfungen kann man problemlos reduzieren oder aussetzen;
+                            während den Semesterferien wiederum sein Budget aufbessern.
                         </p>
                         <p style={{fontSize: "1.33em"}}>
-                            <i>- Manuel Keller, Senior Software Engineer</i>
+                            <i>- Manuel Keller, studiert Wirtschaftsinformatik</i>
                         </p>
                         {/*</Message>*/}
                     </Container>
 
                 </Grid.Column>
-                <Grid.Column width={7}>
+                <Grid.Column width={5}>
                     <Image bordered rounded size='large' src={Manu}/>
                 </Grid.Column>
             </Grid.Row>
             <Grid.Row/>
             <Grid.Row>
-                <Grid.Column width={7}>
-                    <Image bordered size='large' src={Pascal}/>
+                <Grid.Column width={1} />
+                <Grid.Column width={5}>
+                    <Image bordered rounded size='large' src={Pascal}/>
                 </Grid.Column>
-                <Grid.Column width={9}>
-                    <Container style={{marginTop: 60}}>
-                        <Header as='h3' style={{fontSize: "2em"}}>
-                            Am Insti zu arbeiten ist das beste.
+                <Grid.Column width={7}>
+                    <Container style={{marginTop: 20}}>
+                        <Header as='h3'>
+                            Abwechslung und Eigenverantwortung
                         </Header>
                         <p style={{fontSize: "1.33em"}}>
-                            Ich lerne jeden Tag Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Pellentesque
-                            risus lectus, aliquet a pellentesque ac, eleifend quis magna. Aliquam vitae felis
-                            augue.
-                            Cras vitae velit ex. Integer at convallis felis. Donec est mauris, accumsan ut
-                            sollicitudin
-                            ac, efficitur non sapien. Suspendisse a lorem erat. Integer a feugiat metus.
+                            Mir gefällt, dass ich in meiner Arbeit am Institut selbst die Verantwortung für meine Projekte trage.
+                            Dadurch kann ich selber entscheiden, welche Technologien ich einsetzen will und lerne viel dabei.
                         </p>
                         <p style={{fontSize: "1.33em"}}>
-                            <i>- Roland Schläftli, Mr. Devops</i>
+                            <i>- Pascal Zehnder, studiert Data Science</i>
                         </p>
                     </Container>
                 </Grid.Column>

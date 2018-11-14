@@ -233,14 +233,15 @@ class IndexPage extends React.Component{
             </Grid>
         </Segment>
 
+          <Grid.Row>
+              <Header as='h2' textAlign='center' style={{fontSize: '2.5em', width: "100%"}}>
+                  ...
+              </Header>
+          </Grid.Row>
+          <Divider/>
+
         <Segment style={{padding: '8em 0em', background: 'lightgrey',}} vertical>
             <Grid celled='internally' columns='equal' stackable>
-                <Grid.Row>
-                    <Header as='h2' textAlign='center' style={{fontSize: '2.5em', width: "100%"}}>
-                        ...
-                    </Header>
-                </Grid.Row>
-                <Divider/>
                 <Grid.Row>
                     <Header as='h2' textAlign='center' style={{fontSize: '2.5em', width: "100%"}}>
                         Was du mitbringen sollst:

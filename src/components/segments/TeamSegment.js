@@ -1,4 +1,4 @@
-import {Header, Segment, Grid} from "semantic-ui-react";
+import {Header, Segment, Grid, Divider} from "semantic-ui-react";
 import TeamColumn from "../TeamColumn";
 import Rene from "../../images/rene.jpg";
 import Lisa from "../../images/lisa.jpg";
@@ -6,34 +6,38 @@ import Beni from "../../images/beni.jpg";
 import React from "react";
 
 const TeamSegment = ({headerText}) => (
-    <Segment style={{padding: "8em 0em"}} vertical>
+    <Segment style={{padding: "4em 0 5em 0"}} vertical>
         <Grid container stackable verticalAlign='top'>
             <Grid.Row>
                 <Header as='h2' textAlign='center' style={{fontSize: "2.5em", width: "100%"}}>
                     {headerText}
                 </Header>
             </Grid.Row>
-            <Grid.Row columns={3}>
+            <Grid.Row columns={3} divided>
                 <TeamColumn
-                    teamName={"ATP"}
+                    teamName={"Administration"}
                     imageSrc={Rene}
                     leaderName={"René Hegglin"}
                     leaderPosition={"Geschäftsführer, Leitung Administration"}
-                    teamDescription={"In unserem TeamColumn sind wir vorallem damit beschäftigt X sowie Y zu betreiben."}
+                    teamDescription={"« Informatiker in meinem Team helfen mit, die Management-Prozesse effizienter zu " +
+                    "gestalten und modernisieren die Institutswebseite mit neuen Tools und Methoden. »"}
                 />
                 <TeamColumn
                     teamName={"Teaching Center"}
                     imageSrc={Lisa}
                     leaderName={"Elisabeth Liechti"}
                     leaderPosition={"Leitung Teaching Center IBF"}
-                    teamDescription={"In unserem TeamColumn sind wir vorallem damit beschäftigt X sowie Y zu betreiben."}
+                    teamDescription={"« Das Teaching Center ist für den Lehrbetrieb des Instituts zuständig. " +
+                    "Wir müssen die Kurse betreuen, Projekte wie Klicker und Jobeye weiterentwickeln und die Dozenten mit interaktiven " +
+                    "Möglichkeiten unterstützen. »"}
                 />
                 <TeamColumn
                     teamName={"Weiterbildung"}
                     imageSrc={Beni}
                     leaderName={"Benjamin Wilding"}
                     leaderPosition={"Geschäftsführer, Leitung Lehre & Weiterbildung"}
-                    teamDescription={"In unserem TeamColumn sind wir vorallem damit beschäftigt X sowie Y zu betreiben."}
+                    teamDescription={"« Wir bieten Weiterbildungskurse an. Dafür brauchen wir Informatiker, die die User " +
+                    "Experience durch Tools und Webseiten verbessern und die Kundenverwaltung mit Automatisierungen effizienter gestalten. »"}
                 />
             </Grid.Row>
         </Grid>

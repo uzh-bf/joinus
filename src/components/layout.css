@@ -5,7 +5,12 @@ html {
 }
 
 body {
-  margin: 0;
+    margin: 0;
+    -moz-hyphens: auto;
+    -o-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 article,
@@ -703,4 +708,16 @@ pre tt:after {
   background: rgba(255,255,255,0.9);
   z-index: 999;
   border-radius: 0px;
+}
+
+.leaderPhoto {
+  max-height: 250px;
+    margin: auto;
+    margin-top:20px;
+    width: '90%';
+    border-radius: 2px;
+}
+
+.ui.vertical.segment {
+    padding: 5em 0 6em 0;
 }

@@ -5,6 +5,7 @@ import BurgerMenu from "./burgermenu";
 import HomepageHeading from "./HomepageHeading"
 import Layout from './layout'
 import Footer from './Footer'
+import Helmet from 'react-helmet'
 
 import ibf_background from '../images/bfinverted.png'
 
@@ -88,7 +89,11 @@ MobileContainer.propTypes = {
 };
 
 export const ResponsiveContainer = ({children}) => (
+
     <Layout>
+        <Helmet>
+            <html lang="de" />
+        </Helmet>
         <BurgerMenu/>
         <DesktopContainer>{children}</DesktopContainer>
         <MobileContainer>{children}</MobileContainer>

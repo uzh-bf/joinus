@@ -1,7 +1,7 @@
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
  * such things.
  */
-import {Card, Header, Image, Grid} from "semantic-ui-react";
+import { Header, Image, Grid, Container} from "semantic-ui-react";
 import React from "react";
 
 const TeamColumn = ({teamName, imageSrc, leaderName, leaderPosition, teamDescription}) => (
@@ -9,14 +9,20 @@ const TeamColumn = ({teamName, imageSrc, leaderName, leaderPosition, teamDescrip
         <Header as='h3' style={{fontSize: '2em', textAlign:'center'}}>
             {teamName}
         </Header>
-        <Card style={{margin:'auto'}}>
-            <Image src={imageSrc}/>
-            <Card.Content>
-                <Card.Header>{leaderName}</Card.Header>
-                <Card.Meta>{leaderPosition}</Card.Meta>
-                <Card.Description>{teamDescription}</Card.Description>
-            </Card.Content>
-        </Card>
+        <Container style={{margin:'auto', width: '90%'}}>
+            <Image src={imageSrc} className={'leaderPhoto'}/>
+            <Header as='h5'>
+                {leaderName}
+            </Header>
+            <Header as='h6' style={{marginTop: -10, marginBottom:10, minHeight:28}}>
+                {leaderPosition}
+            </Header>
+            <p style={{fontSize:'1.5em',}}>
+                {teamDescription}
+            </p>
+
+        </Container>
+
     </Grid.Column>
 );
 

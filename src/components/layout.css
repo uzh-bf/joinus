@@ -5,7 +5,12 @@ html {
 }
 
 body {
-  margin: 0;
+    margin: 0;
+    -moz-hyphens: auto;
+    -o-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 article,

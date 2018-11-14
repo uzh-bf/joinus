@@ -1,8 +1,12 @@
 import React from 'react'
 import Manu from '../images/manuel.jpg'
+import Lisa from '../images/lisa.jpg'
+import Rene from '../images/rene.jpg'
+import Beni from '../images/beni.jpg'
 import Pascal from '../images/pascal.jpg'
 import {Button, Card, Container, Divider, Grid, Header, Icon, Image, List, Segment, Form, } from 'semantic-ui-react'
 import {ResponsiveContainer} from "../components/ContainerComponents";
+import Team from "../components/Team";
 import TeamBild from '../images/team.jpg'
 
 
@@ -24,22 +28,22 @@ class IndexPage extends React.Component{
                 </Grid.Row>
                 <Grid.Row>
                     <Grid.Column width={9}>
-                    <Container style={{marginTop:70}}>
-                      {/*<Message color='white'>*/}
-                          <Header as='h3' style={{fontSize: '2em'}}>
-                              Am Insti zu arbeiten ist sooo toll.
-                          </Header>
-                          <p style={{fontSize: '1.33em'}}>
-                              Ich lerne jeden Tag Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                              risus lectus, aliquet a pellentesque ac, eleifend quis magna. Aliquam vitae felis augue.
-                              Cras vitae velit ex. Integer at convallis felis. Donec est mauris, accumsan ut sollicitudin
-                              ac, efficitur non sapien. Suspendisse a lorem erat. Integer a feugiat metus.
-                          </p>
-                          <p style={{fontSize: '1.33em'}}>
-                              <i>- Manuel Keller, Senior Software Engineer</i>
-                          </p>
-                      {/*</Message>*/}
-                    </Container>
+                        <Container style={{marginTop:70}}>
+                          {/*<Message color='white'>*/}
+                              <Header as='h3' style={{fontSize: '2em'}}>
+                                  Am Insti zu arbeiten ist sooo toll.
+                              </Header>
+                              <p style={{fontSize: '1.33em'}}>
+                                  Ich lerne jeden Tag Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                                  risus lectus, aliquet a pellentesque ac, eleifend quis magna. Aliquam vitae felis augue.
+                                  Cras vitae velit ex. Integer at convallis felis. Donec est mauris, accumsan ut sollicitudin
+                                  ac, efficitur non sapien. Suspendisse a lorem erat. Integer a feugiat metus.
+                              </p>
+                              <p style={{fontSize: '1.33em'}}>
+                                  <i>- Manuel Keller, Senior Software Engineer</i>
+                              </p>
+                          {/*</Message>*/}
+                        </Container>
 
                     </Grid.Column>
                     <Grid.Column width={7}>
@@ -71,7 +75,7 @@ class IndexPage extends React.Component{
                 <Divider/>
                 <Grid.Row>
                     <Header as='h2' textAlign='center' style={{fontSize: '2.5em', width: "100%"}}>
-                        So many benefits!
+                        Was wir dir bieten:
                     </Header>
                 </Grid.Row>
                 <Grid.Row>
@@ -127,7 +131,7 @@ class IndexPage extends React.Component{
                 <Divider/>
                 <Grid.Row>
                     <Header as='h2' textAlign='center' style={{fontSize: '2.5em', width: "100%"}}>
-                        You could work on projects like these!
+                        Helf uns bei diesen oder ähnlichen Projekten:
                     </Header>
                 </Grid.Row>
                 <Grid celled='internally'>
@@ -199,69 +203,31 @@ class IndexPage extends React.Component{
                 </Grid.Row>
                 <Grid.Row>
                     <Grid.Column width={5}>
-                        <Header as='h3' style={{fontSize: '2em'}}>
-                            ?ATP?
-                        </Header>
-                        <Card>
-                            <Image src='https://react.semantic-ui.com/images/avatar/large/daniel.jpg'/>
-                            <Card.Content>
-                                <Card.Header>René</Card.Header>
-                                <Card.Meta>Managing Director, Head of Administration</Card.Meta>
-                                <Card.Description>Join my team! You will get to know everything about X and Y and furthermore you can z.</Card.Description>
-                            </Card.Content>
-                        </Card>
+                        <Team
+                            teamName={"ATP"}
+                            imageSrc={Rene}
+                            leaderName={"René Hegglin"}
+                            leaderPosition={"Geschäftsführer, Leitung Administration"}
+                            teamDescription={"In unserem Team sind wir vorallem damit beschäftigt X sowie Y zu betreiben."}
+                        />
                     </Grid.Column>
                     <Grid.Column width={5} >
-                        <Header as='h3' style={{fontSize: '2em'}}>
-                            Teaching Center
-                        </Header>
-                        <Card>
-                            <Image src='https://react.semantic-ui.com/images/avatar/large/daniel.jpg'/>
-                            <Card.Content>
-                                <Card.Header>Daniel</Card.Header>
-                                <Card.Meta>Joined in 2016</Card.Meta>
-                                <Card.Description>Daniel is a comedian living in Nashville.</Card.Description>
-                            </Card.Content>
-                        </Card>
+                        <Team
+                            teamName={"Teaching Center"}
+                            imageSrc={Lisa}
+                            leaderName={"Elisabeth Liechti"}
+                            leaderPosition={"Leitung Teaching Center IBF"}
+                            teamDescription={"In unserem Team sind wir vorallem damit beschäftigt X sowie Y zu betreiben."}
+                        />
                     </Grid.Column>
                     <Grid.Column width={5}>
-                        <Header as='h3' style={{fontSize: '2em'}}>
-                            Weiterbildung
-                        </Header>
-                        <Card>
-                            <Image src='https://react.semantic-ui.com/images/avatar/large/daniel.jpg'/>
-                            <Card.Content>
-                                <Card.Header>Daniel</Card.Header>
-                                <Card.Meta>Joined in 2016</Card.Meta>
-                                <Card.Description>Daniel is a comedian living in Nashville.</Card.Description>
-                            </Card.Content>
-                        </Card>
-                    </Grid.Column>
-                </Grid.Row>
-                <Grid.Row>
-                    <Grid.Column width={8}>
-                        <Header as='h3' style={{fontSize: '2em'}}>
-                            We Help Companies and Companions
-                        </Header>
-                        <p style={{fontSize: '1.33em'}}>
-                            We can give your company superpowers to do things that they never thought possible.
-                            Let us delight your customers and empower your needs... through pure data analytics.
-                        </p>
-                        <Header as='h3' style={{fontSize: '2em'}}>
-                            We Make Bananas That Can Dance
-                        </Header>
-                        <p style={{fontSize: '1.33em'}}>
-                            Yes that's right, you thought it was the stuff of dreams, but even bananas can be
-                            bioengineered.
-                        </p>
-                    </Grid.Column>
-                    <Grid.Column floated='right' width={6}>
-                        <Image bordered rounded size='large' src='/images/wireframe/white-image.png'/>
-                    </Grid.Column>
-                </Grid.Row>
-                <Grid.Row>
-                    <Grid.Column textAlign='center'>
-                        <Button size='huge'>Check Them Out</Button>
+                        <Team
+                            teamName={"Weiterbildung"}
+                            imageSrc={Beni}
+                            leaderName={"Benjamin Wilding"}
+                            leaderPosition={"Geschäftsführer, Leitung Lehre & Weiterbildung"}
+                            teamDescription={"In unserem Team sind wir vorallem damit beschäftigt X sowie Y zu betreiben."}
+                        />
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
@@ -269,24 +235,6 @@ class IndexPage extends React.Component{
 
         <Segment style={{padding: '8em 0em', background: 'lightgrey',}} vertical>
             <Grid celled='internally' columns='equal' stackable>
-                <Grid.Row textAlign='center'>
-                    <Grid.Column style={{paddingBottom: '5em', paddingTop: '5em'}}>
-                        <Header as='h3' style={{fontSize: '2em'}}>
-                            "What a Company"
-                        </Header>
-                        <p style={{fontSize: '1.33em'}}>That is what they all say about us</p>
-                    </Grid.Column>
-                    <Grid.Column style={{paddingBottom: '5em', paddingTop: '5em'}}>
-                        <Header as='h3' style={{fontSize: '2em'}}>
-                            "I shouldn't have gone with their competitor."
-                        </Header>
-                        <p style={{fontSize: '1.33em'}}>
-                            <Image avatar src='/images/avatar/large/nan.jpg'/>
-                            <b>Nan</b> Chief Fun Officer Acme Toys
-                        </p>
-                    </Grid.Column>
-                </Grid.Row>
-                <Divider/>
                 <Grid.Row>
                     <Header as='h2' textAlign='center' style={{fontSize: '2.5em', width: "100%"}}>
                         ...
@@ -353,43 +301,6 @@ class IndexPage extends React.Component{
           </Grid>
         </Segment>
 
-        <Segment style={{padding: '8em 0em'}} vertical>
-            <Container text>
-                <Header as='h3' style={{fontSize: '2em'}}>
-                    Breaking The Grid, Grabs Your Attention
-                </Header>
-                <p style={{fontSize: '1.33em'}}>
-                    Instead of focusing on content creation and hard work, we have learned how to master the
-                    art of doing nothing by providing massive amounts of whitespace and generic content that
-                    can seem massive, monolithic and worth your attention.
-                </p>
-                <Button as='a' size='large'>
-                    Read More
-                </Button>
-
-                <Divider
-                    as='h4'
-                    className='header'
-                    horizontal
-                    style={{margin: '3em 0em', textTransform: 'uppercase'}}
-                >
-                    <a href='#'>Case Studies</a>
-                </Divider>
-
-                <Header as='h3' style={{fontSize: '2em'}}>
-                    Did We Tell You About Our Bananas?
-                </Header>
-                <p style={{fontSize: '1.33em'}}>
-                    Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but
-                    it's really true. It took years of gene splicing and combinatory DNA research, but our
-                    bananas can really dance.
-                </p>
-                <Button as='a' size='large'>
-                    I'm Still Quite Interested
-                </Button>
-            </Container>
-        </Segment>
-
         <Segment style={{padding: '8em 0em'}} vertical id="bewerbungsformular">
           <Container>
             <Grid divided stackable>
@@ -430,7 +341,7 @@ class IndexPage extends React.Component{
                         label='Motivation für die Bewerbung'
                         placeholder='Bitte stelle dich vor und erzähle von deinen bisherigen Projekten und Erfahrungen.'
                         style={{ minHeight: 150 }} />
-                    <Button type='submit'>Submit</Button>
+                    <Button type='submit'>Bewerben</Button>
                   </Form>
                 </Grid.Column>
 

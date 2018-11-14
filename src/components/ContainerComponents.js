@@ -120,6 +120,4 @@ export const ResponsiveContainer = ({children}) => (
     </Layout>
 )
 
-ResponsiveContainer.propTypes = {
-    children: PropTypes.node,
-}
+//export Left

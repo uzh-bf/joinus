@@ -12,10 +12,13 @@ const HomepageHeading = ({mobile}) => (
             content='Dein nächster Job?'
             inverted
             style={{
-                fontSize: mobile ? '2em' : '4em',
+                fontSize: mobile ? '3em' : '4em',
                 fontWeight: 'normal',
                 marginBottom: 0,
-                marginTop: mobile ? '1.5em' : '3em',
+                padding: '25px',
+                borderRadius: '15px',
+                marginTop: mobile ? '2.5em' : '2em',
+                backgroundColor: "rgba(0,0,0,0.8)",
             }}
         />
         <Header
@@ -25,7 +28,9 @@ const HomepageHeading = ({mobile}) => (
             style={{
                 fontSize: mobile ? '1.5em' : '1.7em',
                 fontWeight: 'normal',
-                marginTop: mobile ? '0.5em' : '1.5em',
+                padding: '15px',
+                borderRadius: '15px',
+                backgroundColor: "rgba(0,0,0,0.8)",
             }}
         />
         {/*<Image />*/}

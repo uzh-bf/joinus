@@ -3,12 +3,11 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-.ui.inverted.segment{
-  background: #000 !important;
-}
+
 body {
   margin: 0;
 }
+
 article,
 aside,
 details,
@@ -693,4 +692,15 @@ pre tt:after {
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+.burgerMenuUnderlay {
+  position: fixed;
+  top: 28px;
+  left: 28px;
+  width: 53px;
+  height: 46px;
+  background: rgba(255,255,255,0.9);
+  z-index: 999;
+  border-radius: 0px;
 }

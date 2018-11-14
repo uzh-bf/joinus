@@ -8,6 +8,21 @@ import Background from "../images/bfinverted.png";
 import PropTypes from "prop-types";
 import BurgerMenu from "./burgermenu";
 import HomepageHeading from "./HomepageHeading"
+import Layout from './layout'
+
+import Bf from '../images/bfinverted.png'
+
+
+const styles = {
+    container: {
+        backgroundImage: `url(${Bf})`,
+        minHeight: '100vh',
+        padding: '1em 0em',
+        backgroundColor: '#000',
+        backgroundPosition: 'left bottom', /*Positioning*/
+        backgroundRepeat: 'no-repeat',
+    }
+};
 
 class DesktopContainer extends Component {
     state = {}
@@ -29,8 +44,8 @@ class DesktopContainer extends Component {
                     <Segment
                         inverted
                         textAlign='center'
-                        style={{minHeight: 700, padding: '1em 0em'}}
                         vertical
+                        style={styles.container}
                     >
                         {/*<Menu
                             fixed={fixed ? 'top' : null}
@@ -57,9 +72,6 @@ class DesktopContainer extends Component {
                             </Container>
                         </Menu>*/}
                         <HomepageHeading/>
-                        <div style={{size: "5px", "backgroundImage": "url(" + {Background} + ")"}}>
-                            <h1>lol</h1>
-                        </div>
                         {/*<img width={"100%"} align="left" src={Background}/>*/}
                     </Segment>
                 </Visibility>
@@ -84,13 +96,10 @@ class MobileContainer extends Component {
                 <Segment
                     inverted
                     textAlign='center'
-                    style={{minHeight: 350, padding: '1em 0em'}}
+                    style={styles.container}
                     vertical>
 
                     <HomepageHeading mobile/>
-                    <div style={{size: "100%", backgroundImage: "url(" + Background + ")"}}>
-                        <h1>lol</h1>
-                    </div>
                 </Segment>
 
                 {children}
@@ -104,14 +113,13 @@ MobileContainer.propTypes = {
     children: PropTypes.node,
 }
 export const ResponsiveContainer = ({children}) => (
-    <div>
+    <Layout>
         <BurgerMenu/>
         <DesktopContainer>{children}</DesktopContainer>
         <MobileContainer>{children}</MobileContainer>
-    </div>
+    </Layout>
 )
 
 ResponsiveContainer.propTypes = {
     children: PropTypes.node,
 }
-

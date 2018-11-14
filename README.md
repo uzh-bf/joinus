@@ -1,106 +1,58 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
+    <img src="https://react.semantic-ui.com/logo.png" alt="Semantic UI React logo" align="center">
 </p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
 
-Kick off your project with this default boilerplate. This barebones starter ships with the main Gatsby configuration files you might need. 
+<h1 align="center">Gatsby 2 Semantic UI Starter</h1>
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+**NOTE: This project is not officially associated with Semantic UI, Facebook and/or Gatsby in any way. It is just a helpful boilerplate arranged by me.**
 
-## 🚀 Quick start
+## Introduction
 
-1.  **Install the Gatsby CLI.**
+This is a boilerplate project that intends to provide an easy way to setup [Gatsby](https://www.gatsbyjs.org/) with a customizable version of [Semantic UI](https://semantic-ui.com/), as this process is usually clumsy and full of little inconveniences.
 
-    The Gatsby CLI helps you create new sites using Gatsby starters (like this one!)
+It is based on the [Webpack 3 example](https://github.com/Semantic-Org/Semantic-UI-React/tree/master/examples/webpack3) provided by the Semantic UI folks, with a bunch of opinionated changes.
 
-    ```sh
-    # install the Gatsby CLI globally
-    npm install -g gatsby-cli
-    ```
+## How to use
 
-2.  **Create a Gatsby site.**
+### Installation
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+**NOTE: This starter is intended for use with Gatsby 2.0.0 and above.**
 
-    ```sh
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter
-    ```
+Make sure that you have the Gatsby CLI program installed  
+`yarn global add gatsby-cli@next` (**npm:** `npm install --global gatsby-cli@next`)
 
-3.  **Start developing.**
+Now run from your terminal  
+`gatsby new my-project https://github.com/pretzelhands/gatsby-starter-semantic-ui`
 
-    Navigate into your new site’s directory and start it up.
+Then you can run it by doing the following  
+```sh
+cd my-project
+gatsby develop
+```
 
-    ```sh
-    cd my-default-starter/
-    gatsby develop
-    ```
+Gatsby will start up a web server for you and you are ready to go.
 
-4.  **Open the source code and start editing!**
+If you've never worked with Gatsby before, I recommend [reading the documentation](https://next.gatsbyjs.org/docs/)
 
-    Your site is now running at `http://localhost:8000`!
-    
-    *Note: You'll also see a second link: `http://localhost:8000/___graphql`. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql).*
-    
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-    
-## 🧐 What's inside?
+### Customizing Semantic UI
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+To customize Semantic UI you can find the appropriate files in `src/semantic/site`. To understand the file structure provided in that folder, please read the [Customization Guide](http://learnsemantic.com/developing/customizing.html) provided by Semantic UI.
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    ├── README.md
-    └── yarn.lock
+The theme files are pre-filled with all available variables so you can just set them and forget them. As you save those files Gatsby will automatically re-compile your files.
 
-  1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.  
-  
-  2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
-  
-  3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-  
-  4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-  
-  5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-  
-  6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
-  
-  7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-  
-  8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-  
-  9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
-  
-  10.  **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-  
-  11.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-  
-  12.  **`README.md`**: A text file containing useful reference information about your project.
-  
-  13.  **`yarn.lock`**: [Yarn](https://yarnpkg.com/) is a package manager alternative to npm. You can use either yarn or npm, though all of the Gatsby docs reference npm.  This file serves essentially the same purpose as `package-lock.json`, just for a different package management system.
+## Contributing
 
-## 🎓 Learning Gatsby
+Contributions in any form are welcome! If you find a bug, please [file an issue.](https://github.com/pretzelhands/gatsby-starter-semantic-ui/issues) All contributors are asked to abide by the rules of the [Contributor Covenant.](./CODE_OF_CONDUCT.md)
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+## Updates
 
--   **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+This repo will be kept up-to-date in accordance with the stable releases of React, Gatsby, Semantic UI and Semantic UI React insofar they are compatible.
 
--   **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+If major changes happen to the Webpack 3 example of the Semantic UI React repository, I will reflect them in this repository.
 
-## 💫 Deploy
+## License
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+This project is licensed under the ISC license. See the [LICENSE file](./LICENSE.md) for more details.
+
+
+

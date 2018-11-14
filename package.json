@@ -9,6 +9,7 @@
     "gatsby-plugin-react-helmet": "next",
     "less": "^3.8.1",
     "moment": "^2.22.2",
+    "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-burger-menu": "^2.5.4",
     "react-datepicker": "^1.8.0",

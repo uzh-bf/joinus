@@ -9,7 +9,7 @@ const HomepageHeading = ({mobile}) => (
     <Container text>
         <Header
             as='h1'
-            content='Dein nächster Job?'
+            content='function job(yourApplication)'
             inverted
             style={{
                 fontSize: mobile ? '3em' : '4em',
@@ -33,17 +33,11 @@ const HomepageHeading = ({mobile}) => (
                 backgroundColor: "rgba(0,0,0,0.8)",
             }}
         />
-        {/*<Image />*/}
-        {/*<div style={{size:"100%", "background-image":"url(" + { Background } + ")"}}>
-            <h1>lol</h1>
-        </div>*/}
-        {/*<img width={"100%"} align="left" src={Background}></img>
-        <div style={{backgroundImage: "url(" + { Background } + ")"}}></div>*/}
     </Container>
-)
+);
 
 HomepageHeading.propTypes = {
     mobile: PropTypes.bool,
-}
+};
 
 export default HomepageHeading

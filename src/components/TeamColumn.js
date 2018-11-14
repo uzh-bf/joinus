@@ -9,7 +9,7 @@ const TeamColumn = ({teamName, imageSrc, leaderName, leaderPosition, teamDescrip
         <Header as='h3' style={{fontSize: '2em', textAlign:'center'}}>
             {teamName}
         </Header>
-        <Card>
+        <Card style={{margin:'auto'}}>
             <Image src={imageSrc}/>
             <Card.Content>
                 <Card.Header>{leaderName}</Card.Header>

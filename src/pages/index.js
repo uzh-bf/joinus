@@ -21,15 +21,21 @@ class IndexPage extends React.Component{
     render() {
       return(
       <ResponsiveContainer>
-          <CitationSegment/>
-          <AdvantagesSegment/>
-          <ProjectSegment/>
+          <CitationSegment
+              backgroundColor={"antiquewhite"}/>
+          <AdvantagesSegment
+              backgroundColor={"azure"}/>
+          <ProjectSegment
+              backgroundColor={"cornsilk"}/>
           <TeamSegment
-              headerText="Unsere drei Teams:"/>
+              headerText="Unsere drei Teams:"
+              backgroundColor={"honeydew"}/>
           <RequirementSegment
-              backgorundColor={"lightgrey"}/>
-          <InstituteSegment/>
-          <ApplicationFormSegment/>
+              backgroundColor={"ghostwhite"}/>
+          <InstituteSegment
+              backgroundColor={"lightcyan"}/>
+          <ApplicationFormSegment
+              backgroundColor={"white"}/>
       </ResponsiveContainer>)
   }
 }

@@ -5,8 +5,8 @@ import Lisa from "../../images/lisa.jpg";
 import Beni from "../../images/beni.jpg";
 import React from "react";
 
-const TeamSegment = ({headerText}) => (
-    <Segment style={{padding: "4em 0 5em 0"}} vertical>
+const TeamSegment = ({headerText, backgroundColor}) => (
+    <Segment style={{padding: "4em 0 5em 0", background: backgroundColor, }} vertical>
         <Grid container stackable verticalAlign='top'>
             <Grid.Row>
                 <Header as='h2' textAlign='center' style={{fontSize: "2.5em", width: "100%"}}>
@@ -36,8 +36,9 @@ const TeamSegment = ({headerText}) => (
                     imageSrc={Beni}
                     leaderName={"Benjamin Wilding"}
                     leaderPosition={"Geschäftsführer, Leitung Lehre & Weiterbildung"}
-                    teamDescription={"« Wir bieten Weiterbildungskurse an. Dafür brauchen wir Informatiker, die die User " +
-                    "Experience durch Tools und Webseiten verbessern und die Kundenverwaltung mit Automatisierungen effizienter gestalten. »"}
+                    teamDescription={"« Als Weiterbildungsanbieter brauchen wir kreative Informatiker, die die User " +
+                    "Experience mit innovativen Tools verbessern und die Kundenverwaltung mit " +
+                    "Automatisierungen effizienter gestalten. »"}
                 />
             </Grid.Row>
         </Grid>

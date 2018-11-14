@@ -3,8 +3,8 @@ import Manu from "../../images/manuel.jpg";
 import Pascal from "../../images/pascal.jpg";
 import React from "react";
 
-const CitationSegment = () => (
-    <Segment vertical>
+const CitationSegment = ({backgroundColor}) => (
+    <Segment style={{background: backgroundColor,}} vertical>
         <Grid container stackable verticalAlign='top'>
             <Grid.Row>
                 <Header as='h2' textAlign='center' style={{fontSize: "2.5em", width: "100%"}}>

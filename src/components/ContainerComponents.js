@@ -17,6 +17,7 @@ const styles = {
         backgroundColor: '#000',
         backgroundPosition: 'left bottom', /*Positioning in left lower corner*/
         backgroundRepeat: 'no-repeat',
+        backgroundSize: 'contain',
     }
 };
 

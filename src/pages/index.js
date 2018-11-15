@@ -9,7 +9,6 @@ import {
     RequirementSegment,
     TeamSegment
 } from "../components/segments/index";
-import {Footer} from "../components/Footer";
 
 
 /* eslint-disable react/no-multi-comp */

@@ -1,4 +1,4 @@
-import {Divider, Header, Segment, Grid, List} from "semantic-ui-react";
+import { Header, Segment, Grid, List} from "semantic-ui-react";
 import React from "react";
 
 const RequirementSegment = ({backgroundColor}) => (

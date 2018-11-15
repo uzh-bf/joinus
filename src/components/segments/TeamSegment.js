@@ -1,4 +1,4 @@
-import {Header, Segment, Grid, Divider} from "semantic-ui-react";
+import {Header, Segment, Grid} from "semantic-ui-react";
 import TeamColumn from "../TeamColumn";
 import Rene from "../../images/rene.jpg";
 import Lisa from "../../images/lisa.jpg";

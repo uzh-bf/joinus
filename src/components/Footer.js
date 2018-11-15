@@ -1,6 +1,5 @@
 import {Container, Header, Icon, Segment} from "semantic-ui-react";
 import React from "react";
-import {Grid} from "semantic-ui-react/dist/commonjs/collections/Grid/Grid";
 
 const Footer = () => (
     <Segment inverted vertical style={{padding: "3em 0em"}}>

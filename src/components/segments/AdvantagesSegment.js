@@ -1,4 +1,4 @@
-import {Grid, Header, Icon, Segment} from "semantic-ui-react";
+import {Grid, Header, Segment} from "semantic-ui-react";
 import React from "react";
 import AdvantageColumn from "../AdvantageColumn";
 

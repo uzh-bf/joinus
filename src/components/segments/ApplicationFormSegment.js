@@ -7,8 +7,12 @@ const ApplicationFormSegment = ({backgroundColor}) => (
             <Grid divided stackable>
                 <Grid.Row>
                     <Header as='h2' textAlign='center' style={{fontSize: "2.5em", width: "100%"}}>
-                        Jetzt bewerben via Formular:
+                        Jetzt bewerben via E-Mail unter: <a href='mailto:info@bf.uzh.ch'>info@bf.uzh.ch</a>
                     </Header>
+                    <Header as='h2' textAlign='center' style={{fontSize: "2.5em", width: "100%"}}>
+                        Oder direkt via Formular:
+                    </Header>
+
                 </Grid.Row>
                 <Grid.Row centered>
                     <Grid.Column width={10}>
@@ -40,11 +44,34 @@ const ApplicationFormSegment = ({backgroundColor}) => (
                                              {key: "anderes", text: "Anderes, bitte angeben", value: "anderes"},
                                          ]}
                                          placeholder='Hauptfach'/>
+                            <Form.Select fluid label='Ungefähres gewünschtes Pensum (Stellenprozente)'
+                                         options={[
+                                             {key: "kleiner20", text: "< 20%", value: "< 20%"},
+                                             {key: "20", text: "20%", value: "20%"},
+                                             {key: "30", text: "30%", value: "30%"},
+                                             {key: "40", text: "40%", value: "40%"},
+                                             {key: "50", text: "50%", value: "50%"},
+                                             {key: "60", text: "60%", value: "60%"},
+                                             {key: "grösser60", text: "> 60%", value: "> 60%"},
+                                         ]}
+                                         placeholder='Pensum'/>
                             <Form.Field>
                                 <label>
                                     Lebenslauf
                                 </label>
                                 <input placeholder="Lebenslauf" type="file" value={null}/>
+                            </Form.Field>
+                            <Form.Field>
+                                <label>
+                                    Aktuelle Leistungsübersicht
+                                </label>
+                                <input placeholder="Leistungsübersicht" type="file" value={null}/>
+                            </Form.Field>
+                            <Form.Field>
+                                <label>
+                                    Aktuelle Leistungsübersicht
+                                </label>
+                                <input placeholder="Leistungsübersicht" type="file" value={null}/>
                             </Form.Field>
                             <Form.TextArea
                                 label='Motivation für die Bewerbung'
@@ -52,12 +79,18 @@ const ApplicationFormSegment = ({backgroundColor}) => (
                                 style={{minHeight: 150}}/>
                             <Button type='submit'>Bewerben</Button>
                         </Form>
+
                     </Grid.Column>
 
                 </Grid.Row>
 
             </Grid>
         </Container>
+
+        <Header as='h2' textAlign='center'>
+            Hast du Fragen? Gerne beantworten wir diese per Telefon oder E-Mail <br />
+            <a href='https://www.bf.uzh.ch/static/employee/detail/index.php?language=de&alias=liechti-elisabeth&tab=detail'>Kontaktdaten</a>
+        </Header>
 
     </Segment>
 );

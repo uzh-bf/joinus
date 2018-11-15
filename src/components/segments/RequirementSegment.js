@@ -1,52 +1,53 @@
-import { Header, Segment, Grid, List} from "semantic-ui-react";
+import {Header, Segment, Grid, List} from "semantic-ui-react";
 import React from "react";
+
+const RequirementColumn = ({header, must, should}) => (
+    <Grid.Column width={7}>
+        <Header as='h2' textAlign='center'>
+            {header}
+        </Header>
+        <List as='ul'>
+            {
+                must.map((item) =>
+                    (
+                        <List.Item as='li'>{item}</List.Item>
+                    ))
+            }
+        </List>
+        <Header as='h3' textAlign='center'>
+            Fakultativ
+        </Header>
+        <List as='ul'>
+            {
+                should.map((item) =>
+                    (
+                        <List.Item as='li'>{item}</List.Item>
+                    ))
+            }
+        </List>
+    </Grid.Column>
+);
 
 const RequirementSegment = ({backgroundColor}) => (
     <Segment style={{background: backgroundColor,}} vertical id="requirements">
-        <Grid celled='internally' columns='equal' stackable>
+        <Grid container stackable verticalAlign='top'>
             <Grid.Row>
                 <Header as='h2' textAlign='center' style={{fontSize: "2.5em", width: "100%"}}>
-                    Was du mitbringen sollst:
+                    Was du mitbringen solltest:
                 </Header>
             </Grid.Row>
-            <Grid celled='internally'>
-                <Grid.Row centered style={{width: "100%"}}>
-                    <Grid.Column width={6}>
-                        <Header as='h3' textAlign='center' style={{fontSize: "2em", width: "100%"}}>
-                            Allgemein
-                        </Header>
-                        <List as='ul'>
-                            <List.Item as='li'>Du studierst etwa im 3. Semester (Informatik oder
-                                Wirtschaftsinformatik)</List.Item>
-                            <List.Item as='li'>Teamfähigkeit</List.Item>
-                            <List.Item as='li'>Eigenständiges Arbeiten</List.Item>
-                        </List>
-                        <Header as='h3' textAlign='center' style={{fontSize: "1.5em", width: "100%"}}>
-                            Fakultativ
-                        </Header>
-                        <List as='ul'>
-                            <List.Item as='li'>Interesse am Finanzplatz Schweiz</List.Item>
-                        </List>
-                    </Grid.Column>
-                    <Grid.Column width={1}/>
-                    <Grid.Column width={6}>
-                        <Header as='h3' textAlign='center' style={{fontSize: "2em", width: "100%"}}>
-                            Informatik
-                        </Header>
-                        <List as='ul'>
-                            <List.Item as='li'>Du bist interessiert an den neusten Technologien</List.Item>
-                            <List.Item as='li'>Du kannst dich schnell einarbeiten in neue Programmiersprachen und
-                                Frameworks</List.Item>
-                        </List>
-                        <Header as='h3' textAlign='center' style={{fontSize: "1.5em", width: "100%"}}>
-                            Fakultativ
-                        </Header>
-                        <List as='ul'>
-                            <List.Item as='li'>Erfahrung im Webdevelopment</List.Item>
-                        </List>
-                    </Grid.Column>
-                </Grid.Row>
-            </Grid>
+            <Grid.Row divided centered>
+                <RequirementColumn
+                    header='Informatik'
+                    must={['Du bist interessiert an den neusten Technologien', 'Du kannst dich schnell einarbeiten in neue Programmiersprachen und Frameworks']}
+                    should={['Erfahrung im Webdevelopment']}
+                />
+                <RequirementColumn
+                    header='Allgemein'
+                    must={['Du studierst etwa im 3. Semester Informatik, Data Science oder Wirtschaftsinformatik', 'Du kannst gut eigenständig arbeiten', 'Du passt gut in unser Team', 'Du willst durchschnittlich zwischen 20-60% arbeiten, mehr auf Anfrage']}
+                    should={['Interesse am Finanzplatz Schweiz']}
+                />
+            </Grid.Row>
         </Grid>
     </Segment>
 );

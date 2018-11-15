@@ -38,7 +38,7 @@ class DesktopContainer extends Component {
                     onBottomPassed={this.showFixedMenu}
                     onBottomPassedReverse={this.hideFixedMenu}
                 >
-                    <div style={{background: 'black', position: 'relative'}}>
+                    <div style={{background: '#000', position: 'relative'}}>
                         <Segment
                             inverted
                             textAlign='center'

@@ -5,6 +5,7 @@ import Manu from "../../images/manuel.jpg";
 import Pascal from "../../images/pascal.jpg";
 import Rolli from "../../images/rolli.jpg";
 import Nik from "../../images/nik.jpg";
+import Flo from "../../images/flo.jpg";
 import {EmployeeRow} from "../EmployeeRow";
 
 class InstituteSegment extends Component {
@@ -71,7 +72,7 @@ class InstituteSegment extends Component {
                                             team="Administration"
                                             study='Master Informatics'
                                             tasklist={['Weiterentwicklung Management Information System', 'Modernisierung bf.uzh.ch']}
-                                            time='2.5 Jahre'
+                                            time='2.5 Jahren'
                                         />
                                         <EmployeeRow
                                             name="Roli"
@@ -79,15 +80,15 @@ class InstituteSegment extends Component {
                                             team="Teaching Center"
                                             study='Master Informatics'
                                             tasklist={['Klicker UZH', 'Jobeye']}
-                                            time='3.5 Jahre'
+                                            time='3.5 Jahren'
                                         />
                                         <EmployeeRow
-                                            name="Nick"
+                                            name="Nik"
                                             picture={Nik}
                                             team="Weiterbildung"
                                             study='Bachelor Informatics'
                                             tasklist={['Redesign Weiterbildungs Webseite', 'Betreuung SFI OLAT']}
-                                            time='2 Jahre'
+                                            time='2 Jahren'
                                         />
                                         <EmployeeRow
                                             name="Manuel"
@@ -95,15 +96,15 @@ class InstituteSegment extends Component {
                                             team="Weiterbildung"
                                             study='Master Wirtschaftsinformatik'
                                             tasklist={['Dynamics CRM Customizing', 'CRM Anbindung für Webseite']}
-                                            time='1.5 Jahre'
+                                            time='1.5 Jahren'
                                         />
                                         <EmployeeRow
                                             name="Flo"
-                                            picture={Manu}
+                                            picture={Flo}
                                             team="Administration"
                                             study='Master Data Science'
                                             tasklist={['Redesign Webseite']}
-                                            time='2.5 Jahre'
+                                            time='2.5 Jahren'
                                         />
                                     </Table.Body>
                                 </Table>

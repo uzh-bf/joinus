@@ -33,28 +33,15 @@ class DesktopContainer extends Component {
 
         return (
             <Responsive minWidth={Responsive.onlyTablet.minWidth}>
-                <Visibility
-                    once={false}
-                    onBottomPassed={this.showFixedMenu}
-                    onBottomPassedReverse={this.hideFixedMenu}
-                >
                     <div style={{background: 'rgb(0, 2, 62)', position: 'relative'}}>
-
                         <Segment
                             inverted
                             textAlign='center'
                             vertical
                             style={styles.container}
-                        >
-                            <p>test</p>
-                        </Segment>
+                        />
                         <HomepageHeading />
-
-
                     </div>
-
-
-                </Visibility>
 
                 {children}
 

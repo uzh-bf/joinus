@@ -39,13 +39,18 @@ class DesktopContainer extends Component {
                     onBottomPassedReverse={this.hideFixedMenu}
                 >
                     <div style={{background: '#000', position: 'relative'}}>
+
                         <Segment
                             inverted
                             textAlign='center'
                             vertical
                             style={styles.container}
-                        />
-                        <HomepageHeading/>
+                        >
+                            <p>test</p>
+                        </Segment>
+                        <HomepageHeading />
+
+
                     </div>
 
 

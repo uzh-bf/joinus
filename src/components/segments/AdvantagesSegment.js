@@ -3,7 +3,7 @@ import React from "react";
 import AdvantageColumn from "../AdvantageColumn";
 
 const AdvantagesSegment = ({backgroundColor}) => (
-    <Segment style={{background: backgroundColor,}} vertical>
+    <Segment style={{background: backgroundColor,}} vertical id="advantages">
         <Grid container stackable verticalAlign='top'>
             <Grid.Row>
                 <Header as='h2' textAlign='center' style={{fontSize: "2.5em", width: "100%"}}>

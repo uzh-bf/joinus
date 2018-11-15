@@ -12,7 +12,7 @@ const CitationSegment = ({mobile, backgroundColor}) => {
     let imgstyle = {marginBottom: 0, maxHeight: 'auto', objectFit: 'cover', margin: 'auto'};
 
     return(
-        <Segment style={{background: backgroundColor,}} vertical>
+        <Segment style={{background: backgroundColor,}} vertical id="citations">
             <Grid container stackable verticalAlign='center' reversed="mobile">
                 <Grid.Column width={4} />
                 <Grid.Column width={7} style={centerAlignColumn}>

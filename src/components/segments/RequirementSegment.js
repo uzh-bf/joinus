@@ -2,7 +2,7 @@ import {Divider, Header, Segment, Grid, List} from "semantic-ui-react";
 import React from "react";
 
 const RequirementSegment = ({backgroundColor}) => (
-    <Segment style={{background: backgroundColor,}} vertical>
+    <Segment style={{background: backgroundColor,}} vertical id="requirements">
         <Grid celled='internally' columns='equal' stackable>
             <Grid.Row>
                 <Header as='h2' textAlign='center' style={{fontSize: "2.5em", width: "100%"}}>

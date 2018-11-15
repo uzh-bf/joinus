@@ -2,7 +2,7 @@ import {Button, Container, Header, Segment, Grid, Form} from "semantic-ui-react"
 import React from "react";
 
 const ApplicationFormSegment = ({backgroundColor}) => (
-    <Segment style={{background: backgroundColor,}} vertical id="bewerbungsformular">
+    <Segment style={{background: backgroundColor,}} vertical id="application">
         <Container>
             <Grid divided stackable>
                 <Grid.Row>

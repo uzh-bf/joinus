@@ -3,7 +3,7 @@ import TeamBild from "../../images/institut.jpg";
 import React from "react";
 
 const InstituteSegment = ({backgroundColor}) => (
-    <Segment style={{background: backgroundColor,}} vertical>
+    <Segment style={{background: backgroundColor,}} vertical id="institute">
         <Grid container stackable verticalAlign='top'>
             <Grid.Row>
                 <Header as='h2' textAlign='center' style={{fontSize: "2.5em", width: "100%"}}>

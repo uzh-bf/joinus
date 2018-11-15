@@ -723,9 +723,9 @@ pre tt:after {
 }
 
 .downArrow{
-    position: absolute;
-    top: 63%;
-    left: 45%;
+    width: fit-content;
+    margin: 40px auto auto;
+    left: calc(50% - 45px);
 }
 
 .bounce {

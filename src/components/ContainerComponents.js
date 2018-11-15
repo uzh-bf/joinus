@@ -13,6 +13,7 @@ const styles = {
     container: {
         backgroundImage: `url(${ibf_background})`,
         minHeight: '100vh',
+        maxWidth: 800,
         padding: '1em 0em',
         backgroundColor: '#000',
         backgroundPosition: 'left bottom', /*Positioning in left lower corner*/
@@ -37,14 +38,17 @@ class DesktopContainer extends Component {
                     onBottomPassed={this.showFixedMenu}
                     onBottomPassedReverse={this.hideFixedMenu}
                 >
-                    <Segment
-                        inverted
-                        textAlign='center'
-                        vertical
-                        style={styles.container}
-                    >
+                    <div style={{background: 'black', position: 'relative'}}>
+                        <Segment
+                            inverted
+                            textAlign='center'
+                            vertical
+                            style={styles.container}
+                        />
                         <HomepageHeading/>
-                    </Segment>
+                    </div>
+
+
                 </Visibility>
 
                 {children}

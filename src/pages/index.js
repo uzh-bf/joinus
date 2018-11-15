@@ -14,26 +14,29 @@ import {Footer} from "../components/Footer";
 
 /* eslint-disable react/no-multi-comp */
 class IndexPage extends React.Component{
+
     state = {};
 
     handleChange = (e, { value }) => this.setState({ value })
 
     render() {
-      return(
+    const mobile = window.innerWidth < 775;
+    return(
       <ResponsiveContainer>
           <CitationSegment
-              backgroundColor={"antiquewhite"}/>
+              mobile={mobile}
+              backgroundColor={"white"}/>
           <AdvantagesSegment
-              backgroundColor={"azure"}/>
+              backgroundColor={"white"}/>
           <ProjectSegment
-              backgroundColor={"cornsilk"}/>
+              backgroundColor={"white"}/>
           <TeamSegment
               headerText="Unsere drei Teams:"
-              backgroundColor={"honeydew"}/>
+              backgroundColor={"white"}/>
           <RequirementSegment
-              backgroundColor={"ghostwhite"}/>
+              backgroundColor={"white"}/>
           <InstituteSegment
-              backgroundColor={"lightcyan"}/>
+              backgroundColor={"white"}/>
           <ApplicationFormSegment
               backgroundColor={"white"}/>
       </ResponsiveContainer>)

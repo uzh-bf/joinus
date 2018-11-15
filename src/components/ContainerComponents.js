@@ -71,14 +71,15 @@ class MobileContainer extends Component {
 
         return (
             <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
-                <Segment
-                    inverted
-                    textAlign='center'
-                    style={styles.container}
-                    vertical>
-
+                <div style={{background: '#000', position: 'relative'}}>
+                    <Segment
+                        inverted
+                        textAlign='center'
+                        vertical
+                        style={styles.container}
+                    />
                     <HomepageHeading mobile/>
-                </Segment>
+                </div>
 
                 {children}
 

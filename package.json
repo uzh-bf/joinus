@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Richard Blechinger <me@blechi.at>",
   "dependencies": {
+    "animated-scroll-to": "^1.2.2",
     "gatsby": "next",
     "gatsby-plugin-less": "^2.0.0-beta.5",
     "gatsby-plugin-react-helmet": "next",

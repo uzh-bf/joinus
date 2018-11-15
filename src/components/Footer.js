@@ -1,39 +1,18 @@
-import {Container, Header, Segment, Grid, List} from "semantic-ui-react";
+import {Container, Header, Icon, Segment} from "semantic-ui-react";
 import React from "react";
 
 const Footer = () => (
-    <Segment inverted vertical style={{padding: "5em 0em"}}>
-        <Container>
-            <Grid divided inverted stackable>
-                <Grid.Row>
-                    <Grid.Column width={3}>
-                        <Header inverted as='h4' content='About'/>
-                        <List link inverted>
-                            <List.Item as='a'>Sitemap</List.Item>
-                            <List.Item as='a'>Contact Us</List.Item>
-                            <List.Item as='a'>Religious Ceremonies</List.Item>
-                            <List.Item as='a'>Gazebo Plans</List.Item>
-                        </List>
-                    </Grid.Column>
-                    <Grid.Column width={3}>
-                        <Header inverted as='h4' content='Services'/>
-                        <List link inverted>
-                            <List.Item as='a'>Banana Pre-Order</List.Item>
-                            <List.Item as='a'>DNA FAQ</List.Item>
-                            <List.Item as='a'>How To Access</List.Item>
-                            <List.Item as='a'>Favorite X-Men</List.Item>
-                        </List>
-                    </Grid.Column>
-                    <Grid.Column width={7}>
-                        <Header as='h4' inverted>
-                            Footer Header
-                        </Header>
-                        <p>
-                            Extra space for a call to action inside the footer that could help re-engage users.
-                        </p>
-                    </Grid.Column>
-                </Grid.Row>
-            </Grid>
+    <Segment inverted vertical style={{padding: "3em 0em"}}>
+        <Container >
+            <Header as='h3' textAlign='center' inverted>
+                Build with <Icon name='heart'/>in the center of Zurich
+            </Header>
+            <Header as='h6' textAlign='center' inverted style={{marginTop:'0.5em', marginBlockEnd:0}}>
+                For this website, we used React, our favourite front end framework, together with GatsbyJS.
+            </Header>
+            <Header as='h6' textAlign='center' inverted style={{marginTop:'0.5em'}}>
+                Do you want to have a look at the code? Head over to <a href="https://github.com/uzh-bf/joinus"><Icon name='github' />GitHub</a> where we also host our Klicker project.
+            </Header>
         </Container>
     </Segment>);
 

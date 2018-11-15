@@ -1,4 +1,4 @@
-import {Header, Segment, Grid, Divider} from "semantic-ui-react";
+import {Header, Segment, Grid} from "semantic-ui-react";
 import TeamColumn from "../TeamColumn";
 import Rene from "../../images/rene.jpg";
 import Lisa from "../../images/lisa.jpg";
@@ -6,7 +6,7 @@ import Beni from "../../images/beni.jpg";
 import React from "react";
 
 const TeamSegment = ({headerText, backgroundColor}) => (
-    <Segment style={{padding: "4em 0 5em 0", background: backgroundColor, }} vertical>
+    <Segment style={{padding: "4em 0 5em 0", background: backgroundColor, }} vertical id="team">
         <Grid container stackable verticalAlign='top'>
             <Grid.Row>
                 <Header as='h2' textAlign='center' style={{fontSize: "2.5em", width: "100%"}}>

@@ -4,6 +4,12 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+@media only screen and (max-width: 767px){
+    .ui.stackable.grid:not(.vertically) > .row {
+        padding: 0.33em !important;
+    }
+}
+
 body {
     margin: 0;
     -moz-hyphens: auto;
@@ -192,7 +198,6 @@ textarea {
 html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
-  overflow-y: scroll;
 }
 * {
   box-sizing: inherit;
@@ -723,9 +728,9 @@ pre tt:after {
 }
 
 .downArrow{
-    position: absolute;
-    top: 63%;
-    left: 45%;
+    width: fit-content;
+    margin: 40px auto auto;
+    left: calc(50% - 45px);
 }
 
 .bounce {

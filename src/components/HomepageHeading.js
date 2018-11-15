@@ -18,7 +18,7 @@ const HomepageHeading = ({mobile}) => (
                 padding: '25px',
                 borderRadius: '15px',
                 marginTop: !mobile ? '2.5em' : '1em',
-                backgroundColor: "rgba(0,0,0,0.8)",
+                backgroundColor: "rgba(0, 2, 62,0.8)",
             }}
         />
         <Header
@@ -30,7 +30,7 @@ const HomepageHeading = ({mobile}) => (
                 fontWeight: 'normal',
                 padding: '15px',
                 borderRadius: '15px',
-                backgroundColor: "rgba(0,0,0,0.8)",
+                backgroundColor: "rgba(0, 2, 62,0.8)",
             }}
         />
 

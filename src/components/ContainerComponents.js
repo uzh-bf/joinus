@@ -7,7 +7,7 @@ import Layout from './layout'
 import Footer from './Footer'
 import Helmet from 'react-helmet'
 
-import ibf_background from '../images/bfinverted.png'
+import ibf_background from '../images/bfinverted_transparent.png'
 
 const styles = {
     container: {
@@ -15,7 +15,7 @@ const styles = {
         minHeight: '100vh',
         maxWidth: 800,
         padding: '1em 0em',
-        backgroundColor: '#000',
+        backgroundColor: 'rgb(0, 2, 62)',
         backgroundPosition: 'left bottom', /*Positioning in left lower corner*/
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'contain',
@@ -38,7 +38,7 @@ class DesktopContainer extends Component {
                     onBottomPassed={this.showFixedMenu}
                     onBottomPassedReverse={this.hideFixedMenu}
                 >
-                    <div style={{background: '#000', position: 'relative'}}>
+                    <div style={{background: 'rgb(0, 2, 62)', position: 'relative'}}>
 
                         <Segment
                             inverted
@@ -76,7 +76,7 @@ class MobileContainer extends Component {
 
         return (
             <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
-                <div style={{background: '#000', position: 'relative'}}>
+                <div style={{background: 'rgb(0, 2, 62)', position: 'relative'}}>
                     <Segment
                         inverted
                         textAlign='center'

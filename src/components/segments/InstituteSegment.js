@@ -4,6 +4,7 @@ import React, {Component} from "react";
 import Manu from "../../images/manuel.jpg";
 import Pascal from "../../images/pascal.jpg";
 import Rolli from "../../images/rolli.jpg";
+import Nik from "../../images/nik.jpg";
 import {EmployeeRow} from "../EmployeeRow";
 
 class InstituteSegment extends Component {
@@ -53,7 +54,7 @@ class InstituteSegment extends Component {
                                 </Header>
                             </Grid.Row>,
                             <Grid.Row centered>
-                                <Table basic='very' celled collapsing>
+                                <Table basic='very' celled collapsing unstackable>
                                     <Table.Header>
                                         <Table.Row>
                                             <Table.HeaderCell> </Table.HeaderCell>
@@ -65,27 +66,43 @@ class InstituteSegment extends Component {
 
                                     <Table.Body>
                                         <EmployeeRow
-                                            name="Manuel"
-                                            picture={Manu}
-                                            team="Weiterbildung"
-                                            study='Wirtschaftsinformatik'
-                                            tasklist={['Dynamics CRM Customizing', 'CRM Anbindung für Webseite']}
-                                            time='1.5 Jahre'
-                                        />
-                                        <EmployeeRow
                                             name="Pascal"
                                             picture={Pascal}
                                             team="Administration"
-                                            study='Data Science'
+                                            study='Master Informatics'
                                             tasklist={['Weiterentwicklung Management Information System', 'Modernisierung bf.uzh.ch']}
                                             time='2.5 Jahre'
                                         />
                                         <EmployeeRow
-                                            name="Rolli"
+                                            name="Roli"
                                             picture={Rolli}
                                             team="Teaching Center"
                                             study='Master Informatics'
                                             tasklist={['Klicker UZH', 'Jobeye']}
+                                            time='3.5 Jahre'
+                                        />
+                                        <EmployeeRow
+                                            name="Nick"
+                                            picture={Nik}
+                                            team="Weiterbildung"
+                                            study='Bachelor Informatics'
+                                            tasklist={['Redesign Weiterbildungs Webseite', 'Betreuung SFI OLAT']}
+                                            time='2 Jahre'
+                                        />
+                                        <EmployeeRow
+                                            name="Manuel"
+                                            picture={Manu}
+                                            team="Weiterbildung"
+                                            study='Master Wirtschaftsinformatik'
+                                            tasklist={['Dynamics CRM Customizing', 'CRM Anbindung für Webseite']}
+                                            time='1.5 Jahre'
+                                        />
+                                        <EmployeeRow
+                                            name="Flo"
+                                            picture={Manu}
+                                            team="Administration"
+                                            study='Master Data Science'
+                                            tasklist={['Redesign Webseite']}
                                             time='2.5 Jahre'
                                         />
                                     </Table.Body>

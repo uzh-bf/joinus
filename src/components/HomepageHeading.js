@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import React from "react";
 
 const HomepageHeading = ({mobile}) => (
-    <Container text style={{position:'absolute', top: 0, left: 0, right: 0, height:'100vh'}}>
+    <Container text style={{position:'absolute', top: 0, left: 0, right: 0, height: mobile ?'85vh' : '100vh'}}>
         <Header
             as='h1'
             content='Dein neuer Job?'

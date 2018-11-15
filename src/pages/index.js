@@ -19,11 +19,9 @@ class IndexPage extends React.Component{
     handleChange = (e, { value }) => this.setState({ value })
 
     render() {
-    const mobile = window.innerWidth < 775;
     return(
       <ResponsiveContainer>
           <CitationSegment
-              mobile={mobile}
               backgroundColor={"white"}/>
           <AdvantagesSegment
               backgroundColor={"white"}/>

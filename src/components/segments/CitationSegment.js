@@ -7,7 +7,7 @@ let pstyle = {fontSize: "1.2em"};
 let pistyle = {fontSize: "1.25em"};
 let centerAlignColumn = {marginTop: 'auto', marginBottom: 'auto'};
 
-const CitationSegment = ({mobile, backgroundColor}) => {
+const CitationSegment = ({backgroundColor}) => {
 
     let imgstyle = {marginBottom: 0, maxHeight: 'auto', objectFit: 'cover', margin: 'auto'};
 

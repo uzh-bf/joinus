@@ -53,16 +53,19 @@ const ProjectSegment = ({backgroundColor}) => (
             <Grid.Row centered>
                 <Card.Group style={{width:"100%"}}>
                     <ProjectCard
+                        upper={false}
                         projectTitle="Klicker"
                         projectSubtitle="The new way to ask questions"
                         projectDescription="Roli developed a website that does x, using y and z. Klicker is now used by 1000000000 people all around the world."
                     />
                     <ProjectCard
+                        upper={false}
                         projectTitle="Klicker"
                         projectSubtitle="The new way to ask questions"
                         projectDescription="Roli developed a website that does x, using y and z. Klicker is now used by 1000000000 people all around the world."
                     />
                     <ProjectCard
+                        upper={false}
                         projectTitle="Klicker"
                         projectSubtitle="The new way to ask questions"
                         projectDescription="Roli developed a website that does x, using y and z. Klicker is now used by 1000000000 people all around the world."

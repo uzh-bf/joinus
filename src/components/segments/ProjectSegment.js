@@ -87,8 +87,8 @@ class ProjectSegment extends Component {
 
     UNSAFE_componentWillMount(){
         // get screen size
-        this.setState({height: window.innerHeight});
-        this.setState({width: window.innerWidth});
+        this.setState({height: typeof window !== 'undefined' && window.innerHeight});
+        this.setState({width: typeof window !== 'undefined' && window.innerWidth});
     }
 
     showProject = (title) => {

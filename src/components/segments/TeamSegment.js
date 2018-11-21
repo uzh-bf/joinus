@@ -27,9 +27,9 @@ const TeamSegment = ({headerText, backgroundColor}) => (
                     imageSrc={Lisa}
                     leaderName={"Elisabeth Liechti"}
                     leaderPosition={"Leitung Teaching Center IBF"}
-                    teamDescription={"« Das Teaching Center ist für den Lehrbetrieb des Instituts zuständig. " +
-                    "Wir müssen die Kurse betreuen, Projekte wie Klicker und Jobeye weiterentwickeln und die Dozenten mit interaktiven " +
-                    "Möglichkeiten unterstützen. »"}
+                    teamDescription={"« Wir wollen die Lehrveranstaltungen unseres Instituts innovativ und interaktiv " +
+                    "gestalten. Deshalb brauchen wir IT-Support für die digital unterstützten Kurse, für Klicker und " +
+                    "Jobeye oder eine neue Idee von dir! »"}
                 />
                 <TeamColumn
                     teamName={"Weiterbildung"}
@@ -40,6 +40,11 @@ const TeamSegment = ({headerText, backgroundColor}) => (
                     "Experience mit innovativen Tools verbessern und die Kundenverwaltung mit " +
                     "Automatisierungen effizienter gestalten. »"}
                 />
+
+                <Header as='h2' textAlign='center' style={{fontSize: '2em', width: "100%"}}>
+                    Wir suchen momentan Verstärkung für <i>alle</i> Teams!
+                </Header>
+
             </Grid.Row>
         </Grid>
     </Segment>

@@ -61,7 +61,7 @@ class InstituteSegment extends Component {
                                             <Table.HeaderCell> </Table.HeaderCell>
                                             <Table.HeaderCell>Studienrichtung</Table.HeaderCell>
                                             <Table.HeaderCell>Aktuelle Projekte</Table.HeaderCell>
-                                            <Table.HeaderCell style={{minWidth:"55px"}}>Am Institut seit</Table.HeaderCell>
+                                            <Table.HeaderCell style={{minWidth:"55px"}} className={'mobile hidden'}>Am Institut seit</Table.HeaderCell>
                                         </Table.Row>
                                     </Table.Header>
 

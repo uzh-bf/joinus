@@ -23,6 +23,6 @@ export function EmployeeRow({name, picture, team, study, tasklist, time}) {
                 }
             </List>
         </Table.Cell>
-        <Table.Cell>{time}</Table.Cell>
+        <Table.Cell className={"mobile hidden"}>{time}</Table.Cell>
     </Table.Row>;
 }

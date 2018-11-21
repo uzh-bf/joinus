@@ -52,7 +52,7 @@ class ProjectSegment extends Component {
         return (
         <Segment style={{background: backgroundColor,}} vertical id="project">
             <Header as='h2' textAlign='center' style={{fontSize: "2.5em", width: "100%"}}>
-                Helf uns bei diesen oder ähnlichen Projekten:
+                Hilf uns bei diesen oder ähnlichen Projekten:
             </Header>
             <Grid container celled stackable verticalAlign='top' columns='equal'>
                 <Grid.Row centered celled columns='equal'>

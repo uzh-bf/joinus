@@ -794,3 +794,10 @@ pre tt:after {
   width: 100% !important;
   margin: auto;
 }
+
+@media only screen and (max-width: 480px) {
+  th.mobile.hidden, td.mobile.hidden {
+    display: none !important;
+  }
+
+}

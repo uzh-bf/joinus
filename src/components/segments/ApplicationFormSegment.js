@@ -1,4 +1,4 @@
-import {Button, Container, Header, Segment, Grid, Form} from "semantic-ui-react";
+import {Button, Container, Header, Segment, Grid, Form, Icon} from "semantic-ui-react";
 import React from "react";
 
 const ApplicationFormSegment = ({backgroundColor}) => (
@@ -88,9 +88,8 @@ const ApplicationFormSegment = ({backgroundColor}) => (
         </Container>
 
         <Header as='h2' textAlign='center'>
-            Hast du Fragen? Gerne beantworten wir diese per Telefon oder E-Mail <br />
-            <a href='https://www.bf.uzh.ch/static/employee/detail/index.php?language=de&alias=liechti-elisabeth&tab=detail'>Kontaktdaten</a>
-        </Header>
+            Hast du Fragen? Gerne beantworten wir diese per Telefon oder E-Mail. <br />
+            <a href='https://www.bf.uzh.ch/static/employee/detail/index.php?language=de&alias=liechti-elisabeth&tab=detail'>Kontaktdaten <Icon name="external alternate"/></a></Header>
 
     </Segment>
 );

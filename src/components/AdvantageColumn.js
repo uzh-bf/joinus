@@ -9,7 +9,7 @@ const AdvantageColumn= ({iconName, iconColor, advantageTitle, advantageText}) =>
         <Header as='h3' textAlign='center' style={{fontSize: "2em"}}>
             {advantageTitle}
         </Header>
-        <p style={{fontSize: "1.33em", "text-align":"justify"}}>
+        <p style={{fontSize: "1.33em"}}>
             {advantageText}
         </p>
     </Grid.Column>

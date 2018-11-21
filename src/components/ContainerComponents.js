@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Responsive, Segment, Visibility} from "semantic-ui-react";
+import {Responsive, Segment} from "semantic-ui-react";
 import PropTypes from "prop-types";
 import BurgerMenu from "./burgermenu";
 import HomepageHeading from "./HomepageHeading"
@@ -13,6 +13,19 @@ const styles = {
     container: {
         backgroundImage: `url(${ibf_background})`,
         minHeight: '100vh',
+        maxWidth: 800,
+        padding: '1em 0em',
+        backgroundColor: 'rgb(0, 2, 62)',
+        backgroundPosition: 'left bottom', /*Positioning in left lower corner*/
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'contain',
+    }
+};
+
+const stylesMobile = {
+    container: {
+        backgroundImage: `url(${ibf_background})`,
+        minHeight: '90vh',
         maxWidth: 800,
         padding: '1em 0em',
         backgroundColor: 'rgb(0, 2, 62)',
@@ -68,7 +81,7 @@ class MobileContainer extends Component {
                         inverted
                         textAlign='center'
                         vertical
-                        style={styles.container}
+                        style={stylesMobile.container}
                     />
                     <HomepageHeading mobile/>
                 </div>

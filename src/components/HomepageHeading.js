@@ -1,7 +1,7 @@
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
  * such things.
  */
-import {Container, Header, Button} from "semantic-ui-react";
+import {Container, Header} from "semantic-ui-react";
 import PropTypes from "prop-types";
 import React from "react";
 import animateScrollTo from 'animated-scroll-to';
@@ -36,7 +36,7 @@ const HomepageHeading = ({mobile}) => (
         />
 
         {
-            //!mobile &&
+            // eslint-disable-next-line
             <a href="#" onClick={() => animateScrollTo((document.querySelector('#citations')))}>
                 <div className="downArrow bounce">
                     <img width="90" height="50" alt=""

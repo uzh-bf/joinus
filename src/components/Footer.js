@@ -2,7 +2,7 @@ import {Container, Header, Icon, Segment} from "semantic-ui-react";
 import React from "react";
 
 const Footer = () => (
-    <Segment inverted vertical style={{padding: "3em 0em"}}>
+    <Segment inverted vertical style={{padding: "3em 0em", backgroundColor: "rgb(0, 2, 62)"}}>
         <Container >
             <Header as='h3' textAlign='center' inverted>
                 Build with <Icon name='heart'/>in the center of Zurich

@@ -12,10 +12,11 @@ html {
 
 body {
     margin: 0;
-    -moz-hyphens: auto;
-    -o-hyphens: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
+    -moz-hyphens: auto;
     hyphens: auto;
 }
 
@@ -785,4 +786,11 @@ pre tt:after {
         -webkit-transform: translateY(-15px);
         transform: translateY(-15px);
     }
+}
+
+.projectDescription {
+  padding: 0px 10%;
+  background: rgba(0,0,63,0.1);
+  width: 100% !important;
+  margin: auto;
 }

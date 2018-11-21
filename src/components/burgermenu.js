@@ -3,6 +3,8 @@ import {Icon} from 'semantic-ui-react'
 import {slide as Menu} from 'react-burger-menu'
 import animateScrollTo from 'animated-scroll-to';
 
+/* eslint-disable */
+
 const BurgerMenu = () => {
     return (
         <div>

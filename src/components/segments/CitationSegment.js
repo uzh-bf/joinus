@@ -36,6 +36,7 @@ const CitationSegment = ({backgroundColor}) => {
                         <Image bordered rounded size='large' src={Manu} style={imgstyle}/>
                     </div>
                 </Grid.Column>
+                
             </Grid>
             <Grid container stackable verticalAlign='center'>
                 <Grid.Column width={1} />
@@ -58,6 +59,7 @@ const CitationSegment = ({backgroundColor}) => {
                         </p>
                     </Container>
                 </Grid.Column>
+                <Grid.Column width={4} />
             </Grid>
         </Segment>
     );

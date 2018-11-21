@@ -14,27 +14,26 @@ const AdvantagesSegment = ({backgroundColor}) => (
                 <AdvantageColumn
                     iconName='code branch'
                     iconColor='black'
-                    advantageTitle='#code'
-                    advantageText='Wende deine Programmierkenntnisse in einem praktischen Umfeld an und sammle Erfahrung für spätere Berufe.'
+                    advantageTitle='#experience'
+                    advantageText='Wende deine Programmierkenntnisse in einem praktischen Umfeld an, arbeite dich in neue Bereiche ein und sammle in verschiedenen Projekten breite Erfahrung für deine berufliche Laufbahn.'
                 />
                 <AdvantageColumn
                     iconName='dollar sign'
                     iconColor='green'
-                    advantageTitle='#cash'
-                    advantageText='Bei uns verdienst du mehr als bei Promotion-Jobs oder an der Kasse im Supermarkt.'
+                    advantageTitle='#salary'
+                    advantageText='Verdiene einen fairen Stundenlohn, welcher nach deinem aktuellen Abschluss festgelegt ist.'
                 />
                 <AdvantageColumn
                     iconName='clock outline'
                     iconColor='brown'
                     advantageTitle='#flexibility'
-                    advantageText='Dein Studium geht vor! Dementsprechend kannst du bei uns auch deine Arbeitszeiten so anpassen, dass dir die Arbeit nicht in die Quere kommt.'
+                    advantageText='Teile dir die Arbeitszeiten frei ein, sodass du trotz spannender Arbeit genügend Zeit und Energie fürs Studium aufwenden kannst.'
                 />
                 <AdvantageColumn
                     iconName='users'
                     iconColor='orange'
                     advantageTitle='#team'
-                    advantageText='
-                        Sei Teil von einem ambitionierten Team von Studenten. Neben regelmässigen Events wie z.B. einem Schlitteltag in Engelberg, grillen wir auch gerne oder besetzen das BQM.'
+                    advantageText='Sei Teil eines jungen und ambitionierten Teams. Neben engagierter Zusammenarbeit grillieren wir im Sommer gerne, besetzen das bQm oder machen Teamausflüge.'
                 />
             </Grid.Row>
         </Grid>

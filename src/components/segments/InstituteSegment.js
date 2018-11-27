@@ -1,4 +1,4 @@
-import {Button, Grid, Header, Image, Segment, Table, Menu} from "semantic-ui-react";
+import {Grid, Header, Image, Segment, Table, Menu} from "semantic-ui-react";
 import TeamBild from "../../images/institut.jpg";
 import React, {Component} from "react";
 import Manu from "../../images/manuel.jpg";

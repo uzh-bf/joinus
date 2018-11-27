@@ -1,4 +1,4 @@
-import {Button, Grid, Header, Image, Segment, Table} from "semantic-ui-react";
+import {Button, Grid, Header, Image, Segment, Table, Menu} from "semantic-ui-react";
 import TeamBild from "../../images/institut.jpg";
 import React, {Component} from "react";
 import Manu from "../../images/manuel.jpg";
@@ -27,14 +27,11 @@ class InstituteSegment extends Component {
                         </Header>
                     </Grid.Row>
 
-                    <Grid.Row centered>
-                        <Button.Group style={{fontFamily: "IBM Plex Mono"}}>
-                            <Button attached={"left"} style={{fontFamily: "IBM Plex Mono"}}
-                                    onClick={this.hideInsti}>Informatikteam</Button>
-                            <Button attached={"right"} style={{fontFamily: "IBM Plex Mono"}}
-                                    onClick={this.showInsti}>Institutsteam</Button>
-                        </Button.Group>
-                    </Grid.Row>
+                    <Menu pointing fluid style={{fontFamily: "IBM Plex Mono"}}>
+                        <Menu.Item name='Unser Informatikteam' active={this.state.institute === false} onClick={this.hideInsti} />
+                        <Menu.Item name='Unser Institut' active={this.state.institute === true} onClick={this.showInsti} />
+                    </Menu>
+
                     {
                         this.state.institute && [
                         <Grid.Row style={{maxHeight: 400, height: 'auto'}}>

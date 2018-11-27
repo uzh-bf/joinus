@@ -107,13 +107,13 @@ class ApplicationFormSegment extends Component {
                                     />
                                     <Form.Field>
                                         <label>
-                                            Lebenslauf
+                                            Lebenslauf (Max. 5Mb)
                                         </label>
                                         <input placeholder="Lebenslauf (Max. 5Mb)" accept='.pdf' type="file" value={null} name='cvFile'/>
                                     </Form.Field>
                                     <Form.Field>
                                         <label>
-                                            Aktuelle Leistungsübersicht
+                                            Aktuelle Leistungsübersicht (Max. 5Mb)
                                         </label>
                                         <input placeholder="Leistungsübersicht (Max. 5Mb)" accept='.pdf' type="file" value={null} name='grades'/>
                                     </Form.Field>

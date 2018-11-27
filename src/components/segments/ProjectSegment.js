@@ -74,10 +74,13 @@ class ProjectSegment extends Component {
             citeName: "Christian"
         },
         jobeye: {
-            img: 'tools.jpg',
-            title: 'Jobeye',
-            desc: "JOBEYE TEXT",
-            cite: "« Supidupu »",
+            img: 'jobeye.jpg',
+            title: 'Jobeye - Stellenportal für Studenten',
+            desc: "Jobeye bietet teilnehmenden Firmen die Möglichkeit, nach studentischen Mitarbeitern zu suchen. Dies " +
+                "vereinfacht die Stellenausschreibung für unser Institut und gibt den Studenten gleichzeitig die Möglichkeit," +
+                " einen Nebenverdienst während dem Studium zu finden.",
+            cite: "« Jobeye war das erste Projekt, welches wir extern auf einer Docker Instanz gehostet haben. Docker " +
+                "vereinfacht das Deployment stark und sorgt dafür, dass stets die korrekte Laufzeitumgebung verfügbar ist. »",
             citeName: "Roli"
         },
 

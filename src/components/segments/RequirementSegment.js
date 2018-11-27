@@ -39,13 +39,21 @@ const RequirementSegment = ({backgroundColor}) => (
             <Grid.Row divided centered>
                 <RequirementColumn
                     header='Informatik'
-                    must={['Du bist interessiert an den neusten Technologien', 'Du kannst dich schnell einarbeiten in neue Programmiersprachen und Frameworks']}
-                    should={['Erfahrung im Webdevelopment']}
+                    must={['Bereitschaft, dich mit den eingesetzten Technologien vertieft zu befassen',
+                        'Fähigkeit, sich neue Programmierkenntnisse schnell anzueignen',
+                        'Kreative und effiziente Problemlösung',
+                        'Fähigkeit, Architektur und Design möglichst zukunftssicher zu entwerfen']}
+                    should={['Erfahrung im Webdevelopment',
+                             'Erfahrungen mit React, PHP, C# (Dynamics CRM)']}
                 />
                 <RequirementColumn
                     header='Allgemein'
-                    must={['Du studierst etwa im 3. Semester Informatik, Data Science oder Wirtschaftsinformatik', 'Du kannst gut eigenständig arbeiten', 'Du passt gut in unser Team', 'Du willst durchschnittlich zwischen 20-60% arbeiten, mehr auf Anfrage']}
-                    should={['Interesse am Finanzplatz Schweiz']}
+                    must={['Du studierst etwa im 3. Semester Informatik, Data Science oder Wirtschaftsinformatik',
+                        'Eigenständiges und engagiertes Arbeiten',
+                        'Teamfähigkeit',
+                        'Möglichkeit, mit einem Pensum von 20-60% zu arbeiten, mehr auf Anfrage (flexibel mehr oder weniger während Ferien oder Prüfungen)']}
+                    should={['erste Projekterfahrungen',
+                        'Gute Englischkentnisse, weitere Sprachen von Vorteil']}
                 />
             </Grid.Row>
         </Grid>

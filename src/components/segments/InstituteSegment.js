@@ -23,18 +23,23 @@ class InstituteSegment extends Component {
                 <Grid container stackable verticalAlign='top'>
                     <Grid.Row>
                         <Header as='h2' textAlign='center' style={{fontSize: "2.5em", width: "100%"}}>
-                            Das Team:
+                            Unser Institut
                         </Header>
                     </Grid.Row>
 
                     <Menu pointing fluid style={{fontFamily: "IBM Plex Mono"}}>
                         <Menu.Item name='Unser Informatikteam' active={this.state.institute === false} onClick={this.hideInsti} />
-                        <Menu.Item name='Unser Institut' active={this.state.institute === true} onClick={this.showInsti} />
+                        <Menu.Item name='Institutsteam' active={this.state.institute === true} onClick={this.showInsti} />
                     </Menu>
 
                     {
                         this.state.institute && [
-                        <Grid.Row style={{maxHeight: 400, height: 'auto'}}>
+                            <Grid.Row centered>
+                                <Header as='h3'>
+                                    Unsere Instituts-Mitarbeiter
+                                </Header>
+                            </Grid.Row>,
+                            <Grid.Row style={{maxHeight: 400, height: 'auto'}}>
                             <Image centered
                                    style={{width: "70%", height: "100%", objectFit: 'cover', borderRadius: '3px',}}
                                    src={TeamBild}/>
@@ -47,7 +52,7 @@ class InstituteSegment extends Component {
                     {
                         ! this.state.institute && [
                             <Grid.Row centered>
-                                <Header as='h4'>
+                                <Header as='h3'>
                                     Unsere Informatik-Mitarbeiter
                                 </Header>
                             </Grid.Row>,

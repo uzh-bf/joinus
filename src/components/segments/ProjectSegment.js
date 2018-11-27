@@ -33,15 +33,19 @@ class ProjectSegment extends Component {
             citeName: "Manuel"
         },
         redesign: {
-            img: 'dynamics.jpg',
+            img: 'redesign.jpg',
             title: 'Redesign Institutswebseite',
-            desc: "Die Universität Zürich verwendet seit Langem Magnolia als Content Management System. Die Webseite unseres " +
-                "Instituts basierte aber lange Zeit noch auf dem Vorgänger (XXX). Im Rahmen eines umfassenden Redesigns wurde die Webseite" +
-                "auf Magnolia umgestellt sowie um neue Elemente wie die Mitarbeiterübersicht eingebaut. Wo die Möglichkeiten des CMS nicht ausreichten, " +
-                "wurden diese mittels Javascript, extern eingebundenen Webseiten sowie einfachen PHP Backends erweitert.",
-            cite: "« Obwohl die neue Webseite der alten aufgrund der Corporate Identity Bestimmungen der UZH sehr ähnelt ," +
-                " ist die technische Grundlage komplett neu. Wir profitieren nun von neuen Möglichkeiten des CMS und haben " +
-                "performante und benutzerfreundliche Zusätze eingepflegt. »",
+            desc: "Die Universität Zürich verwendet seit langem Magnolia als Content Management System (CMS)" +
+                ". Die Webseite unseres Instituts basierte aber lange Zeit noch auf dem in Contao eingebetteten Vorgänge" +
+                "r. Im Rahmen eines umfassenden Redesigns wurde die Webseite auf Magnolia umgestellt sowie um neue Element" +
+                "e wie die Mitarbeiter- oder Vorlesungsübersicht erweitert. Wo die Möglichkeiten des CMS nicht ausreichten" +
+                ", wurden diese mit PHP und Javascript ergänzt. Im Hintergrund werden die Daten in einer von uns entwickelten MySQL Datenban" +
+                "k gespeichert, auf die wir mit einer PHP API zugreifen. Anschliessend werden die Daten visualisiert. Alle " +
+                "Daten externer Quellen werden bei uns gecached, mit nächtlich durchlaufende Skripts werden diese aktualisiert.",
+            cite: "« Obwohl die neue Webseite der alten aufgrund der Corporate Identity Bestimmungen der UZH sehr ähnelt" +
+                ", ist die technische Grundlage komplett neu. Mit eigenentwickelten Komponenten versuchen wir die Nach" +
+                "teile und Einschränkungen des CMS zu umgehen und haben performante und benutzerfreundliche Zusätze eing" +
+                "epflegt. Die neue Struktur der Datenbank erlaubt uns ausserdem, viel mehr Informationen aus den Daten zu ziehen. »",
             citeName: "Pascal"
         },
         tools: {
@@ -50,9 +54,10 @@ class ProjectSegment extends Component {
             desc: "Da das Institut insgesamt etwa 30 Semesterassistenten beschäftigt, wurden Tools zur Mitarbeiterverwaltung notwendig. " +
                 "Mit diesen Tools können zum Beispiel die Arbeitsstunden aufgezeichnet werden oder die Anwesenheit in der nächsten Zeit" +
                 " angegeben werden. Eine ganze Reihe an Tools unterstützen die Mitarbeiter und steigern die Effizienz. ",
-            cite: "« Die Mitarbeitertools erleichtern die Verwaltung in vielerlei Hinsicht. Mir gefällt vorallem, dass ich so" +
-                " weniger Verwaltungsarbeit auf Papier habe. Allerdings müssten einige der Tools dringend überarbeitet werden, " +
-                " leider haben wir bisher noch keine Zeit dafür gefunden. »",
+            cite: "« Das Anwesenheits-WebApp war für mich das erste Projekt am Institut und die optimale Gelegenheit mich " +
+                "einzuarbeiten und das Institut und seine Mitarbeiter kennenzulernen. Bei der Implementierung hatte ich " +
+                "grosse gestalterische Freiheiten und konnte meine Web-Programming Skills deutlich erweitern. Am meisten freut mich," +
+                " dass es nun von so vielen Mitarbeitern benutzt wird.»",
             citeName: "Flo"
         },
         lehrveranstaltungen: {
@@ -158,7 +163,7 @@ class ProjectSegment extends Component {
                                     }
                                 `}
                             </style>
-                            <Grid container stackable verticalAlign='top' columns='equal' id={"projectDescription"}>
+                            <Grid container stackable verticalAlign='middle' columns='equal' id={"projectDescription"}>
                             <Grid.Row centered inverted style={{maxWidth:'1100px', margin:'auto'}}>
                                 <Grid.Column width={6}>
                                     {
@@ -188,7 +193,7 @@ class ProjectSegment extends Component {
                         }
                     </Transition>
                 <Grid container celled stackable columns='equal'>
-                <Grid.Row centered celled columns='equal'>
+                <Grid.Row centered columns='equal'>
                     <Grid.Column>
                         <Header as='h3' textAlign='center'>
                             Interne Tools

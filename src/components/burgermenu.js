@@ -8,7 +8,7 @@ import animateScrollTo from 'animated-scroll-to';
 const BurgerMenu = () => {
     return (
         <div>
-            <div class="burgerMenuUnderlay">
+            <div className="burgerMenuUnderlay">
             </div>
 
             <Menu isOpen={false}>

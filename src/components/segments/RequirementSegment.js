@@ -15,7 +15,7 @@ const RequirementColumn = ({header, must, should}) => (
             }
         </List>
         <Header as='h3' textAlign='center'>
-            Fakultativ
+            Worüber wir uns freuen würden
         </Header>
         <List as='ul'>
             {

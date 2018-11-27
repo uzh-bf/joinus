@@ -6,6 +6,7 @@
   "dependencies": {
     "animated-scroll-to": "^1.2.2",
     "gatsby": "next",
+    "gatsby-plugin-google-analytics": "^2.0.7",
     "gatsby-plugin-less": "^2.0.0-beta.5",
     "gatsby-plugin-react-helmet": "next",
     "less": "^3.8.1",

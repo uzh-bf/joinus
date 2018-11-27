@@ -83,10 +83,17 @@ class InstituteSegment extends Component {
                                             time='3.5 Jahren'
                                         />
                                         <EmployeeRow
+                                            name="Christian"
+                                            team="Teaching Center"
+                                            study=''
+                                            tasklist={['IT-Betreuung OLAT Kurse', 'Support für Studenten und Mitarbeiter', 'Entwicklung IAs']}
+                                            time='2.5 Jahren'
+                                        />
+                                        <EmployeeRow
                                             name="Nik"
                                             picture={Nik}
                                             team="Weiterbildung"
-                                            study='Bachelor Informatics'
+                                            study='Master Informatics'
                                             tasklist={['Redesign Weiterbildungs Webseite', 'Betreuung SFI OLAT']}
                                             time='2 Jahren'
                                         />

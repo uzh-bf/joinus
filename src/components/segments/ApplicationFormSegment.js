@@ -1,7 +1,6 @@
 import {Button, Container, Header, Segment, Grid, Form, Icon, Message} from "semantic-ui-react";
 import React, {Component} from "react";
 
-
 class ApplicationFormSegment extends Component {
     constructor(props) {
         super(props);
@@ -14,12 +13,15 @@ class ApplicationFormSegment extends Component {
 
     }
 
-    handleChangeGender = (e, { value }) => this.setState({gender: value });
+    handleChangeGender = (e, { value }) => {
+        this.setState({gender: value });
+    }
     handleChangePensum = (e, { value }) => this.setState({pensum: value });
     handleChangeStudy = (e, { value }) => this.setState({study: value });
 
     handleSubmit(event) {
         event.preventDefault();
+
         const data = new FormData(event.target);
         data.append('gender', this.state.gender);
         data.append('pensum', this.state.pensum);

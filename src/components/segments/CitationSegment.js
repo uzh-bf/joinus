@@ -13,7 +13,7 @@ const CitationSegment = ({backgroundColor}) => {
 
     return(
         <Segment style={{background: backgroundColor,}} vertical id="citations">
-            <Grid container stackable verticalAlign='center' reversed="mobile">
+            <Grid container stackable verticalAlign='middle' reversed="mobile">
                 <Grid.Column width={4} />
                 <Grid.Column width={7} style={centerAlignColumn}>
                     <Container>
@@ -38,7 +38,7 @@ const CitationSegment = ({backgroundColor}) => {
                 </Grid.Column>
                 
             </Grid>
-            <Grid container stackable verticalAlign='center'>
+            <Grid container stackable verticalAlign='middle'>
                 <Grid.Column width={1} />
                 <Grid.Column width={5}  style={centerAlignColumn}>
                     <div style={{maxWidth:'55vw', margin: 'auto'}}>

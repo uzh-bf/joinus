@@ -10,16 +10,17 @@ import {
     TeamSegment
 } from "../components/segments/index";
 
-
 /* eslint-disable react/no-multi-comp */
 class IndexPage extends React.Component{
-
-    state = {};
+    constructor(props){
+        super(props);
+        this.state = {};
+    }
 
     handleChange = (e, { value }) => this.setState({ value })
 
     render() {
-    return(
+        return(
       <ResponsiveContainer>
           <CitationSegment
               backgroundColor={"white"}/>

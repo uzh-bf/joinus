@@ -82,7 +82,7 @@ class InstituteSegment extends Component {
                                             team="Teaching Center"
                                             study='Master Data Science'
                                             tasklist={['Klicker UZH', 'Jobeye']}
-                                            time='3 Jahren'
+                                            time='3.5 Jahren'
                                         />
                                         <EmployeeRow
                                             name="Christian"
@@ -113,7 +113,7 @@ class InstituteSegment extends Component {
                                             team="Administration"
                                             study='Master Data Science'
                                             tasklist={['Modernisierung Instituts-Webseite', 'interne Tools']}
-                                            time='2.5 Jahren'
+                                            time='2 Jahren'
                                         />
                                     </Table.Body>
                                 </Table>

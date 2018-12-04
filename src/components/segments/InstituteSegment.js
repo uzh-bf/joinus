@@ -72,7 +72,7 @@ class InstituteSegment extends Component {
                                             name="Pascal"
                                             picture={Pascal}
                                             team="Administration"
-                                            study='Master Informatics'
+                                            study='Master Information Systems'
                                             tasklist={['Weiterentwicklung Management Information System', 'Modernisierung Instituts-Webseite']}
                                             time='2.5 Jahren'
                                         />
@@ -80,7 +80,7 @@ class InstituteSegment extends Component {
                                             name="Roli"
                                             picture={Rolli}
                                             team="Teaching Center"
-                                            study='Master Informatics'
+                                            study='Master Data Science'
                                             tasklist={['Klicker UZH', 'Jobeye']}
                                             time='3 Jahren'
                                         />
@@ -103,7 +103,7 @@ class InstituteSegment extends Component {
                                             name="Manuel"
                                             picture={Manu}
                                             team="Weiterbildung"
-                                            study='Master Wirtschaftsinformatik'
+                                            study='Master Information Systems'
                                             tasklist={['Dynamics CRM Customizing und Automatisierungen', 'CRM Anbindung für Webseite']}
                                             time='1.5 Jahren'
                                         />

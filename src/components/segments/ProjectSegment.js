@@ -52,7 +52,7 @@ class ProjectSegment extends Component {
             img: 'tools.jpg',
             title: 'Interne Tools',
             desc: "Unser Institut besteht aus über 50 Teams an vier verschiedenen Standorten. Um die Mitarbeiter möglichst effizient zu verwalten, haben wir interne Tools zur Arbeitsstundenaufzeichnung und für die Anwesenheit implementiert. Mit letzterem können die Mitarbeiter ihre Absenzen festhalten und die Absenzen ihrer Team-Mitglieder festhalten. "
-            + "Zudem gibt es das Management Information System (MIS), welches der Institutsleitung über diverse Visualisierungen, Metriken, etc. aufschlussreiche Informationen über das Institut, dessen Mitarbeiter und die aktuelle Forschung liefert. Miomentan befindet sich eine Version 2 in Entwicklung. ",
+            + "Zudem gibt es das Management Information System (MIS), welches der Institutsleitung über diverse Visualisierungen, Metriken, etc. aufschlussreiche Informationen über das Institut, dessen Mitarbeiter und die aktuelle Forschung liefert. Momentan befindet sich eine Version 2 in Entwicklung. ",
             cite: "« Die Anwesenheits Web Applikation war für mich das erste Projekt am Institut und die optimale Gelegenheit mich " +
                 "einzuarbeiten und das Institut und seine Mitarbeiter kennenzulernen. Bei der Implementierung hatte ich " +
                 "grosse gestalterische Freiheiten und konnte meine Web Development Skills deutlich erweitern. Es freut mich besonders," +
@@ -214,7 +214,7 @@ class ProjectSegment extends Component {
                         <Header as='h3' textAlign='center'>
                             Interne Tools
                         </Header>
-                        <p>Mitarbeitertools, die die tägliche Arbeit erleichtern</p>
+                        <p>Mitarbeiteradministration und Management Support</p>
                         <Button onClick={this.showTools} floated='right'>
                             Details
                         </Button>

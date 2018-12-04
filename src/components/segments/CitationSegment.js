@@ -26,7 +26,7 @@ const CitationSegment = ({backgroundColor}) => {
                             während den Semesterferien wiederum sein Budget aufbessern.
                         </p>
                         <p style={pistyle}>
-                            <i>- Manuel Keller, studiert Wirtschaftsinformatik</i>
+                            <i>- Manuel Keller, studiert Information Systems</i>
                         </p>
                     </Container>
 
@@ -36,7 +36,7 @@ const CitationSegment = ({backgroundColor}) => {
                         <Image bordered rounded size='large' src={Manu} style={imgstyle}/>
                     </div>
                 </Grid.Column>
-                
+
             </Grid>
             <Grid container stackable verticalAlign='middle'>
                 <Grid.Column width={1} />
@@ -55,7 +55,7 @@ const CitationSegment = ({backgroundColor}) => {
                             Dadurch kann ich selber entscheiden, welche Technologien ich einsetzen will und lerne viel dabei.
                         </p>
                         <p style={pistyle}>
-                            <i>- Pascal Zehnder, studiert Data Science</i>
+                            <i>- Pascal Zehnder, studiert Information Systems</i>
                         </p>
                     </Container>
                 </Grid.Column>

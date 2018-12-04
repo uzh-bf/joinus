@@ -73,7 +73,7 @@ class InstituteSegment extends Component {
                                             picture={Pascal}
                                             team="Administration"
                                             study='Master Informatics'
-                                            tasklist={['Weiterentwicklung Management Information System', 'Modernisierung bf.uzh.ch']}
+                                            tasklist={['Weiterentwicklung Management Information System', 'Modernisierung Instituts-Webseite']}
                                             time='2.5 Jahren'
                                         />
                                         <EmployeeRow
@@ -82,21 +82,21 @@ class InstituteSegment extends Component {
                                             team="Teaching Center"
                                             study='Master Informatics'
                                             tasklist={['Klicker UZH', 'Jobeye']}
-                                            time='3.5 Jahren'
+                                            time='3 Jahren'
                                         />
                                         <EmployeeRow
                                             name="Christian"
                                             team="Teaching Center"
-                                            study=''
-                                            tasklist={['IT-Betreuung OLAT Kurse', 'Support für Studenten und Mitarbeiter', 'Entwicklung IAs']}
-                                            time='2.5 Jahren'
+                                            study='Bachelor Banking & Finance'
+                                            tasklist={['Erstellung und Betreuung der OLAT Kurse']}
+                                            time='1 Jahr'
                                         />
                                         <EmployeeRow
                                             name="Nik"
                                             picture={Nik}
                                             team="Weiterbildung"
                                             study='Master Informatics'
-                                            tasklist={['Redesign Weiterbildungs Webseite', 'Betreuung SFI OLAT']}
+                                            tasklist={['Modernisierung Weiterbildungs-Webseite', 'Betreuung SFI OLAT']}
                                             time='2 Jahren'
                                         />
                                         <EmployeeRow
@@ -104,7 +104,7 @@ class InstituteSegment extends Component {
                                             picture={Manu}
                                             team="Weiterbildung"
                                             study='Master Wirtschaftsinformatik'
-                                            tasklist={['Dynamics CRM Customizing', 'CRM Anbindung für Webseite']}
+                                            tasklist={['Dynamics CRM Customizing und Automatisierungen', 'CRM Anbindung für Webseite']}
                                             time='1.5 Jahren'
                                         />
                                         <EmployeeRow
@@ -112,7 +112,7 @@ class InstituteSegment extends Component {
                                             picture={Flo}
                                             team="Administration"
                                             study='Master Data Science'
-                                            tasklist={['Redesign Webseite']}
+                                            tasklist={['Modernisierung Instituts-Webseite', 'interne Tools']}
                                             time='2.5 Jahren'
                                         />
                                     </Table.Body>

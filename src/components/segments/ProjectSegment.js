@@ -50,18 +50,22 @@ class ProjectSegment extends Component {
         },
         tools: {
             img: 'tools.jpg',
-            title: 'Interne Mitarbeitertools',
-            desc: "Da das Institut insgesamt etwa 30 Semesterassistenten beschäftigt, wurden Tools zur Mitarbeiterverwaltung notwendig. " +
-                "Mit diesen Tools können zum Beispiel die Arbeitsstunden aufgezeichnet werden oder die Anwesenheit in der nächsten Zeit" +
-                " angegeben werden. Eine ganze Reihe an Tools unterstützen die Mitarbeiter und steigern die Effizienz. ",
-            cite: "« Das Anwesenheits-WebApp war für mich das erste Projekt am Institut und die optimale Gelegenheit mich " +
+            title: 'Interne Tools',
+            desc: "Unser Institut besteht aus über 50 Teams an vier verschiedenen Standorten. Um die Mitarbeiter möglichst effizient zu verwalten, haben wir interne Tools zur Arbeitsstundenaufzeichnung und für die Anwesenheit implementiert. Mit letzterem können die Mitarbeiter ihre Absenzen festhalten und die Absenzen ihrer Team-Mitglieder festhalten. "
+            + "Zudem gibt es das Management Information System (MIS), welches der Institutsleitung über diverse Visualisierungen, Metriken, etc. aufschlussreiche Informationen über das Institut, dessen Mitarbeiter und die aktuelle Forschung liefert. Miomentan befindet sich eine Version 2 in Entwicklung. ",
+            cite: "« Die Anwesenheits Web Applikation war für mich das erste Projekt am Institut und die optimale Gelegenheit mich " +
                 "einzuarbeiten und das Institut und seine Mitarbeiter kennenzulernen. Bei der Implementierung hatte ich " +
-                "grosse gestalterische Freiheiten und konnte meine Web-Programming Skills deutlich erweitern. Am meisten freut mich," +
-                " dass es nun von so vielen Mitarbeitern benutzt wird.»",
-            citeName: "Flo"
+                "grosse gestalterische Freiheiten und konnte meine Web Development Skills deutlich erweitern. Es freut mich besonders," +
+                " dass das Endresultat nun von so vielen Mitarbeitern aktiv benutzt wird. »",
+            citeName: "Flo",
+            cite2: "« Das Management Information System ist ein Business Intelligence Tool. Es zieht aus verschiedenen Quellen Daten und" +
+              " veranschaulicht die darin enthaltenen Informationen. Als Data Science Masterstudent kann ich hier mein Wissen voll nutzen "+
+              "und so die Institutsleitung unterstützen. Daneben lerne ich viel über Visualisierungen und Web Development. »",
+            cite2Name: "Pascal"
+
         },
         lehrveranstaltungen: {
-            img: 'tools.jpg',
+            img: 'olat.jpg',
             title: 'Lehrveranstaltungen',
             desc: "Wer Lehrveranstaltungen von unserem Institut besucht, weiss, dass wir Innovation und Interaktivität fördern. " +
                 "Für einige Vorlesungen bieten wir beispielsweise elektronische Skripts an, mit welchen die Studenten lernen können. " +
@@ -185,7 +189,16 @@ class ProjectSegment extends Component {
                                             <i><p>{this.mapping[this.state.showWhat].cite}</p></i>,
                                             <Header as='h5' textAlign='right'>
                                                 - {this.mapping[this.state.showWhat].citeName}
-                                            </Header>
+                                            </Header>,
+
+                                            this.mapping[this.state.showWhat].cite2 && [
+                                              <br />,
+                                              <i><p>{this.mapping[this.state.showWhat].cite2}</p></i>,
+                                              <Header as='h5' textAlign='right'>
+                                                  - {this.mapping[this.state.showWhat].cite2Name}
+                                              </Header>,
+                                            ],
+
                                         ]
 
                                     }

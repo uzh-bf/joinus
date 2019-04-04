@@ -185,7 +185,7 @@ class FrameworkSegment extends React.Component {
 
                     <div>
                         <img src={Sentry} />
-                        <p>Sentry zur Fehlererkennung von WebApps</p>
+                        <p>Sentry zur Fehlererkennung in WebApps</p>
                     </div>
                 </div>
             </div>

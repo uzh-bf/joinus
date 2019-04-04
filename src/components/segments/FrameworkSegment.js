@@ -175,7 +175,7 @@ class FrameworkSegment extends React.Component {
 
                     <div>
                         <img src={Node} />
-                        <p>ReactJS für performante Webapplikationen</p>
+                        <p>NodeJS als Server für WebApps</p>
                     </div>
 
                     <div>

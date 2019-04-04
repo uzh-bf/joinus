@@ -1,7 +1,7 @@
 import {Header, Segment, Grid} from "semantic-ui-react";
 import TeamColumn from "../TeamColumn";
 import Rene from "../../images/rene.jpg";
-import Lisa from "../../images/lisa.jpg";
+import Johanna from "../../images/johanna.jpg";
 import Beni from "../../images/beni.jpg";
 import React from "react";
 
@@ -24,8 +24,8 @@ const TeamSegment = ({headerText, backgroundColor}) => (
                 />
                 <TeamColumn
                     teamName={"Teaching Center"}
-                    imageSrc={Lisa}
-                    leaderName={"Elisabeth Liechti"}
+                    imageSrc={Johanna}
+                    leaderName={"Johanna Braun"}
                     leaderPosition={"Leitung Teaching Center IBF"}
                     teamDescription={"« Wir wollen die Lehrveranstaltungen unseres Instituts innovativ und interaktiv " +
                     "gestalten. Deshalb brauchen wir IT-Support für die digital unterstützten Kurse, für Klicker und " +

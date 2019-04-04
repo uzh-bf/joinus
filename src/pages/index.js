@@ -7,7 +7,8 @@ import {
     InstituteSegment,
     ProjectSegment,
     RequirementSegment,
-    TeamSegment
+    TeamSegment,
+    FrameworkSegment
 } from "../components/segments/index";
 
 /* eslint-disable react/no-multi-comp */
@@ -27,6 +28,8 @@ class IndexPage extends React.Component{
           <AdvantagesSegment
               backgroundColor={"white"}/>
           <ProjectSegment
+              backgroundColor={"white"}/>
+          <FrameworkSegment
               backgroundColor={"white"}/>
           <TeamSegment
               headerText="Unsere drei Teams:"

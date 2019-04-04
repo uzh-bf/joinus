@@ -14,17 +14,6 @@ const RequirementColumn = ({header, must, should}) => (
                     ))
             }
         </List>
-        <Header as='h3' textAlign='center'>
-            Worüber wir uns freuen würden
-        </Header>
-        <List as='ul'>
-            {
-                should.map((item) =>
-                    (
-                        <List.Item as='li'>{item}</List.Item>
-                    ))
-            }
-        </List>
     </Grid.Column>
 );
 
@@ -43,16 +32,13 @@ const RequirementSegment = ({backgroundColor}) => (
                         'Fähigkeit, sich neue Programmierkenntnisse schnell anzueignen',
                         'Kreative und effiziente Problemlösung',
                         'Fähigkeit, Architektur und Design möglichst zukunftssicher zu entwerfen']}
-                    should={['Erfahrung im Webdevelopment',
-                             'Erfahrungen mit React, PHP, C# (Dynamics CRM)']}
                 />
                 <RequirementColumn
                     header='Allgemein'
                     must={['Du studierst etwa im 3. Semester Informatik, Data Science oder Wirtschaftsinformatik',
                         'Eigenständiges und engagiertes Arbeiten',
                         'Teamfähigkeit',
-                        'Möglichkeit, mit einem Pensum von 20-60% zu arbeiten, mehr auf Anfrage (flexibel mehr oder weniger während Ferien oder Prüfungen)']}
-                    should={['erste Projekterfahrungen',
+                        'Möglichkeit, mit einem Pensum von 20-60% zu arbeiten, mehr auf Anfrage (flexibel mehr oder weniger während Ferien oder Prüfungen)',
                         'Gute Englischkentnisse, weitere Sprachen von Vorteil']}
                 />
             </Grid.Row>

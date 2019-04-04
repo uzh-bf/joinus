@@ -27,7 +27,7 @@ class InstituteSegment extends Component {
                         </Header>
                     </Grid.Row>
 
-                    <Menu pointing fluid style={{fontFamily: "IBM Plex Mono"}}>
+                    <Menu pointing fluid widths={2} style={{fontFamily: "IBM Plex Mono"}}>
                         <Menu.Item name='Unser Informatikteam' active={this.state.institute === false} onClick={this.hideInsti} />
                         <Menu.Item name='Institutsteam' active={this.state.institute === true} onClick={this.showInsti} />
                     </Menu>

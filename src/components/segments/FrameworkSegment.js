@@ -38,6 +38,12 @@ class FrameworkSegment extends React.Component {
             }
             }
 
+
+            .slideshowContainer {
+                max-width: 100%;
+                overflow: hidden;
+            }
+
             .slideshowContent {
                 display: inline-flex;
                 white-space: nowrap;

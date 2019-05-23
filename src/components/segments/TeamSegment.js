@@ -42,7 +42,7 @@ const TeamSegment = ({headerText, backgroundColor}) => (
                 />
 
                 <Header as='h2' textAlign='center' style={{fontSize: '2em', width: "100%"}}>
-                    Wir suchen momentan Verstärkung für <i>alle</i> Teams!
+                    Momentan suchen wir leider keine Verstärkung für unsere Teams.
                 </Header>
 
             </Grid.Row>

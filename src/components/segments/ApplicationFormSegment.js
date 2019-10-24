@@ -29,7 +29,7 @@ class ApplicationFormSegment extends Component {
 
         this.setState({loading: true});
 
-        fetch('https://www.uzh.ch/finance-weiterbildung/static/joinus/api/public/joinus_apply', {
+        fetch('https://www.uzh.ch/finance-weiterbildung/static/joinus/api/public/index.php/joinus_apply', {
             method: 'POST',
             body: data,
         }).then(() => {

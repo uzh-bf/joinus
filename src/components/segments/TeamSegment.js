@@ -19,7 +19,7 @@ const TeamSegment = ({headerText, backgroundColor}) => (
                     imageSrc={Rene}
                     leaderName={"René Hegglin"}
                     leaderPosition={"Geschäftsführer, Leitung Administration"}
-                    teamDescription={"« Informatiker in meinem Team helfen mit, die Management-Prozesse effizienter zu " +
+                    teamDescription={"« Informatiker in meinem Team helfen mit, Management-Prozesse effizienter zu " +
                     "gestalten und modernisieren die Institutswebseite mit neuen Tools und Methoden. »"}
                 />
                 <TeamColumn
@@ -42,7 +42,7 @@ const TeamSegment = ({headerText, backgroundColor}) => (
                 />
 
                 <Header as='h2' textAlign='center' style={{fontSize: '2em', width: "100%"}}>
-                    Momentan suchen wir leider keine Verstärkung für unsere Teams.
+                    Wir suchen momentan Verstärkung für René Hegglins Team!
                 </Header>
 
             </Grid.Row>

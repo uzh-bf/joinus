@@ -50,7 +50,7 @@ class ApplicationFormSegment extends Component {
                     <Grid divided stackable>
                         <Grid.Row>
                             <Header as='h2' textAlign='center' style={{fontSize: "2.5em", width: "100%"}}>
-                                Wir suchen momentan keine neuen Mitarbeiter. Leider ist das Bewerbungsformular deswegen geschlossen.
+                                Bewirb dich jetzt für René Hegglins Team!
                             </Header>
                             <Header as='h2' textAlign='center' style={{fontSize: "2.5em", width: "100%"}}>
                             </Header>
@@ -59,7 +59,7 @@ class ApplicationFormSegment extends Component {
                         <Grid.Row centered>
                             <Grid.Column width={10}>
                                 <Form style={{width: "100%"}} onSubmit={this.handleSubmit} loading={this.state.loading} success={this.state.success}>
-                                    <Form.Select disabled fluid label='Anrede'
+                                    <Form.Select  fluid label='Anrede'
                                                  options={[{key: "m", text: "Herr", value: "Herr"}, {
                                                      key: "f",
                                                      text: "Frau",
@@ -70,14 +70,14 @@ class ApplicationFormSegment extends Component {
                                                  value={this.state.gender} onChange={this.handleChangeGender}
                                     />
                                     <Form.Group widths='equal'>
-                                        <Form.Input disabled fluid label='Vorname' placeholder='Vorname' name="firstName"/>
-                                        <Form.Input disabled fluid label='Nachname' placeholder='Nachname' name='lastName'/>
+                                        <Form.Input  fluid label='Vorname' placeholder='Vorname' name="firstName"/>
+                                        <Form.Input  fluid label='Nachname' placeholder='Nachname' name='lastName'/>
                                     </Form.Group>
-                                    <Form.Input disabled fluid label='Adresse' placeholder='Adresse' name='street'/>
-                                    <Form.Input disabled fluid label='PLZ / Ort' placeholder='PLZ / Ort' name='city'/>
-                                    <Form.Input disabled fluid label='Telefon' placeholder='Telefon' name='phone'/>
-                                    <Form.Input disabled fluid label='E-Mail' placeholder='E-Mail' name='mail'/>
-                                    <Form.Select disabled fluid label='Hauptfach' name='study'
+                                    <Form.Input  fluid label='Adresse' placeholder='Adresse' name='street'/>
+                                    <Form.Input  fluid label='PLZ / Ort' placeholder='PLZ / Ort' name='city'/>
+                                    <Form.Input  fluid label='Telefon' placeholder='Telefon' name='phone'/>
+                                    <Form.Input  fluid label='E-Mail' placeholder='E-Mail' name='mail'/>
+                                    <Form.Select  fluid label='Hauptfach' name='study'
                                                  options={[{key: "INF", text: "Informatik", value: "INF"},
                                                      {
                                                          key: "WI",
@@ -91,7 +91,7 @@ class ApplicationFormSegment extends Component {
                                                  placeholder='Hauptfach'
                                                  onChange={this.handleChangeStudy}
                                     />
-                                    <Form.Select disabled fluid label='Ungefähres gewünschtes Pensum (Stellenprozente)' name='pensum'
+                                    <Form.Select  fluid label='Ungefähres gewünschtes Pensum (Stellenprozente)' name='pensum'
                                                  options={[
                                                      {key: "kleiner20", text: "< 20%", value: "< 20%"},
                                                      {key: "20", text: "20%", value: "20%"},
@@ -104,24 +104,24 @@ class ApplicationFormSegment extends Component {
                                                  placeholder='Pensum'
                                                  onChange={this.handleChangePensum}
                                     />
-                                    <Form.Field disabled >
+                                    <Form.Field  >
                                         <label>
                                             Lebenslauf (Max. 5Mb)
                                         </label>
                                         <input placeholder="Lebenslauf (Max. 5Mb)" accept='.pdf' type="file" value={null} name='cvFile'/>
                                     </Form.Field>
-                                    <Form.Field disabled >
+                                    <Form.Field  >
                                         <label>
                                             Aktuelle Leistungsübersicht (Max. 5Mb)
                                         </label>
                                         <input placeholder="Leistungsübersicht (Max. 5Mb)" accept='.pdf' type="file" value={null} name='grades'/>
                                     </Form.Field>
-                                    <Form.TextArea disabled
+                                    <Form.TextArea
                                         label='Motivation für die Bewerbung'
                                         placeholder='Bitte stelle dich vor und erzähle von deinen bisherigen Projekten und Erfahrungen.'
                                         style={{minHeight: 150}}
                                         name='motivation'/>
-                                    <Button disabled type='submit'>Bewerbung abschicken</Button>
+                                    <Button  type='submit'>Bewerbung abschicken</Button>
                                     <Message success header='Bewerbung versendet' content="Vielen Dank für deine Bewerbung. Du solltest nun ein Bestätigungsemail von uns erhalten haben." />
                                 </Form>
 

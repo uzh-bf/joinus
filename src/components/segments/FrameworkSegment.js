@@ -1,4 +1,4 @@
-import {Container, Header, Image, Segment, Grid} from "semantic-ui-react";
+import {Header, Segment, Grid} from "semantic-ui-react";
 import ReactIMG from "../../images/slideshow/react.jpg";
 import SemanticUI from "../../images/slideshow/semanticui.png";
 import GitLab from "../../images/slideshow/gitlab.png";
@@ -8,7 +8,6 @@ import Node from "../../images/slideshow/node.png";
 import OpenOLAT from "../../images/slideshow/openolat.png";
 import Python from "../../images/slideshow/python.png";
 import Sentry from "../../images/slideshow/sentry.png";
-import Manu from "../../images/manuel.jpg";
 import React from "react";
 
 class FrameworkSegment extends React.Component {

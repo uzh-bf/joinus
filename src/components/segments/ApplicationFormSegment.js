@@ -134,7 +134,7 @@ class ApplicationFormSegment extends Component {
 
                 <Header as='h2' textAlign='center'>
                     Hast du Fragen? Gerne beantworten wir diese per Telefon oder E-Mail. <br/>
-                    <a href='https://www.bf.uzh.ch/static/employee/detail/index.php?language=de&alias=liechti-elisabeth&tab=detail'>Kontaktdaten <Icon
+                    <a href='https://www.bf.uzh.ch/de/persons/hegglin-rene'>Kontaktdaten <Icon
                         name="external alternate"/></a></Header>
 
             </Segment>

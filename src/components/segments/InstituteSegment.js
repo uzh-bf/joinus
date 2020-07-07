@@ -90,7 +90,7 @@ class InstituteSegment extends Component {
                                           picture={Christian}
                                           study='Bachelor Banking & Finance'
                                           tasklist={['Erstellung und Betreuung der OLAT Kurse', 'Erarbeiten Online-Prüfungen']}
-                                          time='Juni 2018'
+                                          time='April 2018'
                                         />
                                         <EmployeeRow
                                           name="Dimitri"

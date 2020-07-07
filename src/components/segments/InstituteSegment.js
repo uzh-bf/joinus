@@ -5,6 +5,7 @@ import Manu from "../../images/manuel.jpg";
 import Rolli from "../../images/rolli.jpg";
 import Luca from "../../images/luca.jpg";
 import Dimitri from "../../images/Dimitri.jpeg";
+import Christian from "../../images/christian.jpg";
 import {EmployeeRow} from "../EmployeeRow";
 
 class InstituteSegment extends Component {
@@ -86,6 +87,7 @@ class InstituteSegment extends Component {
                                         <EmployeeRow
                                           name="Christian"
                                           team="Teaching Center"
+                                          picture={Christian}
                                           study='Bachelor Banking & Finance'
                                           tasklist={['Erstellung und Betreuung der OLAT Kurse', 'Erarbeiten Online-Prüfungen']}
                                           time='Juni 2018'

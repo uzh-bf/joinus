@@ -4,6 +4,7 @@ import React, {Component} from "react";
 import Manu from "../../images/manuel.jpg";
 import Rolli from "../../images/rolli.jpg";
 import Luca from "../../images/luca.jpg";
+import Dimitri from "../../images/Dimitri.jpeg";
 import {EmployeeRow} from "../EmployeeRow";
 
 class InstituteSegment extends Component {
@@ -92,9 +93,10 @@ class InstituteSegment extends Component {
                                         <EmployeeRow
                                           name="Dimitri"
                                           team="Teaching Center"
+                                          picture={Dimitri}
                                           study='Master Banking & Finance'
-                                          tasklist={['Erstellung und Betreuung von Website-Projekten', 'Erarbeiten eines CMS für Kursinhalte']}
-                                          time='Oktober 2019'
+                                          tasklist={['Erstellung und Betreuung von Website-Projekten', 'Erarbeiten eines CMS für Kursinhalte', 'Unterstützung div. IT Projekte']}
+                                          time='August 2019'
                                         />
                                         <EmployeeRow
                                           name="Luca"

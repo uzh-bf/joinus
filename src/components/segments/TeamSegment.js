@@ -43,7 +43,7 @@ const TeamSegment = ({headerText, backgroundColor}) => (
                 />
 
                 <Header as='h2' textAlign='center' style={{fontSize: '2em', width: "100%"}}>
-                    Wir suchen momentan Verstärkung für die Teams Administration und Weiterbildung!
+                    Wir suchen momentan Verstärkung für die Teams Kommunikation und Weiterbildung!
                 </Header>
 
             </Grid.Row>

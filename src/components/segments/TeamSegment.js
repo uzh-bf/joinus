@@ -1,6 +1,6 @@
 import {Header, Segment, Grid} from "semantic-ui-react";
 import TeamColumn from "../TeamColumn";
-import Rene from "../../images/rene.jpg";
+import Lisa from "../../images/lisa.jpg";
 import Johanna from "../../images/johanna.jpg";
 import Beni from "../../images/beni.jpg";
 import React from "react";
@@ -15,12 +15,13 @@ const TeamSegment = ({headerText, backgroundColor}) => (
             </Grid.Row>
             <Grid.Row columns={3} divided>
                 <TeamColumn
-                    teamName={"Administration"}
-                    imageSrc={Rene}
-                    leaderName={"René Hegglin"}
-                    leaderPosition={"Geschäftsführer, Leitung Administration"}
-                    teamDescription={"« Informatiker in meinem Team helfen mit, Management-Prozesse effizienter zu " +
-                    "gestalten und modernisieren die Institutswebseite mit neuen Tools und Methoden. »"}
+                    teamName={"Kommunikation"}
+                    imageSrc={Lisa}
+                    leaderName={"Lisa Liechti"}
+                    leaderPosition={"Kommunikationsverantwortliche"}
+                    teamDescription={"« Bei mir stehen viele Data Science Projekte an, bei welchen ich eure " +
+                    "Unterstützung brauche. Dazu kommen immer wieder Aufgaben im Web-Design und der Gestaltung von " +
+                    "Magazinen und Newslettern. Ich suche also kreative Data Scientists! »"}
                 />
                 <TeamColumn
                     teamName={"Teaching Center"}
@@ -42,7 +43,7 @@ const TeamSegment = ({headerText, backgroundColor}) => (
                 />
 
                 <Header as='h2' textAlign='center' style={{fontSize: '2em', width: "100%"}}>
-                    Wir suchen momentan Verstärkung für René Hegglins Team!
+                    Wir suchen momentan Verstärkung für die Teams Administration und Weiterbildung!
                 </Header>
 
             </Grid.Row>

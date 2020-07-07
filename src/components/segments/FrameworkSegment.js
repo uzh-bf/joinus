@@ -8,6 +8,7 @@ import Node from "../../images/slideshow/node.png";
 import OpenOLAT from "../../images/slideshow/openolat.png";
 import Python from "../../images/slideshow/python.png";
 import Sentry from "../../images/slideshow/sentry.png";
+import Directus from "../../images/slideshow/directus.png";
 import React from "react";
 
 class FrameworkSegment extends React.Component {
@@ -121,6 +122,11 @@ class FrameworkSegment extends React.Component {
                     <div>
                         <img src={GitLab} />
                         <p>GitLab für Versionsmanagement und CI</p>
+                    </div>
+
+                    <div>
+                        <img src={Directus} />
+                        <p>Directus Headless CMS für Inhalte</p>
                     </div>
 
                     <div>

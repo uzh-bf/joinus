@@ -2,10 +2,8 @@ import {Grid, Header, Image, Segment, Table, Menu} from "semantic-ui-react";
 import TeamBild from "../../images/institut.jpg";
 import React, {Component} from "react";
 import Manu from "../../images/manuel.jpg";
-import Pascal from "../../images/pascal.jpg";
 import Rolli from "../../images/rolli.jpg";
-import Nik from "../../images/nik.jpg";
-import Flo from "../../images/flo.jpg";
+import Luca from "../../images/luca.jpg";
 import {EmployeeRow} from "../EmployeeRow";
 
 class InstituteSegment extends Component {
@@ -69,51 +67,56 @@ class InstituteSegment extends Component {
 
                                     <Table.Body>
                                         <EmployeeRow
-                                            name="Pascal"
-                                            picture={Pascal}
-                                            team="Administration"
-                                            study='Master Information Systems'
-                                            tasklist={['Weiterentwicklung Management Information System', 'Modernisierung Instituts-Webseite']}
-                                            time='2.5 Jahren'
-                                        />
-                                        <EmployeeRow
                                             name="Roli"
                                             picture={Rolli}
                                             team="Teaching Center"
-                                            study='Master Data Science'
-                                            tasklist={['Klicker UZH', 'Jobeye']}
-                                            time='3.5 Jahren'
-                                        />
-                                        <EmployeeRow
-                                            name="Christian"
-                                            team="Teaching Center"
-                                            study='Bachelor Banking & Finance'
-                                            tasklist={['Erstellung und Betreuung der OLAT Kurse']}
-                                            time='1 Jahr'
-                                        />
-                                        <EmployeeRow
-                                            name="Nik"
-                                            picture={Nik}
-                                            team="Weiterbildung"
-                                            study='Master Informatics'
-                                            tasklist={['Modernisierung Weiterbildungs-Webseite', 'Betreuung SFI OLAT']}
-                                            time='2 Jahren'
+                                            study='Master Data Science abgeschlossen'
+                                            tasklist={['Leitung IT-Team TC', 'Klicker UZH', 'Jobeye', 'Erarbeiten eines CRM für Kursinhalte']}
+                                            time='Januar 2015'
                                         />
                                         <EmployeeRow
                                             name="Manuel"
                                             picture={Manu}
                                             team="Weiterbildung"
-                                            study='Master Information Systems'
-                                            tasklist={['Dynamics CRM Customizing und Automatisierungen', 'CRM Anbindung für Webseite']}
-                                            time='1.5 Jahren'
+                                            study='Master Information Systems abgeschlossen'
+                                            tasklist={['Leitung IT-Team WB', 'Dynamics CRM Customizing, Integrationen und Automatisierungen', 'Webseitenbetreuung und -entwicklung']}
+                                            time='Juni 2017'
                                         />
                                         <EmployeeRow
-                                            name="Flo"
-                                            picture={Flo}
-                                            team="Administration"
-                                            study='Master Data Science'
-                                            tasklist={['Modernisierung Instituts-Webseite', 'interne Tools']}
-                                            time='2 Jahren'
+                                          name="Christian"
+                                          team="Teaching Center"
+                                          study='Bachelor Banking & Finance'
+                                          tasklist={['Erstellung und Betreuung der OLAT Kurse', 'Erarbeiten Online-Prüfungen']}
+                                          time='Juni 2018'
+                                        />
+                                        <EmployeeRow
+                                          name="Dimitri"
+                                          team="Teaching Center"
+                                          study='Master Banking & Finance'
+                                          tasklist={['Erstellung und Betreuung von Website-Projekten', 'Erarbeiten eines CMS für Kursinhalte']}
+                                          time='Oktober 2019'
+                                        />
+                                        <EmployeeRow
+                                          name="Luca"
+                                          team="Teaching Center"
+                                          picture={Luca}
+                                          study='Bachelor Informatik'
+                                          tasklist={['Erstellung und Betreuung der Kursinhalte', 'Erarbeiten Online-Prüfungen']}
+                                          time='Juni 2018'
+                                        />
+                                        <EmployeeRow
+                                          name="Senthuasa"
+                                          team="Weiterbildung"
+                                          study='Master Informatik'
+                                          tasklist={['Betreuung Website', 'Betreuung Webapps']}
+                                          time='Januar 2019'
+                                        />
+                                        <EmployeeRow
+                                          name="Michael"
+                                          team="Weiterbildung"
+                                          study='Bachelor Informatik'
+                                          tasklist={['Betreuung Website', 'Betreuung und Erstellung Webapps', 'Erarbeitung Semesterplanungstool']}
+                                          time='Januar 2019'
                                         />
                                     </Table.Body>
                                 </Table>

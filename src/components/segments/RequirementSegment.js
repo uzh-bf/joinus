@@ -35,7 +35,7 @@ const RequirementSegment = ({backgroundColor}) => (
                 />
                 <RequirementColumn
                     header='Allgemein'
-                    must={['Du studierst etwa im 3. Semester Informatik, Data Science oder Wirtschaftsinformatik',
+                    must={['Du studierst Informatik, Data Science oder Wirtschaftsinformatik (ca. zwischen 3. und 7. Semester)',
                         'Eigenständiges und engagiertes Arbeiten',
                         'Teamfähigkeit',
                         'Möglichkeit, mit einem Pensum von 20-60% zu arbeiten, mehr auf Anfrage (flexibel mehr oder weniger während Ferien oder Prüfungen)',

@@ -50,7 +50,7 @@ class ApplicationFormSegment extends Component {
                     <Grid divided stackable>
                         <Grid.Row>
                             <Header as='h2' textAlign='center' style={{fontSize: "2.5em", width: "100%"}}>
-                                Bewirb dich jetzt für René Hegglins Team!
+                                Bewirb dich jetzt für die Teams Administration und Weiterbildung!
                             </Header>
                             <Header as='h2' textAlign='center' style={{fontSize: "2.5em", width: "100%"}}>
                             </Header>

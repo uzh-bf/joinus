@@ -73,7 +73,7 @@ class InstituteSegment extends Component {
                                             picture={Rolli}
                                             team="Teaching Center"
                                             study='Master Data Science abgeschlossen'
-                                            tasklist={['Leitung IT-Team TC', 'Klicker UZH', 'Jobeye', 'Erarbeiten eines CRM für Kursinhalte']}
+                                            tasklist={['Klicker UZH', 'Jobeye', 'Wartung Cloud Infrastruktur', 'Erarbeiten eines CMS für Kursinhalte']}
                                             time='Januar 2015'
                                         />
                                         <EmployeeRow

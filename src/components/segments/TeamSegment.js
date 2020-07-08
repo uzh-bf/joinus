@@ -18,7 +18,7 @@ const TeamSegment = ({headerText, backgroundColor}) => (
                     teamName={"Kommunikation"}
                     imageSrc={Lisa}
                     leaderName={"Lisa Liechti"}
-                    leaderPosition={"Kommunikationsverantwortliche"}
+                    leaderPosition={"Leitung Kommunikation IBF"}
                     teamDescription={"« Bei mir stehen viele Data Science Projekte an, bei welchen ich eure " +
                     "Unterstützung brauche. Dazu kommen immer wieder Aufgaben im Web-Design und der Gestaltung von " +
                     "Magazinen und Newslettern. Ich suche also kreative Data Scientists! »"}

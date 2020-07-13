@@ -104,9 +104,9 @@ class InstituteSegment extends Component {
                                           name="Luca"
                                           team="Teaching Center"
                                           picture={Luca}
-                                          study='Bachelor Informatik'
+                                          study='Bachelor Informatik & Ökonomik'
                                           tasklist={['Erstellung und Betreuung der Kursinhalte', 'Erarbeiten Online-Prüfungen']}
-                                          time='Juni 2018'
+                                          time='April 2019'
                                         />
                                         <EmployeeRow
                                           name="Senthuasa"

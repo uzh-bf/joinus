@@ -6,6 +6,7 @@ import Rolli from "../../images/rolli.jpg";
 import Luca from "../../images/luca.jpg";
 import Dimitri from "../../images/Dimitri.jpeg";
 import Christian from "../../images/christian.jpg";
+import Senthuasa from "../../images/senthuasa.jpg";
 import {EmployeeRow} from "../EmployeeRow";
 
 class InstituteSegment extends Component {
@@ -111,9 +112,10 @@ class InstituteSegment extends Component {
                                         <EmployeeRow
                                           name="Senthuasa"
                                           team="Weiterbildung"
-                                          study='Master Informatik'
+                                          picture={Senthuasa}
+                                          study='Master Wirtschaftsinformatik'
                                           tasklist={['Betreuung Website', 'Betreuung Webapps']}
-                                          time='Januar 2019'
+                                          time='April 2019'
                                         />
                                         <EmployeeRow
                                           name="Michael"

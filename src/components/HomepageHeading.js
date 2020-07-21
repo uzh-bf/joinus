@@ -24,7 +24,7 @@ const HomepageHeading = ({mobile}) => (
         />
         <Header
             as='h2'
-            content='Das Institut für Banking und Finance sucht Informatiker! Finde heraus, was es so speziell macht:'
+            content='Das Institut für Banking und Finance sucht Informatiker*innen! Finde heraus, was es so speziell macht:'
             inverted
             style={{
                 fontSize: mobile ? '1.5em' : '1.7em',

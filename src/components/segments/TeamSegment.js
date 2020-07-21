@@ -37,7 +37,7 @@ const TeamSegment = ({headerText, backgroundColor}) => (
                     imageSrc={Beni}
                     leaderName={"Benjamin Wilding"}
                     leaderPosition={"Geschäftsführer, Leitung Lehre & Weiterbildung"}
-                    teamDescription={"« Als Weiterbildungsanbieter brauchen wir kreative Informatiker, die die User " +
+                    teamDescription={"« Als Weiterbildungsanbieter brauchen wir kreative Informatiker*innen, die die User " +
                     "Experience mit innovativen Tools verbessern und die Kundenverwaltung mit " +
                     "Automatisierungen effizienter gestalten. »"}
                 />

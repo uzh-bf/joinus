@@ -1,0 +1,166 @@
+import React, { Component } from 'react'
+import { Grid, Header, Image, Segment, Table, Menu } from 'semantic-ui-react'
+
+import { EmployeeRow } from '../EmployeeRow'
+
+function InstituteSegment({ backgroundColor }) {
+  const [isShown, setIsShown] = React.useState(false)
+
+  return (
+    <Segment style={{ background: backgroundColor }} vertical id="institute">
+      <Grid container stackable verticalAlign="top">
+        <Grid.Row>
+          <Header
+            as="h2"
+            textAlign="center"
+            style={{ fontSize: '2.5em', width: '100%' }}
+          >
+            Unser Institut
+          </Header>
+        </Grid.Row>
+
+        <Menu pointing fluid widths={2} style={{ fontFamily: 'IBM Plex Mono' }}>
+          <Menu.Item
+            name="Unser Informatikteam"
+            active={!isShown}
+            onClick={() => setIsShown(true)}
+          />
+          <Menu.Item
+            name="Institutsteam"
+            active={isShown}
+            onClick={() => setIsShown(false)}
+          />
+        </Menu>
+
+        {isShown && [
+          <Grid.Row centered>
+            <Header as="h3">Unsere Instituts-Mitarbeiter</Header>
+          </Grid.Row>,
+          <Grid.Row style={{ maxHeight: 400, height: 'auto' }}>
+            <Image
+              centered
+              style={{
+                width: '70%',
+                height: '100%',
+                objectFit: 'cover',
+                borderRadius: '3px',
+              }}
+              src="images/institut.jpg"
+            />
+          </Grid.Row>,
+          <Grid.Row centered>
+            <p>
+              Gesamthaft sind wir rund 250 Mitarbeiter, Professoren und
+              Forscher.
+            </p>
+          </Grid.Row>,
+        ]}
+        {!isShown && [
+          <Grid.Row centered>
+            <Header as="h3">Unsere Informatik-Mitarbeiter</Header>
+          </Grid.Row>,
+          <Grid.Row centered>
+            <Table basic="very" celled collapsing unstackable>
+              <Table.Header>
+                <Table.Row>
+                  <Table.HeaderCell> </Table.HeaderCell>
+                  <Table.HeaderCell>Studienrichtung</Table.HeaderCell>
+                  <Table.HeaderCell>Aktuelle Projekte</Table.HeaderCell>
+                  <Table.HeaderCell
+                    style={{ minWidth: '55px' }}
+                    className={'mobile hidden'}
+                  >
+                    Am Institut seit
+                  </Table.HeaderCell>
+                </Table.Row>
+              </Table.Header>
+
+              <Table.Body>
+                <EmployeeRow
+                  name="Roli"
+                  picture="images/rolli.jpg"
+                  team="Teaching Center"
+                  study="Master Data Science abgeschlossen"
+                  tasklist={[
+                    'Klicker UZH',
+                    'Jobeye',
+                    'Wartung Cloud Infrastruktur',
+                    'Erarbeiten eines CMS für Kursinhalte',
+                  ]}
+                  time="Januar 2015"
+                />
+                <EmployeeRow
+                  name="Manuel"
+                  picture="images/manuel.jpg"
+                  team="Weiterbildung"
+                  study="Master Information Systems abgeschlossen"
+                  tasklist={[
+                    'Leitung IT-Team WB',
+                    'Dynamics CRM Customizing, Integrationen und Automatisierungen',
+                    'Webseitenbetreuung und -entwicklung',
+                  ]}
+                  time="Juni 2017"
+                />
+                <EmployeeRow
+                  name="Christian"
+                  team="Teaching Center"
+                  picture="images/christian.jpg"
+                  study="Bachelor Banking & Finance"
+                  tasklist={[
+                    'Erstellung und Betreuung der OLAT Kurse',
+                    'Erarbeiten Online-Prüfungen',
+                  ]}
+                  time="April 2018"
+                />
+                <EmployeeRow
+                  name="Dimitri"
+                  team="Teaching Center"
+                  picture="images/Dimitri.jpeg"
+                  study="Master Banking & Finance"
+                  tasklist={[
+                    'Erstellung und Betreuung von Website-Projekten',
+                    'Erarbeiten eines CMS für Kursinhalte',
+                    'Unterstützung div. IT Projekte',
+                  ]}
+                  time="August 2019"
+                />
+                <EmployeeRow
+                  name="Luca"
+                  team="Teaching Center"
+                  picture="images/luca.jpg"
+                  study="Bachelor Informatik & Ökonomik"
+                  tasklist={[
+                    'Erstellung und Betreuung der Kursinhalte',
+                    'Erarbeiten Online-Prüfungen',
+                  ]}
+                  time="April 2019"
+                />
+                <EmployeeRow
+                  name="Senthuasa"
+                  team="Weiterbildung"
+                  picture="images/senthuasa.jpg"
+                  study="Master Wirtschaftsinformatik"
+                  tasklist={['Betreuung Website', 'Betreuung Webapps']}
+                  time="April 2019"
+                />
+                <EmployeeRow
+                  name="Michael"
+                  team="Weiterbildung"
+                  study="Bachelor Informatik"
+                  tasklist={[
+                    'Betreuung Website',
+                    'Betreuung und Erstellung Webapps',
+                    'Erarbeitung Semesterplanungstool',
+                  ]}
+                  time="Januar 2019"
+                />
+              </Table.Body>
+            </Table>
+          </Grid.Row>,
+        ]}
+      </Grid>
+    </Segment>
+  )
+}
+
+export default InstituteSegment

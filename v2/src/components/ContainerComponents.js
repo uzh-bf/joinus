@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import { Responsive, Segment } from 'semantic-ui-react'
+import { Segment } from 'semantic-ui-react'
 
 import BurgerMenu from './BurgerMenu'
 import HomepageHeading from './HomepageHeading'
@@ -32,9 +32,9 @@ const stylesMobile = {
   },
 }
 
-function DesktopContainer({ children }) {
+function DesktopContainer() {
   return (
-    <Responsive minWidth={Responsive.onlyTablet.minWidth}>
+    <div className="desktopContainer">
       <div style={{ background: 'rgb(0, 2, 62)', position: 'relative' }}>
         <Segment
           inverted
@@ -45,16 +45,20 @@ function DesktopContainer({ children }) {
         <HomepageHeading />
       </div>
 
-      {children}
-
-      <Footer />
-    </Responsive>
+      <style jsx>{`
+        @media screen and (min-width: 768px) {
+          .desktopContainer {
+            display: none;
+          }
+        }
+      `}</style>
+    </div>
   )
 }
 
-function MobileContainer({ children }) {
+function MobileContainer() {
   return (
-    <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
+    <div className="mobileContainer">
       <div style={{ background: 'rgb(0, 2, 62)', position: 'relative' }}>
         <Segment
           inverted
@@ -65,10 +69,16 @@ function MobileContainer({ children }) {
         <HomepageHeading mobile />
       </div>
 
-      {children}
 
-      <Footer />
-    </Responsive>
+
+      <style jsx>{`
+        @media screen and (max-width: 768px) {
+          .mobileContainer {
+            display: none;
+          }
+        }
+      `}</style>
+    </div>
   )
 }
 
@@ -81,6 +91,8 @@ export function ResponsiveContainer({ children }) {
       <BurgerMenu />
       <DesktopContainer>{children}</DesktopContainer>
       <MobileContainer>{children}</MobileContainer>
+      {children}
+      <Footer />
     </div>
   )
 }

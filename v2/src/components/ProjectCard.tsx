@@ -9,12 +9,19 @@ function Btn(up) {
   )
 }
 
+export interface ProjectCardProps {
+  projectTitle: string,
+  projectDescription: string,
+  projectSubtitle: string,
+  upper: boolean
+}
+
 function ProjectCard({
   projectTitle,
   projectDescription,
   projectSubtitle,
   upper,
-}) {
+}: ProjectCardProps) {
   return (
     <Card style={{ width: '32%' }}>
       {/*TODO schönere lösung finden (32%)*/}

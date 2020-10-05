@@ -1,4 +1,4 @@
-import '../../semantic/dist/semantic.css'
+import '../../semantic/dist/semantic.min.css'
 
 import './layout.css'
 

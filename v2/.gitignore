@@ -1,3 +1,2 @@
 .next/
-semantic/dist/*
-!semantic/dist/semantic.min.css
+semantic/dist/

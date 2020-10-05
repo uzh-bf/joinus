@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "npm run build:semantic && next build",
+    "build": "next build",
     "build:semantic": "cd semantic && gulp build-css build-assets",
     "start": "next start"
   },

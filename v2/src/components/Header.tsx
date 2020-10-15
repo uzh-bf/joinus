@@ -1,7 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
 
-function Header({ siteTitle }) {
+interface Props {
+  siteTitle: string
+}
+
+function Header({ siteTitle }: Props) {
   return (
     <div
       style={{
@@ -17,14 +21,15 @@ function Header({ siteTitle }) {
         }}
       >
         <h1 style={{ margin: 0 }}>
-          <Link
-            to="/"
-            style={{
-              color: 'white',
-              textDecoration: 'none',
-            }}
-          >
-            {siteTitle}
+          <Link href="/">
+            <a
+              style={{
+                color: 'white',
+                textDecoration: 'none',
+              }}
+            >
+              {siteTitle}
+            </a>
           </Link>
         </h1>
       </div>

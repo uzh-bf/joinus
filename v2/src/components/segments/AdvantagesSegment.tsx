@@ -3,7 +3,11 @@ import { Grid, Header, Segment } from 'semantic-ui-react'
 
 import AdvantageColumn from '../AdvantageColumn'
 
-function AdvantagesSegment({ backgroundColor }) {
+interface Props {
+  backgroundColor: string
+}
+
+function AdvantagesSegment({ backgroundColor }: Props) {
   return (
     <Segment style={{ background: backgroundColor }} vertical id="advantages">
       <Grid container stackable verticalAlign="top">

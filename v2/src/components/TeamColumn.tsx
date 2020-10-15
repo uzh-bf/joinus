@@ -1,13 +1,21 @@
 import React from 'react'
 import { Header, Image, Grid, Container } from 'semantic-ui-react'
 
+interface Props {
+  teamName: string
+  imageSrc: string
+  leaderName: string
+  leaderPosition: string
+  teamDescription: string
+}
+
 function TeamColumn({
   teamName,
   imageSrc,
   leaderName,
   leaderPosition,
   teamDescription,
-}) {
+}: Props) {
   return (
     <Grid.Column>
       <Header as="h3" style={{ fontSize: '2em', textAlign: 'center' }}>

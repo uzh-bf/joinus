@@ -1,10 +1,17 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import { Grid, Header, Image, Segment, Table, Menu } from 'semantic-ui-react'
 
-import { EmployeeRow } from '../EmployeeRow'
+import EmployeeRow from '../EmployeeRow'
 
-function InstituteSegment({ backgroundColor }) {
-  const [isShown, setIsShown] = React.useState(false)
+interface Props {
+  backgroundColor: string
+}
+
+/*
+TODO: rework data display to array from JSON
+*/
+function InstituteSegment({ backgroundColor }: Props) {
+  const [isShown, setIsShown] = useState(false)
 
   return (
     <Segment style={{ background: backgroundColor }} vertical id="institute">
@@ -23,12 +30,12 @@ function InstituteSegment({ backgroundColor }) {
           <Menu.Item
             name="Unser Informatikteam"
             active={!isShown}
-            onClick={() => setIsShown(true)}
+            onClick={() => setIsShown(false)}
           />
           <Menu.Item
             name="Institutsteam"
             active={isShown}
-            onClick={() => setIsShown(false)}
+            onClick={() => setIsShown(true)}
           />
         </Menu>
 
@@ -146,6 +153,7 @@ function InstituteSegment({ backgroundColor }) {
                 <EmployeeRow
                   name="Michael"
                   team="Weiterbildung"
+                  picture={null}
                   study="Bachelor Informatik"
                   tasklist={[
                     'Betreuung Website',

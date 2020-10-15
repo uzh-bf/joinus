@@ -3,7 +3,12 @@ import { Header, Segment, Grid } from 'semantic-ui-react'
 
 import TeamColumn from '../TeamColumn'
 
-function TeamSegment({ headerText, backgroundColor }) {
+interface Props {
+  headerText: string
+  backgroundColor: string
+}
+
+function TeamSegment({ headerText, backgroundColor }: Props) {
   return (
     <Segment
       style={{ padding: '4em 0 5em 0', background: backgroundColor }}

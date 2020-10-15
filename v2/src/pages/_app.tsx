@@ -1,8 +1,10 @@
+import React from 'react'
+
 import '../../semantic/dist/semantic.min.css'
 import '../layout.css'
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
-export default MyApp
+export default App

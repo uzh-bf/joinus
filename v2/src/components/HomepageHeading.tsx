@@ -2,7 +2,11 @@ import { Container, Header } from 'semantic-ui-react'
 import React from 'react'
 import animateScrollTo from 'animated-scroll-to'
 
-function HomepageHeading({ mobile }) {
+interface Props {
+  mobile?: boolean
+}
+
+function HomepageHeading({ mobile }: Props) {
   return (
     <Container
       text

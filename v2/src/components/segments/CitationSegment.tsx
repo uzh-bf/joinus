@@ -5,7 +5,11 @@ const pstyle = { fontSize: '1.2em' }
 const pistyle = { fontSize: '1.25em' }
 const centerAlignColumn = { marginTop: 'auto', marginBottom: 'auto' }
 
-function CitationSegment({ backgroundColor }) {
+interface Props {
+  backgroundColor: string
+}
+
+function CitationSegment({ backgroundColor }: Props) {
   let imgstyle = {
     marginBottom: 0,
     maxHeight: 'auto',

@@ -1,20 +1,13 @@
-import { Header, Segment, Grid, List } from 'semantic-ui-react'
+import { Header, Segment, Grid } from 'semantic-ui-react'
 import React from 'react'
 
-const RequirementColumn = ({ header, must, should }) => (
-  <Grid.Column width={7}>
-    <Header as="h2" textAlign="center">
-      {header}
-    </Header>
-    <List as="ul">
-      {must.map((item) => (
-        <List.Item as="li">{item}</List.Item>
-      ))}
-    </List>
-  </Grid.Column>
-)
+import RequirementColumn from './RequirementColumn'
 
-function RequirementSegment({ backgroundColor }) {
+interface Props {
+  backgroundColor: string
+}
+
+function RequirementSegment({ backgroundColor }: Props) {
   return (
     <Segment style={{ background: backgroundColor }} vertical id="requirements">
       <Grid container stackable verticalAlign="top">

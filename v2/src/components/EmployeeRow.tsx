@@ -1,7 +1,16 @@
 import React from 'react'
 import { Image, Table, Header, List } from 'semantic-ui-react'
 
-export function EmployeeRow({ name, picture, team, study, tasklist, time }) {
+interface Props {
+  name: string
+  picture: string
+  team: string
+  study: string
+  tasklist: string[]
+  time: string
+}
+
+function EmployeeRow({ name, picture, team, study, tasklist, time }: Props) {
   return (
     <Table.Row>
       <Table.Cell>
@@ -30,3 +39,5 @@ export function EmployeeRow({ name, picture, team, study, tasklist, time }) {
     </Table.Row>
   )
 }
+
+export default EmployeeRow

@@ -1,12 +1,25 @@
 import React from 'react'
-import { Grid, Header, Icon } from 'semantic-ui-react'
+import {
+  Grid,
+  Header,
+  Icon,
+  SemanticCOLORS,
+  SemanticICONS,
+} from 'semantic-ui-react'
+
+interface Props {
+  iconName: SemanticICONS
+  iconColor: SemanticCOLORS
+  advantageTitle: string
+  advantageText: string
+}
 
 function AdvantageColumn({
   iconName,
   iconColor,
   advantageTitle,
   advantageText,
-}) {
+}: Props) {
   return (
     <Grid.Column>
       <div style={{ margin: '0 auto', width: '120px' }}>

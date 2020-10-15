@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ResponsiveContainer } from '../components/ContainerComponents'
+import ResponsiveContainer from '../components/containers/ResponsiveContainer'
 import AdvantagesSegment from '../components/segments/AdvantagesSegment'
 import ApplicationFormSegment from '../components/segments/ApplicationFormSegment'
 import CitationSegment from '../components/segments/CitationSegment'
@@ -10,7 +10,7 @@ import RequirementSegment from '../components/segments/RequirementSegment'
 import TeamSegment from '../components/segments/TeamSegment'
 import FrameworkSegment from '../components/segments/FrameworkSegment'
 
-export default function Home() {
+function Home() {
   return (
     <ResponsiveContainer>
       <CitationSegment backgroundColor={'white'} />
@@ -24,3 +24,5 @@ export default function Home() {
     </ResponsiveContainer>
   )
 }
+
+export default Home

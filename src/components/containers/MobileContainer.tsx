@@ -5,7 +5,7 @@ import HomepageHeading from '../HomepageHeading'
 
 const stylesMobile = {
   container: {
-    backgroundImage: `images/bfinverted_transparent.png`,
+    backgroundImage: `url(images/bfinverted_transparent.png)`,
     minHeight: '90vh',
     maxWidth: 800,
     padding: '1em 0em',
@@ -30,7 +30,7 @@ function MobileContainer() {
       </div>
 
       <style jsx>{`
-        @media screen and (max-width: 768px) {
+        @media screen and (min-width: 768px) {
           .mobileContainer {
             display: none;
           }

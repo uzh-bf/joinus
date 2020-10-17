@@ -2,3 +2,5 @@ node_modules
 old_src/
 .next/
 semantic/dist/
+
+.vercel

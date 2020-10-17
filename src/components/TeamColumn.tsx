@@ -1,6 +1,8 @@
 import React from 'react'
 import { Header, Image, Grid, Container } from 'semantic-ui-react'
 
+import styles from './TeamColumn.module.scss'
+
 interface Props {
   teamName: string
   imageSrc: string
@@ -18,19 +20,17 @@ function TeamColumn({
 }: Props) {
   return (
     <Grid.Column>
-      <Header as="h3" style={{ fontSize: '2em', textAlign: 'center' }}>
+      <Header as="h3" className={styles.teamName}>
         {teamName}
       </Header>
-      <Container style={{ margin: 'auto', width: '90%' }}>
-        <Image src={imageSrc} className={'leaderPhoto'} />
+
+      <Container className={styles.teamInfo}>
+        <Image src={imageSrc} className={styles.leaderPhoto} />
         <Header as="h5">{leaderName}</Header>
-        <Header
-          as="h6"
-          style={{ marginTop: -10, marginBottom: 10, minHeight: 28 }}
-        >
+        <Header as="h6" className={styles.leaderPosition}>
           {leaderPosition}
         </Header>
-        <p style={{ fontSize: '1.5em' }}>{teamDescription}</p>
+        <p className={styles.teamDescription}>{teamDescription}</p>
       </Container>
     </Grid.Column>
   )

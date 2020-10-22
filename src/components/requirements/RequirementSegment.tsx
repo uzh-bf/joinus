@@ -3,7 +3,7 @@ import React from 'react'
 
 import RequirementColumn from './RequirementColumn'
 import styles from './RequirementSegment.module.scss'
-import { requirements } from '../fixtures'
+import { requirements } from '../../fixtures'
 
 interface Props {
   backgroundColor: string

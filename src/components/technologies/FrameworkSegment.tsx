@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header, Segment, Grid } from 'semantic-ui-react'
 
-import { technologies } from '../fixtures'
+import { technologies } from '../../fixtures'
 import styles from './FrameworkSegment.module.scss'
 
 interface Props {

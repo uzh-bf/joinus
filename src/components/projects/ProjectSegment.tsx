@@ -10,7 +10,7 @@ import React, { useState } from 'react'
 import animateScrollTo from 'animated-scroll-to'
 
 import styles from './ProjectSegment.module.scss'
-import { projects } from '../fixtures'
+import { projects } from '../../fixtures'
 
 interface Props {
   backgroundColor: string

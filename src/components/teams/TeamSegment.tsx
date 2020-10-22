@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header, Segment, Grid } from 'semantic-ui-react'
-import { teams } from '../fixtures'
 
+import { teams } from '../../fixtures'
 import TeamColumn from './TeamColumn'
 import styles from './TeamSegment.module.scss'
 

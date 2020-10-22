@@ -3,7 +3,7 @@ import { Container, Header, Image, Segment, Grid } from 'semantic-ui-react'
 
 import styles from './CitationSegment.module.scss'
 
-interface Props {
+export interface Props {
   backgroundColor: string
 }
 

@@ -6,7 +6,7 @@ import EmployeeRow from './EmployeeRow'
 
 import styles from './DepartmentSegment.module.scss'
 
-interface Props {
+export interface Props {
   backgroundColor: string
 }
 

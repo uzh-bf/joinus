@@ -5,7 +5,7 @@ import RequirementColumn from './RequirementColumn'
 import styles from './RequirementSegment.module.scss'
 import { requirements } from '../../fixtures'
 
-interface Props {
+export interface Props {
   backgroundColor: string
 }
 

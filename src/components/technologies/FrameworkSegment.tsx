@@ -4,7 +4,7 @@ import { Header, Segment, Grid } from 'semantic-ui-react'
 import { technologies } from '../../fixtures'
 import styles from './FrameworkSegment.module.scss'
 
-interface Props {
+export interface Props {
   backgroundColor: string
 }
 

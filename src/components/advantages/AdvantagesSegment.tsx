@@ -5,7 +5,7 @@ import AdvantageColumn from './AdvantageColumn'
 
 import styles from './AdvantagesSegment.module.scss'
 
-interface Props {
+export interface Props {
   backgroundColor: string
 }
 

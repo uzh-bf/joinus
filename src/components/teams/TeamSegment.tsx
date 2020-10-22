@@ -5,7 +5,7 @@ import { teams } from '../../fixtures'
 import TeamColumn from './TeamColumn'
 import styles from './TeamSegment.module.scss'
 
-interface Props {
+export interface Props {
   backgroundColor: string
 }
 

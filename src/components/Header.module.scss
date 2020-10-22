@@ -1,12 +1,12 @@
 #container {
   min-height: 90vh;
-  padding: 1em 0;
+  padding: 1rem 0;
 
-  background-image: url('/images/bfinverted_transparent.png');
+  background-image: url('../../public/images/bfinverted_transparent.png');
   background-color: rgb(0, 2, 62);
   background-position: left bottom;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 700px;
 
   @media screen and (min-width: 768px) {
     min-height: 100vh;
@@ -52,7 +52,7 @@
   }
 }
 
-.downArrow {
+#downArrow {
   width: fit-content;
   margin: 40px auto auto;
   left: calc(50% - 45px);

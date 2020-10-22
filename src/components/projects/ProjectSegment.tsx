@@ -12,7 +12,7 @@ import animateScrollTo from 'animated-scroll-to'
 import styles from './ProjectSegment.module.scss'
 import { projects } from '../../fixtures'
 
-interface Props {
+export interface Props {
   backgroundColor: string
 }
 

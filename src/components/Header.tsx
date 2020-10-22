@@ -25,7 +25,7 @@ function Header() {
           href="#"
           onClick={() => animateScrollTo(document.querySelector('#citations'))}
         >
-          <div className={styles.downArrow}>
+          <div id={styles.downArrow}>
             <img
               width="90"
               height="50"

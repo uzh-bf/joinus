@@ -1,14 +1,13 @@
 import React from 'react'
 import { Container, Header, Image, Segment, Grid } from 'semantic-ui-react'
 
-const pstyle = { fontSize: '1.2em' }
-const pistyle = { fontSize: '1.25em' }
-const centerAlignColumn = { marginTop: 'auto', marginBottom: 'auto' }
+import styles from './CitationSegment.module.scss'
 
 interface Props {
   backgroundColor: string
 }
 
+// TODO: component split
 function CitationSegment({ backgroundColor }: Props) {
   let imgstyle = {
     marginBottom: 0,
@@ -18,23 +17,31 @@ function CitationSegment({ backgroundColor }: Props) {
   }
 
   return (
-    <Segment style={{ background: backgroundColor }} vertical id="citations">
-      <Grid container stackable verticalAlign="middle" reversed="mobile">
-        <Grid.Column width={4} />
-        <Grid.Column width={7} style={centerAlignColumn}>
+    <Segment style={{ background: backgroundColor }} vertical>
+      <Grid
+        container
+        stackable
+        verticalAlign="middle"
+        reversed="mobile"
+        centered
+      >
+        <Grid.Column width={7}>
           <Container>
             <Header as="h3">Flexibilität ist Trumpf</Header>
-            <p style={pstyle}>
+
+            <p className={styles.description}>
               Mir gefällt, dass ich sehr flexible Arbeitszeiten habe. Vor
               Prüfungen kann man problemlos reduzieren oder aussetzen; während
               den Semesterferien wiederum sein Budget aufbessern.
             </p>
-            <p style={pistyle}>
-              <i>- Manuel Keller, studiert Information Systems</i>
+
+            <p className={styles.citation}>
+              <cite>- Manuel Keller, studiert Information Systems</cite>
             </p>
           </Container>
         </Grid.Column>
-        <Grid.Column width={5} style={centerAlignColumn}>
+
+        <Grid.Column width={5}>
           <div style={{ maxWidth: '55vw', margin: 'auto' }}>
             <Image
               bordered
@@ -46,9 +53,8 @@ function CitationSegment({ backgroundColor }: Props) {
           </div>
         </Grid.Column>
       </Grid>
-      <Grid container stackable verticalAlign="middle">
-        <Grid.Column width={1} />
-        <Grid.Column width={5} style={centerAlignColumn}>
+      <Grid container stackable verticalAlign="middle" centered>
+        <Grid.Column width={5}>
           <div style={{ maxWidth: '55vw', margin: 'auto' }}>
             <Image
               bordered
@@ -59,21 +65,23 @@ function CitationSegment({ backgroundColor }: Props) {
             />
           </div>
         </Grid.Column>
-        <Grid.Column width={7} style={centerAlignColumn}>
+
+        <Grid.Column width={7}>
           <Container>
             <Header as="h3">Abwechslung und Eigenverantwortung</Header>
-            <p style={pstyle}>
+
+            <p className={styles.description}>
               Mir gefällt, dass ich in meiner Arbeit am Institut selbst die
               Verantwortung für meine Projekte trage. Dadurch kann ich selber
               entscheiden, welche Technologien ich einsetzen will und lerne viel
               dabei.
             </p>
-            <p style={pistyle}>
-              <i>- Pascal Zehnder, studiert Information Systems</i>
+
+            <p className={styles.citation}>
+              <cite>- Pascal Zehnder, studiert Information Systems</cite>
             </p>
           </Container>
         </Grid.Column>
-        <Grid.Column width={4} />
       </Grid>
     </Segment>
   )

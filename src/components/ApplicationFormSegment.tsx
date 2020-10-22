@@ -10,10 +10,13 @@ import {
   Message,
 } from 'semantic-ui-react'
 
+import styles from './ApplicationFormSegment.module.scss'
+
 interface Props {
   backgroundColor: string
 }
 
+// TODO: replace RH contact
 function ApplicationFormSegment({ backgroundColor }: Props) {
   const [submissionState, setSubmissionState] = useState<{
     loading: boolean
@@ -67,24 +70,14 @@ function ApplicationFormSegment({ backgroundColor }: Props) {
     <Segment style={{ background: backgroundColor }} vertical id="application">
       <Container>
         <Grid divided stackable>
-          <Grid.Row>
-            <Header
-              as="h2"
-              textAlign="center"
-              style={{ fontSize: '2.5em', width: '100%' }}
-            >
+          <Grid.Row centered>
+            <Header as="h2" textAlign="center" size="huge">
               Bewirb dich jetzt für die Teams Kommunikation und Weiterbildung!
             </Header>
-            <Header
-              as="h2"
-              textAlign="center"
-              style={{ fontSize: '2.5em', width: '100%' }}
-            ></Header>
           </Grid.Row>
           <Grid.Row centered>
             <Grid.Column width={10}>
               <Form
-                style={{ width: '100%' }}
                 onSubmit={handleSubmit}
                 loading={submissionState.loading}
                 success={submissionState.success}
@@ -210,7 +203,7 @@ function ApplicationFormSegment({ backgroundColor }: Props) {
                 <Form.TextArea
                   label="Motivation für die Bewerbung"
                   placeholder="Bitte stelle dich vor und erzähle von deinen bisherigen Projekten und Erfahrungen."
-                  style={{ minHeight: 150 }}
+                  rows={10}
                   name="motivation"
                 />
                 <Button type="submit">Bewerbung abschicken</Button>

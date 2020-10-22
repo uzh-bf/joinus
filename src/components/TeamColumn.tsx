@@ -20,16 +20,26 @@ function TeamColumn({
 }: Props) {
   return (
     <Grid.Column>
-      <Header as="h3" className={styles.teamName}>
+      <Header as="h3" textAlign="center" size="large">
         {teamName}
       </Header>
 
       <Container className={styles.teamInfo}>
         <Image src={imageSrc} className={styles.leaderPhoto} />
-        <Header as="h5">{leaderName}</Header>
-        <Header as="h6" className={styles.leaderPosition}>
+
+        <Header textAlign="center" as="h5" size="medium">
+          {leaderName}
+        </Header>
+
+        <Header
+          textAlign="center"
+          as="h6"
+          size="medium"
+          className={styles.leaderPosition}
+        >
           {leaderPosition}
         </Header>
+
         <p className={styles.teamDescription}>{teamDescription}</p>
       </Container>
     </Grid.Column>

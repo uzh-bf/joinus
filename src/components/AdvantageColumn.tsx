@@ -7,6 +7,8 @@ import {
   SemanticICONS,
 } from 'semantic-ui-react'
 
+import styles from './AdvantageColumn.module.scss'
+
 interface Props {
   iconName: SemanticICONS
   iconColor: SemanticCOLORS
@@ -22,13 +24,13 @@ function AdvantageColumn({
 }: Props) {
   return (
     <Grid.Column>
-      <div style={{ margin: '0 auto', width: '120px' }}>
+      <div className={styles.icon}>
         <Icon circular inverted color={iconColor} size="huge" name={iconName} />
       </div>
-      <Header as="h3" textAlign="center" style={{ fontSize: '2em' }}>
+      <Header as="h3" textAlign="center" size="huge">
         {advantageTitle}
       </Header>
-      <p style={{ fontSize: '1.33em' }}>{advantageText}</p>
+      <p className={styles.description}>{advantageText}</p>
     </Grid.Column>
   )
 }

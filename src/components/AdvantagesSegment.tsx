@@ -1,7 +1,9 @@
 import React from 'react'
 import { Grid, Header, Segment } from 'semantic-ui-react'
 
-import AdvantageColumn from '../AdvantageColumn'
+import AdvantageColumn from './AdvantageColumn'
+
+import styles from './AdvantagesSegment.module.scss'
 
 interface Props {
   backgroundColor: string
@@ -9,14 +11,10 @@ interface Props {
 
 function AdvantagesSegment({ backgroundColor }: Props) {
   return (
-    <Segment style={{ background: backgroundColor }} vertical id="advantages">
+    <Segment style={{ background: backgroundColor }} vertical>
       <Grid container stackable verticalAlign="top">
-        <Grid.Row>
-          <Header
-            as="h2"
-            textAlign="center"
-            style={{ fontSize: '2.5em', width: '100%' }}
-          >
+        <Grid.Row centered>
+          <Header as="h2" textAlign="center" size="huge">
             Was wir dir bieten:
           </Header>
         </Grid.Row>

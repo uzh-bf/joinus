@@ -1,19 +1,130 @@
-import {
-  Grid,
-  Header,
-  Segment,
-  Button,
-  Transition,
-  Image,
-} from 'semantic-ui-react'
-import React, { useState } from 'react'
-import animateScrollTo from 'animated-scroll-to'
-
-const mapping = {
-  '': {
-    img: '',
-    text: '',
+export const employees = [
+  {
+    name: 'Roli',
+    picture: 'images/rolli.jpg',
+    team: 'Teaching Center',
+    study: 'Master Data Science abgeschlossen',
+    tasklist: [
+      'Klicker UZH',
+      'Jobeye',
+      'Wartung Cloud Infrastruktur',
+      'Erarbeiten eines CMS für Kursinhalte',
+    ],
+    time: 'Januar 2015',
   },
+  {
+    name: 'Manuel',
+    picture: 'images/manuel.jpg',
+    team: 'Weiterbildung',
+    study: 'Master Information Systems abgeschlossen',
+    tasklist: [
+      'Leitung IT-Team WB',
+      'Dynamics CRM Customizing, Integrationen und Automatisierungen',
+      'Webseitenbetreuung und -entwicklung',
+    ],
+    time: 'Juni 2017',
+  },
+  {
+    name: 'Christian',
+    team: 'Teaching Center',
+    picture: 'images/christian.jpg',
+    study: 'Bachelor Banking & Finance',
+    tasklist: [
+      'Erstellung und Betreuung der OLAT Kurse',
+      'Erarbeiten Online-Prüfungen',
+    ],
+    time: 'April 2018',
+  },
+  {
+    name: 'Dimitri',
+    team: 'Teaching Center',
+    picture: 'images/Dimitri.jpeg',
+    study: 'Master Banking & Finance',
+    tasklist: [
+      'Erstellung und Betreuung von Website-Projekten',
+      'Erarbeiten eines CMS für Kursinhalte',
+      'Unterstützung div. IT Projekte',
+    ],
+    time: 'August 2019',
+  },
+  {
+    name: 'Luca',
+    team: 'Teaching Center',
+    picture: 'images/luca.jpg',
+    study: 'Bachelor Informatik & Ökonomik',
+    tasklist: [
+      'Erstellung und Betreuung der Kursinhalte',
+      'Erarbeiten Online-Prüfungen',
+    ],
+    time: 'April 2019',
+  },
+  {
+    name: 'Senthuasa',
+    team: 'Weiterbildung',
+    picture: 'images/senthuasa.jpg',
+    study: 'Master Wirtschaftsinformatik',
+    tasklist: ['Betreuung Website', 'Betreuung Webapps'],
+    time: 'April 2019',
+  },
+  {
+    name: 'Michael',
+    team: 'Weiterbildung',
+    picture: null,
+    study: 'Bachelor Informatik',
+    tasklist: [
+      'Betreuung Website',
+      'Betreuung und Erstellung Webapps',
+      'Erarbeitung Semesterplanungstool',
+    ],
+    time: 'Januar 2019',
+  },
+]
+
+// TODO: add K8s, Strapi, Tailwind
+export const technologies = [
+  {
+    image: 'images/slideshow/python.png',
+    title: 'Python für Statistiken und Modellierung',
+  },
+  {
+    image: 'images/slideshow/semanticui.png',
+    title: 'Semantic UI für Layouting',
+  },
+  {
+    image: 'images/slideshow/react.jpg',
+    title: 'ReactJS für performante Webapplikationen',
+  },
+  {
+    image: 'images/slideshow/gitlab.png',
+    title: 'GitLab für Versionsmanagement und CI',
+  },
+  {
+    image: 'images/slideshow/directus.png',
+    title: 'Directus Headless CMS für Inhalte',
+  },
+  {
+    image: 'images/slideshow/slim.png',
+    title: 'Slim Framework für einfache PHP APIs',
+  },
+  {
+    image: 'images/slideshow/docker.png',
+    title: 'Docker für Containervirtualisierung von WebApps',
+  },
+  {
+    image: 'images/slideshow/node.png',
+    title: 'NodeJS als Backend für WebApps',
+  },
+  {
+    image: 'images/slideshow/openolat.png',
+    title: 'OpenOLAT für eLearning Kurse',
+  },
+  {
+    image: 'images/slideshow/sentry.png',
+    title: 'Sentry zur Fehlererkennung von WebApps',
+  },
+]
+
+export const projects = {
   klicker: {
     img: 'klicker.jpg',
     title: 'Klicker',
@@ -106,182 +217,57 @@ const mapping = {
   },
 }
 
-interface Props {
-  backgroundColor: string
-}
+export const requirements = [
+  {
+    header: 'Informatik',
+    must: [
+      'Bereitschaft, dich mit den eingesetzten Technologien vertieft zu befassen',
+      'Fähigkeit, sich neue Programmierkenntnisse schnell anzueignen',
+      'Kreative und effiziente Problemlösung',
+      'Fähigkeit, Architektur und Design möglichst zukunftssicher zu entwerfen',
+    ],
+  },
+  {
+    header: 'Allgemein',
+    must: [
+      'Du studierst Informatik, Data Science oder Wirtschaftsinformatik (ca. zwischen 3. und 7. Semester)',
+      'Eigenständiges und engagiertes Arbeiten',
+      'Teamfähigkeit',
+      'Möglichkeit, mit einem Pensum von 20-60% zu arbeiten, mehr auf Anfrage (flexibel mehr oder weniger während Ferien oder Prüfungen)',
+      'Gute Englischkentnisse, weitere Sprachen von Vorteil',
+    ],
+  },
+]
 
-function ProjectSegment({ backgroundColor }: Props) {
-  const [showProject, setShowProject] = useState(null)
-
-  return (
-    <Segment style={{ background: backgroundColor }} vertical id="project">
-      <Header
-        as="h2"
-        textAlign="center"
-        style={{ fontSize: '2.5em', width: '100%' }}
-      >
-        Hilf uns bei diesen oder ähnlichen Projekten:
-      </Header>
-      <Grid container celled stackable columns="equal">
-        <Grid.Row centered columns="equal">
-          <Grid.Column>
-            <Header as="h3" textAlign="center">
-              Klicker
-            </Header>
-            <p>
-              Open-Source Abstimmungs-Tool für Interaktivität in den
-              Vorlesungen.
-            </p>
-            <Button onClick={() => setShowProject('klicker')} floated="right">
-              Details
-            </Button>
-          </Grid.Column>
-          <Grid.Column>
-            <Header as="h3" textAlign="center">
-              Redesign Webseite
-            </Header>
-            <p>
-              Technische Aktualisierung der Institutswebseite mit Wechsel des
-              CMS
-            </p>
-            <Button onClick={() => setShowProject('redesign')} floated="right">
-              Details
-            </Button>
-          </Grid.Column>
-          <Grid.Column>
-            <Header as="h3" textAlign="center">
-              Dynamics CRM
-            </Header>
-            <p>
-              Customizing und Automatisiimport
-              '../../semantic/dist/semantic.min.css' import
-              '../layout.css'rungen implementieren
-            </p>
-            <Button onClick={() => setShowProject('dynamics')} floated="right">
-              Details
-            </Button>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-      <Transition visible={showProject} animation="slide down" duration={300}>
-        <div>
-          <Grid
-            container
-            stackable
-            verticalAlign="middle"
-            columns="equal"
-            id="projectDescription"
-          >
-            <Grid.Row
-              centered
-              inverted
-              style={{ maxWidth: '1100px', margin: 'auto' }}
-            >
-              <Grid.Column width={6}>
-                {showProject && (
-                  <Image src={'images/' + mapping[showProject].img} />
-                )}
-              </Grid.Column>
-              <Grid.Column width={10}>
-                {showProject && [
-                  <Header as="h3" textAlign="center">
-                    {mapping[showProject].title}
-                  </Header>,
-                  <p>{mapping[showProject].desc}</p>,
-                  <br />,
-                  <i>
-                    <p>{mapping[showProject].cite}</p>
-                  </i>,
-                  <Header as="h5" textAlign="right">
-                    - {mapping[showProject].citeName}
-                  </Header>,
-
-                  mapping[showProject].cite2 && [
-                    <br />,
-                    <i>
-                      <p>{mapping[showProject].cite2}</p>
-                    </i>,
-                    <Header as="h5" textAlign="right">
-                      - {mapping[showProject].cite2Name}
-                    </Header>,
-                  ],
-                ]}
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-        </div>
-      </Transition>
-      <Grid container celled stackable columns="equal">
-        <Grid.Row centered columns="equal">
-          <Grid.Column>
-            <Header as="h3" textAlign="center">
-              Interne Tools
-            </Header>
-            <p>Mitarbeiteradministration und Management Support</p>
-            <Button onClick={() => setShowProject('tools')} floated="right">
-              Details
-            </Button>
-          </Grid.Column>
-          <Grid.Column>
-            <Header as="h3" textAlign="center">
-              Lehrveranstaltungen
-            </Header>
-            <p>
-              Digitale Lerninhalte in Form von eSkripten, Aufgaben (IAs),
-              eAssessment und mehr
-            </p>
-            <Button onClick={() => setShowProject('lehre')} floated="right">
-              Details
-            </Button>
-          </Grid.Column>
-          <Grid.Column>
-            <Header as="h3" textAlign="center">
-              Jobeye
-            </Header>
-            <p>Plattform für Studenten auf der Suche nach Teilzeitjobs</p>
-            <Button onClick={() => setShowProject('jobeye')} floated="right">
-              Details
-            </Button>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-
-      <style jsx>{`
-        #projectDescription {
-          padding: 0px 10%;
-          background: rgba(0, 0, 63, 0.1);
-          width: 100% !important;
-          margin: auto;
-        }
-      `}</style>
-    </Segment>
-  )
-
-  // state = {
-  //   show: false,
-  //   showWhat: '',
-  //   width: 0,
-  //   height: 0,
-  // }
-
-  // UNSAFE_componentWillMount() {
-  //   // get screen size
-  //   this.setState({
-  //     height: typeof window !== 'undefined' && window.innerHeight,
-  //   })
-  //   this.setState({ width: typeof window !== 'undefined' && window.innerWidth })
-  // }
-
-  // showProject = (title) => {
-  //   this.setState({ show: false })
-  //   this.setState({ showWhat: title })
-  //   this.setState({ show: true })
-  //   if (this.state.width < 480) {
-  //     setTimeout(() => {
-  //       animateScrollTo(document.querySelector('#projectDescription'))
-  //     }, 300)
-  //   }
-  // }
-}
-
-export default ProjectSegment
+export const teams = [
+  {
+    teamName: 'Kommunikation',
+    imageSrc: 'images/lisa.jpg',
+    leaderName: 'Lisa Liechti',
+    leaderPosition: 'Leitung Kommunikation IBF',
+    teamDescription:
+      '« Bei mir stehen viele Data Science Projekte an, bei welchen ich eure ' +
+      'Unterstützung brauche. Dazu kommen immer wieder Aufgaben im Web-Design und der Gestaltung von ' +
+      'Magazinen und Newslettern. Ich suche also kreative Data Scientists! »',
+  },
+  {
+    teamName: 'Teaching Center',
+    imageSrc: 'images/johanna.jpg',
+    leaderName: 'Johanna Braun',
+    leaderPosition: 'Leitung Teaching Center IBF',
+    teamDescription:
+      '« Wir wollen die Lehrveranstaltungen unseres Instituts innovativ und interaktiv ' +
+      'gestalten. Deshalb brauchen wir IT-Support für die digital unterstützten Kurse, für Klicker und ' +
+      'Jobeye oder eine neue Idee von dir! »',
+  },
+  {
+    teamName: 'Weiterbildung',
+    imageSrc: 'images/beni.jpg',
+    leaderName: 'Benjamin Wilding',
+    leaderPosition: 'Geschäftsführer, Leitung Lehre & Weiterbildung',
+    teamDescription:
+      '« Als Weiterbildungsanbieter brauchen wir kreative Informatiker*innen, die die User ' +
+      'Experience mit innovativen Tools verbessern und die Kundenverwaltung mit ' +
+      'Automatisierungen effizienter gestalten. »',
+  },
+]

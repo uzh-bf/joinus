@@ -26,29 +26,29 @@
 }
 
 #title {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: normal;
   margin-bottom: 0;
   padding: 25px;
   border-radius: 15px;
-  margin-top: 1em;
+  margin-top: 1rem;
   background-color: rgba(0, 2, 62, 0.8);
 
   @media screen and (min-width: 768px) {
-    font-size: 4em;
-    margin-top: 2.5em;
+    font-size: 4rem;
+    margin-top: 2.5rem;
   }
 }
 
 #subtitle {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: normal;
   padding: 15px;
   border-radius: 15px;
   background-color: rgba(0, 2, 62, 0.8);
 
   @media screen and (min-width: 768px) {
-    font-size: 1.7em;
+    font-size: 1.7rem;
   }
 }
 

@@ -3,22 +3,23 @@ import { Icon } from 'semantic-ui-react'
 import { slide as Menu } from 'react-burger-menu'
 import animateScrollTo from 'animated-scroll-to'
 
+import styles from './BurgerMenu.module.scss'
+
 function BurgerMenu() {
   return (
     <div>
-      <div className="burgerMenuUnderlay"></div>
+      <div className={styles.burgerMenuUnderlay}></div>
 
       <Menu isOpen={false}>
         <a
           href="#"
           onClick={() => animateScrollTo(document.querySelector('#'))}
         >
-          <h3>Dein nächster Job?</h3>
+          <h3>Dein neuer Job?</h3>
         </a>
         <br />
         <br />
         <a
-          className="menu-item"
           href="#"
           onClick={() => animateScrollTo(document.querySelector('#citations'))}
         >
@@ -26,7 +27,6 @@ function BurgerMenu() {
         </a>
         <br />
         <a
-          className="menu-item"
           href="#"
           onClick={() => animateScrollTo(document.querySelector('#advantages'))}
         >
@@ -34,7 +34,6 @@ function BurgerMenu() {
         </a>
         <br />
         <a
-          className="menu-item"
           href="#"
           onClick={() => animateScrollTo(document.querySelector('#projects'))}
         >
@@ -42,7 +41,6 @@ function BurgerMenu() {
         </a>
         <br />
         <a
-          className="menu-item"
           href="#"
           onClick={() => animateScrollTo(document.querySelector('#team'))}
         >
@@ -50,7 +48,6 @@ function BurgerMenu() {
         </a>
         <br />
         <a
-          className="menu-item"
           href="#"
           onClick={() =>
             animateScrollTo(document.querySelector('#requirements'))
@@ -60,7 +57,6 @@ function BurgerMenu() {
         </a>
         <br />
         <a
-          className="menu-item"
           href="#"
           onClick={() => animateScrollTo(document.querySelector('#department'))}
         >
@@ -68,7 +64,6 @@ function BurgerMenu() {
         </a>
         <br />
         <a
-          className="menu-item"
           href="#"
           onClick={() =>
             animateScrollTo(document.querySelector('#application'))

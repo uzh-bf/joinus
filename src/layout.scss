@@ -1,0 +1,10 @@
+.ui.vertical.segment {
+  padding: 5rem 0 6rem 0;
+}
+
+@media only screen and (max-width: 480px) {
+  th.mobile.hidden,
+  td.mobile.hidden {
+    display: none !important;
+  }
+}

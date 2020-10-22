@@ -14,7 +14,7 @@ function DepartmentSegment({ backgroundColor }: Props) {
   const [isShown, setIsShown] = useState(false)
 
   return (
-    <Segment style={{ background: backgroundColor }} vertical>
+    <Segment style={{ background: backgroundColor }} vertical id="department">
       <Grid container stackable verticalAlign="top">
         <Grid.Row centered>
           <Header as="h2" textAlign="center" size="huge">

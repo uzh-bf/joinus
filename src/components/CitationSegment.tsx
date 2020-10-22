@@ -17,7 +17,7 @@ function CitationSegment({ backgroundColor }: Props) {
   }
 
   return (
-    <Segment style={{ background: backgroundColor }} vertical>
+    <Segment style={{ background: backgroundColor }} vertical id="citations">
       <Grid
         container
         stackable

@@ -11,7 +11,7 @@ interface Props {
 
 function AdvantagesSegment({ backgroundColor }: Props) {
   return (
-    <Segment style={{ background: backgroundColor }} vertical>
+    <Segment style={{ background: backgroundColor }} vertical id="advantages">
       <Grid container stackable verticalAlign="top">
         <Grid.Row centered>
           <Header as="h2" textAlign="center" size="huge">

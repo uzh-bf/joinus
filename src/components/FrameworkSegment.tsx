@@ -10,7 +10,7 @@ interface Props {
 
 function FrameworkSegment({ backgroundColor }: Props) {
   return (
-    <Segment style={{ background: backgroundColor }} vertical>
+    <Segment style={{ background: backgroundColor }} vertical id="technologies">
       <Grid container stackable verticalAlign="top">
         <Grid.Row centered>
           <Header as="h2" textAlign="center" size="huge">

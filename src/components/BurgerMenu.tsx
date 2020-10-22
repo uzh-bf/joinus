@@ -36,7 +36,7 @@ function BurgerMenu() {
         <a
           className="menu-item"
           href="#"
-          onClick={() => animateScrollTo(document.querySelector('#project'))}
+          onClick={() => animateScrollTo(document.querySelector('#projects'))}
         >
           <Icon name="code" /> Aktuelle Projekte
         </a>
@@ -62,7 +62,7 @@ function BurgerMenu() {
         <a
           className="menu-item"
           href="#"
-          onClick={() => animateScrollTo(document.querySelector('#institute'))}
+          onClick={() => animateScrollTo(document.querySelector('#department'))}
         >
           <Icon name="building" /> Über unser Institut
         </a>

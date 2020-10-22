@@ -21,7 +21,7 @@ function ProjectSegment({ backgroundColor }: Props) {
   const [showProject, setShowProject] = useState(null)
 
   return (
-    <Segment style={{ background: backgroundColor }} vertical>
+    <Segment style={{ background: backgroundColor }} vertical id="projects">
       <Header as="h2" textAlign="center" size="huge">
         Hilf uns bei diesen oder ähnlichen Projekten:
       </Header>

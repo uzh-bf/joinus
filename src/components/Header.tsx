@@ -16,7 +16,7 @@ function Header() {
         />
         <SemanticHeader
           as="h2"
-          content="Das Institut für Banking und Finance sucht Informatiker*innen! Finde heraus, was es so speziell macht:"
+          content="Das Institut für Banking und Finance sucht Informatiker*innen! Finde heraus, was es so speziell macht."
           inverted
           id={styles.subtitle}
         />

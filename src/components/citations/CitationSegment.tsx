@@ -25,18 +25,21 @@ function CitationSegment({ backgroundColor }: Props) {
         reversed="mobile"
         centered
       >
-        <Grid.Column width={7}>
+        <Grid.Column width={3} />
+        <Grid.Column width={7} textAlign="right">
           <Container>
             <Header as="h3">Flexibilität ist Trumpf</Header>
 
-            <p className={styles.description}>
-              Mir gefällt, dass ich sehr flexible Arbeitszeiten habe. Vor
-              Prüfungen kann man problemlos reduzieren oder aussetzen; während
-              den Semesterferien wiederum sein Budget aufbessern.
+            <p className={styles.citation}>
+              <q>
+                Mir gefällt, dass ich sehr flexible Arbeitszeiten habe. Vor
+                Prüfungen kann man problemlos reduzieren oder aussetzen; während
+                den Semesterferien wiederum sein Budget aufbessern.
+              </q>
             </p>
 
-            <p className={styles.citation}>
-              <cite>- Manuel Keller, studiert Information Systems</cite>
+            <p className={styles.person}>
+              Manuel Keller, studiert Information Systems
             </p>
           </Container>
         </Grid.Column>
@@ -70,18 +73,21 @@ function CitationSegment({ backgroundColor }: Props) {
           <Container>
             <Header as="h3">Abwechslung und Eigenverantwortung</Header>
 
-            <p className={styles.description}>
-              Mir gefällt, dass ich in meiner Arbeit am Institut selbst die
-              Verantwortung für meine Projekte trage. Dadurch kann ich selber
-              entscheiden, welche Technologien ich einsetzen will und lerne viel
-              dabei.
+            <p className={styles.citation}>
+              <q>
+                Mir gefällt, dass ich in meiner Arbeit am Institut selbst die
+                Verantwortung für meine Projekte trage. Dadurch kann ich selber
+                entscheiden, welche Technologien ich einsetzen will und lerne
+                viel dabei.
+              </q>
             </p>
 
-            <p className={styles.citation}>
-              <cite>- Pascal Zehnder, studiert Information Systems</cite>
+            <p className={styles.person}>
+              Pascal Zehnder, studiert Information Systems
             </p>
           </Container>
         </Grid.Column>
+        <Grid.Column width={3} />
       </Grid>
     </Segment>
   )

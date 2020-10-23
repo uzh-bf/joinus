@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Card, Label } from 'semantic-ui-react'
+import styles from './ProjectCard.module.scss'
 
 interface Props {
   id: string
@@ -17,16 +18,16 @@ function ProjectCard({ id, title, subtitle, tags, handleShowProject }: Props) {
         <Card.Description>{subtitle}</Card.Description>
       </Card.Content>
 
-      <Card.Content extra>
+      <Card.Content extra className={styles.cardextraStyle}>
         <Label.Group>
           {tags?.map((tag) => (
-            <Label>{tag}</Label>
+            <Label className={styles.labelStyle}>{tag}</Label>
           ))}
         </Label.Group>
       </Card.Content>
 
-      <Card.Content extra>
-        <Button fluid basic onClick={() => handleShowProject(id)}>
+      <Card.Content extra className={styles.detailStyle}>
+        <Button fluid attached onClick={() => handleShowProject(id)} className={styles.buttonstyle} color={"blue"}>
           Details
         </Button>
       </Card.Content>

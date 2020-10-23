@@ -1,3 +1,20 @@
 /*******************************
      User Global Variables
 *******************************/
+
+@headerFont: 'IBM Plex Mono', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont: 'Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@googleFontFamily: 'IBM+Plex+Mono|Roboto:300,400italic';
+
+@importGoogleFonts: true;
+@googleFontSizes: '300,400,700,400italic,700italic';
+@googleSubset: 'latin';
+
+@googleProtocol: 'https://';
+@googleFontRequest: '@{googleFontFamily}&subset=@{googleSubset}';
+
+@primaryColor: @purple;
+@secondaryColor: @black;
+
+@lightPrimaryColor: @lightBlue;
+@lightSecondaryColor: @lightBlack;

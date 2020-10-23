@@ -23,7 +23,7 @@ function ApplicationFormSegment({ backgroundColor }: Props) {
   return (
     <SegmentContainer
       id="application"
-      title="Bewirb dich jetzt für die Teams Kommunikation und Weiterbildung!"
+      title="Bewirb dich jetzt!"
       backgroundColor={backgroundColor}
     >
       <Grid.Row centered>
@@ -36,7 +36,7 @@ function ApplicationFormSegment({ backgroundColor }: Props) {
         <Header as="h2" textAlign="center">
           Hast du Fragen? Gerne beantworten wir diese per Telefon oder E-Mail.{' '}
           <br />
-          <a href="https://www.bf.uzh.ch/de/persons/hegglin-rene">
+          <a href="https://www.bf.uzh.ch/de/persons/keller-manuel">
             Kontaktdaten <Icon name="external alternate" />
           </a>
         </Header>

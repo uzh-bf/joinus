@@ -12,9 +12,9 @@ interface Props {
 function Position({ title, subtitle, children }: Props): React.ReactElement {
   return (
     <Container>
-        <Header as="h3">{title}</Header>
-        <p className={styles.person}>{subtitle}</p>
-        <p>{children}</p>
+      <Header as="h3">{title}</Header>
+      <p className={styles.person}>{subtitle}</p>
+      <p>{children}</p>
     </Container>
   )
 }

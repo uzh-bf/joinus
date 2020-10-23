@@ -1,5 +1,12 @@
 import React from 'react'
-import { Container, Header, Image, Segment, Grid, Divider } from 'semantic-ui-react'
+import {
+  Container,
+  Header,
+  Image,
+  Segment,
+  Grid,
+  Divider,
+} from 'semantic-ui-react'
 import SegmentContainer from '../SegmentContainer'
 import Position from './Position'
 
@@ -11,9 +18,11 @@ export interface Props {
 
 function PositionSegment({ backgroundColor }: Props) {
   return (
-    <SegmentContainer id="citations"
-                      title="Offene Positionen"
-                      backgroundColor={backgroundColor}>
+    <SegmentContainer
+      id="citations"
+      title="Offene Positionen"
+      backgroundColor={backgroundColor}
+    >
       <Grid
         container
         stackable
@@ -28,8 +37,13 @@ function PositionSegment({ backgroundColor }: Props) {
             title="Junior Entwickler"
             subtitle="IT-Fachkraft für technische Unterstützung und Umsetzung von neuen Inhalten"
           >
-            Diese Position ist für Student*innen, welche ca. im 3. Semester Informatik im Haupt- oder Nebenfach studieren und erst wenig Programmiererfahrung haben.
-            Hier macht man beispielsweise inhaltliche Anpassungen, entwickelt unsere CMS's weiter, setzt neue OLAT-Kurse auf und hilft bei allgemeinen IT-Problemen und Anfragen.
+            Diese Position ist für Student*innen, welche ca. im 3. Semester
+            Informatik im Haupt- oder Nebenfach studieren und erst wenig
+            Programmiererfahrung haben. Hier macht man anfangs beispielsweise
+            inhaltliche Anpassungen, entwickelt unsere CMS's weiter, setzt neue
+            OLAT-Kurse auf und hilft bei allgemeinen IT-Problemen und Anfragen.
+            Dabei besteht viel Potenzial zur Weiterentwicklung und zum Lernen,
+            mit zunehmender Übernahme von Verantwortung.
           </Position>
         </Grid.Column>
 
@@ -38,7 +52,13 @@ function PositionSegment({ backgroundColor }: Props) {
         </Grid.Column>
       </Grid>
 
-      <Grid container stackable verticalAlign="middle" centered className={styles.margined}>
+      <Grid
+        container
+        stackable
+        verticalAlign="middle"
+        centered
+        className={styles.margined}
+      >
         <Grid.Column width={5}>
           <Image bordered rounded size="large" src="images/klicker.jpg" />
         </Grid.Column>
@@ -48,11 +68,18 @@ function PositionSegment({ backgroundColor }: Props) {
             title="IT-Projektmitarbeiter"
             subtitle="Software-Entwicklung Geschäftsapplikationen, WebApps, Games und weiterer IT-Projekte "
           >
-            Diese Position ist für Student*innen ab dem 5. Semester Informatik im Haupt- oder Nebenfach, welche bereits Programmiererfahrung, zum Beispiel mit React haben.
-            Hier arbeitet man in IT-Projekten mit, bei welchen WebApps, Websites, Games oder andere Produkte implementiert werden und hilft bei Erweiterungen und Modernisierung bestehender Applikationen.
-            <br /><br />
-            Bei einer Bewerbung für diese Position wirst du von uns eine <i>Programmier-Challenge</i> erhalten, wo du deine Fähigkeiten beweisen kannst.
-
+            Diese Position ist für Student*innen ab dem 5. Semester Informatik
+            im Haupt- oder Nebenfach, welche bereits Programmiererfahrung, zum
+            Beispiel mit React haben. Hier arbeitet man in IT-Projekten mit, bei
+            welchen WebApps, Websites, Games oder andere Produkte implementiert
+            werden und hilft bei Erweiterungen und Modernisierung bestehender
+            Applikationen sowie bei der Konzeptionierung neuer Ideen.
+            <br />
+            <br />
+            Bei einer Bewerbung für diese Position wirst du von uns eine kleine{' '}
+            <i>Programmier-Challenge</i> erhalten, mit der du deine Fähigkeiten
+            beweisen kannst. Das erlaubt uns, beim Interview auf ein technisches
+            Quiz zu verzichten :)
           </Position>
         </Grid.Column>
 

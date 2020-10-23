@@ -258,9 +258,9 @@ export const teams = [
     leaderName: 'Lisa Liechti',
     leaderPosition: 'Leitung Kommunikation IBF',
     teamDescription:
-      '« Bei mir stehen viele Data Science Projekte an, bei welchen ich eure ' +
+      'Bei mir stehen viele Data Science Projekte an, bei welchen ich eure ' +
       'Unterstützung brauche. Dazu kommen immer wieder Aufgaben im Web-Design und der Gestaltung von ' +
-      'Magazinen und Newslettern. Ich suche also kreative Data Scientists! »',
+      'Magazinen und Newslettern. Ich suche also kreative Data Scientists!',
   },
   {
     teamName: 'Teaching Center',
@@ -268,9 +268,9 @@ export const teams = [
     leaderName: 'Johanna Braun',
     leaderPosition: 'Leitung Teaching Center IBF',
     teamDescription:
-      '« Wir wollen die Lehrveranstaltungen unseres Instituts innovativ und interaktiv ' +
+      'Wir wollen die Lehrveranstaltungen unseres Instituts innovativ und interaktiv ' +
       'gestalten. Deshalb brauchen wir IT-Support für die digital unterstützten Kurse, für Klicker und ' +
-      'Jobeye oder eine neue Idee von dir! »',
+      'Jobeye oder eine neue Idee von dir!',
   },
   {
     teamName: 'Weiterbildung',
@@ -278,8 +278,8 @@ export const teams = [
     leaderName: 'Benjamin Wilding',
     leaderPosition: 'Geschäftsführer, Leitung Lehre & Weiterbildung',
     teamDescription:
-      '« Als Weiterbildungsanbieter brauchen wir kreative Informatiker*innen, die die User ' +
+      'Als Weiterbildungsanbieter brauchen wir kreative Informatiker*innen, die die User ' +
       'Experience mit innovativen Tools verbessern und die Kundenverwaltung mit ' +
-      'Automatisierungen effizienter gestalten. »',
+      'Automatisierungen effizienter gestalten.',
   },
 ]

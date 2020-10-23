@@ -27,20 +27,22 @@ function TeamColumn({
       <Container className={styles.teamInfo}>
         <Image src={imageSrc} className={styles.leaderPhoto} />
 
-        <Header textAlign="center" as="h5" size="medium">
+        <Header textAlign="center" as="h4" size="medium">
           {leaderName}
         </Header>
 
         <Header
           textAlign="center"
-          as="h6"
+          as="h5"
           size="medium"
           className={styles.leaderPosition}
         >
           {leaderPosition}
         </Header>
 
-        <p className={styles.teamDescription}>{teamDescription}</p>
+        <blockquote className={styles.teamDescription}>
+          <p>{teamDescription}</p>
+        </blockquote>
       </Container>
     </Grid.Column>
   )

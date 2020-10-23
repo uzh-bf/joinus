@@ -14,9 +14,9 @@ function Citation({ title, author, children }: Props): React.ReactElement {
     <Container>
       <Header as="h3">{title}</Header>
 
-      <p className={styles.citation}>
-        <q>{children}</q>
-      </p>
+      <blockquote className={styles.citation}>
+        <p>{children}</p>
+      </blockquote>
 
       <p className={styles.person}>{author}</p>
     </Container>

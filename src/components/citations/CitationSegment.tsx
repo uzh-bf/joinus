@@ -9,7 +9,6 @@ export interface Props {
   backgroundColor: string
 }
 
-// TODO: component split
 function CitationSegment({ backgroundColor }: Props) {
   return (
     <SegmentContainer id="citations" backgroundColor={backgroundColor}>

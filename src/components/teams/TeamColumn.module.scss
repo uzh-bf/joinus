@@ -4,19 +4,14 @@
 }
 
 .leaderPhoto {
-  max-height: 250px;
+  max-height: 225px;
   margin: auto;
-  margin-top: 20px;
-  width: '90%';
-  border-radius: 2px;
-}
-
-.leaderPosition {
-  margin-top: -10;
-  margin-bottom: 10;
-  min-height: 28;
+  margin-top: 1rem;
+  border-radius: 5px;
 }
 
 .teamDescription {
-  font-size: 1.5rem;
+  min-height: 14rem;
+  font-size: 1.3rem;
+  text-align: justify;
 }

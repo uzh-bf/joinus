@@ -11,7 +11,7 @@ function ProjectDetails({
   cite2Name,
 }) {
   return (
-    <Segment>
+    <Segment attached padded>
       <Grid
         container
         stackable
@@ -19,25 +19,29 @@ function ProjectDetails({
         columns="equal"
         id="projectDescription"
       >
-        <Grid.Row
-          centered
-          inverted
-          style={{ maxWidth: '1100px', margin: 'auto' }}
-        >
+        <Grid.Row centered inverted>
           <Grid.Column width={6}>{<Image src={'images/' + img} />}</Grid.Column>
           <Grid.Column width={10}>
             <Header as="h3" textAlign="center">
               {title}
             </Header>
+
             <p>{desc}</p>
-            <q>{cite}</q>
+
+            <blockquote>
+              <p>{cite}</p>
+            </blockquote>
+
             <Header as="h5" textAlign="right">
               {citeName}
             </Header>
 
             {cite2 && (
               <>
-                <q>{cite2}</q>
+                <blockquote>
+                  <p>{cite2}</p>
+                </blockquote>
+
                 <Header as="h5" textAlign="right">
                   {cite2Name}
                 </Header>

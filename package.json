@@ -15,6 +15,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "build:semantic": "cd semantic && gulp build-css build-assets",
     "start": "next start",
     "type-check": "tsc --noEmit -p tsconfig.json",

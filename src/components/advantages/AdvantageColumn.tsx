@@ -27,7 +27,7 @@ function AdvantageColumn({
       <div className={styles.icon}>
         <Icon circular inverted color={iconColor} size="huge" name={iconName} />
       </div>
-      <Header as="h3" textAlign="center" size="huge">
+      <Header as="h3" size="large">
         {advantageTitle}
       </Header>
       <p className={styles.description}>{advantageText}</p>

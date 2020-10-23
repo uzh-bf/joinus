@@ -2,6 +2,8 @@ import React from 'react'
 import { Header, Segment, Grid } from 'semantic-ui-react'
 
 import { technologies } from '../../fixtures'
+import SegmentContainer from '../SegmentContainer'
+import Framework from './Framework'
 import styles from './FrameworkSegment.module.scss'
 
 export interface Props {
@@ -10,26 +12,19 @@ export interface Props {
 
 function FrameworkSegment({ backgroundColor }: Props) {
   return (
-    <Segment style={{ background: backgroundColor }} vertical id="technologies">
-      <Grid container stackable verticalAlign="top">
-        <Grid.Row centered>
-          <Header as="h2" textAlign="center" size="huge">
-            Unsere Lieblingstechnologien und Frameworks:
-          </Header>
-        </Grid.Row>
-      </Grid>
-
+    <SegmentContainer
+      id="technologies"
+      title="Unsere Lieblingstechnologien und Frameworks:"
+      backgroundColor={backgroundColor}
+    >
       <div className={styles.slideshowContainer}>
         <div className={styles.slideshowContent}>
-          {technologies.map(({ image, title }) => (
-            <div>
-              <img src={image} />
-              <p>{title}</p>
-            </div>
+          {technologies.map((tech) => (
+            <Framework {...tech} />
           ))}
         </div>
       </div>
-    </Segment>
+    </SegmentContainer>
   )
 }
 

@@ -11,6 +11,7 @@ import animateScrollTo from 'animated-scroll-to'
 
 import styles from './ProjectSegment.module.scss'
 import { projects } from '../../fixtures'
+import SegmentContainer from '../SegmentContainer'
 
 export interface Props {
   backgroundColor: string
@@ -21,11 +22,11 @@ function ProjectSegment({ backgroundColor }: Props) {
   const [showProject, setShowProject] = useState(null)
 
   return (
-    <Segment style={{ background: backgroundColor }} vertical id="projects">
-      <Header as="h2" textAlign="center" size="huge">
-        Hilf uns bei diesen oder ähnlichen Projekten:
-      </Header>
-
+    <SegmentContainer
+      id="projects"
+      title="Hilf uns bei diesen oder ähnlichen Projekten:"
+      backgroundColor={backgroundColor}
+    >
       <Grid container celled stackable columns="equal">
         <Grid.Row centered columns="equal">
           <Grid.Column>
@@ -149,7 +150,7 @@ function ProjectSegment({ backgroundColor }: Props) {
           </Grid.Column>
         </Grid.Row>
       </Grid>
-    </Segment>
+    </SegmentContainer>
   )
 }
 

@@ -43,19 +43,6 @@
   -webkit-animation-play-state: paused;
 }
 
-.slideshowContent > div > img {
-  padding: 0 50px;
-  margin-bottom: 0;
-  max-height: 90px;
-  max-width: 100%;
-}
-
-.slideshowContent > div > p {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-54%);
-  bottom: 0;
-}
 .slideshowContent > div {
   float: left;
   width: 300px;

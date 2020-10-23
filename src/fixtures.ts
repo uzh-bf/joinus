@@ -128,6 +128,8 @@ export const projects = {
   klicker: {
     img: 'klicker.jpg',
     title: 'Klicker',
+    subtitle:
+      'Open-Source Abstimmungs-Tool für Interaktivität in den Vorlesungen',
     desc:
       'Klicker ist ein Open-Source Instant Audience Response System - auf Deutsch ein Service, bei dem man' +
       ' Abstimmungen erstellt und einer Audienz zum Ausfüllen übergibt und in Echtzeit Zugriff auf die Resultate hat. ' +
@@ -135,26 +137,31 @@ export const projects = {
       'leicht zu bedienen ist, gut aussieht und bestens für Smartphones ausgelegt ist. So kann die grösste Anzahl ' +
       'Studenten in den Hörsälen ermuntert werden, mitzumachen.',
     cite:
-      '« Um Klicker so interaktiv wie möglich zu machen, habe ich die Seite mit React mit einem node.js Server ' +
-      'aufgebaut. Mit einem QR Code gelangen die Teilnehmer auf die Seite und müssen nur einmal klicken. »',
+      'Um Klicker so interaktiv wie möglich zu machen, habe ich die Seite mit React mit einem node.js Server ' +
+      'aufgebaut. Mit einem QR Code gelangen die Teilnehmer auf die Seite und müssen nur einmal klicken.',
     citeName: 'Roli',
+    tags: ['react', 'node.js', 'graphql', 'docker'],
   },
   dynamics: {
     img: 'dynamics.jpg',
-    title: 'Dynamics CRM Customizing und Automatisierungen',
+    title: 'Dynamics CRM',
+    subtitle: 'Customizing und Automatisierungen',
     desc:
       'Das Weiterbildungsteam setzt für ihre Kundenverwaltung Microsoft Dynamics CRM ein. Der gesamte Teilnehmerworkflow ist darin abgebildet: ' +
       'Von Anmeldung über Kursteilnahmen bis zu Abschlüssen sind darin alle Informationen zu jedem Kursteilnehmer erfasst.' +
       ' Der Prozess soll möglichst automatisiert ablaufen und Fehler verhindern. Über einer neu entwickelten WebAPI kann ' +
       "man nun auf die Daten zugreifen, sodass diese direkt auf der Webseite dargestellt werden können. Hier halten wir uns an das 'One source of truth Prinzip'.",
     cite:
-      '« Trotz Startschwierigkeiten kenne ich mich mittlerweile so gut im CRM aus, dass ich Automatisierungen schon fast schneller als unser Customizing-Partner implementieren kann. ' +
-      ' Ich bin zwar noch immer kein Fan der C# / .NET Umgebung, doch das CRM bietet uns so viel Mehrwert, dass sich die Mühe lohnt. »',
+      'Trotz Startschwierigkeiten kenne ich mich mittlerweile so gut im CRM aus, dass ich Automatisierungen schon fast schneller als unser Customizing-Partner implementieren kann. ' +
+      ' Ich bin zwar noch immer kein Fan der C# / .NET Umgebung, doch das CRM bietet uns so viel Mehrwert, dass sich die Mühe lohnt.',
     citeName: 'Manuel',
+    tags: ['c#', 'dynamics crm', 'azure'],
   },
   redesign: {
     img: 'redesign.jpg',
-    title: 'Redesign Institutswebseite',
+    title: 'Redesign bf.uzh.ch',
+    subtitle:
+      'Technische Aktualisierung der Institutswebseite mit Wechsel des CMS',
     desc:
       'Die Universität Zürich verwendet seit langem Magnolia als Content Management System (CMS)' +
       '. Die Webseite unseres Instituts basierte aber lange Zeit noch auf dem in Contao eingebetteten Vorgänge' +
@@ -164,15 +171,17 @@ export const projects = {
       'k gespeichert, auf die wir mit einer PHP API zugreifen. Anschliessend werden die Daten visualisiert. Alle ' +
       'Daten externer Quellen werden bei uns gecached, mit nächtlich durchlaufende Skripts werden diese aktualisiert.',
     cite:
-      '« Obwohl die neue Webseite der alten aufgrund der Corporate Identity Bestimmungen der UZH sehr ähnelt' +
+      'Obwohl die neue Webseite der alten aufgrund der Corporate Identity Bestimmungen der UZH sehr ähnelt' +
       ', ist die technische Grundlage komplett neu. Mit eigenentwickelten Komponenten versuchen wir die Nach' +
       'teile und Einschränkungen des CMS zu umgehen und haben performante und benutzerfreundliche Zusätze eing' +
-      'epflegt. Die neue Struktur der Datenbank erlaubt uns ausserdem, viel mehr Informationen aus den Daten zu ziehen. »',
+      'epflegt. Die neue Struktur der Datenbank erlaubt uns ausserdem, viel mehr Informationen aus den Daten zu ziehen.',
     citeName: 'Pascal',
+    tags: ['react', 'php'],
   },
   tools: {
     img: 'tools.jpg',
     title: 'Interne Tools',
+    subtitle: 'Mitarbeiteradministration und Management Support',
     desc:
       'Unser Institut besteht aus über 50 Teams an vier verschiedenen Standorten. Um die Mitarbeiter möglichst effizient zu verwalten, haben wir interne Tools zur Arbeitsstundenaufzeichnung und für die Anwesenheit implementiert. Mit letzterem können die Mitarbeiter ihre Absenzen festhalten und die Absenzen ihrer Team-Mitglieder festhalten. ' +
       'Zudem gibt es das Management Information System (MIS), welches der Institutsleitung über diverse Visualisierungen, Metriken, etc. aufschlussreiche Informationen über das Institut, dessen Mitarbeiter und die aktuelle Forschung liefert. Momentan befindet sich eine Version 2 in Entwicklung. ',
@@ -183,14 +192,17 @@ export const projects = {
       ' dass das Endresultat nun von so vielen Mitarbeitern aktiv benutzt wird. »',
     citeName: 'Flo',
     cite2:
-      '« Das Management Information System ist ein Business Intelligence Tool. Es zieht aus verschiedenen Quellen Daten und' +
+      'Das Management Information System ist ein Business Intelligence Tool. Es zieht aus verschiedenen Quellen Daten und' +
       ' veranschaulicht die darin enthaltenen Informationen. Als Data Science Masterstudent kann ich hier mein Wissen voll nutzen ' +
-      'und so die Institutsleitung unterstützen. Daneben lerne ich viel über Visualisierungen und Web Development. »',
+      'und so die Institutsleitung unterstützen. Daneben lerne ich viel über Visualisierungen und Web Development.',
     cite2Name: 'Pascal',
+    tags: ['react', 'php', 'data modelling'],
   },
   lehre: {
     img: 'olat.jpg',
-    title: 'Lehrveranstaltungen',
+    title: 'eLearning',
+    subtitle:
+      'Digitale Lerninhalte in Form von eSkripten, Aufgaben (IAs), eAssessment und mehr',
     desc:
       'Wer Lehrveranstaltungen von unserem Institut besucht, weiss, dass wir Innovation und Interaktivität fördern. ' +
       'Für einige Vorlesungen bieten wir beispielsweise elektronische Skripts an, mit welchen die Studenten lernen können. ' +
@@ -198,22 +210,22 @@ export const projects = {
       'Dozenten interaktive Möglichkeiten wie Klicker. Auch die Übungen während dem Semester sind digital und können ' +
       'mit clever implementierten Excels, etc. erarbeitet werden.',
     cite:
-      '« Aus den Feedbacks der Studenten wissen wir, dass diese die zur Verfügung gestellten Materialien sehr schätzen. ' +
-      'Wir sind stets daran, die Inhalte auf dem aktuellsten Stand zu halten und entwickeln neue Unterstützungsmöglichkeiten.' +
-      'Momentan haben wir gerade eine Idee, welche vielleicht in naher Zukunft realisiert werden kann. »',
+      'Aus den Feedbacks der Studenten wissen wir, dass diese die zur Verfügung gestellten Materialien sehr schätzen. ' +
+      'Wir sind stets daran, die Inhalte auf dem aktuellsten Stand zu halten und entwickeln neue Unterstützungsmöglichkeiten.',
     citeName: 'Christian',
+    tags: ['react', 'strapi', 'lms', 'python'],
   },
   jobeye: {
     img: 'jobeye.jpg',
-    title: 'Jobeye - Stellenportal für Studenten',
-    desc:
-      'Jobeye bietet teilnehmenden Firmen die Möglichkeit, nach studentischen Mitarbeitern zu suchen. Dies ' +
-      'vereinfacht die Stellenausschreibung für unser Institut und gibt den Studenten gleichzeitig die Möglichkeit,' +
-      ' einen Nebenverdienst während dem Studium zu finden.',
+    title: 'Game-Based Learning',
+    subtitle:
+      'Unterstützung der Lehre durch Simulationen und Serious Games (e.g., Portfoliomanagement-Game)',
+    desc: ``,
     cite:
-      '« Jobeye war das erste Projekt, welches wir extern auf einer Docker Instanz gehostet haben. Docker ' +
-      'vereinfacht das Deployment stark und sorgt dafür, dass stets die korrekte Laufzeitumgebung verfügbar ist. »',
+      'Jobeye war das erste Projekt, welches wir extern auf einer Docker Instanz gehostet haben. Docker ' +
+      'vereinfacht das Deployment stark und sorgt dafür, dass stets die korrekte Laufzeitumgebung verfügbar ist.',
     citeName: 'Roli',
+    tags: ['react', 'graphql', 'node.js', 'gamification'],
   },
 }
 

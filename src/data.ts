@@ -155,7 +155,7 @@ export const projects = {
       'Trotz Startschwierigkeiten kenne ich mich mittlerweile so gut im CRM aus, dass ich Automatisierungen schon fast schneller als unser Customizing-Partner implementieren kann. ' +
       ' Ich bin zwar noch immer kein Fan der C# / .NET Umgebung, doch das CRM bietet uns so viel Mehrwert, dass sich die Mühe lohnt.',
     citeName: 'Manuel',
-    tags: ['c#', 'dynamics crm', 'azure'],
+    tags: ['automation', 'CRM', 'azure'],
   },
   redesign: {
     img: 'redesign.jpg',
@@ -180,13 +180,16 @@ export const projects = {
   },
   tools: {
     img: 'tools.jpg',
-    title: 'Interne Tools',
-    subtitle: 'Mitarbeiteradministration und Management Support',
+    title: 'Intranet',
+    subtitle: 'Intranet mit Management-Tools',
     desc:
-      'Unser Institut besteht aus über 50 Teams an vier verschiedenen Standorten. Um die Mitarbeiter möglichst effizient zu verwalten, haben wir interne Tools zur Arbeitsstundenaufzeichnung und für die Anwesenheit implementiert. Mit letzterem können die Mitarbeiter ihre Absenzen festhalten und die Absenzen ihrer Team-Mitglieder festhalten. ' +
-      'Zudem gibt es das Management Information System (MIS), welches der Institutsleitung über diverse Visualisierungen, Metriken, etc. aufschlussreiche Informationen über das Institut, dessen Mitarbeiter und die aktuelle Forschung liefert. Momentan befindet sich eine Version 2 in Entwicklung. ',
+      'Unser Institut besteht aus über 50 Teams an vier verschiedenen Standorten welche im aktuellen Umfeld immer mehr auf ' +
+        'IT-Tools wie Zoom und ähnliches angewiesen sind. Deswegen ist geplant, ein Intranet zu entwickeln, wo man sich' +
+        ' über die aktuellsten Tools und deren Einsatzgebiete informieren kann. Dazu kommt, dass das Institut diverse ' +
+        'Management-Informations-Tools einsetzt, wie zum Beispiel eine eigene Mitarbeiter-Verwaltung. Auch diese Tools müssen ins Intranet überführt' +
+        ' und dort eingegliedert werden.',
     cite:
-      '« Die Anwesenheits Web Applikation war für mich das erste Projekt am Institut und die optimale Gelegenheit mich ' +
+      '« Die Anwesenheits-Web Applikation war für mich das erste Projekt am Institut und die optimale Gelegenheit mich ' +
       'einzuarbeiten und das Institut und seine Mitarbeiter kennenzulernen. Bei der Implementierung hatte ich ' +
       'grosse gestalterische Freiheiten und konnte meine Web Development Skills deutlich erweitern. Es freut mich besonders,' +
       ' dass das Endresultat nun von so vielen Mitarbeitern aktiv benutzt wird. »',

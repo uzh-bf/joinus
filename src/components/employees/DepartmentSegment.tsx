@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Grid, Header, Image, Segment, Table, Menu } from 'semantic-ui-react'
 
-import { employees } from '../../fixtures'
+import { employees } from '../../data'
 import EmployeeRow from './EmployeeRow'
 
 import styles from './DepartmentSegment.module.scss'

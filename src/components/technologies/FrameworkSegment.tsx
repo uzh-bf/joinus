@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header, Segment, Grid } from 'semantic-ui-react'
 
-import { technologies } from '../../fixtures'
+import { technologies } from '../../data'
 import SegmentContainer from '../SegmentContainer'
 import Framework from './Framework'
 import styles from './FrameworkSegment.module.scss'

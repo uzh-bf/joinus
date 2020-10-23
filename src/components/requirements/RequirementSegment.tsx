@@ -3,7 +3,7 @@ import React from 'react'
 
 import RequirementColumn from './RequirementColumn'
 import styles from './RequirementSegment.module.scss'
-import { requirements } from '../../fixtures'
+import { requirements } from '../../data'
 import SegmentContainer from '../SegmentContainer'
 
 export interface Props {

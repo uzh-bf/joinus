@@ -20,7 +20,8 @@
     "start": "next start",
     "type-check": "tsc --noEmit -p tsconfig.json",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy": "next build && next export && gh-pages -d out "
   },
   "dependencies": {
     "animated-scroll-to": "2.0.11",

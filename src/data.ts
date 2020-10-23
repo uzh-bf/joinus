@@ -122,8 +122,15 @@ export const alumni = [
   },
 ]
 
-// TODO: add K8s, Strapi, Tailwind
 export const technologies = [
+  {
+    image: 'images/slideshow/react.jpg',
+    title: 'ReactJS für performante Webapplikationen',
+  },
+  {
+    image: 'images/slideshow/node.png',
+    title: 'NodeJS als Backend für WebApps',
+  },
   {
     image: 'images/slideshow/python.png',
     title: 'Python für statistische Modellierung und Auswertung',
@@ -133,20 +140,20 @@ export const technologies = [
     title: 'Semantic UI für Layouting',
   },
   {
-    image: 'images/slideshow/react.jpg',
-    title: 'ReactJS für performante Webapplikationen',
-  },
-  {
-    image: 'images/slideshow/gitlab.png',
-    title: 'GitLab für Versionsmanagement und CI',
+    image: 'images/slideshow/tailwind.png',
+    title: 'Tailwind CSS für Layouting',
   },
   {
     image: 'images/slideshow/directus.png',
     title: 'Directus Headless CMS für Inhalte',
   },
   {
-    image: 'images/slideshow/slim.png',
-    title: 'Slim Framework für simple PHP APIs',
+    image: 'images/slideshow/strapi.png',
+    title: 'Strapi Headless CMS für Inhalte',
+  },
+  {
+    image: 'images/slideshow/graphql.png',
+    title: 'GraphQL für verständliche APIs',
   },
   {
     image: 'images/slideshow/docker.png',
@@ -157,8 +164,12 @@ export const technologies = [
     title: 'Kubernetes zur Orchestrierung komplexer Applikationen'
   },
   {
-    image: 'images/slideshow/node.png',
-    title: 'NodeJS als Backend für WebApps',
+    image: 'images/slideshow/slim.png',
+    title: 'Slim Framework für simple PHP APIs',
+  },
+  {
+    image: 'images/slideshow/gitlab.png',
+    title: 'GitLab für Versionsmanagement und CI',
   },
   {
     image: 'images/slideshow/openolat.png',
@@ -169,21 +180,9 @@ export const technologies = [
     title: 'Sentry zur Fehlererkennung von WebApps',
   },
   {
-    image: 'images/slideshow/graphql.png',
-    title: 'GraphQL für verständliche APIs',
-  },
-  {
-    image: 'images/slideshow/strapi.png',
-    title: 'Strapi Headless CMS für Inhalte',
-  },
-  {
-    image: 'images/slideshow/tailwind.png',
-    title: 'Tailwind CSS für Layouting',
-  },
-  {
     image: 'images/slideshow/typescript.png',
     title: 'TypeScript zur Verbesserung der Type-Safety',
-  },
+  }
 ]
 
 export const projects = {

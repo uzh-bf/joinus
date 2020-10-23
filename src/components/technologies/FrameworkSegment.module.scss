@@ -1,0 +1,53 @@
+@keyframes scrolling-animation {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -2000px;
+  }
+}
+@-webkit-keyframes scrolling-animation {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -2000px;
+  }
+}
+
+.slideshowContainer {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slideshowContent {
+  display: inline-flex;
+  white-space: nowrap;
+  padding: 50px 0;
+
+  animation: scrolling-animation 66s linear infinite;
+  animation-name: scrolling-animation;
+  animation-duration: 35s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+
+  -webkit-animation: scrolling-animation 35s linear infinite;
+}
+
+.slideshowContent:hover {
+  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+}
+
+.slideshowContent > div {
+  float: left;
+  width: 300px;
+  position: relative;
+  height: 115px;
+  -webkit-position: inline-block;
+  position: inline-block;
+}

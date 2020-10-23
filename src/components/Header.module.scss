@@ -1,0 +1,124 @@
+#container {
+  min-height: 90vh;
+  padding: 1rem 0;
+
+  background-image: url('../../public/images/bfinverted_transparent.png');
+  background-color: rgb(0, 2, 62);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 700px;
+
+  @media screen and (min-width: 768px) {
+    min-height: 100vh;
+  }
+}
+
+#content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 85vh;
+
+  @media screen and (min-width: 768px) {
+    height: 100vh;
+  }
+}
+
+#title {
+  font-size: 3rem;
+  font-weight: normal;
+  margin-bottom: 0;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 10rem;
+  background-color: rgba(0, 2, 62, 0.8);
+
+  @media screen and (min-width: 768px) {
+    font-size: 4rem;
+  }
+}
+
+#subtitle {
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgba(0, 2, 62, 0.8);
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.7rem;
+    margin-top: 3rem;
+  }
+}
+
+#downArrow {
+  width: fit-content;
+  margin: 4rem auto auto;
+  left: calc(50% - 45px);
+
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}

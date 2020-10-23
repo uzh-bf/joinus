@@ -1,10 +1,6 @@
-# Project dependencies
-.cache
 node_modules
-yarn-error.log
-.idea
+old_src/
+.next/
+semantic/dist/
 
-# Build directory
-/public
-.DS_Store
-.idea
+.vercel

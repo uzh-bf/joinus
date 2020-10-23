@@ -1,0 +1,30 @@
+@media only screen and (max-width: 480px) {
+  th.mobile.hidden,
+  td.mobile.hidden {
+    display: none !important;
+  }
+}
+
+blockquote {
+  background: #f9f9f9;
+  // border-left: 10px solid #ccc;
+  margin: 1.5em 0;
+  padding: 1em;
+  quotes: '\201C''\201D';
+}
+
+blockquote:before {
+  color: grey;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.3em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+blockquote q {
+}

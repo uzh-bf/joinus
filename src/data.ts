@@ -194,12 +194,12 @@ export const projects = {
     desc:
       'Klicker ist ein Open-Source Instant Audience Response System - auf Deutsch ein Service, bei dem man' +
       ' Abstimmungen erstellt und einer Audienz zum Ausfüllen übergibt und in Echtzeit Zugriff auf die Resultate hat. ' +
-      'Das Frontend wurde in React entwickelt, das Backend mit node.js. Wichtig war von Anfang an, dass der Service ' +
-      'leicht zu bedienen ist, gut aussieht und bestens für Smartphones ausgelegt ist. So kann die grösste Anzahl ' +
+      'Das Frontend wurde in React entwickelt, das Backend mit Node.js. Wichtig war von Anfang an, dass der Service ' +
+      'leicht zu bedienen ist, gut aussieht und bestens für Smartphones ausgelegt ist. So kann die grösstmögliche Anzahl ' +
       'Studenten in den Hörsälen ermuntert werden, mitzumachen.',
     cite:
-      'Um Klicker so interaktiv wie möglich zu machen, habe ich die Seite mit React mit einem node.js Server ' +
-      'aufgebaut. Mit einem QR Code gelangen die Teilnehmer auf die Seite und müssen nur einmal klicken.',
+      'Um Klicker so interaktiv wie möglich zu machen, habe ich die Seite mit React mit einem Node.js Server ' +
+      'aufgebaut. Mit einem QR Code gelangen die Teilnehmer auf die Seite und müssen nur einmal klicken, um abzustimmen.',
     citeName: 'Roli',
     tags: ['react', 'node.js', 'graphql', 'docker'],
   },
@@ -266,30 +266,34 @@ export const projects = {
     img: 'olat.jpg',
     title: 'eLearning',
     subtitle:
-      'Digitale Lerninhalte in Form von eSkripten, Aufgaben (IAs), eAssessment und mehr',
+      'Digitale Lerninhalte in Form von Kursen, eSkripten, und eAssessment',
     desc:
       'Wer Lehrveranstaltungen von unserem Institut besucht, weiss, dass wir Innovation und Interaktivität fördern. ' +
       'Für einige Vorlesungen bieten wir beispielsweise elektronische Skripts an, mit welchen die Studenten lernen können. ' +
-      'Wir fördern den Einsatz von eAssessment Prüfungen, stellen auf OLAT eLearning Inhalte bereit und bieten den ' +
+      'Wir fördern den Einsatz von eAssessment Prüfungen, stellen auf OLAT eLearning Inhalte mit einem innovativen CMS bereit und bieten den ' +
       'Dozenten interaktive Möglichkeiten wie Klicker. Auch die Übungen während dem Semester sind digital und können ' +
-      'mit clever implementierten Excels, etc. erarbeitet werden.',
+      'mit clever implementierten Excels erarbeitet werden und werden automatisiert mit Python ausgewertet.',
     cite:
       'Aus den Feedbacks der Studenten wissen wir, dass diese die zur Verfügung gestellten Materialien sehr schätzen. ' +
       'Wir sind stets daran, die Inhalte auf dem aktuellsten Stand zu halten und entwickeln neue Unterstützungsmöglichkeiten.',
     citeName: 'Christian',
+    cite2:
+      'Unser neu entwickeltes Strapi Kurs-CMS erlaubt es jedem, Änderungen an Kursinhalten vorzunehmen, ohne sich mit HTML auszukennen. ' +
+      'Die Inhalte werden danach als React.js Applikation exportiert und in ein LMS wie OLAT eingebunden.',
+    cite2Name: 'Roli',
     tags: ['react', 'strapi', 'lms', 'python'],
   },
   jobeye: {
     img: 'jobeye.jpg',
     title: 'Game-Based Learning',
     subtitle:
-      'Unterstützung der Lehre durch Simulationen und Serious Games (e.g., Portfoliomanagement-Game)',
+      'Unterstützung der Lehre durch Simulationen und Serious Games',
     desc: ``,
     cite:
-      'Jobeye war das erste Projekt, welches wir extern auf einer Docker Instanz gehostet haben. Docker ' +
-      'vereinfacht das Deployment stark und sorgt dafür, dass stets die korrekte Laufzeitumgebung verfügbar ist.',
+      'Unsere Simulationen erlauben es den Studierenden, theoretische Konzepte spielerisch anzuwenden. ' +
+      '...',
     citeName: 'Roli',
-    tags: ['react', 'graphql', 'node.js', 'gamification'],
+    tags: ['react', 'python', 'gamification'],
   },
 }
 

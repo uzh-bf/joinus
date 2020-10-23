@@ -126,7 +126,7 @@ export const alumni = [
 export const technologies = [
   {
     image: 'images/slideshow/python.png',
-    title: 'Python für Statistiken und Modellierung',
+    title: 'Python für statistische Modellierung und Auswertung',
   },
   {
     image: 'images/slideshow/semanticui.png',
@@ -146,11 +146,15 @@ export const technologies = [
   },
   {
     image: 'images/slideshow/slim.png',
-    title: 'Slim Framework für einfache PHP APIs',
+    title: 'Slim Framework für simple PHP APIs',
   },
   {
     image: 'images/slideshow/docker.png',
-    title: 'Docker für Containervirtualisierung von WebApps',
+    title: 'Docker für Containervirtualisierung',
+  },
+  {
+    image: 'images/slideshow/kubernetes.png',
+    title: 'Kubernetes zur Orchestrierung komplexer Applikationen'
   },
   {
     image: 'images/slideshow/node.png',
@@ -163,6 +167,22 @@ export const technologies = [
   {
     image: 'images/slideshow/sentry.png',
     title: 'Sentry zur Fehlererkennung von WebApps',
+  },
+  {
+    image: 'images/slideshow/graphql.png',
+    title: 'GraphQL für verständliche APIs',
+  },
+  {
+    image: 'images/slideshow/strapi.png',
+    title: 'Strapi Headless CMS für Inhalte',
+  },
+  {
+    image: 'images/slideshow/tailwind.png',
+    title: 'Tailwind CSS für Layouting',
+  },
+  {
+    image: 'images/slideshow/typescript.png',
+    title: 'TypeScript zur Verbesserung der Type-Safety',
   },
 ]
 

@@ -1,3 +1,3 @@
 module.exports = {
-  assetPrefix: '/joinus/',
+  assetPrefix: process.env.ASSET_PREFIX
 }

@@ -11,7 +11,11 @@ export interface Props {
 
 function CitationSegment({ backgroundColor }: Props) {
   return (
-    <SegmentContainer id="citations" backgroundColor={backgroundColor}>
+    <SegmentContainer
+      id="citations"
+      nextUp="#advantages"
+      backgroundColor={backgroundColor}
+    >
       <Grid
         container
         stackable

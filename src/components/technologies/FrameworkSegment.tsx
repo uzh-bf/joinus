@@ -15,6 +15,7 @@ function FrameworkSegment({ backgroundColor }: Props) {
     <SegmentContainer
       id="technologies"
       title="Unsere Lieblingstechnologien und Frameworks:"
+      nextUp="#teams"
       backgroundColor={backgroundColor}
     >
       <div className={styles.slideshowContainer}>

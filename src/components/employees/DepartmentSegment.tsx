@@ -12,29 +12,30 @@ export interface Props {
 }
 
 function DepartmentSegment({ backgroundColor }: Props) {
-  const [isShown, setIsShown] = useState("current")
+  const [isShown, setIsShown] = useState('current')
 
   return (
     <SegmentContainer
       id="department"
       title="Unser Institut"
+      nextUp="#requirements"
       backgroundColor={backgroundColor}
     >
       <Menu pointing fluid widths={3}>
         <Menu.Item
           name="Unser Team"
           active={isShown === 'current'}
-          onClick={() => setIsShown("current")}
+          onClick={() => setIsShown('current')}
         />
         <Menu.Item
           name="Unsere Alumni"
           active={isShown === 'alumni'}
-          onClick={() => setIsShown("alumni")}
+          onClick={() => setIsShown('alumni')}
         />
         <Menu.Item
           name="Institutsteam"
           active={isShown === 'department'}
-          onClick={() => setIsShown("department")}
+          onClick={() => setIsShown('department')}
         />
       </Menu>
 
@@ -103,7 +104,6 @@ function DepartmentSegment({ backgroundColor }: Props) {
                 <EmployeeRow {...alumnus} />
               ))}
             </Table.Body>
-
           </Table>
         </Grid.Row>,
       ]}

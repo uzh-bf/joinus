@@ -14,6 +14,7 @@ function AdvantagesSegment({ backgroundColor }: Props) {
     <SegmentContainer
       id="advantages"
       title="Was wir dir bieten:"
+      nextUp="#projects"
       backgroundColor={backgroundColor}
     >
       <Grid.Row columns={4}>

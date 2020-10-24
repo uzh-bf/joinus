@@ -15,6 +15,7 @@ function TeamSegment({ backgroundColor }: Props) {
     <SegmentContainer
       id="team"
       title="Unsere drei Teams:"
+      nextUp="#department"
       backgroundColor={backgroundColor}
     >
       <Grid.Row columns={3} divided centered>

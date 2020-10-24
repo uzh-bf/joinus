@@ -18,6 +18,7 @@ function ProjectSegment({ backgroundColor }: Props) {
     <SegmentContainer
       id="projects"
       title="Hilf uns bei diesen oder ähnlichen Projekten:"
+      nextUp="#technologies"
       backgroundColor={backgroundColor}
     >
       <Grid.Row centered>

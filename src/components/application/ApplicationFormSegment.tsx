@@ -1,14 +1,5 @@
-import React, { useState } from 'react'
-import {
-  Button,
-  Container,
-  Header,
-  Segment,
-  Grid,
-  Form,
-  Icon,
-  Message,
-} from 'semantic-ui-react'
+import React from 'react'
+import { Header, Grid, Icon } from 'semantic-ui-react'
 
 import SegmentContainer from '../SegmentContainer'
 import ApplicationForm from './ApplicationForm'
@@ -18,7 +9,6 @@ interface Props {
   backgroundColor: string
 }
 
-// TODO: replace RH contact
 function ApplicationFormSegment({ backgroundColor }: Props) {
   return (
     <SegmentContainer

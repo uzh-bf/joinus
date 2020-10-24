@@ -13,7 +13,7 @@ function BurgerMenu() {
       <Menu isOpen={false}>
         <a
           href="#"
-          onClick={() => animateScrollTo(document.querySelector('#'))}
+          onClick={() => animateScrollTo(document.querySelector('#top'))}
         >
           <h3>Dein neuer Job?</h3>
         </a>

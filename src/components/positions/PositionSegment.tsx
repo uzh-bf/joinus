@@ -19,8 +19,9 @@ export interface Props {
 function PositionSegment({ backgroundColor }: Props) {
   return (
     <SegmentContainer
-      id="citations"
+      id="positions"
       title="Offene Positionen"
+      nextUp="#application"
       backgroundColor={backgroundColor}
     >
       <Grid

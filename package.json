@@ -13,6 +13,7 @@
     "Roland Schlaefli <roland.schlaefli@bf.uzh.ch>"
   ],
   "scripts": {
+    "clean": "rimraf out/ .next/",
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
@@ -21,7 +22,7 @@
     "type-check": "tsc --noEmit -p tsconfig.json",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook",
-    "deploy": "npm run build:semantic && cross-env NODE_ENV=production next build && cross-env NODE_ENV=production next export && gh-pages -d out "
+    "deploy": "npm run clean && npm run build:semantic && cross-env NODE_ENV=production next build && cross-env NODE_ENV=production next export && gh-pages -d out "
   },
   "dependencies": {
     "animated-scroll-to": "2.0.11",
@@ -45,6 +46,7 @@
     "cross-env": "7.0.2",
     "prettier": "2.1.2",
     "react-is": "16.13.1",
+    "rimraf": "3.0.2",
     "sass": "1.27.0",
     "typescript": "4.0.3"
   }

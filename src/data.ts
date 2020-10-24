@@ -288,7 +288,7 @@ export const projects = {
     title: 'Game-Based Learning',
     subtitle:
       'Unterstützung der Lehre durch Simulationen und Serious Games',
-    desc: ``,
+    desc: `Am IBF bieten wir mehrere Vera`,
     cite:
       'Unsere Simulationen erlauben es den Studierenden, theoretische Konzepte spielerisch anzuwenden. ' +
       '...',

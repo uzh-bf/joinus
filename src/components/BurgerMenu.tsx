@@ -46,7 +46,7 @@ function BurgerMenu() {
             animateScrollTo(document.querySelector('#technologies'))
           }
         >
-          <Icon name="hammer" /> Unsere Lieblingstechnologien
+          <Icon name="cog" /> Unsere Lieblingstechnologien
         </a>
         <br />
         <a

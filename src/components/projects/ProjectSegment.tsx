@@ -17,7 +17,7 @@ function ProjectSegment({ backgroundColor }: Props) {
   return (
     <SegmentContainer
       id="projects"
-      title="Hilf uns bei diesen oder ähnlichen Projekten:"
+      title="Hilf uns bei diesen oder ähnlichen Projekten"
       nextUp="#technologies"
       backgroundColor={backgroundColor}
     >

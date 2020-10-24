@@ -12,7 +12,7 @@ import TeamSegment from '../components/teams/TeamSegment'
 import FrameworkSegment from '../components/technologies/FrameworkSegment'
 import BurgerMenu from '../components/BurgerMenu'
 import Footer from '../components/Footer'
-import PositionSegment from "../components/positions/PositionSegment";
+import PositionSegment from '../components/positions/PositionSegment'
 
 function Home() {
   return (
@@ -27,12 +27,15 @@ function Home() {
 
       <CitationSegment backgroundColor={'white'} />
       <AdvantagesSegment backgroundColor={'white'} />
+
       <ProjectSegment backgroundColor={'white'} />
       <FrameworkSegment backgroundColor={'white'} />
+
       <TeamSegment backgroundColor={'white'} />
       <DepartmentSegment backgroundColor={'white'} />
-      <RequirementSegment backgroundColor={'white'} />
+
       <PositionSegment backgroundColor={'white'} />
+      <RequirementSegment backgroundColor={'white'} />
       <ApplicationFormSegment backgroundColor={'white'} />
 
       <Footer />

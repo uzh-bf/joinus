@@ -9,6 +9,14 @@
   -moz-animation: bounce 3s infinite;
   -webkit-animation: bounce 3s infinite;
   animation: bounce 3s infinite;
+
+  i:global(:not(.inverted)) {
+    color: #042b4a !important;
+
+    &:hover {
+      color: #00023e !important;
+    }
+  }
 }
 
 @-moz-keyframes bounce {

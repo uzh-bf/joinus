@@ -21,7 +21,7 @@ function Header() {
           inverted
           id={styles.subtitle}
         />
-        <ScrollDown scrollTo="#citations" />
+        <ScrollDown inverted scrollTo="#citations" />
       </Container>
     </div>
   )

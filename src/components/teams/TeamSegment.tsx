@@ -13,8 +13,8 @@ export interface Props {
 function TeamSegment({ backgroundColor }: Props) {
   return (
     <SegmentContainer
-      id="team"
-      title="Unsere drei Teams:"
+      id="teams"
+      title="Unsere drei Teams"
       nextUp="#department"
       backgroundColor={backgroundColor}
     >

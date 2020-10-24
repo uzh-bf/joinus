@@ -14,8 +14,8 @@ function RequirementSegment({ backgroundColor }: Props) {
   return (
     <SegmentContainer
       id="requirements"
-      title="Was du mitbringen solltest:"
-      nextUp="#positions"
+      title="Was du mitbringen solltest"
+      nextUp="#application"
       backgroundColor={backgroundColor}
     >
       <Grid.Row divided centered>

@@ -14,7 +14,7 @@ function FrameworkSegment({ backgroundColor }: Props) {
   return (
     <SegmentContainer
       id="technologies"
-      title="Unsere Lieblingstechnologien und Frameworks:"
+      title="Unsere Lieblingstechnologien und Frameworks"
       nextUp="#teams"
       backgroundColor={backgroundColor}
     >

@@ -13,7 +13,7 @@ function AdvantagesSegment({ backgroundColor }: Props) {
   return (
     <SegmentContainer
       id="advantages"
-      title="Was wir dir bieten:"
+      title="Was wir dir bieten"
       nextUp="#projects"
       backgroundColor={backgroundColor}
     >

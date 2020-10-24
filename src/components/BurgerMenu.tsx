@@ -30,21 +30,46 @@ function BurgerMenu() {
           href="#"
           onClick={() => animateScrollTo(document.querySelector('#advantages'))}
         >
-          <Icon name="thumbs up" /> Deine Vorteile bei uns
+          <Icon name="thumbs up" /> Was wir dir bieten
         </a>
         <br />
         <a
           href="#"
           onClick={() => animateScrollTo(document.querySelector('#projects'))}
         >
-          <Icon name="code" /> Aktuelle Projekte
+          <Icon name="code" /> Unsere Projekte
         </a>
         <br />
         <a
           href="#"
-          onClick={() => animateScrollTo(document.querySelector('#team'))}
+          onClick={() =>
+            animateScrollTo(document.querySelector('#technologies'))
+          }
+        >
+          <Icon name="hammer" /> Unsere Lieblingstechnologien
+        </a>
+        <br />
+        <a
+          href="#"
+          onClick={() => animateScrollTo(document.querySelector('#teams'))}
         >
           <Icon name="id badge" /> Unsere Teams
+        </a>
+        <br />
+        <a
+          href="#"
+          onClick={() => animateScrollTo(document.querySelector('#department'))}
+        >
+          <Icon name="building" /> Unser Institut
+        </a>
+        <br />
+        <a
+          href="#"
+          onClick={() =>
+            animateScrollTo(document.querySelector('#requirements'))
+          }
+        >
+          <Icon name="user" /> Offene Positionen
         </a>
         <br />
         <a
@@ -58,18 +83,11 @@ function BurgerMenu() {
         <br />
         <a
           href="#"
-          onClick={() => animateScrollTo(document.querySelector('#department'))}
-        >
-          <Icon name="building" /> Über unser Institut
-        </a>
-        <br />
-        <a
-          href="#"
           onClick={() =>
             animateScrollTo(document.querySelector('#application'))
           }
         >
-          <Icon name="street view" /> Bewerbungsformular
+          <Icon name="street view" /> Jetzt bewerben!
         </a>
       </Menu>
     </div>

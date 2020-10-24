@@ -18,7 +18,7 @@ function DepartmentSegment({ backgroundColor }: Props) {
     <SegmentContainer
       id="department"
       title="Unser Institut"
-      nextUp="#requirements"
+      nextUp="#positions"
       backgroundColor={backgroundColor}
     >
       <Menu pointing fluid widths={3}>

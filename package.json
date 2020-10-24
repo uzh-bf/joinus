@@ -13,16 +13,16 @@
     "Roland Schlaefli <roland.schlaefli@bf.uzh.ch>"
   ],
   "scripts": {
-    "clean": "rimraf out/ .next/",
+    "clean": "rimraf node_modules/.cache out/ .next/",
     "dev": "next dev",
-    "build": "next build",
-    "export": "next export",
+    "build": "cross-env NODE_ENV=production next build",
+    "export": "cross-env NODE_ENV=production next export",
     "build:semantic": "cd semantic && gulp build-css build-assets",
     "start": "next start",
     "type-check": "tsc --noEmit -p tsconfig.json",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook",
-    "deploy": "npm run clean && npm run build:semantic && cross-env NODE_ENV=production next build && cross-env NODE_ENV=production next export && gh-pages -d out "
+    "deploy": "npm run clean && npm run build:semantic && npm run build && npm run export && touch out/.nojekyll && gh-pages -d out -t true"
   },
   "dependencies": {
     "animated-scroll-to": "2.0.11",

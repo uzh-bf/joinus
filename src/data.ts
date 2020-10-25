@@ -70,7 +70,7 @@ export const employees = [
     name: 'Dimitri',
     team: 'Teaching Center',
     picture: 'images/Dimitri.jpeg',
-    study: 'Master Banking & Finance (aktuell)',
+    study: 'Master Information Systems (aktuell)',
     tasklist: [
       'Erstellung und Betreuung von Website-Projekten',
       'Erarbeiten eines CMS für Kursinhalte',

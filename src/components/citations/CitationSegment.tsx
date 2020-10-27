@@ -1,4 +1,5 @@
 import React from 'react'
+import NextImage from 'next/image'
 import { Container, Header, Image, Segment, Grid } from 'semantic-ui-react'
 import SegmentContainer from '../SegmentContainer'
 import Citation from './Citation'
@@ -37,13 +38,17 @@ function CitationSegment({ backgroundColor }: Props) {
         </Grid.Column>
 
         <Grid.Column width={5}>
-          <Image bordered rounded size="large" src="images/manuel.jpg" />
+          <Image bordered rounded>
+            <NextImage src="/images/manuel.jpg" height={300} width={400} />
+          </Image>
         </Grid.Column>
       </Grid>
 
       <Grid container stackable verticalAlign="middle" centered>
         <Grid.Column width={5}>
-          <Image bordered rounded size="large" src="images/pascal.jpg" />
+          <Image bordered rounded>
+            <NextImage src="/images/pascal.jpg" height={300} width={400} />
+          </Image>
         </Grid.Column>
 
         <Grid.Column width={8}>

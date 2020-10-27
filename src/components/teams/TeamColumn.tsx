@@ -1,4 +1,5 @@
 import React from 'react'
+import NextImage from 'next/image'
 import { Header, Image, Grid, Container } from 'semantic-ui-react'
 
 import styles from './TeamColumn.module.scss'
@@ -24,8 +25,13 @@ function TeamColumn({
         {teamName}
       </Header>
 
-      <Container className={styles.teamInfo}>
-        <Image src={imageSrc} className={styles.leaderPhoto} />
+      <Container>
+        <NextImage
+          className={styles.leaderPhoto}
+          src={'/' + imageSrc}
+          height={225}
+          width={190}
+        />
 
         <Header textAlign="center" as="h4" size="medium">
           {leaderName}

@@ -24,8 +24,8 @@ function TeamSegment({ backgroundColor }: Props) {
         ))}
 
         <Header as="h2" textAlign="center" size="large">
-          Wir suchen momentan Verstärkung für die Teams Kommunikation und
-          Weiterbildung!
+          Wir suchen momentan Verstärkung für die Teams Teaching Center (Junior
+          &amp; Senior) und Weiterbildung (Senior)!
         </Header>
       </Grid.Row>
     </SegmentContainer>

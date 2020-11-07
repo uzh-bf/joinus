@@ -43,8 +43,9 @@ function PositionSegment({ backgroundColor }: Props) {
             Programmiererfahrung haben. Hier macht man anfangs beispielsweise
             inhaltliche Anpassungen, entwickelt unsere CMS's weiter, setzt neue
             OLAT-Kurse auf und hilft bei allgemeinen IT-Problemen und Anfragen.
-            Dabei besteht viel Potenzial zur Weiterentwicklung und zum Lernen,
-            mit zunehmender Übernahme von Verantwortung.
+            Dabei besteht viel Potenzial zur Weiterentwicklung (z.B. in Richtung
+            Web Development) und zum Lernen, mit zunehmender Übernahme von
+            Verantwortung.
           </Position>
         </Grid.Column>
 
@@ -70,17 +71,17 @@ function PositionSegment({ backgroundColor }: Props) {
             subtitle="Software-Entwicklung Geschäftsapplikationen, WebApps, Games und weiterer IT-Projekte "
           >
             Diese Position ist für Student*innen ab dem 5. Semester Informatik
-            im Haupt- oder Nebenfach, welche bereits Programmiererfahrung, zum
-            Beispiel mit React haben. Hier arbeitet man in IT-Projekten mit, bei
-            welchen WebApps, Websites, Games oder andere Produkte implementiert
-            werden und hilft bei Erweiterungen und Modernisierung bestehender
+            im Haupt- oder Nebenfach, welche bereits Programmiererfahrung haben,
+            bevorzugterweise mit React. Hier arbeitet man in IT-Projekten mit,
+            bei welchen WebApps, Games oder andere Produkte implementiert werden
+            und hilft bei Erweiterungen und Modernisierung bestehender
             Applikationen sowie bei der Konzeptionierung neuer Ideen.
             <br />
             <br />
             Bei einer Bewerbung für diese Position wirst du von uns eine kleine{' '}
-            <i>Programmier-Challenge</i> erhalten, mit der du deine Fähigkeiten
-            beweisen kannst. Das erlaubt uns, beim Interview auf ein technisches
-            Quiz zu verzichten :)
+            <i>React Programmier-Challenge</i> erhalten, mit der du deine
+            Fähigkeiten beweisen kannst. Das erlaubt uns, beim Interview auf
+            nicht aussagekräftige technische Fragen zu verzichten :)
           </Position>
         </Grid.Column>
 

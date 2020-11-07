@@ -24,8 +24,7 @@ function ApplicationFormSegment({ backgroundColor }: Props) {
 
       <Grid.Row centered>
         <Header as="h2" textAlign="center">
-          Hast du Fragen? Gerne beantworten wir diese per Telefon oder E-Mail.{' '}
-          <br />
+          Hast du Fragen? Gerne beantworten wir diese per E-Mail. <br />
           <a href="https://www.bf.uzh.ch/de/persons/keller-manuel">
             Kontaktdaten <Icon name="external alternate" />
           </a>

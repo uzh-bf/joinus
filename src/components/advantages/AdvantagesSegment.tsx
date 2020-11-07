@@ -25,12 +25,6 @@ function AdvantagesSegment({ backgroundColor }: Props) {
           advantageText="Wende deine Programmierkenntnisse in einem praktischen Umfeld an, arbeite dich in neue Bereiche ein und sammle in verschiedenen Projekten breite Erfahrung für deine berufliche Laufbahn."
         />
         <AdvantageColumn
-          iconName="dollar sign"
-          iconColor="green"
-          advantageTitle="#salary"
-          advantageText="Verdiene einen fairen Stundenlohn, welcher nach deinem aktuellen Abschluss festgelegt ist."
-        />
-        <AdvantageColumn
           iconName="clock outline"
           iconColor="brown"
           advantageTitle="#flexibility"
@@ -41,6 +35,12 @@ function AdvantagesSegment({ backgroundColor }: Props) {
           iconColor="orange"
           advantageTitle="#team"
           advantageText="Sei Teil eines jungen und ambitionierten Teams. Neben engagierter Zusammenarbeit grillieren wir im Sommer gerne, besetzen das bQm oder machen Teamausflüge."
+        />
+        <AdvantageColumn
+          iconName="dollar sign"
+          iconColor="green"
+          advantageTitle="#salary"
+          advantageText="Verdiene einen fairen Stundenlohn, welcher nach deinem aktuellen Abschluss festgelegt ist und mit deinem Studium Schritt hält."
         />
       </Grid.Row>
     </SegmentContainer>

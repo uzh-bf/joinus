@@ -114,7 +114,7 @@ function ApplicationForm() {
       />
       <Form.Select
         fluid
-        label="Ungefähres gewünschtes Pensum (Stellenprozente)"
+        label="Ungefähres gewünschtes Pensum (Stellenprozente, während dem Semester)"
         name="pensum"
         options={[
           { key: 'kleiner20', text: '< 20%', value: '< 20%' },
@@ -151,7 +151,7 @@ function ApplicationForm() {
       </Form.Field>
       <Form.TextArea
         label="Motivation für die Bewerbung"
-        placeholder="Bitte stelle dich vor und erzähle von deinen bisherigen Projekten und Erfahrungen."
+        placeholder="Bitte stelle dich vor und erzähle von deinen bisherigen Projekten und Erfahrungen. Du kannst kreativ sein, aber bitte schicke uns weder einen one-liner noch einen umfassenden Report :)"
         rows={10}
         name="motivation"
       />

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 import * as gtag from '../lib/gtag'
 
 import '../../semantic/dist/semantic.css'
@@ -17,7 +18,14 @@ function App({ Component, pageProps }) {
       router.events.off('routeChangeComplete', handleRouteChange)
     }
   }, [router.events])
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  )
 }
 
 export default App

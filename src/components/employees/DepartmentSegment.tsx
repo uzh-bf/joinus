@@ -62,15 +62,13 @@ function DepartmentSegment({ backgroundColor }: Props) {
           <Header as="h3">Unser Team</Header>
         </Grid.Row>,
         <Grid.Row centered>
-          <Table basic="very" celled collapsing unstackable>
+          <Table basic="very" collapsing>
             <Table.Header>
               <Table.Row>
                 <Table.HeaderCell> </Table.HeaderCell>
                 <Table.HeaderCell>Studienrichtung</Table.HeaderCell>
                 <Table.HeaderCell>Aufgabenbereiche u.A.</Table.HeaderCell>
-                <Table.HeaderCell className="mobile hidden">
-                  Am Institut seit
-                </Table.HeaderCell>
+                <Table.HeaderCell>Am Institut seit</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
             <Table.Body>
@@ -87,15 +85,13 @@ function DepartmentSegment({ backgroundColor }: Props) {
           <Header as="h3">Unsere Alumni (seit 2020)</Header>
         </Grid.Row>,
         <Grid.Row centered>
-          <Table basic="very" celled collapsing unstackable>
+          <Table basic="very" collapsing>
             <Table.Header>
               <Table.Row>
                 <Table.HeaderCell> </Table.HeaderCell>
                 <Table.HeaderCell>Studienrichtung</Table.HeaderCell>
                 <Table.HeaderCell>Aufgabenbereiche u.A.</Table.HeaderCell>
-                <Table.HeaderCell className="mobile hidden">
-                  Am Institut bis
-                </Table.HeaderCell>
+                <Table.HeaderCell>Am Institut bis</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
 

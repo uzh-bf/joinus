@@ -34,7 +34,7 @@
     "semantic-ui-react": "2.0.1"
   },
   "devDependencies": {
-    "@babel/core": "7.12.3",
+    "@babel/core": "7.12.9",
     "@storybook/addon-actions": "6.0.28",
     "@storybook/addon-essentials": "6.0.28",
     "@storybook/addon-links": "6.0.28",

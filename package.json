@@ -43,7 +43,7 @@
     "@types/react": "16.9.55",
     "babel-loader": "8.2.2",
     "babel-preset-react-app": "9.1.2",
-    "cross-env": "7.0.2",
+    "cross-env": "7.0.3",
     "prettier": "2.2.1",
     "react-is": "16.13.1",
     "rimraf": "3.0.2",

@@ -27,7 +27,7 @@
   "dependencies": {
     "animated-scroll-to": "2.0.12",
     "fomantic-ui": "2.8.7",
-    "next": "9.5.5",
+    "next": "10.0.6",
     "react": "16.14.0",
     "react-burger-menu": "2.9.0",
     "react-dom": "16.14.0",

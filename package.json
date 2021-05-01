@@ -37,7 +37,7 @@
     "@babel/core": "7.13.8",
     "@storybook/addon-actions": "6.1.20",
     "@storybook/addon-essentials": "6.1.21",
-    "@storybook/addon-links": "6.1.20",
+    "@storybook/addon-links": "6.2.9",
     "@storybook/preset-typescript": "3.0.0",
     "@storybook/react": "6.1.20",
     "@types/react": "16.9.55",

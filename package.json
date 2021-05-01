@@ -25,7 +25,7 @@
     "deploy": "npm run clean && npm run build:semantic && npm run build && npm run export && touch out/.nojekyll && gh-pages -d out -t true"
   },
   "dependencies": {
-    "animated-scroll-to": "2.0.12",
+    "animated-scroll-to": "2.2.0",
     "fomantic-ui": "2.8.7",
     "next": "9.5.5",
     "react": "16.14.0",

@@ -27,7 +27,7 @@ function SubscribeForm() {
   })
 
   return (
-    <div id="c8">
+    <div id="c8" style={{ minHeight: '350px' }}>
       Fill in the{' '}
       <a href="https://www.bf-tools.uzh.ch/applications/easyforms/index.php?r=app%2Fform&id=18">
         online form

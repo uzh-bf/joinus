@@ -27,7 +27,7 @@ function ApplicationForm() {
   })
 
   return (
-    <div id="c7">
+    <div id="c7" style={{ minHeight: '1500px' }}>
       Fill in the{' '}
       <a href="https://www.bf-tools.uzh.ch/applications/easyforms/index.php?r=app%2Fform&id=17">
         online form

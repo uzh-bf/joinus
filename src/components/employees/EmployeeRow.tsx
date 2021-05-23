@@ -25,7 +25,7 @@ function EmployeeRow({
     <Table.Row>
       <Table.Cell>
         <Header as="h4" image>
-          <Image src={picture} rounded size="large" className={styles.image} />
+          <Image src={picture} rounded size="small" className={styles.image} />
           <Header.Content>
             {name}
             <Header.Subheader>{team}</Header.Subheader>

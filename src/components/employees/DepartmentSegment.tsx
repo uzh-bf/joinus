@@ -60,7 +60,7 @@ function DepartmentSegment({ backgroundColor }: Props) {
           <Header as="h3">Unser Team</Header>
         </Grid.Row>,
         <Grid.Row centered>
-          <Table basic="very" collapsing>
+          <Table basic="very" size="small" collapsing>
             <Table.Header>
               <Table.Row>
                 <Table.HeaderCell />
@@ -83,7 +83,7 @@ function DepartmentSegment({ backgroundColor }: Props) {
           <Header as="h3">Unsere Alumni (seit 2020)</Header>
         </Grid.Row>,
         <Grid.Row centered>
-          <Table basic="very" collapsing>
+          <Table basic="very" size="small" collapsing>
             <Table.Header>
               <Table.Row>
                 <Table.HeaderCell />

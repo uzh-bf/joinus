@@ -48,7 +48,12 @@ function PositionSegment({ backgroundColor }: Props) {
         </Grid.Column>
 
         <Grid.Column width={5}>
-          <Image bordered rounded size="large" src="images/olat.jpg" />
+          <Image
+            bordered
+            rounded
+            size="large"
+            src="images/projects/thumb_olat.jpg"
+          />
         </Grid.Column>
       </Grid>
 
@@ -99,7 +104,12 @@ function PositionSegment({ backgroundColor }: Props) {
         className={styles.margined}
       >
         <Grid.Column width={5}>
-          <Image bordered size="large" src="images/olat.jpg" />
+          <Image
+            bordered
+            rounded
+            size="medium"
+            src="images/einzelarbeit_icon.png"
+          />
         </Grid.Column>
 
         <Grid.Column width={8}>

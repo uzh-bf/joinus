@@ -35,13 +35,23 @@ function CitationSegment({ backgroundColor }: Props) {
         </Grid.Column>
 
         <Grid.Column width={5}>
-          <Image bordered rounded size="large" src="images/manuel.jpg" />
+          <Image
+            bordered
+            rounded
+            size="large"
+            src="images/people/medium_manuel.jpg"
+          />
         </Grid.Column>
       </Grid>
 
       <Grid container stackable verticalAlign="middle" centered>
         <Grid.Column width={5}>
-          <Image bordered rounded size="large" src="images/pascal.jpg" />
+          <Image
+            bordered
+            rounded
+            size="large"
+            src="images/people/medium_pascal.jpg"
+          />
         </Grid.Column>
 
         <Grid.Column width={8}>

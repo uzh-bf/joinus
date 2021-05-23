@@ -45,7 +45,7 @@ function DepartmentSegment({ backgroundColor }: Props) {
           <Image
             centered
             className={styles.deptImage}
-            src="images/institut.jpg"
+            src="images/people/medium_institut.jpg"
           />
         </Grid.Row>,
         <Grid.Row centered>

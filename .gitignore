@@ -1,7 +1,6 @@
-node_modules
-old_src/
+node_modules/
 .next/
-semantic/dist/
+src/semantic/dist/
 out/
 
 .vercel

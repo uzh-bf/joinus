@@ -18,7 +18,6 @@
     "export": "cross-env NODE_ENV=production next export",
     "build:semantic": "cd semantic && gulp build-css build-assets",
     "start": "next start",
-    "deploy": "npm-run-all build:semantic build",
     "check": "npm-run-all --parallel check:ts format:ci lint",
     "check:ts": "tsc",
     "check:fix": "npm-run-all check:ts format lint:fix",

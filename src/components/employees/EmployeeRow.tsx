@@ -8,7 +8,7 @@ interface Props {
   team: string
   study: string
   tasklist: string[]
-  time: string
+  time?: string
   withTime?: boolean
 }
 
@@ -46,6 +46,7 @@ function EmployeeRow({
 }
 
 EmployeeRow.defaultProps = {
+  time: undefined,
   withTime: true,
 }
 

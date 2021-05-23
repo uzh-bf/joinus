@@ -1,6 +1,5 @@
 import React from 'react'
-import { Image, Table, Header, List } from 'semantic-ui-react'
-
+import { Header, Image, List, Table } from 'semantic-ui-react'
 import styles from './EmployeeRow.module.scss'
 
 interface Props {
@@ -10,9 +9,18 @@ interface Props {
   study: string
   tasklist: string[]
   time: string
+  withTime?: boolean
 }
 
-function EmployeeRow({ name, picture, team, study, tasklist, time }: Props) {
+function EmployeeRow({
+  name,
+  picture,
+  team,
+  study,
+  tasklist,
+  time,
+  withTime,
+}: Props) {
   return (
     <Table.Row>
       <Table.Cell>
@@ -32,9 +40,13 @@ function EmployeeRow({ name, picture, team, study, tasklist, time }: Props) {
           ))}
         </List>
       </Table.Cell>
-      <Table.Cell className="mobile hidden">{time}</Table.Cell>
+      {withTime && <Table.Cell className="mobile hidden">{time}</Table.Cell>}
     </Table.Row>
   )
+}
+
+EmployeeRow.defaultProps = {
+  withTime: true,
 }
 
 export default EmployeeRow

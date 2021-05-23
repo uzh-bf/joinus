@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
-import { Grid, Header, Image, Segment, Table, Menu } from 'semantic-ui-react'
-
-import { employees, alumni } from '../../data'
-import EmployeeRow from './EmployeeRow'
-
-import styles from './DepartmentSegment.module.scss'
+import { Grid, Header, Image, Menu, Table } from 'semantic-ui-react'
+import { alumni, employees } from '../../data'
 import SegmentContainer from '../SegmentContainer'
+import styles from './DepartmentSegment.module.scss'
+import EmployeeRow from './EmployeeRow'
 
 export interface Props {
   backgroundColor: string
@@ -65,7 +63,7 @@ function DepartmentSegment({ backgroundColor }: Props) {
           <Table basic="very" collapsing>
             <Table.Header>
               <Table.Row>
-                <Table.HeaderCell> </Table.HeaderCell>
+                <Table.HeaderCell />
                 <Table.HeaderCell>Studienrichtung</Table.HeaderCell>
                 <Table.HeaderCell>Aufgabenbereiche u.A.</Table.HeaderCell>
                 <Table.HeaderCell>Am Institut seit</Table.HeaderCell>
@@ -88,16 +86,15 @@ function DepartmentSegment({ backgroundColor }: Props) {
           <Table basic="very" collapsing>
             <Table.Header>
               <Table.Row>
-                <Table.HeaderCell> </Table.HeaderCell>
+                <Table.HeaderCell />
                 <Table.HeaderCell>Studienrichtung</Table.HeaderCell>
                 <Table.HeaderCell>Aufgabenbereiche u.A.</Table.HeaderCell>
-                <Table.HeaderCell>Am Institut bis</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
 
             <Table.Body>
               {alumni.map((alumnus) => (
-                <EmployeeRow {...alumnus} />
+                <EmployeeRow withTime={false} {...alumnus} />
               ))}
             </Table.Body>
           </Table>

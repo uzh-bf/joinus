@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 
-function ApplicationForm() {
+function SubscribeForm() {
   useEffect(() => {
     const s: any = document.createElement('script')
     const options = {
-      id: 17,
+      id: 18,
       theme: 0,
-      container: 'c7',
+      container: 'c8',
       height: '479px',
       form:
         '//www.bf-tools.uzh.ch/applications/easyforms/index.php?r=app%2Fembed',
@@ -27,9 +27,9 @@ function ApplicationForm() {
   })
 
   return (
-    <div id="c7">
+    <div id="c8">
       Fill in the{' '}
-      <a href="https://www.bf-tools.uzh.ch/applications/easyforms/index.php?r=app%2Fform&id=17">
+      <a href="https://www.bf-tools.uzh.ch/applications/easyforms/index.php?r=app%2Fform&id=18">
         online form
       </a>
       .
@@ -37,4 +37,4 @@ function ApplicationForm() {
   )
 }
 
-export default ApplicationForm
+export default SubscribeForm

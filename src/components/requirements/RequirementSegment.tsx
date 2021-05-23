@@ -1,10 +1,8 @@
-import { Header, Segment, Grid } from 'semantic-ui-react'
 import React from 'react'
-
-import RequirementColumn from './RequirementColumn'
-import styles from './RequirementSegment.module.scss'
+import { Grid } from 'semantic-ui-react'
 import { requirements } from '../../data'
 import SegmentContainer from '../SegmentContainer'
+import RequirementColumn from './RequirementColumn'
 
 export interface Props {
   backgroundColor: string

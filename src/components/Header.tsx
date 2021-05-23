@@ -1,7 +1,5 @@
-import animateScrollTo from 'animated-scroll-to'
 import React from 'react'
 import { Container, Header as SemanticHeader } from 'semantic-ui-react'
-
 import styles from './Header.module.scss'
 import ScrollDown from './ScrollDown'
 

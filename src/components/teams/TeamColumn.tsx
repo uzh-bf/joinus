@@ -1,6 +1,5 @@
 import React from 'react'
-import { Header, Image, Grid, Container } from 'semantic-ui-react'
-
+import { Container, Grid, Header, Image } from 'semantic-ui-react'
 import styles from './TeamColumn.module.scss'
 
 interface Props {

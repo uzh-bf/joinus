@@ -1,5 +1,5 @@
 import React from 'react'
-import { Segment, Grid, Image, Header } from 'semantic-ui-react'
+import { Grid, Header, Image, Segment } from 'semantic-ui-react'
 
 function ProjectDetails({
   img,

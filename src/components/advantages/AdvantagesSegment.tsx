@@ -1,9 +1,7 @@
 import React from 'react'
 import { Grid } from 'semantic-ui-react'
-
 import SegmentContainer from '../SegmentContainer'
 import AdvantageColumn from './AdvantageColumn'
-import styles from './AdvantagesSegment.module.scss'
 
 export interface Props {
   backgroundColor: string

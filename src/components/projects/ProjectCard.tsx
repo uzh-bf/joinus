@@ -27,7 +27,13 @@ function ProjectCard({ id, title, subtitle, tags, handleShowProject }: Props) {
       </Card.Content>
 
       <Card.Content extra className={styles.detailStyle}>
-        <Button fluid attached onClick={() => handleShowProject(id)} className={styles.buttonstyle} color={"blue"}>
+        <Button
+          fluid
+          attached
+          onClick={() => handleShowProject(id)}
+          className={styles.buttonstyle}
+          color={'blue'}
+        >
           Details
         </Button>
       </Card.Content>

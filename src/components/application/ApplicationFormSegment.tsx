@@ -1,9 +1,7 @@
 import React from 'react'
-import { Header, Grid, Icon } from 'semantic-ui-react'
-
+import { Grid, Header, Icon } from 'semantic-ui-react'
 import SegmentContainer from '../SegmentContainer'
 import ApplicationForm from './ApplicationForm'
-import styles from './ApplicationFormSegment.module.scss'
 
 interface Props {
   backgroundColor: string

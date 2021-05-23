@@ -1,14 +1,13 @@
-import React from 'react'
-import { Icon } from 'semantic-ui-react'
-import { slide as Menu } from 'react-burger-menu'
 import animateScrollTo from 'animated-scroll-to'
-
+import React from 'react'
+import { slide as Menu } from 'react-burger-menu'
+import { Icon } from 'semantic-ui-react'
 import styles from './BurgerMenu.module.scss'
 
 function BurgerMenu() {
   return (
     <div>
-      <div className={styles.burgerMenuUnderlay}></div>
+      <div className={styles.burgerMenuUnderlay} />
 
       <Menu isOpen={false}>
         <a
@@ -69,17 +68,17 @@ function BurgerMenu() {
             animateScrollTo(document.querySelector('#requirements'))
           }
         >
-          <Icon name="user" /> Offene Positionen
-        </a>
-        <br />
-        <a
-          href="#"
-          onClick={() =>
-            animateScrollTo(document.querySelector('#requirements'))
-          }
-        >
           <Icon name="clipboard list" /> Was du mitbringen solltest
         </a>
+        <br />
+
+        <a
+          href="#"
+          onClick={() => animateScrollTo(document.querySelector('#positions'))}
+        >
+          <Icon name="user" /> Offene Positionen
+        </a>
+
         <br />
         <a
           href="#"

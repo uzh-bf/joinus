@@ -1,8 +1,6 @@
 import React from 'react'
 import { Grid, Header, List } from 'semantic-ui-react'
 
-import styles from './RequirementColumn.module.scss'
-
 interface Props {
   header: string
   must: string[]

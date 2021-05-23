@@ -6,7 +6,6 @@ import {
   SemanticCOLORS,
   SemanticICONS,
 } from 'semantic-ui-react'
-
 import styles from './AdvantageColumn.module.scss'
 
 interface Props {

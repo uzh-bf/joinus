@@ -1,6 +1,5 @@
 import React from 'react'
 import { Header, Image } from 'semantic-ui-react'
-
 import styles from './Framework.module.scss'
 
 interface Props {

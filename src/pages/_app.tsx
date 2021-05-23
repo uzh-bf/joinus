@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react'
-import { useRouter } from 'next/router'
 import Head from 'next/head'
-import * as gtag from '../lib/gtag'
-
+import { useRouter } from 'next/router'
+import React, { useEffect } from 'react'
 import '../../semantic/dist/semantic.css'
 import '../burger-menu.scss'
 import '../layout.scss'
+import * as gtag from '../lib/gtag'
 
 function App({ Component, pageProps }) {
   const router = useRouter()

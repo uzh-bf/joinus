@@ -1,7 +1,6 @@
 import animateScrollTo from 'animated-scroll-to'
 import React from 'react'
 import { Icon } from 'semantic-ui-react'
-
 import styles from './ScrollDown.module.scss'
 
 interface Props {

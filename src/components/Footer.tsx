@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container, Header, Icon, Segment } from 'semantic-ui-react'
-
 import styles from './Footer.module.scss'
 
 function Footer() {

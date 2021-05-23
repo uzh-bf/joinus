@@ -1,7 +1,5 @@
-import { Grid, Header, Transition, Image, Card } from 'semantic-ui-react'
 import React, { useState } from 'react'
-
-import styles from './ProjectSegment.module.scss'
+import { Card, Grid, Transition } from 'semantic-ui-react'
 import { projects } from '../../data'
 import SegmentContainer from '../SegmentContainer'
 import ProjectCard from './ProjectCard'

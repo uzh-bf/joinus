@@ -1,9 +1,7 @@
 import React from 'react'
-import { Container, Header, Image, Segment, Grid } from 'semantic-ui-react'
+import { Grid, Image } from 'semantic-ui-react'
 import SegmentContainer from '../SegmentContainer'
 import Citation from './Citation'
-
-import styles from './CitationSegment.module.scss'
 
 export interface Props {
   backgroundColor: string

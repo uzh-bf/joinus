@@ -1,6 +1,4 @@
 import React from 'react'
-import { Header, Segment, Grid } from 'semantic-ui-react'
-
 import { technologies } from '../../data'
 import SegmentContainer from '../SegmentContainer'
 import Framework from './Framework'

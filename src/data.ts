@@ -1,193 +1,228 @@
 export const employees = [
   {
     name: 'Roli',
-    picture: 'images/rolli.jpg',
+    picture: 'images/people/thumb_roli.jpg',
     team: 'Teaching Center',
-    study: 'Master Data Science (abgeschlossen)',
+    study: 'Master Data Science',
     tasklist: [
       'Leitung IT-Team TC',
       'Webapps wie Klicker UZH, Jobeye, und eLearning CMS',
-      'Umsetzung von Projekten im Game-Based Learning',
+      'Umsetzung von Projekten im Bereich Game-Based Learning',
       'Devops und Cloud Infrastruktur des IBF',
     ],
-    time: 'Januar 2015',
+    time: '01.2015',
   },
   {
     name: 'Manuel',
-    picture: 'images/manuel.jpg',
+    picture: 'images/people/thumb_manuel.jpg',
     team: 'Weiterbildung',
-    study: 'Master Information Systems (abgeschlossen)',
+    study: 'Master Information Systems',
     tasklist: [
       'Leitung IT-Team WB',
       'Dynamics CRM Customizing, Integrationen und Automatisierungen',
       'Webseitenbetreuung und -entwicklung',
     ],
-    time: 'Juni 2017',
+    time: '06.2017',
   },
   {
     name: 'Christian',
     team: 'Teaching Center',
-    picture: 'images/christian.jpg',
-    study: 'Bachelor Banking & Finance (aktuell)',
+    picture: 'images/people/thumb_christian.jpg',
+    study: 'Bachelor Banking & Finance',
     tasklist: [
       'Erstellung und Betreuung der OLAT Kurse',
       'Erarbeiten Online-Prüfungen',
     ],
-    time: 'April 2018',
-  },
-  {
-    name: 'Michael',
-    team: 'Weiterbildung',
-    picture: null,
-    study: 'Bachelor Informatik (aktuell)',
-    tasklist: [
-      'Betreuung Website',
-      'Betreuung und Erstellung Webapps',
-      'Erarbeitung Semesterplanungstool',
-    ],
-    time: 'Januar 2019',
+    time: '04.2018',
   },
   {
     name: 'Luca',
     team: 'Teaching Center',
-    picture: 'images/luca.jpg',
-    study: 'Bachelor Informatik & Ökonomik (aktuell)',
+    picture: 'images/people/thumb_luca.jpg',
+    study: 'Bachelor Informatik & Ökonomik',
     tasklist: [
-      'Erstellung und Betreuung der Kursinhalte',
-      'Erarbeiten Online-Prüfungen',
+      'Erstellung von eLearning Kursinhalten',
+      'Erarbeiten von Tools für Online-Prüfungen',
     ],
-    time: 'April 2019',
+    time: '04.2019',
   },
-  {
-    name: 'Senthuasa',
-    team: 'Weiterbildung',
-    picture: 'images/senthuasa.jpg',
-    study: 'Master Wirtschaftsinformatik (aktuell)',
-    tasklist: ['Betreuung Website', 'Betreuung Webapps'],
-    time: 'April 2019',
-  },
+
   {
     name: 'Dimitri',
     team: 'Teaching Center',
-    picture: 'images/Dimitri.jpeg',
-    study: 'Master Information Systems (aktuell)',
+    picture: 'images/people/thumb_dimitri.jpg',
+    study: 'Master Information Systems',
     tasklist: [
       'Erstellung und Betreuung von Website-Projekten',
       'Erarbeiten eines CMS für Kursinhalte',
       'Unterstützung div. IT Projekte des TC',
     ],
-    time: 'August 2019',
+    time: '08.2019',
   },
   {
     name: 'Rémy',
-    team: 'Webteam/Kommunikation',
-    picture: '',
-    study: '',
-    tasklist: [''],
-    time: 'Februar 2020',
+    team: 'Kommunikation',
+    picture: 'images/people/thumb_remy.jpg',
+    study: 'Bachelor Informatik',
+    tasklist: ['Mitarbeit im Team Kommunikation'],
+    time: '02.2020',
   },
   {
     name: 'Claudine',
-    team: 'Webteam/Kommunikation',
-    picture: '',
-    study: '',
-    tasklist: [''],
-    time: 'Oktober 2020',
+    team: 'Kommunikation',
+    picture: 'images/people/thumb_claudine.jpg',
+    study: 'Bachelor Geschichte & Soziologie',
+    tasklist: ['Mitarbeit im Team Kommunikation'],
+    time: '10.2020',
+  },
+  {
+    name: 'Celine',
+    team: 'Teaching Center',
+    picture: 'images/people/thumb_placeholder.jpg',
+    study: 'Bachelor Interdisz. Naturwissenschaften',
+    tasklist: [
+      'Erstellung von eLearning Kursinhalten',
+      'Technischer Support im Semesterbetrieb',
+    ],
+    time: '01.2021',
+  },
+  {
+    name: 'Matthias',
+    team: 'Weiterbildung',
+    picture: 'images/people/thumb_placeholder.jpg',
+    study: 'Bachelor Informatik',
+    tasklist: ['Mitarbeit im IT-Team der Finance Weiterbildung'],
+    time: '01.2021',
+  },
+  {
+    name: 'Max',
+    team: 'Teaching Center',
+    picture: 'images/people/thumb_placeholder.jpg',
+    study: 'Master Data Science',
+    tasklist: [
+      'Erstellung von eLearning Kursinhalten',
+      'Erarbeiten von Tools für Online-Prüfungen',
+    ],
+    time: '01.2021',
+  },
+  {
+    name: 'Philip',
+    team: 'Weiterbildung',
+    picture: 'images/people/thumb_philip.png',
+    study: 'Bachelor Software Systems',
+    tasklist: ['Mitarbeit im IT-Team der Finance Weiterbildung'],
+    time: '01.2021',
   },
 ]
 
 export const alumni = [
   {
+    name: 'Senthuasa',
+    team: 'Weiterbildung',
+    picture: 'images/people/senthuasa.jpg',
+    study: 'Master Wirtschaftsinformatik',
+    tasklist: ['Betreuung Website', 'Betreuung Webapps'],
+  },
+  {
+    name: 'Michael',
+    team: 'Weiterbildung',
+    picture: 'images/people/thumb_placeholder.jpg',
+    study: 'Bachelor Informatik',
+    tasklist: [
+      'Betreuung Website',
+      'Betreuung und Erstellung Webapps',
+      'Erarbeitung Semesterplanungstool',
+    ],
+  },
+  {
     name: 'Florian',
-    picture: '',
+    picture: 'images/people/thumb_placeholder.jpg',
     team: 'Webteam',
-    study: 'Master Data Science (abgeschlossen)',
+    study: 'Master Data Science',
     tasklist: [
       'Weiterentwicklung MSFinance Application',
       'Entwicklung und Wartung diverser Webapplikationen',
     ],
-    time: 'August 2020',
   },
   {
     name: 'Pascal',
-    picture: 'images/pascal.jpg',
+    picture: 'images/people/pascal.jpg',
     team: 'Webteam',
-    study: 'Master Information Systems (abgeschlossen)',
+    study: 'Master Information Systems',
     tasklist: [
       'Migration bf.uzh.ch Webseite und Datenbanken',
       'Entwicklung des Management Information System 2.0',
       'Entwicklung und Wartung diverser Webapplikationen',
     ],
-    time: 'Februar 2020',
   },
 ]
 
 export const technologies = [
   {
-    image: 'images/slideshow/react.jpg',
+    image: 'images/slideshow/thumb_react.jpg',
     title: 'ReactJS für performante Webapplikationen',
   },
   {
-    image: 'images/slideshow/node.png',
+    image: 'images/slideshow/thumb_node.png',
     title: 'NodeJS als Backend für WebApps',
   },
   {
-    image: 'images/slideshow/python.png',
+    image: 'images/slideshow/thumb_python.png',
     title: 'Python für statistische Modellierung und Auswertung',
   },
   {
-    image: 'images/slideshow/semanticui.png',
+    image: 'images/slideshow/thumb_semanticui.png',
     title: 'Semantic UI für Layouting',
   },
   {
-    image: 'images/slideshow/tailwind.png',
+    image: 'images/slideshow/thumb_tailwind.png',
     title: 'Tailwind CSS für Layouting',
   },
   {
-    image: 'images/slideshow/directus.png',
+    image: 'images/slideshow/thumb_directus.png',
     title: 'Directus Headless CMS für Inhalte',
   },
   {
-    image: 'images/slideshow/strapi.png',
+    image: 'images/slideshow/thumb_strapi.png',
     title: 'Strapi Headless CMS für Inhalte',
   },
   {
-    image: 'images/slideshow/graphql.png',
+    image: 'images/slideshow/thumb_graphql.png',
     title: 'GraphQL für verständliche APIs',
   },
   {
-    image: 'images/slideshow/docker.png',
+    image: 'images/slideshow/thumb_docker.png',
     title: 'Docker für Containervirtualisierung',
   },
   {
-    image: 'images/slideshow/kubernetes.png',
+    image: 'images/slideshow/thumb_kubernetes.png',
     title: 'Kubernetes zur Orchestrierung komplexer Applikationen',
   },
   {
-    image: 'images/slideshow/slim.png',
+    image: 'images/slideshow/thumb_slim.png',
     title: 'Slim Framework für simple PHP APIs',
   },
   {
-    image: 'images/slideshow/gitlab.png',
+    image: 'images/slideshow/thumb_gitlab.png',
     title: 'GitLab für Versionsmanagement und CI',
   },
   {
-    image: 'images/slideshow/openolat.png',
+    image: 'images/slideshow/thumb_openolat.png',
     title: 'OpenOLAT für eLearning Kurse',
   },
   {
-    image: 'images/slideshow/sentry.png',
+    image: 'images/slideshow/thumb_sentry.png',
     title: 'Sentry zur Fehlererkennung von WebApps',
   },
   {
-    image: 'images/slideshow/typescript.png',
+    image: 'images/slideshow/thumb_typescript.png',
     title: 'TypeScript zur Verbesserung der Type-Safety',
   },
 ]
 
 export const projects = {
   klicker: {
-    img: 'klicker.jpg',
+    img: 'projects/klicker.jpg',
     title: 'Klicker',
     subtitle:
       'Open-Source Abstimmungs-Tool für Interaktivität in den Vorlesungen',
@@ -202,7 +237,7 @@ export const projects = {
     tags: ['react', 'node.js', 'graphql', 'docker'],
   },
   dynamics: {
-    img: 'dynamics.jpg',
+    img: 'projects/dynamics.jpg',
     title: 'Dynamics CRM',
     subtitle: 'Customizing und Automatisierungen',
     desc: `Das Weiterbildungsteam setzt für ihre Kundenverwaltung Microsoft Dynamics CRM ein. Der gesamte Teilnehmerworkflow ist darin abgebildet:
@@ -215,7 +250,7 @@ export const projects = {
     tags: ['automation', 'CRM', 'azure'],
   },
   redesign: {
-    img: 'redesign.jpg',
+    img: 'projects/redesign.jpg',
     title: 'Redesign bf.uzh.ch',
     subtitle:
       'Technische Aktualisierung der Institutswebseite mit Wechsel des CMS',
@@ -234,7 +269,7 @@ export const projects = {
     tags: ['react', 'php'],
   },
   tools: {
-    img: 'tools.jpg',
+    img: 'projects/tools.jpg',
     title: 'Intranet',
     subtitle: 'Intranet mit Management-Tools',
     desc: `Unser Institut besteht aus über 50 Teams an vier verschiedenen Standorten welche im aktuellen Umfeld immer mehr auf
@@ -254,7 +289,7 @@ export const projects = {
     tags: ['react', 'php', 'data modelling'],
   },
   lehre: {
-    img: 'olat.jpg',
+    img: 'projects/olat.jpg',
     title: 'eLearning',
     subtitle:
       'Digitale Lerninhalte in Form von Kursen, eSkripten, und eAssessment',
@@ -271,8 +306,8 @@ export const projects = {
     cite2Name: 'Roli',
     tags: ['react', 'strapi', 'lms', 'python'],
   },
-  jobeye: {
-    img: 'pfm_game.png',
+  gbl: {
+    img: 'projects/pfm_game.png',
     title: 'Game-Based Learning',
     subtitle: 'Unterstützung der Lehre durch Simulationen und Serious Games',
     desc: `Am IBF bieten wir mehrere Veranstaltungen und Seminare an, die durch Simulationen unterstützt werden.
@@ -311,7 +346,7 @@ export const requirements = [
 export const teams = [
   {
     teamName: 'Kommunikation',
-    imageSrc: 'images/lisa.jpg',
+    imageSrc: 'images/people/thumb_lisa.jpg',
     leaderName: 'Lisa Liechti',
     leaderPosition: 'Leitung Kommunikation IBF',
     teamDescription: `Bei mir stehen viele Data Science Projekte an, bei welchen ich eure
@@ -320,7 +355,7 @@ export const teams = [
   },
   {
     teamName: 'Teaching Center',
-    imageSrc: 'images/johanna.jpg',
+    imageSrc: 'images/people/thumb_johanna.jpg',
     leaderName: 'Johanna Braun',
     leaderPosition: 'Leitung Teaching Center IBF',
     teamDescription: `Wir wollen die Lehrveranstaltungen unseres Instituts innovativ und interaktiv
@@ -329,7 +364,7 @@ export const teams = [
   },
   {
     teamName: 'Weiterbildung',
-    imageSrc: 'images/beni.jpg',
+    imageSrc: 'images/people/thumb_beni.jpg',
     leaderName: 'Benjamin Wilding',
     leaderPosition: 'Geschäftsführer IBF, Leitung Lehre & Weiterbildung',
     teamDescription: `Als Weiterbildungsanbieter brauchen wir kreative Informatiker*innen, die die User

@@ -1,10 +1,8 @@
 import React from 'react'
-import { Header, Segment, Grid } from 'semantic-ui-react'
-
+import { Grid, Header } from 'semantic-ui-react'
 import { teams } from '../../data'
 import SegmentContainer from '../SegmentContainer'
 import TeamColumn from './TeamColumn'
-import styles from './TeamSegment.module.scss'
 
 export interface Props {
   backgroundColor: string
@@ -24,8 +22,7 @@ function TeamSegment({ backgroundColor }: Props) {
         ))}
 
         <Header as="h2" textAlign="center" size="large">
-          Wir suchen momentan Verstärkung für die Teams Teaching Center (Junior
-          &amp; Senior) und Weiterbildung (Senior)!
+          Wir suchen momentan Verstärkung für das Team Teaching Center (Junior)!
         </Header>
       </Grid.Row>
     </SegmentContainer>

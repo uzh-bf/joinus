@@ -1,18 +1,17 @@
-import React from 'react'
 import Head from 'next/head'
-
-import Header from '../components/Header'
+import React from 'react'
 import AdvantagesSegment from '../components/advantages/AdvantagesSegment'
 import ApplicationFormSegment from '../components/application/ApplicationFormSegment'
+import BurgerMenu from '../components/BurgerMenu'
 import CitationSegment from '../components/citations/CitationSegment'
 import DepartmentSegment from '../components/employees/DepartmentSegment'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
+import PositionSegment from '../components/positions/PositionSegment'
 import ProjectSegment from '../components/projects/ProjectSegment'
 import RequirementSegment from '../components/requirements/RequirementSegment'
 import TeamSegment from '../components/teams/TeamSegment'
 import FrameworkSegment from '../components/technologies/FrameworkSegment'
-import BurgerMenu from '../components/BurgerMenu'
-import Footer from '../components/Footer'
-import PositionSegment from '../components/positions/PositionSegment'
 
 function Home() {
   return (
@@ -25,18 +24,18 @@ function Home() {
 
       <Header />
 
-      <CitationSegment backgroundColor={'white'} />
-      <AdvantagesSegment backgroundColor={'white'} />
+      <CitationSegment backgroundColor="white" />
+      <AdvantagesSegment backgroundColor="white" />
 
-      <ProjectSegment backgroundColor={'white'} />
-      <FrameworkSegment backgroundColor={'white'} />
+      <ProjectSegment backgroundColor="white" />
+      <FrameworkSegment backgroundColor="white" />
 
-      <TeamSegment backgroundColor={'white'} />
-      <DepartmentSegment backgroundColor={'white'} />
+      <TeamSegment backgroundColor="white" />
+      <DepartmentSegment backgroundColor="white" />
 
-      <PositionSegment backgroundColor={'white'} />
-      <RequirementSegment backgroundColor={'white'} />
-      <ApplicationFormSegment backgroundColor={'white'} />
+      <RequirementSegment backgroundColor="white" />
+      <PositionSegment backgroundColor="white" />
+      <ApplicationFormSegment backgroundColor="white" />
 
       <Footer />
     </>

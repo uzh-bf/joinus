@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Header, Icon } from 'semantic-ui-react'
+import { Grid, Header, Icon, List } from 'semantic-ui-react'
 import SegmentContainer from '../SegmentContainer'
 import ApplicationForm from './ApplicationForm'
 
@@ -22,10 +22,38 @@ function ApplicationFormSegment({ backgroundColor }: Props) {
 
       <Grid.Row centered>
         <Header as="h2" textAlign="center">
-          Hast du Fragen? Gerne beantworten wir diese per E-Mail. <br />
-          <a href="https://www.bf.uzh.ch/de/persons/keller-manuel">
-            Kontaktdaten <Icon name="external alternate" />
-          </a>
+          <p>Hast du Fragen? Gerne beantworten wir diese per E-Mail.</p>
+          <List relaxed>
+            <List.Item>
+              <a
+                target="_blank"
+                href="https://www.bf.uzh.ch/de/persons/keller-manuel"
+                rel="noreferrer"
+              >
+                <Icon name="external alternate" />
+                Finance Weiterbildung
+              </a>
+            </List.Item>
+            <List.Item>
+              <a
+                target="_blank"
+                href="https://www.bf.uzh.ch/de/persons/braendle-claudine"
+                rel="noreferrer"
+              >
+                <Icon name="external alternate" />
+                IBF Kommunikation
+              </a>
+            </List.Item>
+            <List.Item>
+              <a
+                target="_blank"
+                href="https://www.bf.uzh.ch/de/persons/schlaefli-roland"
+                rel="noreferrer"
+              >
+                <Icon name="external alternate" /> IBF Teaching Center
+              </a>
+            </List.Item>
+          </List>
         </Header>
       </Grid.Row>
     </SegmentContainer>

@@ -14,7 +14,7 @@ function PositionSegment({ backgroundColor }: Props) {
     <SegmentContainer
       id="positions"
       title="Offene Positionen"
-      nextUp="#requirements"
+      nextUp="#application"
       backgroundColor={backgroundColor}
     >
       <Grid

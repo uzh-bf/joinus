@@ -13,7 +13,7 @@ function RequirementSegment({ backgroundColor }: Props) {
     <SegmentContainer
       id="requirements"
       title="Was du mitbringen solltest"
-      nextUp="#application"
+      nextUp="#positions"
       backgroundColor={backgroundColor}
     >
       <Grid.Row divided centered>

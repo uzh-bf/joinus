@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.2](https://github.com/uzh-bf/joinus/compare/v2.1.1...v2.1.2) (2021-05-23)
+
+
+### Bug Fixes
+
+* move semantic into the src directory ([69d2364](https://github.com/uzh-bf/joinus/commit/69d23649224d88a493d2d4ad0292cc34926e1598))
+
 ### [2.1.1](https://github.com/uzh-bf/joinus/compare/v2.1.0...v2.1.1) (2021-05-23)
 
 ## 2.1.0 (2021-05-23)

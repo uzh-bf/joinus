@@ -18,7 +18,7 @@
     "export": "cross-env NODE_ENV=production next export",
     "build:semantic": "cd semantic && gulp build-css build-assets",
     "start": "next start",
-    "deploy": "npm run clean && npm run build:semantic && npm run build && npm run export && touch out/.nojekyll && gh-pages -d out -t true",
+    "deploy": "npm-run-all build:semantic build",
     "check": "npm-run-all --parallel check:ts format:ci lint",
     "check:ts": "tsc",
     "check:fix": "npm-run-all check:ts format lint:fix",

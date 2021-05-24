@@ -8,4 +8,5 @@ updates:
   open-pull-requests-limit: 99
   reviewers:
   - mkllr888
+  - rschlaefli
   versioning-strategy: increase

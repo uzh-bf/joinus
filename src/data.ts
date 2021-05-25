@@ -64,7 +64,12 @@ export const employees = [
     team: 'Kommunikation',
     picture: 'images/people/thumb_remy.jpg',
     study: 'Bachelor Informatik',
-    tasklist: ['Mitarbeit im Team Kommunikation'],
+    tasklist: [
+        'Mitarbeit im Team Kommunikation',
+        'Migration des Management Information System auf Drupal',
+        'Betreuung Website',
+        'Entwicklung und Wartung diverser Webapplikationen'
+    ],
     time: '02.2020',
   },
   {
@@ -72,7 +77,12 @@ export const employees = [
     team: 'Kommunikation',
     picture: 'images/people/thumb_claudine.jpg',
     study: 'Bachelor Geschichte & Soziologie',
-    tasklist: ['Mitarbeit im Team Kommunikation'],
+    tasklist: [
+        'Leitung Web-Team Institut',
+        'Unterstützung Digitale Strategie & Kommunikation',
+        'Migration des Management Information System auf Drupal',
+        'Entwicklung und Wartung diverser Webapplikationen'
+    ],
     time: '10.2020',
   },
   {

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.1](https://github.com/uzh-bf/joinus/compare/v2.2.0...v2.2.1) (2021-05-25)
+
+
+### Bug Fixes
+
+* update flyer with deadline ([d30e789](https://github.com/uzh-bf/joinus/commit/d30e7890e8f74513e963896fde99a180fd720061))
+
 ## [2.2.0](https://github.com/uzh-bf/joinus/compare/v2.1.2...v2.2.0) (2021-05-25)
 
 

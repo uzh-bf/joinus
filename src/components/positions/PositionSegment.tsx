@@ -13,7 +13,7 @@ function PositionSegment({ backgroundColor }: Props) {
   return (
     <SegmentContainer
       id="positions"
-      title="Offene Positionen"
+      title="Positionen am IBF"
       nextUp="#application"
       backgroundColor={backgroundColor}
     >
@@ -28,6 +28,7 @@ function PositionSegment({ backgroundColor }: Props) {
 
         <Grid.Column width={8} textAlign="right">
           <Position
+            isOpen="Aktuell und bis am 28. Juni 2021 läuft eine Ausschreibung für diese Position mit Fokus auf den Bereich eAssessment/Prüfungsauswertung mit Python."
             title="Junior IT"
             subtitle="IT-Fachkraft für technische Unterstützung und Umsetzung von neuen Inhalten"
           >
@@ -35,9 +36,9 @@ function PositionSegment({ backgroundColor }: Props) {
               Diese Position ist für Studierende, welche ca. im 3. Semester
               Informatik im Haupt- oder Nebenfach studieren und erste
               Programmiererfahrungen haben. Hier entwickelt man beispielsweise
-              unsere CMS und Webseiten weiter, erstellt neue eLearning-Kurse,
-              und unterstützt bei allgemeinen IT-Projekten sowie der Erfassung
-              von Inhalten.
+              unsere CMS, Webseiten, und eAssessment-Tools weiter, erstellt neue
+              eLearning-Kurse, und unterstützt bei allgemeinen IT-Projekten
+              sowie der Erfassung von Inhalten.
             </p>
             <p>
               Es besteht viel Potenzial zur persönlichen Weiterentwicklung (z.B.
@@ -57,7 +58,7 @@ function PositionSegment({ backgroundColor }: Props) {
         </Grid.Column>
       </Grid>
 
-      {/* <Grid
+      <Grid
         container
         stackable
         verticalAlign="middle"
@@ -65,7 +66,12 @@ function PositionSegment({ backgroundColor }: Props) {
         className={styles.margined}
       >
         <Grid.Column width={5}>
-          <Image bordered rounded size="large" src="images/klicker.jpg" />
+          <Image
+            bordered
+            rounded
+            size="large"
+            src="images/projects/klicker.jpg"
+          />
         </Grid.Column>
 
         <Grid.Column width={8}>
@@ -93,7 +99,7 @@ function PositionSegment({ backgroundColor }: Props) {
         </Grid.Column>
 
         <Grid.Column width={3} />
-      </Grid> */}
+      </Grid>
 
       <Grid
         container
@@ -103,6 +109,17 @@ function PositionSegment({ backgroundColor }: Props) {
         centered
         className={styles.margined}
       >
+        <Grid.Column width={3} />
+
+        <Grid.Column width={8}>
+          <Position
+            title="Aktuell keine Position für dich offen?"
+            subtitle="Melde dich bei uns und wir informieren dich, wenn wir etwas Passendes finden"
+          >
+            <SubscribeForm />
+          </Position>
+        </Grid.Column>
+
         <Grid.Column width={5}>
           <Image
             bordered
@@ -111,17 +128,6 @@ function PositionSegment({ backgroundColor }: Props) {
             src="images/einzelarbeit_icon.png"
           />
         </Grid.Column>
-
-        <Grid.Column width={8}>
-          <Position
-            title="Aktuell keine Position für dich?"
-            subtitle="Melde dich bei uns und wir informieren dich, wenn sich etwas ändert"
-          >
-            <SubscribeForm />
-          </Position>
-        </Grid.Column>
-
-        <Grid.Column width={3} />
       </Grid>
     </SegmentContainer>
   )

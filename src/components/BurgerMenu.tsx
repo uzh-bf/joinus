@@ -76,7 +76,7 @@ function BurgerMenu() {
           href="#"
           onClick={() => animateScrollTo(document.querySelector('#positions'))}
         >
-          <Icon name="user" /> Offene Positionen
+          <Icon name="user" /> Positionen am IBF
         </a>
 
         <br />

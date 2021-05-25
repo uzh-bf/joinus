@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/uzh-bf/joinus/compare/v2.1.2...v2.2.0) (2021-05-25)
+
+
+### Features
+
+* added text and image ([59052ed](https://github.com/uzh-bf/joinus/commit/59052ede7ee73d5e427f502d6f5c794b299363f5))
+* improve position overview ([dad6f34](https://github.com/uzh-bf/joinus/commit/dad6f3486a63209c7160487dee9fe421fc4b7f38))
+* use native dependabot [#58](https://github.com/uzh-bf/joinus/issues/58) ([3cd1346](https://github.com/uzh-bf/joinus/commit/3cd13467c422c23561d57580bf29e1d8bed26e24))
+
+
+### Bug Fixes
+
+* add rschlaefli to dependabot reviewers ([78bc4d3](https://github.com/uzh-bf/joinus/commit/78bc4d338e0bc3e8dba1273df4b6d52beb6a9c87))
+
+
+* add a deploy command ([8e17447](https://github.com/uzh-bf/joinus/commit/8e174479cfa292e9af0172281d6d49ed13f10de3))
+* move flyer ai/pdf to new directory ([e8ee979](https://github.com/uzh-bf/joinus/commit/e8ee9794c6068af4a041b6bf6f7d1a64584b592c))
+* reorganize flyer files ([1883ba3](https://github.com/uzh-bf/joinus/commit/1883ba368f94be9e03f6275d823db5a3492fc14d))
+* switch to src/semantic for semantic build command ([8595e58](https://github.com/uzh-bf/joinus/commit/8595e5853a589aea504f787558f48853eab54087))
+
 ### [2.1.2](https://github.com/uzh-bf/joinus/compare/v2.1.1...v2.1.2) (2021-05-23)
 
 

@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.2](https://github.com/uzh-bf/joinus/compare/v2.2.1...v2.2.2) (2021-05-27)
+
+
+### Bug Fixes
+
+* naming of positions for consistency, fix: update no position text ([a2b8230](https://github.com/uzh-bf/joinus/commit/a2b8230be2865302553ec1e6ab3e1759440d9e54))
+* update flyer with application deadline ([47b4b15](https://github.com/uzh-bf/joinus/commit/47b4b1591918525fede9b93ba7cdd8359f0b5951))
+
 ### [2.2.1](https://github.com/uzh-bf/joinus/compare/v2.2.0...v2.2.1) (2021-05-25)
 
 

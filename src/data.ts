@@ -101,7 +101,12 @@ export const employees = [
     team: 'Weiterbildung',
     picture: 'images/people/thumb_placeholder.jpg',
     study: 'Bachelor Informatik',
-    tasklist: ['Mitarbeit im IT-Team der Finance Weiterbildung'],
+    tasklist: [
+      'Mitarbeit im IT-Team der Finance Weiterbildung',
+      'Betreuung & Weiterentwicklung diverser Websites',
+      'Technischer Support CMS',
+      'Begleitung Datenmigration Dynamics CRM'
+    ],
     time: '01.2021',
   },
   {
@@ -119,8 +124,13 @@ export const employees = [
     name: 'Philip',
     team: 'Weiterbildung',
     picture: 'images/people/thumb_philip.png',
-    study: 'Bachelor Software Systems',
-    tasklist: ['Mitarbeit im IT-Team der Finance Weiterbildung'],
+    study: 'Master Software Systems',
+    tasklist: [
+      'Mitarbeit im IT-Team der Finance Weiterbildung',
+      'Betreuung & Weiterentwicklung Websites',
+      'Umsetzung diverser IT-Projekte der Weiterbildung',
+      'Begleitung Datenmigration Dynamics CRM'
+    ],
     time: '01.2021',
   },
 ]
@@ -131,7 +141,7 @@ export const alumni = [
     team: 'Weiterbildung',
     picture: 'images/people/senthuasa.jpg',
     study: 'Master Wirtschaftsinformatik',
-    tasklist: ['Betreuung Website', 'Betreuung Webapps'],
+    tasklist: ['Betreuung Website', 'Betreuung WebApps'],
   },
   {
     name: 'Michael',

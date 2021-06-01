@@ -53,7 +53,7 @@ function PositionSegment({ backgroundColor }: Props) {
             bordered
             rounded
             size="large"
-            src="images/projects/thumb_olat.jpg"
+            src="images/thumb_code_example.png"
           />
         </Grid.Column>
       </Grid>

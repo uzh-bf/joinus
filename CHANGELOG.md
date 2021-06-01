@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.1](https://github.com/uzh-bf/joinus/compare/v2.3.0...v2.3.1) (2021-06-01)
+
+
+### Bug Fixes
+
+* swap the image for the junior position ([281a074](https://github.com/uzh-bf/joinus/commit/281a0744c3dbdec6bda704facd8c2de5dcbeafde))
+
 ## [2.3.0](https://github.com/uzh-bf/joinus/compare/v2.2.2...v2.3.0) (2021-05-31)
 
 

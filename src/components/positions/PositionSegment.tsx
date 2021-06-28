@@ -28,7 +28,7 @@ function PositionSegment({ backgroundColor }: Props) {
 
         <Grid.Column width={8} textAlign="right">
           <Position
-            isOpen="Aktuell und bis am 23. Juni 2021 läuft eine Ausschreibung für diese Position mit Fokus auf den Bereich eAssessment/Prüfungsauswertung mit Python."
+            // isOpen="Aktuell und bis am 23. Juni 2021 läuft eine Ausschreibung für diese Position mit Fokus auf den Bereich eAssessment/Prüfungsauswertung mit Python."
             title="Junior IT"
             subtitle="IT-Fachkraft für technische Unterstützung und Umsetzung von neuen Inhalten"
           >

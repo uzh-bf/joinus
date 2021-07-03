@@ -1,5 +1,7 @@
+import Image from 'next/image'
 import React, { useState } from 'react'
-import { Grid, Header, Image, Menu, Table } from 'semantic-ui-react'
+import { Grid, Header, Menu, Table } from 'semantic-ui-react'
+import DeptImage from '../../../public/images/people/institut.jpg'
 import { alumni, employees } from '../../data'
 import SegmentContainer from '../SegmentContainer'
 import styles from './DepartmentSegment.module.scss'
@@ -42,11 +44,7 @@ function DepartmentSegment({ backgroundColor }: Props) {
           <Header as="h3">Unsere Instituts-Mitarbeiter</Header>
         </Grid.Row>,
         <Grid.Row className={styles.imageRow}>
-          <Image
-            centered
-            className={styles.deptImage}
-            src="images/people/medium_institut.jpg"
-          />
+          <Image src={DeptImage} />
         </Grid.Row>,
         <Grid.Row centered>
           <p>

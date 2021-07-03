@@ -65,10 +65,10 @@ export const employees = [
     picture: 'images/people/thumb_remy.jpg',
     study: 'Bachelor Informatik',
     tasklist: [
-        'Mitarbeit im Team Kommunikation',
-        'Migration des Management Information System auf Drupal',
-        'Betreuung Website',
-        'Entwicklung und Wartung diverser Webapplikationen'
+      'Mitarbeit im Team Kommunikation',
+      'Migration des Management Information System auf Drupal',
+      'Betreuung Website',
+      'Entwicklung und Wartung diverser Webapplikationen',
     ],
     time: '02.2020',
   },
@@ -78,10 +78,10 @@ export const employees = [
     picture: 'images/people/thumb_claudine.jpg',
     study: 'Bachelor Geschichte & Soziologie',
     tasklist: [
-        'Leitung Web-Team Institut',
-        'Unterstützung Digitale Strategie & Kommunikation',
-        'Migration des Management Information System auf Drupal',
-        'Entwicklung und Wartung diverser Webapplikationen'
+      'Leitung Web-Team Institut',
+      'Unterstützung Digitale Strategie & Kommunikation',
+      'Migration des Management Information System auf Drupal',
+      'Entwicklung und Wartung diverser Webapplikationen',
     ],
     time: '10.2020',
   },
@@ -99,20 +99,20 @@ export const employees = [
   {
     name: 'Matthias',
     team: 'Weiterbildung',
-    picture: 'images/people/thumb_placeholder.jpg',
+    picture: 'images/people/thumb_matthias.png',
     study: 'Bachelor Informatik',
     tasklist: [
       'Mitarbeit im IT-Team der Finance Weiterbildung',
       'Betreuung & Weiterentwicklung diverser Websites',
       'Technischer Support CMS',
-      'Begleitung Datenmigration Dynamics CRM'
+      'Begleitung Datenmigration Dynamics CRM',
     ],
     time: '01.2021',
   },
   {
     name: 'Max',
     team: 'Teaching Center',
-    picture: 'images/people/thumb_placeholder.jpg',
+    picture: 'images/people/thumb_max.jpg',
     study: 'Master Data Science',
     tasklist: [
       'Erstellung von eLearning Kursinhalten',
@@ -129,7 +129,7 @@ export const employees = [
       'Mitarbeit im IT-Team der Finance Weiterbildung',
       'Betreuung & Weiterentwicklung Websites',
       'Umsetzung diverser IT-Projekte der Weiterbildung',
-      'Begleitung Datenmigration Dynamics CRM'
+      'Begleitung Datenmigration Dynamics CRM',
     ],
     time: '01.2021',
   },

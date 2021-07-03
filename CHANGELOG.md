@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.2](https://github.com/uzh-bf/joinus/compare/v2.3.1...v2.3.2) (2021-07-03)
+
+
+* add images for max and matthias, deps: upgrade packages ([399d453](https://github.com/uzh-bf/joinus/commit/399d453818b0f0011d0b71109704b757c7c67797))
+* remove open junior position label ([4b99963](https://github.com/uzh-bf/joinus/commit/4b99963a293c1df9ab82d0bb49de3196d31fd738))
+
 ### [2.3.1](https://github.com/uzh-bf/joinus/compare/v2.3.0...v2.3.1) (2021-06-01)
 
 

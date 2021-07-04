@@ -36,7 +36,7 @@ function EmployeeRow({
       <Table.Cell>
         <List bulleted>
           {tasklist.map((task) => (
-            <List.Item>{task}</List.Item>
+            <List.Item key={task}>{task}</List.Item>
           ))}
         </List>
       </Table.Cell>

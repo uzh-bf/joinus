@@ -15,7 +15,7 @@ function RequirementColumn({ header, must }: Props) {
 
       <List bulleted relaxed>
         {must.map((item) => (
-          <List.Item>{item}</List.Item>
+          <List.Item key={item}>{item}</List.Item>
         ))}
       </List>
     </Grid.Column>

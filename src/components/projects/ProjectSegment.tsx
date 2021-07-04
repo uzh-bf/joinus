@@ -25,6 +25,7 @@ function ProjectSegment({ backgroundColor }: Props) {
             .slice(0, 3)
             .map(([projectKey, projectData]) => (
               <ProjectCard
+                key={projectKey}
                 id={projectKey}
                 title={projectData.title}
                 subtitle={projectData.subtitle}
@@ -49,6 +50,7 @@ function ProjectSegment({ backgroundColor }: Props) {
             .slice(3)
             .map(([projectKey, projectData]) => (
               <ProjectCard
+                key={projectKey}
                 id={projectKey}
                 title={projectData.title}
                 subtitle={projectData.subtitle}

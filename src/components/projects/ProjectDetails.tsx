@@ -1,5 +1,6 @@
+import Image from 'next/image'
 import React from 'react'
-import { Grid, Header, Image, Segment } from 'semantic-ui-react'
+import { Grid, Header, Segment } from 'semantic-ui-react'
 
 function ProjectDetails({
   img,
@@ -10,6 +11,7 @@ function ProjectDetails({
   cite2,
   cite2Name,
 }) {
+  const ImageSrc = require(`../../../public/images/${img}`)
   return (
     <Segment attached padded>
       <Grid
@@ -20,7 +22,7 @@ function ProjectDetails({
         id="projectDescription"
       >
         <Grid.Row centered inverted>
-          <Grid.Column width={6}>{<Image src={'images/' + img} />}</Grid.Column>
+          <Grid.Column width={6}>{<Image src={ImageSrc} />}</Grid.Column>
           <Grid.Column width={10}>
             <Header as="h3" textAlign="center">
               {title}

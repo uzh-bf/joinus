@@ -3,10 +3,10 @@
 *******************************/
 
 @headerFont: 'IBM Plex Mono', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-@pageFont: 'Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont: 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 @googleFontFamily: 'IBM+Plex+Mono|Roboto:300,400italic';
 
-@importGoogleFonts: true;
+@importGoogleFonts: false;
 @googleFontSizes: '300,400,700,400italic,700italic';
 @googleSubset: 'latin';
 

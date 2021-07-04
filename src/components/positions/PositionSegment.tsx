@@ -1,5 +1,9 @@
+import Image from 'next/image'
 import React from 'react'
-import { Grid, Image } from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
+import CodeImage from '../../../public/images/code_example.png'
+import OtherImg from '../../../public/images/einzelarbeit_icon.png'
+import KlickerImg from '../../../public/images/projects/klicker.jpg'
 import SegmentContainer from '../SegmentContainer'
 import Position from './Position'
 import styles from './PositionSegment.module.scss'
@@ -49,12 +53,7 @@ function PositionSegment({ backgroundColor }: Props) {
         </Grid.Column>
 
         <Grid.Column width={5}>
-          <Image
-            bordered
-            rounded
-            size="large"
-            src="images/thumb_code_example.png"
-          />
+          <Image src={CodeImage} />
         </Grid.Column>
       </Grid>
 
@@ -66,12 +65,7 @@ function PositionSegment({ backgroundColor }: Props) {
         className={styles.margined}
       >
         <Grid.Column width={5}>
-          <Image
-            bordered
-            rounded
-            size="large"
-            src="images/projects/klicker.jpg"
-          />
+          <Image src={KlickerImg} />
         </Grid.Column>
 
         <Grid.Column width={8}>
@@ -121,12 +115,7 @@ function PositionSegment({ backgroundColor }: Props) {
         </Grid.Column>
 
         <Grid.Column width={5}>
-          <Image
-            bordered
-            rounded
-            size="medium"
-            src="images/einzelarbeit_icon.png"
-          />
+          <Image src={OtherImg} />
         </Grid.Column>
       </Grid>
     </SegmentContainer>

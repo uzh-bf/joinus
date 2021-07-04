@@ -1,5 +1,6 @@
+import Image from 'next/image'
 import React from 'react'
-import { Container, Grid, Header, Image } from 'semantic-ui-react'
+import { Container, Grid, Header } from 'semantic-ui-react'
 import styles from './TeamColumn.module.scss'
 
 interface Props {
@@ -17,6 +18,7 @@ function TeamColumn({
   leaderPosition,
   teamDescription,
 }: Props) {
+  const ImageSrc = require(`../../../public/images/people/${imageSrc}`)
   return (
     <Grid.Column>
       <Header as="h3" textAlign="center" size="large">
@@ -24,7 +26,9 @@ function TeamColumn({
       </Header>
 
       <Container className={styles.teamInfo}>
-        <Image src={imageSrc} className={styles.leaderPhoto} />
+        <div className={styles.leaderPhoto}>
+          <Image src={ImageSrc} />
+        </div>
 
         <Header textAlign="center" as="h4" size="medium">
           {leaderName}

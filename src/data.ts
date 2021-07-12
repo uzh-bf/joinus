@@ -358,7 +358,7 @@ export const requirements = [
       'Eigenständiges und engagiertes Arbeiten',
       'Teamfähigkeit',
       'Möglichkeit, mit einem Pensum von 20-60% zu arbeiten, mehr auf Anfrage (flexibel mehr oder weniger während Ferien oder Prüfungen)',
-      'Gute Englischkentnisse, weitere Sprachen von Vorteil',
+      'Gute Deutsch- und Englischkentnisse, weitere Sprachen von Vorteil',
     ],
   },
 ]

@@ -1,7 +1,11 @@
+import Image from 'next/image'
 import React from 'react'
-import { Grid, Image } from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
+import ImageManuel from '../../../public/images/people/manuel.jpg'
+import ImagePascal from '../../../public/images/people/pascal.jpg'
 import SegmentContainer from '../SegmentContainer'
 import Citation from './Citation'
+import styles from './CitationSegment.module.scss'
 
 export interface Props {
   backgroundColor: string
@@ -35,23 +39,17 @@ function CitationSegment({ backgroundColor }: Props) {
         </Grid.Column>
 
         <Grid.Column width={5}>
-          <Image
-            bordered
-            rounded
-            size="large"
-            src="images/people/medium_manuel.jpg"
-          />
+          <div className={styles.image}>
+            <Image src={ImageManuel} />
+          </div>
         </Grid.Column>
       </Grid>
 
       <Grid container stackable verticalAlign="middle" centered>
         <Grid.Column width={5}>
-          <Image
-            bordered
-            rounded
-            size="large"
-            src="images/people/medium_pascal.jpg"
-          />
+          <div className={styles.image}>
+            <Image src={ImagePascal} />
+          </div>
         </Grid.Column>
 
         <Grid.Column width={8}>

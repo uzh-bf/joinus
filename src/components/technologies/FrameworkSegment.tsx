@@ -19,7 +19,7 @@ function FrameworkSegment({ backgroundColor }: Props) {
       <div className={styles.slideshowContainer}>
         <div className={styles.slideshowContent}>
           {technologies.map((tech) => (
-            <Framework {...tech} />
+            <Framework key={tech.title} {...tech} />
           ))}
         </div>
       </div>

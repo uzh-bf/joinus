@@ -21,7 +21,9 @@ function ProjectCard({ id, title, subtitle, tags, handleShowProject }: Props) {
       <Card.Content extra className={styles.cardextraStyle}>
         <Label.Group>
           {tags?.map((tag) => (
-            <Label className={styles.labelStyle}>{tag}</Label>
+            <Label key={tag} className={styles.labelStyle}>
+              {tag}
+            </Label>
           ))}
         </Label.Group>
       </Card.Content>

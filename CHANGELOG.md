@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.2](https://github.com/uzh-bf/joinus/compare/v2.3.1...v2.3.2) (2021-07-03)
+
+
+* add images for max and matthias, deps: upgrade packages ([399d453](https://github.com/uzh-bf/joinus/commit/399d453818b0f0011d0b71109704b757c7c67797))
+* remove open junior position label ([4b99963](https://github.com/uzh-bf/joinus/commit/4b99963a293c1df9ab82d0bb49de3196d31fd738))
+
+### [2.3.1](https://github.com/uzh-bf/joinus/compare/v2.3.0...v2.3.1) (2021-06-01)
+
+
+### Bug Fixes
+
+* swap the image for the junior position ([281a074](https://github.com/uzh-bf/joinus/commit/281a0744c3dbdec6bda704facd8c2de5dcbeafde))
+
+## [2.3.0](https://github.com/uzh-bf/joinus/compare/v2.2.2...v2.3.0) (2021-05-31)
+
+
+### Features
+
+* add WB job descriptions ([fa75bce](https://github.com/uzh-bf/joinus/commit/fa75bcebee96a0a3230f7a26331222ddf838cc66))
+
+### [2.2.2](https://github.com/uzh-bf/joinus/compare/v2.2.1...v2.2.2) (2021-05-27)
+
+
+### Bug Fixes
+
+* naming of positions for consistency, fix: update no position text ([a2b8230](https://github.com/uzh-bf/joinus/commit/a2b8230be2865302553ec1e6ab3e1759440d9e54))
+* update flyer with application deadline ([47b4b15](https://github.com/uzh-bf/joinus/commit/47b4b1591918525fede9b93ba7cdd8359f0b5951))
+
 ### [2.2.1](https://github.com/uzh-bf/joinus/compare/v2.2.0...v2.2.1) (2021-05-25)
 
 

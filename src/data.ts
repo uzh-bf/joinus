@@ -1,7 +1,7 @@
 export const employees = [
   {
     name: 'Roli',
-    picture: 'images/people/thumb_roli.jpg',
+    picture: 'roli.jpg',
     team: 'Teaching Center',
     study: 'Master Data Science',
     tasklist: [
@@ -14,7 +14,7 @@ export const employees = [
   },
   {
     name: 'Manuel',
-    picture: 'images/people/thumb_manuel.jpg',
+    picture: 'manuel.jpg',
     team: 'Weiterbildung',
     study: 'Master Information Systems',
     tasklist: [
@@ -27,7 +27,7 @@ export const employees = [
   {
     name: 'Christian',
     team: 'Teaching Center',
-    picture: 'images/people/thumb_christian.jpg',
+    picture: 'christian.jpg',
     study: 'Bachelor Banking & Finance',
     tasklist: [
       'Erstellung und Betreuung der OLAT Kurse',
@@ -38,7 +38,7 @@ export const employees = [
   {
     name: 'Luca',
     team: 'Teaching Center',
-    picture: 'images/people/thumb_luca.jpg',
+    picture: 'luca.jpg',
     study: 'Bachelor Informatik & Ökonomik',
     tasklist: [
       'Erstellung von eLearning Kursinhalten',
@@ -50,7 +50,7 @@ export const employees = [
   {
     name: 'Dimitri',
     team: 'Teaching Center',
-    picture: 'images/people/thumb_dimitri.jpg',
+    picture: 'dimitri.jpg',
     study: 'Master Information Systems',
     tasklist: [
       'Erstellung und Betreuung von Website-Projekten',
@@ -62,33 +62,33 @@ export const employees = [
   {
     name: 'Rémy',
     team: 'Kommunikation',
-    picture: 'images/people/thumb_remy.jpg',
+    picture: 'remy.jpg',
     study: 'Bachelor Informatik',
     tasklist: [
-        'Mitarbeit im Team Kommunikation',
-        'Migration des Management Information System auf Drupal',
-        'Betreuung Website',
-        'Entwicklung und Wartung diverser Webapplikationen'
+      'Mitarbeit im Team Kommunikation',
+      'Migration des Management Information System auf Drupal',
+      'Betreuung Website',
+      'Entwicklung und Wartung diverser Webapplikationen',
     ],
     time: '02.2020',
   },
   {
     name: 'Claudine',
     team: 'Kommunikation',
-    picture: 'images/people/thumb_claudine.jpg',
+    picture: 'claudine.jpg',
     study: 'Bachelor Geschichte & Soziologie',
     tasklist: [
-        'Leitung Web-Team Institut',
-        'Unterstützung Digitale Strategie & Kommunikation',
-        'Migration des Management Information System auf Drupal',
-        'Entwicklung und Wartung diverser Webapplikationen'
+      'Leitung Web-Team Institut',
+      'Unterstützung Digitale Strategie & Kommunikation',
+      'Migration des Management Information System auf Drupal',
+      'Entwicklung und Wartung diverser Webapplikationen',
     ],
     time: '10.2020',
   },
   {
     name: 'Celine',
     team: 'Teaching Center',
-    picture: 'images/people/thumb_placeholder.jpg',
+    picture: 'placeholder.jpg',
     study: 'Bachelor Interdisz. Naturwissenschaften',
     tasklist: [
       'Erstellung von eLearning Kursinhalten',
@@ -99,20 +99,20 @@ export const employees = [
   {
     name: 'Matthias',
     team: 'Weiterbildung',
-    picture: 'images/people/thumb_placeholder.jpg',
+    picture: 'matthias.png',
     study: 'Bachelor Informatik',
     tasklist: [
       'Mitarbeit im IT-Team der Finance Weiterbildung',
       'Betreuung & Weiterentwicklung diverser Websites',
       'Technischer Support CMS',
-      'Begleitung Datenmigration Dynamics CRM'
+      'Begleitung Datenmigration Dynamics CRM',
     ],
     time: '01.2021',
   },
   {
     name: 'Max',
     team: 'Teaching Center',
-    picture: 'images/people/thumb_placeholder.jpg',
+    picture: 'max.jpg',
     study: 'Master Data Science',
     tasklist: [
       'Erstellung von eLearning Kursinhalten',
@@ -123,13 +123,13 @@ export const employees = [
   {
     name: 'Philip',
     team: 'Weiterbildung',
-    picture: 'images/people/thumb_philip.png',
+    picture: 'philip.png',
     study: 'Master Software Systems',
     tasklist: [
       'Mitarbeit im IT-Team der Finance Weiterbildung',
       'Betreuung & Weiterentwicklung Websites',
       'Umsetzung diverser IT-Projekte der Weiterbildung',
-      'Begleitung Datenmigration Dynamics CRM'
+      'Begleitung Datenmigration Dynamics CRM',
     ],
     time: '01.2021',
   },
@@ -149,14 +149,14 @@ export const alumni = [
   {
     name: 'Senthuasa',
     team: 'Weiterbildung',
-    picture: 'images/people/senthuasa.jpg',
+    picture: 'senthuasa.jpg',
     study: 'Master Wirtschaftsinformatik',
     tasklist: ['Betreuung Website', 'Betreuung WebApps'],
   },
   {
     name: 'Michael',
     team: 'Weiterbildung',
-    picture: 'images/people/thumb_placeholder.jpg',
+    picture: 'placeholder.jpg',
     study: 'Bachelor Informatik',
     tasklist: [
       'Betreuung Website',
@@ -166,7 +166,7 @@ export const alumni = [
   },
   {
     name: 'Florian',
-    picture: 'images/people/thumb_placeholder.jpg',
+    picture: 'placeholder.jpg',
     team: 'Webteam',
     study: 'Master Data Science',
     tasklist: [
@@ -176,7 +176,7 @@ export const alumni = [
   },
   {
     name: 'Pascal',
-    picture: 'images/people/pascal.jpg',
+    picture: 'pascal.jpg',
     team: 'Webteam',
     study: 'Master Information Systems',
     tasklist: [
@@ -189,63 +189,63 @@ export const alumni = [
 
 export const technologies = [
   {
-    image: 'images/slideshow/thumb_react.jpg',
+    image: 'react.jpg',
     title: 'ReactJS für performante Webapplikationen',
   },
   {
-    image: 'images/slideshow/thumb_node.png',
+    image: 'node.png',
     title: 'NodeJS als Backend für WebApps',
   },
   {
-    image: 'images/slideshow/thumb_python.png',
+    image: 'python.png',
     title: 'Python für statistische Modellierung und Auswertung',
   },
   {
-    image: 'images/slideshow/thumb_semanticui.png',
+    image: 'semanticui.png',
     title: 'Semantic UI für Layouting',
   },
   {
-    image: 'images/slideshow/thumb_tailwind.png',
+    image: 'tailwind.png',
     title: 'Tailwind CSS für Layouting',
   },
   {
-    image: 'images/slideshow/thumb_directus.png',
+    image: 'directus.png',
     title: 'Directus Headless CMS für Inhalte',
   },
   {
-    image: 'images/slideshow/thumb_strapi.png',
+    image: 'strapi.png',
     title: 'Strapi Headless CMS für Inhalte',
   },
   {
-    image: 'images/slideshow/thumb_graphql.png',
+    image: 'graphql.png',
     title: 'GraphQL für verständliche APIs',
   },
   {
-    image: 'images/slideshow/thumb_docker.png',
+    image: 'docker.png',
     title: 'Docker für Containervirtualisierung',
   },
   {
-    image: 'images/slideshow/thumb_kubernetes.png',
+    image: 'kubernetes.png',
     title: 'Kubernetes zur Orchestrierung komplexer Applikationen',
   },
   {
-    image: 'images/slideshow/thumb_slim.png',
+    image: 'slim.png',
     title: 'Slim Framework für simple PHP APIs',
   },
   {
-    image: 'images/slideshow/thumb_gitlab.png',
+    image: 'gitlab.png',
     title: 'GitLab für Versionsmanagement und CI',
   },
   {
-    image: 'images/slideshow/thumb_openolat.png',
+    image: 'openolat.png',
     title: 'OpenOLAT für eLearning Kurse',
   },
   {
-    image: 'images/slideshow/thumb_sentry.png',
+    image: 'sentry.png',
     title: 'Sentry zur Fehlererkennung von WebApps',
   },
   {
-    image: 'images/slideshow/thumb_typescript.png',
+    image: 'typescript.png',
     title: 'TypeScript zur Verbesserung der Type-Safety',
   },
 ]
@@ -368,7 +368,7 @@ export const requirements = [
       'Eigenständiges und engagiertes Arbeiten',
       'Teamfähigkeit',
       'Möglichkeit, mit einem Pensum von 20-60% zu arbeiten, mehr auf Anfrage (flexibel mehr oder weniger während Ferien oder Prüfungen)',
-      'Gute Englischkentnisse, weitere Sprachen von Vorteil',
+      'Gute Deutsch- und Englischkentnisse, weitere Sprachen von Vorteil',
     ],
   },
 ]
@@ -376,7 +376,7 @@ export const requirements = [
 export const teams = [
   {
     teamName: 'Kommunikation',
-    imageSrc: 'images/people/thumb_lisa.jpg',
+    imageSrc: 'lisa.jpg',
     leaderName: 'Lisa Liechti',
     leaderPosition: 'Leitung Kommunikation IBF',
     teamDescription: `Bei mir stehen viele Data Science Projekte an, bei welchen ich eure
@@ -385,7 +385,7 @@ export const teams = [
   },
   {
     teamName: 'Teaching Center',
-    imageSrc: 'images/people/thumb_johanna.jpg',
+    imageSrc: 'johanna.jpg',
     leaderName: 'Johanna Braun',
     leaderPosition: 'Leitung Teaching Center IBF',
     teamDescription: `Wir wollen die Lehrveranstaltungen unseres Instituts innovativ und interaktiv
@@ -394,7 +394,7 @@ export const teams = [
   },
   {
     teamName: 'Weiterbildung',
-    imageSrc: 'images/people/thumb_beni.jpg',
+    imageSrc: 'beni.jpg',
     leaderName: 'Benjamin Wilding',
     leaderPosition: 'Geschäftsführer IBF, Leitung Lehre & Weiterbildung',
     teamDescription: `Als Weiterbildungsanbieter brauchen wir kreative Informatiker*innen, die die User

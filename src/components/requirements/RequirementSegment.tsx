@@ -18,7 +18,7 @@ function RequirementSegment({ backgroundColor }: Props) {
     >
       <Grid.Row divided centered>
         {requirements.map((req) => (
-          <RequirementColumn {...req} />
+          <RequirementColumn key={req.header} {...req} />
         ))}
       </Grid.Row>
     </SegmentContainer>

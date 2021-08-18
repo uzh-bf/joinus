@@ -18,7 +18,7 @@ function TeamSegment({ backgroundColor }: Props) {
     >
       <Grid.Row columns={3} divided centered>
         {teams.map((team) => (
-          <TeamColumn {...team} />
+          <TeamColumn key={team.teamName} {...team} />
         ))}
 
         <Header as="h2" textAlign="center" size="large">

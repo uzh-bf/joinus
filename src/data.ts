@@ -133,6 +133,16 @@ export const employees = [
     ],
     time: '01.2021',
   },
+  {
+    name: 'Jonas',
+    team: 'Teaching Center',
+    picture: '',
+    study: 'Bachelor Informatik',
+    tasklist: [
+      
+    ],
+    time: '07.2021',
+  },
 ]
 
 export const alumni = [

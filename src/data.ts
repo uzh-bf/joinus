@@ -136,10 +136,11 @@ export const employees = [
   {
     name: 'Jonas',
     team: 'Teaching Center',
-    picture: '',
+    picture: 'placeholder.jpg',
     study: 'Bachelor Informatik',
     tasklist: [
-      
+      'Erstellung von eLearning Kursinhalten',
+      'Erarbeiten von Tools für Online-Prüfungen',
     ],
     time: '07.2021',
   },

@@ -136,7 +136,7 @@ export const employees = [
   {
     name: 'Jonas',
     team: 'Teaching Center',
-    picture: 'placeholder.jpg',
+    picture: 'jonas.jpg',
     study: 'Bachelor Informatik',
     tasklist: [
       'Erstellung von eLearning Kursinhalten',

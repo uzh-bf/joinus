@@ -29,7 +29,7 @@
     "release": "standard-version"
   },
   "dependencies": {
-    "@popperjs/core": "2.9.2",
+    "@popperjs/core": "2.9.3",
     "animated-scroll-to": "2.2.0",
     "fomantic-ui": "2.8.8",
     "next": "11.0.1",

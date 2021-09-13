@@ -136,11 +136,22 @@ export const employees = [
   {
     name: 'Jonas',
     team: 'Teaching Center',
-    picture: 'placeholder.jpg',
+    picture: 'jonas.jpg',
     study: 'Bachelor Informatik',
     tasklist: [
       'Erstellung von eLearning Kursinhalten',
       'Erarbeiten von Tools für Online-Prüfungen',
+    ],
+    time: '07.2021',
+  },
+  {
+    name: 'Julius',
+    team: 'Teaching Center',
+    picture: 'placeholder.jpg',
+    study: 'Master Robotics, Systems and Control',
+    tasklist: [
+      'Weiterentwicklung des KlickerUZH',
+      'Mitarbeit bei der Entwicklung verschiedener Webapplikationen',
     ],
     time: '07.2021',
   },

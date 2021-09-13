@@ -144,6 +144,17 @@ export const employees = [
     ],
     time: '07.2021',
   },
+  {
+    name: 'Julius',
+    team: 'Teaching Center',
+    picture: 'placeholder.jpg',
+    study: 'Master Robotics, Systems and Control',
+    tasklist: [
+      'Weiterentwicklung des KlickerUZH',
+      'Mitarbeit bei der Entwicklung verschiedener Webapplikationen',
+    ],
+    time: '07.2021',
+  },
 ]
 
 export const alumni = [

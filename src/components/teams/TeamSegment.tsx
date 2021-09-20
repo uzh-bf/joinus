@@ -20,10 +20,6 @@ function TeamSegment({ backgroundColor }: Props) {
         {teams.map((team) => (
           <TeamColumn key={team.teamName} {...team} />
         ))}
-
-        <Header as="h2" textAlign="center" size="large">
-          Wir suchen momentan Verstärkung für das Team Teaching Center (Junior)!
-        </Header>
       </Grid.Row>
     </SegmentContainer>
   )

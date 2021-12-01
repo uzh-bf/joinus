@@ -39,7 +39,7 @@
     "semantic-ui-react": "2.0.3"
   },
   "devDependencies": {
-    "@types/react": "17.0.13",
+    "@types/react": "17.0.37",
     "@uzh-bf/code-style-react-ts": "0.0.13",
     "cross-env": "7.0.3",
     "eslint-config-next": "11.0.1",

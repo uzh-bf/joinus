@@ -13,7 +13,9 @@
   ],
   "scripts": {
     "clean": "rimraf node_modules/.cache out/ .next/",
-    "dev": "next dev",
+    "dev": "npm-run-all --parallel dev:tailwind dev:next",
+    "dev:next": "next dev",
+    "dev:tailwind": "tailwindcss -i ./src/globals.css -o ./src/tailwind.css --watch",
     "build": "cross-env NODE_ENV=production next build",
     "export": "cross-env NODE_ENV=production next export",
     "build:semantic": "cd src/semantic && gulp build-css build-assets",
@@ -29,26 +31,30 @@
     "release": "standard-version"
   },
   "dependencies": {
-    "@popperjs/core": "2.9.2",
+    "@heroicons/react": "1.0.5",
+    "@popperjs/core": "2.11.2",
     "animated-scroll-to": "2.2.0",
     "fomantic-ui": "2.8.8",
-    "next": "11.0.1",
+    "next": "12.0.8",
     "react": "17.0.2",
     "react-burger-menu": "3.0.6",
     "react-dom": "17.0.2",
-    "semantic-ui-react": "2.0.3"
+    "semantic-ui-react": "2.0.4"
   },
   "devDependencies": {
-    "@types/react": "17.0.13",
+    "@tailwindcss/aspect-ratio": "0.4.0",
+    "@tailwindcss/forms": "0.4.0",
+    "@tailwindcss/typography": "0.5.0",
+    "@types/react": "17.0.38",
     "@uzh-bf/code-style-react-ts": "0.0.13",
     "cross-env": "7.0.3",
-    "eslint-config-next": "11.0.1",
-    "npm-run-all": "4.1.5",
-    "postcss": "8.3.5",
+    "eslint-config-next": "12.0.8",
+    "npm-run-all": "^4.1.5",
+    "postcss": "8.4.5",
     "rimraf": "3.0.2",
-    "sass": "1.35.1",
-    "standard-version": "9.3.0",
-    "typescript": "4.3.5"
+    "standard-version": "9.3.2",
+    "tailwindcss": "3.0.15",
+    "typescript": "4.5.4"
   },
   "standard-version": {
     "types": [
@@ -82,5 +88,8 @@
         "type": "ci"
       }
     ]
+  },
+  "volta": {
+    "node": "16.13.2"
   }
 }

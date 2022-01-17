@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Header, List } from 'semantic-ui-react'
+import { List } from 'semantic-ui-react'
 
 interface Props {
   header: string
@@ -8,17 +8,17 @@ interface Props {
 
 function RequirementColumn({ header, must }: Props) {
   return (
-    <Grid.Column width={7}>
-      <Header as="h2" textAlign="center" size="large">
+    <div className="flex-1">
+      <h4 className="text-2xl font-normal md:text-3xl font-thesans-bold">
         {header}
-      </Header>
+      </h4>
 
       <List bulleted relaxed>
         {must.map((item) => (
           <List.Item key={item}>{item}</List.Item>
         ))}
       </List>
-    </Grid.Column>
+    </div>
   )
 }
 

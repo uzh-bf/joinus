@@ -2,9 +2,9 @@
      User Global Variables
 *******************************/
 
-@headerFont: 'IBM Plex Mono', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@headerFont: 'TheSans Bold', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 @pageFont: 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-@googleFontFamily: 'IBM+Plex+Mono|Roboto:300,400italic';
+@googleFontFamily: 'Open Sans:300,400italic';
 
 @importGoogleFonts: false;
 @googleFontSizes: '300,400,700,400italic,700italic';

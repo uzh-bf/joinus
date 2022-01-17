@@ -1,5 +1,4 @@
 import React from 'react'
-import { Grid, Header } from 'semantic-ui-react'
 import { teams } from '../../data'
 import SegmentContainer from '../SegmentContainer'
 import TeamColumn from './TeamColumn'
@@ -16,11 +15,11 @@ function TeamSegment({ backgroundColor }: Props) {
       nextUp="#department"
       backgroundColor={backgroundColor}
     >
-      <Grid.Row columns={3} divided centered>
+      <div className="flex flex-col gap-8 md:flex-row">
         {teams.map((team) => (
           <TeamColumn key={team.teamName} {...team} />
         ))}
-      </Grid.Row>
+      </div>
     </SegmentContainer>
   )
 }

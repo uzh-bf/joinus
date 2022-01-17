@@ -1,5 +1,4 @@
 import React from 'react'
-import { Grid } from 'semantic-ui-react'
 import SegmentContainer from '../SegmentContainer'
 import AdvantageColumn from './AdvantageColumn'
 
@@ -15,32 +14,32 @@ function AdvantagesSegment({ backgroundColor }: Props) {
       nextUp="#projects"
       backgroundColor={backgroundColor}
     >
-      <Grid.Row columns={4}>
+      <div className="flex flex-col gap-8 md:flex-row">
         <AdvantageColumn
           iconName="code branch"
-          iconColor="black"
+          iconColor="#191919"
           advantageTitle="#experience"
           advantageText="Wende deine Programmierkenntnisse in einem praktischen Umfeld an, arbeite dich in neue Bereiche ein und sammle in verschiedenen Projekten breite Erfahrung für deine berufliche Laufbahn."
         />
         <AdvantageColumn
-          iconName="clock outline"
-          iconColor="brown"
+          iconName="clock"
+          iconColor="#a5673f"
           advantageTitle="#flexibility"
           advantageText="Teile dir die Arbeitszeiten frei ein, sodass du trotz spannender Arbeit genügend Zeit und Energie fürs Studium aufwenden kannst."
         />
         <AdvantageColumn
           iconName="users"
-          iconColor="orange"
+          iconColor="#ff851b"
           advantageTitle="#team"
           advantageText="Sei Teil eines jungen und ambitionierten Teams. Neben engagierter Zusammenarbeit grillieren wir im Sommer gerne, besetzen das bQm oder machen Teamausflüge."
         />
         <AdvantageColumn
           iconName="dollar sign"
-          iconColor="green"
+          iconColor="#2ecc40"
           advantageTitle="#salary"
           advantageText="Verdiene einen fairen Stundenlohn, welcher nach deinem aktuellen Abschluss festgelegt ist und mit deinem Studium Schritt hält."
         />
-      </Grid.Row>
+      </div>
     </SegmentContainer>
   )
 }

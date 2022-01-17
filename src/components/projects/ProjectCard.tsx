@@ -1,8 +1,8 @@
 import React from 'react'
 import { Button, Card, Label } from 'semantic-ui-react'
-import styles from './ProjectCard.module.scss'
 
 interface Props {
+  isActive: boolean
   id: string
   title: string
   subtitle: string
@@ -10,7 +10,14 @@ interface Props {
   handleShowProject: (projectKey: string) => void
 }
 
-function ProjectCard({ id, title, subtitle, tags, handleShowProject }: Props) {
+function ProjectCard({
+  isActive,
+  id,
+  title,
+  subtitle,
+  tags,
+  handleShowProject,
+}: Props) {
   return (
     <Card>
       <Card.Content>
@@ -18,23 +25,20 @@ function ProjectCard({ id, title, subtitle, tags, handleShowProject }: Props) {
         <Card.Description>{subtitle}</Card.Description>
       </Card.Content>
 
-      <Card.Content extra className={styles.cardextraStyle}>
+      <Card.Content extra>
         <Label.Group>
           {tags?.map((tag) => (
-            <Label key={tag} className={styles.labelStyle}>
-              {tag}
-            </Label>
+            <Label key={tag}>{tag}</Label>
           ))}
         </Label.Group>
       </Card.Content>
 
-      <Card.Content extra className={styles.detailStyle}>
+      <Card.Content extra>
         <Button
+          disabled={isActive}
           fluid
-          attached
           onClick={() => handleShowProject(id)}
-          className={styles.buttonstyle}
-          color={'blue'}
+          color={isActive ? 'blue' : undefined}
         >
           Details
         </Button>

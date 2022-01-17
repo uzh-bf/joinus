@@ -265,7 +265,7 @@ export const technologies = [
 export const projects = {
   klicker: {
     img: 'projects/klicker.jpg',
-    title: 'Klicker',
+    title: 'KlickerUZH',
     subtitle:
       'Open-Source Abstimmungs-Tool für Interaktivität in den Vorlesungen',
     desc: `Klicker ist ein Open-Source Instant Audience Response System - auf Deutsch ein Service, bei dem man

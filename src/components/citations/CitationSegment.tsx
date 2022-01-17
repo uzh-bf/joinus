@@ -49,7 +49,7 @@ function CitationSegment({ backgroundColor }: Props) {
       </Grid>
 
       <Grid
-        className="!mt-16"
+        className="md:!mt-16"
         container
         stackable
         verticalAlign="middle"

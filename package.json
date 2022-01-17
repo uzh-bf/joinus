@@ -13,7 +13,9 @@
   ],
   "scripts": {
     "clean": "rimraf node_modules/.cache out/ .next/",
-    "dev": "next dev",
+    "dev": "npm-run-all --parallel dev:tailwind dev:next",
+    "dev:next": "next dev",
+    "dev:tailwind": "tailwindcss -i ./src/globals.css -o ./src/tailwind.css --watch",
     "build": "cross-env NODE_ENV=production next build",
     "export": "cross-env NODE_ENV=production next export",
     "build:semantic": "cd src/semantic && gulp build-css build-assets",
@@ -43,12 +45,12 @@
     "@uzh-bf/code-style-react-ts": "0.0.13",
     "cross-env": "7.0.3",
     "eslint-config-next": "12.0.8",
-    "npm-run-all": "4.1.5",
+    "npm-run-all": "^4.1.5",
     "postcss": "8.4.5",
     "rimraf": "3.0.2",
     "sass": "1.48.0",
     "standard-version": "9.3.2",
-    "tailwindcss": "3.0.13",
+    "tailwindcss": "3.0.15",
     "typescript": "4.5.4"
   },
   "standard-version": {

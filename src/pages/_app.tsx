@@ -5,6 +5,7 @@ import '../burger-menu.scss'
 import '../layout.scss'
 import * as gtag from '../lib/gtag'
 import '../semantic/dist/semantic.css'
+import '../tailwind.css'
 
 function App({ Component, pageProps }) {
   const router = useRouter()

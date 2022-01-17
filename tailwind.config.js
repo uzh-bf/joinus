@@ -1,11 +1,15 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  content: ['./src/**/*.{html,js,tsx}'],
   theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'thesans-plain': ['TheSans Plain'],
+        'thesans-bold': ['TheSans Bold'],
+      },
+    },
   },
   plugins: [],
+  corePlugins: {
+    preflight: false,
+  },
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Grid } from 'semantic-ui-react'
 import ScrollDown from './ScrollDown'
 
 export interface Props {
@@ -20,19 +19,15 @@ function SegmentContainer({
   if (title) {
     return (
       <div
-        className="py-16 border-0 border-t border-gray-200 border-solid"
+        className="px-4 py-8 border-0 border-t border-gray-200 border-solid md:p-16"
         style={{ backgroundColor }}
         id={id}
       >
-        <div>
-          <Grid container stackable>
-            <Grid.Row centered>
-              <h3 className="!mb-12 text-3xl font-normal md:text-4xl font-thesans-bold">
-                {title}
-              </h3>
-            </Grid.Row>
-            {children}
-          </Grid>
+        <div className="m-auto max-w-[90rem]">
+          <h3 className="!mb-12 text-3xl font-normal text-center md:text-4xl font-thesans-bold">
+            {title}
+          </h3>
+          {children}
         </div>
 
         {nextUp && <ScrollDown scrollTo={nextUp} />}

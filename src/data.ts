@@ -220,8 +220,8 @@ export const technologies = [
     title: 'Tailwind CSS für Layouting',
   },
   {
-    image: 'directus.png',
-    title: 'Directus Headless CMS für Inhalte',
+    image: 'netlify.png',
+    title: 'Netlify Headless CMS für Inhalte',
   },
   {
     image: 'strapi.png',
@@ -263,7 +263,7 @@ export const technologies = [
 
 export const projects = {
   klicker: {
-    img: 'projects/klicker.jpg',
+    img: 'projects/klicker.png',
     title: 'KlickerUZH',
     subtitle:
       'Open-Source Abstimmungs-Tool für Interaktivität in den Vorlesungen',
@@ -275,7 +275,8 @@ export const projects = {
     cite: `Um Klicker so interaktiv wie möglich zu machen, habe ich die Seite mit React mit einem Node.js Server
       aufgebaut. Mit einem QR Code gelangen die Teilnehmer auf die Seite und müssen nur einmal klicken, um abzustimmen.`,
     citeName: 'Roli',
-    tags: ['react', 'node.js', 'graphql', 'docker'],
+    tags: ['react', 'node.js', 'graphql', 'kubernetes', 'azure'],
+    href: 'https://www.klicker.uzh.ch',
   },
   dynamics: {
     img: 'projects/dynamics.jpg',
@@ -310,7 +311,7 @@ export const projects = {
     tags: ['react', 'php'],
   },
   tools: {
-    img: 'projects/tools.jpg',
+    img: 'projects/attendance.png',
     title: 'Intranet',
     subtitle: 'Intranet mit Management-Tools',
     desc: `Unser Institut besteht aus über 50 Teams an vier verschiedenen Standorten welche im aktuellen Umfeld immer mehr auf
@@ -330,7 +331,7 @@ export const projects = {
     tags: ['react', 'php', 'data modelling'],
   },
   lehre: {
-    img: 'projects/olat.jpg',
+    img: 'projects/elearning.png',
     title: 'eLearning',
     subtitle:
       'Digitale Lerninhalte in Form von Kursen, eSkripten, und eAssessment',
@@ -345,7 +346,7 @@ export const projects = {
     cite2: `Unser neu entwickeltes Strapi Kurs-CMS erlaubt es jedem, Änderungen an Kursinhalten vorzunehmen, ohne sich mit HTML auszukennen.
       Die Inhalte werden danach als React.js Applikation exportiert und in ein LMS wie OLAT eingebunden.`,
     cite2Name: 'Roli',
-    tags: ['react', 'strapi', 'lms', 'python'],
+    tags: ['react', 'strapi', 'python', 'lms'],
   },
   gbl: {
     img: 'projects/pfm_game.png',
@@ -358,7 +359,22 @@ export const projects = {
     cite: `Unsere Simulationen und Serious Games erlauben es den Studierenden, theoretische Konzepte spielerisch anzuwenden.
       Diese Art des Lernens kommt immer sehr gut an und macht es macht viel Spass, dabei mitzuwirken.`,
     citeName: 'Roli',
-    tags: ['react', 'python', 'gamification'],
+    tags: ['react', 'python', 'gamification', 'simulation'],
+    href: 'https://www.gbl.uzh.ch',
+  },
+  devops: {
+    img: 'projects/ci.png',
+    title: 'Devops und Cloud-Plattformen',
+    subtitle:
+      'Unterstützung diverser Teams hinsichtlich Cloud-Deployment und Operations',
+    desc: `Am IBF bieten wir mehrere Veranstaltungen und Seminare an, die durch Simulationen unterstützt werden.
+          Die Studierenden übernehmen zum Beispiel die Rolle einer Bank und müssen diese über mehrere Perioden bestmöglich führen.
+          Verschiedenen Teams ("Banken") spielen gegen- bzw. miteinander auf demselben Markt und können sich durch Kundenzufriedenheit,
+          Performance, und weitere Faktoren zum Marktführer entwickeln.`,
+    cite: `Unsere Simulationen und Serious Games erlauben es den Studierenden, theoretische Konzepte spielerisch anzuwenden.
+      Diese Art des Lernens kommt immer sehr gut an und macht es macht viel Spass, dabei mitzuwirken.`,
+    citeName: 'Roli',
+    tags: ['azure', 'kubernetes', 'gitlab ci', 'pulumi'],
   },
 }
 
@@ -400,15 +416,15 @@ export const teams = [
     leaderName: 'Johanna Braun',
     leaderPosition: 'Leitung Teaching Center IBF',
     teamDescription: `Wir wollen die Lehrveranstaltungen unseres Instituts innovativ und interaktiv
-      gestalten. Deshalb brauchen wir IT-Support für die digital unterstützten Kurse, für Klicker und
-      Jobeye oder eine neue Idee von dir!`,
+      gestalten. Deshalb brauchen wir IT-Support für die digital unterstützten Kurse, für Projekte wir Klicker und
+      Jobeye, oder eine neue Idee von dir!`,
   },
   {
     teamName: 'Weiterbildung',
     imageSrc: 'beni.jpg',
     leaderName: 'Benjamin Wilding',
     leaderPosition: 'Geschäftsführer IBF, Leitung Lehre & Weiterbildung',
-    teamDescription: `Als Weiterbildungsanbieter brauchen wir kreative Informatiker*innen, die die User
+    teamDescription: `Als Weiterbildungsanbieter brauchen wir kreative Informatiker:innen, die die User
       Experience mit innovativen Tools verbessern und die Kundenverwaltung mit
       Automatisierungen effizienter gestalten.`,
   },

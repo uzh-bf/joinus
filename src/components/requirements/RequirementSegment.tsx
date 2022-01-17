@@ -12,7 +12,7 @@ function RequirementSegment({ backgroundColor }: Props) {
     <SegmentContainer
       id="requirements"
       title="Was du mitbringen solltest"
-      nextUp="#positions"
+      nextUp="#teams"
       backgroundColor={backgroundColor}
     >
       <div className="flex flex-col gap-8 md:flex-row">

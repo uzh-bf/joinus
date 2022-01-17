@@ -12,7 +12,7 @@ function FrameworkSegment({ backgroundColor }: Props) {
     <SegmentContainer
       id="technologies"
       title="Unsere Lieblingstechnologien und Frameworks"
-      nextUp="#teams"
+      nextUp="#requirements"
       backgroundColor={backgroundColor}
     >
       <div className="grid grid-cols-2 gap-8 md:gap-16 md:grid-cols-3">

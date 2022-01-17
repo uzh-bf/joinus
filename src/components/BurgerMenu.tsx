@@ -1,12 +1,19 @@
 import animateScrollTo from 'animated-scroll-to'
 import React from 'react'
 import { slide as Menu } from 'react-burger-menu'
-import { Icon } from 'semantic-ui-react'
-import styles from './BurgerMenu.module.scss'
+import { Button, Icon } from 'semantic-ui-react'
+import styles from './BurgerMenu.module.css'
 
 function BurgerMenu() {
   return (
     <div>
+      <Button
+        className="absolute md:fixed !bg-[#00023e] top-8 md:top-auto md:bottom-8 right-4 !text-white !z-10"
+        onClick={() => animateScrollTo(document.querySelector('#application'))}
+      >
+        Jetzt bewerben!
+      </Button>
+
       <div className={styles.burgerMenuUnderlay} />
 
       <Menu isOpen={false}>
@@ -41,25 +48,18 @@ function BurgerMenu() {
         <br />
         <a
           href="#"
+          onClick={() => animateScrollTo(document.querySelector('#positions'))}
+        >
+          <Icon name="user" /> Positionen am IBF
+        </a>
+        <br />
+        <a
+          href="#"
           onClick={() =>
             animateScrollTo(document.querySelector('#technologies'))
           }
         >
           <Icon name="cog" /> Unsere Lieblingstechnologien
-        </a>
-        <br />
-        <a
-          href="#"
-          onClick={() => animateScrollTo(document.querySelector('#teams'))}
-        >
-          <Icon name="id badge" /> Unsere Teams
-        </a>
-        <br />
-        <a
-          href="#"
-          onClick={() => animateScrollTo(document.querySelector('#department'))}
-        >
-          <Icon name="building" /> Unser Institut
         </a>
         <br />
         <a
@@ -74,11 +74,17 @@ function BurgerMenu() {
 
         <a
           href="#"
-          onClick={() => animateScrollTo(document.querySelector('#positions'))}
+          onClick={() => animateScrollTo(document.querySelector('#teams'))}
         >
-          <Icon name="user" /> Positionen am IBF
+          <Icon name="id badge" /> Unsere Teams
         </a>
-
+        <br />
+        <a
+          href="#"
+          onClick={() => animateScrollTo(document.querySelector('#department'))}
+        >
+          <Icon name="building" /> Unser Institut
+        </a>
         <br />
         <a
           href="#"

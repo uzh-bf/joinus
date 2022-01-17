@@ -25,7 +25,7 @@ function AdvantageColumn({
       <h3 className="self-start text-2xl font-normal md:text-3xl font-thesans-bold">
         {advantageTitle}
       </h3>
-      <p className="prose-xl">{advantageText}</p>
+      <p className="prose-lg">{advantageText}</p>
     </div>
   )
 }

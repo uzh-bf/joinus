@@ -15,7 +15,7 @@ function ProjectSegment({ backgroundColor }: Props) {
     <SegmentContainer
       id="projects"
       title="Hilf uns bei diesen oder ähnlichen Projekten"
-      nextUp="#technologies"
+      nextUp="#positions"
       backgroundColor={backgroundColor}
     >
       <div className="flex flex-col w-full gap-4">
@@ -33,7 +33,7 @@ function ProjectSegment({ backgroundColor }: Props) {
                 <div className="mt-2 text-lg font-thesans-plain">
                   {projectData.subtitle}
                 </div>
-                <div className="hidden mt-2 md:visible">
+                <div className="hidden mt-2 md:block">
                   <Button
                     basic
                     disabled={projectKey === showProject}

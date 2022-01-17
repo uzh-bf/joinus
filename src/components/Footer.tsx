@@ -1,27 +1,35 @@
 import React from 'react'
-import { Container, Header, Icon, Segment } from 'semantic-ui-react'
-import styles from './Footer.module.scss'
+import { Icon } from 'semantic-ui-react'
 
 function Footer() {
   return (
-    <Segment inverted vertical id={styles.container}>
-      <Container>
-        <Header as="h3" textAlign="center" inverted>
-          Built with <Icon name="heart" />
-          in the center of Zurich.
-        </Header>
+    <div className="p-16 text-white bg-[#00023e]">
+      <p>
+        Built with <Icon name="heart" />
+        in the center of Zurich.
+      </p>
 
-        <Header as="h6" textAlign="center" inverted>
-          Do you want to have a look at the code? Head over to{' '}
-          <a href="https://github.com/uzh-bf/joinus">
-            <Icon name="github" />
-            GitHub
-          </a>{' '}
-          , where we also host the KlickerUZH and some of our other open-source
-          projects.
-        </Header>
-      </Container>
-    </Segment>
+      <p>
+        Do you want to have a look at the code? Head over to{' '}
+        <a
+          href="https://github.com/uzh-bf/joinus"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Icon name="github" />
+          GitHub
+        </a>{' '}
+        , where we also host the{' '}
+        <a
+          href="https://github.com/uzh-bf/klicker-uzh"
+          target="_blank"
+          rel="noreferrer"
+        >
+          KlickerUZH
+        </a>{' '}
+        and some of our other open-source projects.
+      </p>
+    </div>
   )
 }
 

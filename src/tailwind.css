@@ -1071,22 +1071,6 @@ select {
   margin-bottom: 0;
 }
 
-.aspect-w-1 {
-  position: relative;
-  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
-  --tw-aspect-w: 1;
-}
-
-.aspect-w-1 > * {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
 .title-bg {
   background-image: url('../public/images/bfinverted_transparent.png');
 }
@@ -1196,16 +1180,20 @@ select {
   display: none;
 }
 
-.aspect-1 {
-  aspect-ratio: 1;
-}
-
 .h-\[85vh\] {
   height: 85vh;
 }
 
-.h-14 {
-  height: 3.5rem;
+.h-64 {
+  height: 16rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .h-auto {
@@ -1220,16 +1208,20 @@ select {
   height: 5rem;
 }
 
-.h-16 {
-  height: 4rem;
-}
-
 .h-48 {
   height: 12rem;
 }
 
-.h-64 {
-  height: 16rem;
+.h-36 {
+  height: 9rem;
+}
+
+.h-28 {
+  height: 7rem;
+}
+
+.h-24 {
+  height: 6rem;
 }
 
 .min-h-\[90vh\] {
@@ -1240,8 +1232,16 @@ select {
   width: 100%;
 }
 
-.w-auto {
-  width: auto;
+.w-64 {
+  width: 16rem;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
+.w-36 {
+  width: 9rem;
 }
 
 .max-w-none {
@@ -1306,14 +1306,6 @@ select {
 
 .gap-2 {
   gap: 0.5rem;
-}
-
-.gap-12 {
-  gap: 3rem;
-}
-
-.gap-16 {
-  gap: 4rem;
 }
 
 .self-start {
@@ -1554,10 +1546,6 @@ select {
     max-width: 56rem;
   }
 
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1597,5 +1585,10 @@ select {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }

@@ -86,17 +86,6 @@ export const employees = [
     time: '10.2020',
   },
   {
-    name: 'Celine',
-    team: 'Teaching Center',
-    picture: 'placeholder.jpg',
-    study: 'Bachelor Interdisz. Naturwissenschaften',
-    tasklist: [
-      'Erstellung von eLearning Kursinhalten',
-      'Technischer Support im Semesterbetrieb',
-    ],
-    time: '01.2021',
-  },
-  {
     name: 'Matthias',
     team: 'Weiterbildung',
     picture: 'matthias.png',
@@ -158,6 +147,16 @@ export const employees = [
 ]
 
 export const alumni = [
+  {
+    name: 'Celine',
+    team: 'Teaching Center',
+    picture: 'placeholder.jpg',
+    study: 'Bachelor Interdisz. Naturwissenschaften',
+    tasklist: [
+      'Erstellung von eLearning Kursinhalten',
+      'Technischer Support im Semesterbetrieb',
+    ],
+  },
   {
     name: 'Senthuasa',
     team: 'Weiterbildung',

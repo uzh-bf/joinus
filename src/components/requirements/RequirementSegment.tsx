@@ -1,5 +1,4 @@
 import React from 'react'
-import { Grid } from 'semantic-ui-react'
 import { requirements } from '../../data'
 import SegmentContainer from '../SegmentContainer'
 import RequirementColumn from './RequirementColumn'
@@ -16,11 +15,11 @@ function RequirementSegment({ backgroundColor }: Props) {
       nextUp="#positions"
       backgroundColor={backgroundColor}
     >
-      <Grid.Row divided centered>
+      <div className="flex flex-col gap-8 md:flex-row">
         {requirements.map((req) => (
           <RequirementColumn key={req.header} {...req} />
         ))}
-      </Grid.Row>
+      </div>
     </SegmentContainer>
   )
 }

@@ -1,16 +1,9 @@
 import React from 'react'
-import {
-  Grid,
-  Header,
-  Icon,
-  SemanticCOLORS,
-  SemanticICONS,
-} from 'semantic-ui-react'
-import styles from './AdvantageColumn.module.scss'
+import { Icon, SemanticICONS } from 'semantic-ui-react'
 
 interface Props {
   iconName: SemanticICONS
-  iconColor: SemanticCOLORS
+  iconColor: string
   advantageTitle: string
   advantageText: string
 }
@@ -22,15 +15,18 @@ function AdvantageColumn({
   advantageText,
 }: Props) {
   return (
-    <Grid.Column>
-      <div className={styles.icon}>
-        <Icon circular inverted color={iconColor} size="huge" name={iconName} />
+    <div className="flex flex-col items-center flex-1">
+      <div
+        className="flex flex-col items-center justify-center px-[15px] rounded-full py-[20px]"
+        style={{ backgroundColor: iconColor }}
+      >
+        <Icon className="!mr-0" inverted size="huge" name={iconName} />
       </div>
-      <Header as="h3" size="large">
+      <h3 className="self-start text-2xl font-normal md:text-3xl font-thesans-bold">
         {advantageTitle}
-      </Header>
-      <p className={styles.description}>{advantageText}</p>
-    </Grid.Column>
+      </h3>
+      <p className="prose-xl">{advantageText}</p>
+    </div>
   )
 }
 

@@ -1,7 +1,6 @@
 import React from 'react'
-import { Grid, Header, Segment } from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
 import ScrollDown from './ScrollDown'
-import styles from './SegmentContainer.module.scss'
 
 export interface Props {
   id: string
@@ -20,39 +19,32 @@ function SegmentContainer({
 }: Props): React.ReactElement {
   if (title) {
     return (
-      <Segment
-        vertical
-        className={styles.segmentContainer}
-        style={{ background: backgroundColor }}
+      <div
+        className="py-16 border-0 border-t border-gray-200 border-solid"
+        style={{ backgroundColor }}
         id={id}
       >
-        <div className={styles.content}>
+        <div>
           <Grid container stackable>
-            <Grid.Row centered className={styles.headerRow}>
-              <Header as="h2" textAlign="center" size="huge">
+            <Grid.Row centered>
+              <h3 className="!mb-12 text-3xl font-normal md:text-4xl font-thesans-bold">
                 {title}
-              </Header>
+              </h3>
             </Grid.Row>
             {children}
           </Grid>
         </div>
 
         {nextUp && <ScrollDown scrollTo={nextUp} />}
-      </Segment>
+      </div>
     )
   }
 
   return (
-    <Segment
-      vertical
-      className={styles.segmentContainer}
-      style={{ background: backgroundColor }}
-      id={id}
-    >
-      <div className={styles.content}>{children}</div>
-
+    <div className="py-16" style={{ backgroundColor }} id={id}>
+      <div>{children}</div>
       {nextUp && <ScrollDown scrollTo={nextUp} />}
-    </Segment>
+    </div>
   )
 }
 

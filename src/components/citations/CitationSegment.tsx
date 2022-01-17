@@ -5,7 +5,6 @@ import ImageManuel from '../../../public/images/people/manuel.jpg'
 import ImagePascal from '../../../public/images/people/pascal.jpg'
 import SegmentContainer from '../SegmentContainer'
 import Citation from './Citation'
-import styles from './CitationSegment.module.scss'
 
 export interface Props {
   backgroundColor: string
@@ -25,7 +24,7 @@ function CitationSegment({ backgroundColor }: Props) {
         reversed="mobile"
         centered
       >
-        <Grid.Column width={3} />
+        <Grid.Column width={1} />
 
         <Grid.Column width={8} textAlign="right">
           <Citation
@@ -37,18 +36,33 @@ function CitationSegment({ backgroundColor }: Props) {
             Semesterferien wiederum sein Budget aufbessern.
           </Citation>
         </Grid.Column>
-
         <Grid.Column width={5}>
-          <div className={styles.image}>
-            <Image src={ImageManuel} />
+          <div className="relative">
+            <Image
+              className="rounded-xl"
+              src={ImageManuel}
+              layout="responsive"
+              alt="Manuel"
+            />
           </div>
         </Grid.Column>
       </Grid>
 
-      <Grid container stackable verticalAlign="middle" centered>
+      <Grid
+        className="!mt-16"
+        container
+        stackable
+        verticalAlign="middle"
+        centered
+      >
         <Grid.Column width={5}>
-          <div className={styles.image}>
-            <Image src={ImagePascal} />
+          <div className="relative">
+            <Image
+              className="rounded-xl"
+              src={ImagePascal}
+              layout="responsive"
+              alt="Pascal"
+            />
           </div>
         </Grid.Column>
 
@@ -64,7 +78,7 @@ function CitationSegment({ backgroundColor }: Props) {
           </Citation>
         </Grid.Column>
 
-        <Grid.Column width={3} />
+        <Grid.Column width={1} />
       </Grid>
     </SegmentContainer>
   )

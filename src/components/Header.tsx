@@ -9,7 +9,7 @@ function Header() {
           Dein neuer Job?
         </h1>
         <h2 className="p-4 m-auto mt-16 text-3xl font-normal text-center md:text-5xl md:max-w-4xl font-thesans-plain text-gray-50">
-          Das Institut für Banking und Finance sucht Informatiker*innen! Finde
+          Das Institut für Banking und Finance sucht Informatiker:innen! Finde
           heraus, was es so speziell macht.
         </h2>
         <ScrollDown inverted scrollTo="#citations" />

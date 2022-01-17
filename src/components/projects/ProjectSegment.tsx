@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button } from 'semantic-ui-react'
+import { Button, Icon } from 'semantic-ui-react'
 import { projects } from '../../data'
 import SegmentContainer from '../SegmentContainer'
 import ProjectDetails from './ProjectDetails'
@@ -31,8 +31,16 @@ function ProjectSegment({ backgroundColor }: Props) {
                   {projectData.title}
                 </h4>
                 <div className="mt-2 text-lg font-thesans-plain">
-                  {projectData.subtitle}
+                  {projectData.subtitle}{' '}
                 </div>
+                {projectData.href && (
+                  <div className="mt-1">
+                    <a href={projectData.href} target="_blank" rel="noreferrer">
+                      <Icon name="external" />
+                      Weitere Informationen
+                    </a>
+                  </div>
+                )}
                 <div className="hidden mt-2 md:block">
                   <Button
                     basic

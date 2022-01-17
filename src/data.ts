@@ -274,8 +274,9 @@ export const projects = {
     cite: `Um Klicker so interaktiv wie möglich zu machen, habe ich die Seite mit React mit einem Node.js Server
       aufgebaut. Mit einem QR Code gelangen die Teilnehmer auf die Seite und müssen nur einmal klicken, um abzustimmen.`,
     citeName: 'Roli',
-    tags: ['react', 'node.js', 'graphql', 'kubernetes', 'azure'],
+    tags: ['React', 'Next.js', 'Kubernetes', 'MS Azure'],
     href: 'https://www.klicker.uzh.ch',
+    team: 'Team Teaching Center',
   },
   dynamics: {
     img: 'projects/dynamics.jpg',
@@ -288,8 +289,9 @@ export const projects = {
     cite: `Trotz Startschwierigkeiten kenne ich mich mittlerweile so gut im CRM aus, dass ich Automatisierungen schon fast schneller als unser Customizing-Partner implementieren kann.
       Ich bin zwar noch immer kein Fan der C# / .NET Umgebung, doch das CRM bietet uns so viel Mehrwert, dass sich die Mühe lohnt.`,
     citeName: 'Manuel',
-    tags: ['automation', 'CRM', 'azure'],
+    tags: ['Automation', 'CRM', 'MS Azure'],
     href: null,
+    team: 'Team Weiterbildung',
   },
   redesign: {
     img: 'projects/redesign.jpg',
@@ -308,8 +310,9 @@ export const projects = {
       und Einschränkungen des CMS zu umgehen und haben performante und benutzerfreundliche Zusätze eingepflegt.
       Die neue Struktur der Datenbank erlaubt uns ausserdem, viel mehr Informationen aus den Daten zu ziehen.`,
     citeName: 'Pascal',
-    tags: ['react', 'php'],
+    tags: ['React', 'PHP', 'Magnolia CMS'],
     href: null,
+    team: 'Team Kommunikation',
   },
   tools: {
     img: 'projects/attendance.png',
@@ -329,8 +332,9 @@ export const projects = {
       veranschaulicht die darin enthaltenen Informationen. Als Data Science Masterstudent kann ich hier mein Wissen voll nutzen
       und so die Institutsleitung unterstützen. Daneben lerne ich viel über Visualisierungen und Web Development.`,
     cite2Name: 'Pascal',
-    tags: ['react', 'php', 'data modelling'],
+    tags: ['React', 'PHP', 'Data Modelling'],
     href: null,
+    team: 'Team Kommunikation',
   },
   lehre: {
     img: 'projects/elearning.png',
@@ -348,8 +352,9 @@ export const projects = {
     cite2: `Unser neu entwickeltes Strapi Kurs-CMS erlaubt es jedem, Änderungen an Kursinhalten vorzunehmen, ohne sich mit HTML auszukennen.
       Die Inhalte werden danach als React.js Applikation exportiert und in ein LMS wie OLAT eingebunden.`,
     cite2Name: 'Roli',
-    tags: ['react', 'strapi', 'python', 'lms'],
+    tags: ['React', 'Next.js', 'Strapi CMS', 'Python'],
     href: null,
+    team: 'Team Teaching Center',
   },
   gbl: {
     img: 'projects/pfm_game.png',
@@ -362,23 +367,23 @@ export const projects = {
     cite: `Unsere Simulationen und Serious Games erlauben es den Studierenden, theoretische Konzepte spielerisch anzuwenden.
       Diese Art des Lernens kommt immer sehr gut an und macht es macht viel Spass, dabei mitzuwirken.`,
     citeName: 'Roli',
-    tags: ['react', 'python', 'gamification', 'simulation'],
+    tags: ['React', 'Next.js', 'Python', 'Gamification'],
     href: 'https://www.gbl.uzh.ch',
+    team: null,
   },
   devops: {
     img: 'projects/ci.png',
     title: 'Devops und Cloud-Plattformen',
     subtitle:
       'Unterstützung diverser Teams hinsichtlich Cloud-Deployment und Operations',
-    desc: `Am IBF bieten wir mehrere Veranstaltungen und Seminare an, die durch Simulationen unterstützt werden.
-          Die Studierenden übernehmen zum Beispiel die Rolle einer Bank und müssen diese über mehrere Perioden bestmöglich führen.
-          Verschiedenen Teams ("Banken") spielen gegen- bzw. miteinander auf demselben Markt und können sich durch Kundenzufriedenheit,
-          Performance, und weitere Faktoren zum Marktführer entwickeln.`,
-    cite: `Unsere Simulationen und Serious Games erlauben es den Studierenden, theoretische Konzepte spielerisch anzuwenden.
-      Diese Art des Lernens kommt immer sehr gut an und macht es macht viel Spass, dabei mitzuwirken.`,
+    desc: `Wir unterstützen unsere Entwickler teamübergreifend im Bereich der Automatisierung (z.B., mit Gitlab CI, Python-Scripting, und Pulumi) und
+    hinsichtlich Entwicklung, Deployment und Operations von Apps auf modernen Plattformen wie Kubernetes und Microsoft Azure.`,
+    cite: `Die Nutzung moderner Architekturen und Technologien wie Kubernetes erlaubt es uns, sehr flexibel zu skalieren und trotzdem kosteneffizient zu arbeiten.
+    Seit wir den KlickerUZH auf Microsoft Azure hosten, bezahlen wir dank serverless MongoDB und Redis nur noch für Leistung, die wir wirklich nutzen.`,
     citeName: 'Roli',
-    tags: ['azure', 'kubernetes', 'gitlab ci', 'pulumi'],
+    tags: ['MS Azure', 'Kubernetes', 'Gitlab CI', 'Pulumi'],
     href: null,
+    team: null,
   },
 }
 

@@ -60,6 +60,11 @@ function ProjectSegment({ backgroundColor }: Props) {
                     {tag}
                   </div>
                 ))}
+                {projectData.team && (
+                  <div className="px-2 py-1 mt-2 text-gray-600 bg-blue-100 rounded-lg md:mt-0">
+                    {projectData.team}
+                  </div>
+                )}
               </div>
             </div>
             {projectKey === showProject && (

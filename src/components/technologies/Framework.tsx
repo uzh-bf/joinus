@@ -13,7 +13,7 @@ function Framework({ image, title }: Props) {
       <div className="relative w-full h-16">
         <Image src={ImageSrc} layout="fill" objectFit="contain" />
       </div>
-      <p className="mt-2 text-lg font-thesans-plain">{title}</p>
+      <p className="mt-2 text-lg text-center font-thesans-plain">{title}</p>
     </div>
   )
 }

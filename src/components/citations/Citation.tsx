@@ -1,6 +1,5 @@
 import React from 'react'
-import { Container, Header } from 'semantic-ui-react'
-import styles from './Citation.module.scss'
+import { Container } from 'semantic-ui-react'
 
 interface Props {
   title: string
@@ -11,13 +10,13 @@ interface Props {
 function Citation({ title, author, children }: Props): React.ReactElement {
   return (
     <Container>
-      <Header as="h3">{title}</Header>
+      <h3 className="text-2xl font-normal font-thesans-bold">{title}</h3>
 
-      <blockquote className={styles.citation}>
-        <p>{children}</p>
+      <blockquote className="mt-4 mb-4 text-lg rounded-xl">
+        {children}
       </blockquote>
 
-      <p className={styles.person}>{author}</p>
+      <p className="text-md">{author}</p>
     </Container>
   )
 }

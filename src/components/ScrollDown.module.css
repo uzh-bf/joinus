@@ -1,22 +1,19 @@
-.container {
-}
-
 .downArrow {
   width: fit-content;
-  margin: 4rem auto 0 auto;
+  margin: 8rem auto 0 auto;
   left: calc(50% - 45px);
 
   -moz-animation: bounce 3s infinite;
   -webkit-animation: bounce 3s infinite;
   animation: bounce 3s infinite;
+}
 
-  i:global(:not(.inverted)) {
-    color: #042b4a !important;
+.downArrow i:global(:not(.inverted)) {
+  color: #042b4a !important;
+}
 
-    &:hover {
-      color: #00023e !important;
-    }
-  }
+.downArrow i:global(:not(.inverted)):hover {
+  color: #00023e !important;
 }
 
 @-moz-keyframes bounce {

@@ -1,0 +1,22 @@
+@tailwind base;
+
+@tailwind components;
+
+@layer components {
+  .title-bg {
+    background-image: url('../public/images/bfinverted_transparent.png');
+  }
+}
+
+@tailwind utilities;
+
+@font-face {
+  font-family: 'TheSans Plain';
+  src: url('../public/woff/TheSans-LP5Plain.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TheSans Bold';
+  src: url('../public/woff/TheSans-LP7Bld.woff') format('woff');
+  font-weight: bold;
+}

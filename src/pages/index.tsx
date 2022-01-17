@@ -25,16 +25,21 @@ function Home() {
       <Header />
 
       <CitationSegment backgroundColor="white" />
+
       <AdvantagesSegment backgroundColor="white" />
 
       <ProjectSegment backgroundColor="white" />
+
+      <PositionSegment backgroundColor="white" />
+
       <FrameworkSegment backgroundColor="white" />
 
+      <RequirementSegment backgroundColor="white" />
+
       <TeamSegment backgroundColor="white" />
+
       <DepartmentSegment backgroundColor="white" />
 
-      <RequirementSegment backgroundColor="white" />
-      <PositionSegment backgroundColor="white" />
       <ApplicationFormSegment backgroundColor="white" />
 
       <Footer />

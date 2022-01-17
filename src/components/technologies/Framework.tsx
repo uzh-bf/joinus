@@ -1,7 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import { Header } from 'semantic-ui-react'
-import styles from './Framework.module.scss'
 
 interface Props {
   image: string
@@ -11,9 +9,11 @@ interface Props {
 function Framework({ image, title }: Props) {
   const ImageSrc = require(`../../../public/images/slideshow/${image}`)
   return (
-    <div className={styles.container}>
-      <Image src={ImageSrc} />
-      <Header className={styles.description}>{title}</Header>
+    <div className="flex flex-col items-center">
+      <div className="relative w-full h-16">
+        <Image src={ImageSrc} layout="fill" objectFit="contain" />
+      </div>
+      <p className="mt-2 text-lg font-thesans-plain">{title}</p>
     </div>
   )
 }

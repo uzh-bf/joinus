@@ -1,10 +1,9 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
-import { Grid, Header, Menu, Table } from 'semantic-ui-react'
+import { Menu, Table } from 'semantic-ui-react'
 import DeptImage from '../../../public/images/people/institut.jpg'
 import { alumni, employees } from '../../data'
 import SegmentContainer from '../SegmentContainer'
-import styles from './DepartmentSegment.module.scss'
 import EmployeeRow from './EmployeeRow'
 
 export interface Props {
@@ -18,7 +17,7 @@ function DepartmentSegment({ backgroundColor }: Props) {
     <SegmentContainer
       id="department"
       title="Unser Institut"
-      nextUp="#requirements"
+      nextUp="#application"
       backgroundColor={backgroundColor}
     >
       <Menu pointing fluid widths={3}>
@@ -40,73 +39,48 @@ function DepartmentSegment({ backgroundColor }: Props) {
       </Menu>
 
       {isShown === 'department' && (
-        <>
-          <Grid.Row centered>
-            <Header as="h3">Unsere Instituts-Mitarbeiter</Header>
-          </Grid.Row>
-          <Grid.Row className={styles.imageRow}>
-            <Image src={DeptImage} />
-          </Grid.Row>
-          <Grid.Row centered>
-            <p>
-              Gesamthaft sind wir rund 250 Mitarbeiter, Professoren und
-              Forscher.
-            </p>
-          </Grid.Row>
-        </>
+        <div>
+          <p className="m-auto mb-4 prose prose-lg">
+            Gesamthaft sind wir rund 250 Mitarbeiter, Professoren und Forscher.
+          </p>
+          <div>
+            <Image src={DeptImage} layout="responsive" />
+          </div>
+        </div>
       )}
 
       {isShown === 'current' && (
-        <>
-          <Grid.Row centered>
-            <Header as="h3">Unser Team</Header>
-          </Grid.Row>
-          <Grid.Row centered>
-            <Table basic="very" size="small" collapsing>
-              <Table.Header>
-                <Table.Row>
-                  <Table.HeaderCell />
-                  <Table.HeaderCell>Studienrichtung</Table.HeaderCell>
-                  <Table.HeaderCell>Aufgabenbereiche u.A.</Table.HeaderCell>
-                  <Table.HeaderCell>Am Institut seit</Table.HeaderCell>
-                </Table.Row>
-              </Table.Header>
-              <Table.Body>
-                {employees.map((employee) => (
-                  <EmployeeRow key={employee.name} {...employee} />
-                ))}
-              </Table.Body>
-            </Table>
-          </Grid.Row>
-        </>
+        <Table className="!m-auto" basic="very" size="small" collapsing>
+          <Table.Header>
+            <Table.Row>
+              <Table.HeaderCell />
+              <Table.HeaderCell>Studienrichtung</Table.HeaderCell>
+              <Table.HeaderCell>Aufgabenbereiche u.A.</Table.HeaderCell>
+            </Table.Row>
+          </Table.Header>
+          <Table.Body>
+            {employees.map((employee) => (
+              <EmployeeRow key={employee.name} {...employee} />
+            ))}
+          </Table.Body>
+        </Table>
       )}
 
       {isShown === 'alumni' && (
-        <>
-          <Grid.Row centered>
-            <Header as="h3">Unsere Alumni (seit 2020)</Header>
-          </Grid.Row>
-          <Grid.Row centered>
-            <Table basic="very" size="small" collapsing>
-              <Table.Header>
-                <Table.Row>
-                  <Table.HeaderCell />
-                  <Table.HeaderCell>Studienrichtung</Table.HeaderCell>
-                  <Table.HeaderCell>Aufgabenbereiche u.A.</Table.HeaderCell>
-                </Table.Row>
-              </Table.Header>
-              <Table.Body>
-                {alumni.map((alumnus) => (
-                  <EmployeeRow
-                    key={alumnus.name}
-                    withTime={false}
-                    {...alumnus}
-                  />
-                ))}
-              </Table.Body>
-            </Table>
-          </Grid.Row>
-        </>
+        <Table className="!m-auto" basic="very" size="small" collapsing>
+          <Table.Header>
+            <Table.Row>
+              <Table.HeaderCell />
+              <Table.HeaderCell>Studienrichtung</Table.HeaderCell>
+              <Table.HeaderCell>Aufgabenbereiche u.A.</Table.HeaderCell>
+            </Table.Row>
+          </Table.Header>
+          <Table.Body>
+            {alumni.map((alumnus) => (
+              <EmployeeRow key={alumnus.name} withTime={false} {...alumnus} />
+            ))}
+          </Table.Body>
+        </Table>
       )}
     </SegmentContainer>
   )

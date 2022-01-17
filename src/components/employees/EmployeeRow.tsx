@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { Header, List, Table } from 'semantic-ui-react'
-import styles from './EmployeeRow.module.scss'
+import { List, Table } from 'semantic-ui-react'
 
 interface Props {
   name: string
@@ -26,15 +25,16 @@ function EmployeeRow({
   return (
     <Table.Row>
       <Table.Cell>
-        <Header as="h4" image>
-          <div className={styles.image}>
-            <Image src={ImageSrc} />
-          </div>
-          <Header.Content>
-            {name}
-            <Header.Subheader>{team}</Header.Subheader>
-          </Header.Content>
-        </Header>
+        <div className="relative h-24 w-36">
+          <Image
+            src={ImageSrc}
+            layout="fill"
+            objectFit="cover"
+            className="rounded"
+          />
+        </div>
+        <div className="mt-2 text-lg font-normal font-thesans-bold">{name}</div>
+        <div className="text-md">{team}</div>
       </Table.Cell>
       <Table.Cell>{study}</Table.Cell>
       <Table.Cell>
@@ -44,7 +44,7 @@ function EmployeeRow({
           ))}
         </List>
       </Table.Cell>
-      {withTime && <Table.Cell className="mobile hidden">{time}</Table.Cell>}
+      {withTime && <Table.Cell className="hidden mobile">{time}</Table.Cell>}
     </Table.Row>
   )
 }

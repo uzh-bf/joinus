@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/uzh-bf/joinus/compare/v2.3.2...v3.0.0) (2022-01-17)
+
+
+### Features
+
+* add DE ([0ace859](https://github.com/uzh-bf/joinus/commit/0ace859fa3a2cd1a8ff09f9e9a29114ed6ee42a8))
+* rework the JoinUs page with TailwindCSS and TheSans ([#131](https://github.com/uzh-bf/joinus/issues/131)) ([cc147f4](https://github.com/uzh-bf/joinus/commit/cc147f491d49fe5bc9e99a4245c30e561f4df3e6))
+* use next/image for all images, fix: add google fonts to _document to allow for optimizations by next ([8f598d3](https://github.com/uzh-bf/joinus/commit/8f598d36d3629b67754a564bcc88abf6b13b5961))
+
+
+### Bug Fixes
+
+* add keys to array elements ([c9c1266](https://github.com/uzh-bf/joinus/commit/c9c1266599644c866581260d3e8dbf6336d2ffc3))
+* build and switch to Next.js ESLint integration ([6d99eb6](https://github.com/uzh-bf/joinus/commit/6d99eb667c22a9b2a6fa7d385d842cfb3b9fb2c5))
+* remove open text ([22d6660](https://github.com/uzh-bf/joinus/commit/22d6660a038d5220d82c7b90b1a1ad2c7f20ca86))
+
 ### [2.3.2](https://github.com/uzh-bf/joinus/compare/v2.3.1...v2.3.2) (2021-07-03)
 
 

@@ -33,27 +33,28 @@
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
   height: 24px;
-  html {
-    font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-  }
+}
 
-  @media only screen and (max-width: 767px) {
-    .ui.stackable.grid:not(.vertically) > .row {
-      padding: 0.33rem !important;
-    }
-  }
+.bm-cross-button html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
 
-  body {
-    margin: 0;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    hyphens: auto;
+@media only screen and (max-width: 767px) {
+  .bm-cross-button .ui.stackable.grid:not(.vertically) > .row {
+    padding: 0.33rem !important;
   }
+}
+
+.bm-cross-button body {
+  margin: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 
 /* Color/shape of close button cross */

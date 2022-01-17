@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import { Icon } from 'semantic-ui-react'
 import CodeImage from '../../../public/images/code_example.png'
-import KlickerImg from '../../../public/images/projects/klicker.jpg'
+import KlickerImg from '../../../public/images/projects/klicker.png'
 import SegmentContainer from '../SegmentContainer'
 import SubscribeForm from './SubscribeForm'
 

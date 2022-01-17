@@ -2,7 +2,6 @@ import React from 'react'
 import { technologies } from '../../data'
 import SegmentContainer from '../SegmentContainer'
 import Framework from './Framework'
-import styles from './FrameworkSegment.module.scss'
 
 export interface Props {
   backgroundColor: string
@@ -16,12 +15,10 @@ function FrameworkSegment({ backgroundColor }: Props) {
       nextUp="#teams"
       backgroundColor={backgroundColor}
     >
-      <div className={styles.slideshowContainer}>
-        <div className={styles.slideshowContent}>
-          {technologies.map((tech) => (
-            <Framework key={tech.title} {...tech} />
-          ))}
-        </div>
+      <div className="grid grid-cols-2 gap-8 md:gap-16 md:grid-cols-3">
+        {technologies.map((tech) => (
+          <Framework key={tech.title} {...tech} />
+        ))}
       </div>
     </SegmentContainer>
   )

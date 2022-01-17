@@ -46,19 +46,6 @@ export const employees = [
     ],
     time: '04.2019',
   },
-
-  {
-    name: 'Dimitri',
-    team: 'Teaching Center',
-    picture: 'dimitri.jpg',
-    study: 'Master Information Systems',
-    tasklist: [
-      'Erstellung und Betreuung von Website-Projekten',
-      'Erarbeiten eines CMS für Kursinhalte',
-      'Unterstützung div. IT Projekte des TC',
-    ],
-    time: '08.2019',
-  },
   {
     name: 'Rémy',
     team: 'Kommunikation',
@@ -156,6 +143,18 @@ export const alumni = [
       'Erstellung von eLearning Kursinhalten',
       'Technischer Support im Semesterbetrieb',
     ],
+  },
+  {
+    name: 'Dimitri',
+    team: 'Teaching Center',
+    picture: 'dimitri.jpg',
+    study: 'Master Information Systems',
+    tasklist: [
+      'Erstellung und Betreuung von Website-Projekten',
+      'Erarbeiten eines CMS für Kursinhalte',
+      'Unterstützung div. IT Projekte des TC',
+    ],
+    time: '08.2019',
   },
   {
     name: 'Senthuasa',
@@ -290,6 +289,7 @@ export const projects = {
       Ich bin zwar noch immer kein Fan der C# / .NET Umgebung, doch das CRM bietet uns so viel Mehrwert, dass sich die Mühe lohnt.`,
     citeName: 'Manuel',
     tags: ['automation', 'CRM', 'azure'],
+    href: null,
   },
   redesign: {
     img: 'projects/redesign.jpg',
@@ -309,6 +309,7 @@ export const projects = {
       Die neue Struktur der Datenbank erlaubt uns ausserdem, viel mehr Informationen aus den Daten zu ziehen.`,
     citeName: 'Pascal',
     tags: ['react', 'php'],
+    href: null,
   },
   tools: {
     img: 'projects/attendance.png',
@@ -329,6 +330,7 @@ export const projects = {
       und so die Institutsleitung unterstützen. Daneben lerne ich viel über Visualisierungen und Web Development.`,
     cite2Name: 'Pascal',
     tags: ['react', 'php', 'data modelling'],
+    href: null,
   },
   lehre: {
     img: 'projects/elearning.png',
@@ -347,6 +349,7 @@ export const projects = {
       Die Inhalte werden danach als React.js Applikation exportiert und in ein LMS wie OLAT eingebunden.`,
     cite2Name: 'Roli',
     tags: ['react', 'strapi', 'python', 'lms'],
+    href: null,
   },
   gbl: {
     img: 'projects/pfm_game.png',
@@ -375,6 +378,7 @@ export const projects = {
       Diese Art des Lernens kommt immer sehr gut an und macht es macht viel Spass, dabei mitzuwirken.`,
     citeName: 'Roli',
     tags: ['azure', 'kubernetes', 'gitlab ci', 'pulumi'],
+    href: null,
   },
 }
 

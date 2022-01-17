@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.1](https://github.com/uzh-bf/joinus/compare/v3.0.0...v3.0.1) (2022-01-17)
+
+
+### Enhancements
+
+* add external link for projects where available ([555b9c5](https://github.com/uzh-bf/joinus/commit/555b9c5fdd9da0ec1678af4e5096f6d4f6483da1))
+
 ## [3.0.0](https://github.com/uzh-bf/joinus/compare/v2.3.2...v3.0.0) (2022-01-17)
 
 

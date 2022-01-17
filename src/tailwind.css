@@ -1224,6 +1224,14 @@ select {
   height: 4rem;
 }
 
+.h-48 {
+  height: 12rem;
+}
+
+.h-64 {
+  height: 16rem;
+}
+
 .min-h-\[90vh\] {
   min-height: 90vh;
 }

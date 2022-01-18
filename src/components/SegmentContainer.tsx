@@ -36,8 +36,12 @@ function SegmentContainer({
   }
 
   return (
-    <div className="py-16" style={{ backgroundColor }} id={id}>
-      <div>{children}</div>
+    <div
+      className="m-auto py-16 max-w-[90rem]"
+      style={{ backgroundColor }}
+      id={id}
+    >
+      {children}
       {nextUp && <ScrollDown scrollTo={nextUp} />}
     </div>
   )

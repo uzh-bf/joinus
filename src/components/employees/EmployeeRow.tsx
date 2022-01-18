@@ -25,7 +25,7 @@ function EmployeeRow({
   return (
     <Table.Row>
       <Table.Cell>
-        <div className="relative h-24 w-36">
+        <div className="relative h-28 w-36">
           <Image
             src={ImageSrc}
             layout="fill"

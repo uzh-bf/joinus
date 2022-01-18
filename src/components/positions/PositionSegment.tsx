@@ -45,7 +45,7 @@ function Position({ title, description, children, imgSrc, openPositions }) {
                 {position.title}
               </h5>
               <p>{position.description}</p>
-              <div className="flex flex-row items-end justify-between">
+              <div className="flex flex-row flex-wrap items-end justify-between gap-2">
                 <div className="flex flex-row gap-2">
                   {position.tags.map((tag) => (
                     <div

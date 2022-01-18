@@ -1,5 +1,4 @@
 import React from 'react'
-import { Container } from 'semantic-ui-react'
 
 interface Props {
   title: string
@@ -9,7 +8,7 @@ interface Props {
 
 function Citation({ title, author, children }: Props): React.ReactElement {
   return (
-    <Container>
+    <div>
       <h3 className="text-2xl font-normal font-thesans-bold">{title}</h3>
 
       <blockquote className="mt-4 mb-4 text-lg rounded-xl">
@@ -17,7 +16,7 @@ function Citation({ title, author, children }: Props): React.ReactElement {
       </blockquote>
 
       <p className="text-md">{author}</p>
-    </Container>
+    </div>
   )
 }
 

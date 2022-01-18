@@ -2,7 +2,7 @@
   "name": "@uzh-bf/joinus",
   "description": "Overview of IT Projects and Positions at the Dept. of Banking and Finance, University of Zurich",
   "homepage": "https://uzh-bf.github.io/joinus/",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/uzh-bf/joinus"

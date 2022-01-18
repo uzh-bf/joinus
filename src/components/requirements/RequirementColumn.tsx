@@ -8,7 +8,7 @@ interface Props {
 
 function RequirementColumn({ header, must }: Props) {
   return (
-    <div className="flex-1">
+    <div className="flex-1 px-4">
       <h4 className="text-2xl font-normal md:text-3xl font-thesans-bold">
         {header}
       </h4>

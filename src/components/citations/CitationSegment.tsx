@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import { Grid } from 'semantic-ui-react'
 import ImageManuel from '../../../public/images/people/manuel.jpg'
 import ImagePascal from '../../../public/images/people/pascal.jpg'
 import SegmentContainer from '../SegmentContainer'
@@ -17,16 +16,8 @@ function CitationSegment({ backgroundColor }: Props) {
       nextUp="#advantages"
       backgroundColor={backgroundColor}
     >
-      <Grid
-        container
-        stackable
-        verticalAlign="middle"
-        reversed="mobile"
-        centered
-      >
-        <Grid.Column width={1} />
-
-        <Grid.Column width={8} textAlign="right">
+      <div className="flex flex-col items-center w-full gap-8 px-4 md:flex-row">
+        <div className="flex-1 order-2 md:order-1">
           <Citation
             title="Flexibilität ist Trumpf"
             author="Manuel Keller, studiert Information Systems"
@@ -35,38 +26,33 @@ function CitationSegment({ backgroundColor }: Props) {
             Prüfungen kann man problemlos reduzieren oder aussetzen; während den
             Semesterferien wiederum sein Budget aufbessern.
           </Citation>
-        </Grid.Column>
-        <Grid.Column width={5}>
+        </div>
+        <div className="flex-initial order-1 md:order-2 w-[330px]">
           <div className="relative">
             <Image
               className="rounded-xl"
               src={ImageManuel}
               layout="responsive"
               alt="Manuel"
+              objectFit="cover"
             />
           </div>
-        </Grid.Column>
-      </Grid>
-
-      <Grid
-        className="md:!mt-16"
-        container
-        stackable
-        verticalAlign="middle"
-        centered
-      >
-        <Grid.Column width={5}>
+        </div>
+      </div>
+      <div className="flex flex-col items-center w-full gap-8 px-4 mt-4 mt-8 md:mt-0 md:flex-row">
+        <div className="flex-initial w-[330px]">
           <div className="relative">
             <Image
               className="rounded-xl"
               src={ImagePascal}
               layout="responsive"
               alt="Pascal"
+              objectFit="cover"
             />
           </div>
-        </Grid.Column>
+        </div>
 
-        <Grid.Column width={8}>
+        <div className="flex-1">
           <Citation
             title="Abwechslung und Eigenverantwortung"
             author="Pascal Zehnder, studiert Information Systems"
@@ -76,10 +62,8 @@ function CitationSegment({ backgroundColor }: Props) {
             entscheiden, welche Technologien ich einsetzen will und lerne viel
             dabei.
           </Citation>
-        </Grid.Column>
-
-        <Grid.Column width={1} />
-      </Grid>
+        </div>
+      </div>
     </SegmentContainer>
   )
 }

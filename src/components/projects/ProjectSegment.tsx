@@ -51,17 +51,17 @@ function ProjectSegment({ backgroundColor }: Props) {
                   </Button>
                 </div>
               </div>
-              <div className="flex flex-row gap-2">
+              <div className="flex flex-row flex-wrap gap-2 mt-2">
                 {projectData.tags.map((tag) => (
                   <div
                     key={tag}
-                    className="px-2 py-1 mt-2 text-gray-600 bg-gray-200 rounded-lg md:mt-0"
+                    className="px-2 py-1 text-gray-600 bg-gray-200 rounded-lg md:mt-0"
                   >
                     {tag}
                   </div>
                 ))}
                 {projectData.team && (
-                  <div className="px-2 py-1 mt-2 text-gray-600 bg-blue-100 rounded-lg md:mt-0">
+                  <div className="px-2 py-1 text-gray-600 bg-blue-100 rounded-lg md:mt-0">
                     {projectData.team}
                   </div>
                 )}

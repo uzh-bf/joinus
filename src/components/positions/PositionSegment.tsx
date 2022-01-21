@@ -116,7 +116,14 @@ function PositionSegment({ backgroundColor }: Props) {
           title="Senior IT"
           description="Entwicklung von Geschäftsapplikationen, WebApps, Games und weiterer Projekte"
           imgSrc={KlickerImg}
-          openPositions={[]}
+          openPositions={[
+              {
+                  title: 'Mid-level Web Developer\n',
+                  description: `Du arbeitest mit dem IBF Web Team an der Weiterentwicklung der Instituts-Website um eine moderne benutzerorientierte Präsenz zu schaffen. Die Website basiert auf decoupled React-Komponenten die Daten aus einer Drupal (PHP) Datenbank beziehen. Du unterstützt das Team sowohl in der Programmierung der Komponenten als auch in der Wartung & Anpassung des Content Management Frameworks Drupal.\n\n
+Du bist mindestens im 4. Semester Informatik und hast schon gewisse Programmiererfahrung (idealerweise Web Technologien & React). Weiter solltest du Freude an Kommunikation mit Instituts-Mitarbeiter und Teamfähigkeit mitbringen und an einer längerfristigen Zusammenarbeit interessiert sein.`,
+                  tags: ['Drupal', 'Web Development', 'React', 'PHP'],
+              },
+          ]}
         >
           <p>
             Diese Position ist für Studierende ab dem 5. Semester Informatik im

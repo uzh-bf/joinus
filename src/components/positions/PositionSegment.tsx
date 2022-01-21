@@ -94,7 +94,7 @@ function PositionSegment({ backgroundColor }: Props) {
               description: `Du arbeitest mit unserem eigenentwickelten Kurs-CMS (React, Strapi), um die bestmöglichen eLearning-Kurse für unsere Studierenden bereitzustellen.
                 Du arbeitest dich in die Web-Entwicklung mit HTML/CSS/JS und React ein und gestaltest/entwickelst mit, wenn wir unser eLearning/CMS weiter ausbauen.
                 Im Bereich eAssessment unterstützt du uns bei der automatisierten Prüfungserstellung und -korrektur mit Python und übernimmst längerfristig auch Verantwortung bezüglich Weiterentwicklung unserer Korrektursoftware.`,
-              tags: ['eLearning', 'Web Development', 'Python'],
+              tags: ['eLearning', 'Web Development', 'Python', '20-40%'],
             },
           ]}
         >
@@ -117,12 +117,12 @@ function PositionSegment({ backgroundColor }: Props) {
           description="Entwicklung von Geschäftsapplikationen, WebApps, Games und weiterer Projekte"
           imgSrc={KlickerImg}
           openPositions={[
-              {
-                  title: 'Mid-level Web Developer\n',
-                  description: `Du arbeitest mit dem IBF Web Team an der Weiterentwicklung der Instituts-Website, um eine moderne benutzerorientierte Präsenz zu schaffen. Die Website basiert auf decoupled React-Komponenten, die Daten aus einem Drupal (PHP) CMS beziehen. Du unterstützt das Team sowohl in der Programmierung der Komponenten als auch in der Wartung & Anpassung des Content Management Frameworks Drupal.\n\n
+            {
+              title: 'Mid-level Web Developer\n',
+              description: `Du arbeitest mit dem IBF Web Team an der Weiterentwicklung der Instituts-Website, um eine moderne benutzerorientierte Präsenz zu schaffen. Die Website basiert auf decoupled React-Komponenten, die Daten aus einem Drupal (PHP) CMS beziehen. Du unterstützt das Team sowohl in der Programmierung der Komponenten als auch in der Wartung & Anpassung des Content Management Frameworks Drupal.\n\n
 Du bist mindestens im 4. Semester Informatik und hast schon gewisse Programmiererfahrung (idealerweise Web Technologien & React). Weiter bringst du Freude an Kommunikation mit Instituts-Mitarbeitern sowie Teamfähigkeit mit und bist an einer längerfristigen Zusammenarbeit mit uns interessiert.`,
-                  tags: ['Drupal', 'Web Development', 'React', 'PHP'],
-              },
+              tags: ['Drupal', 'Web Development', 'React', 'PHP'],
+            },
           ]}
         >
           <p>

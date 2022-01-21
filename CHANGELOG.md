@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.4](https://github.com/uzh-bf/joinus/compare/v3.0.3...v3.0.4) (2022-01-21)
+
+
+### Bug Fixes
+
+* small text changes ([42706e2](https://github.com/uzh-bf/joinus/commit/42706e26aa8acd51e4c24001de5edc148df0b888))
+
+
+### Enhancements
+
+* added ibf open position ([651bd7e](https://github.com/uzh-bf/joinus/commit/651bd7e1c9ef556bb52b490c4f1f66db83b07f70))
+
 ### [3.0.3](https://github.com/uzh-bf/joinus/compare/v3.0.2...v3.0.3) (2022-01-18)
 
 

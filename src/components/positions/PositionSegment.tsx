@@ -119,8 +119,8 @@ function PositionSegment({ backgroundColor }: Props) {
           openPositions={[
               {
                   title: 'Mid-level Web Developer\n',
-                  description: `Du arbeitest mit dem IBF Web Team an der Weiterentwicklung der Instituts-Website um eine moderne benutzerorientierte Präsenz zu schaffen. Die Website basiert auf decoupled React-Komponenten die Daten aus einer Drupal (PHP) Datenbank beziehen. Du unterstützt das Team sowohl in der Programmierung der Komponenten als auch in der Wartung & Anpassung des Content Management Frameworks Drupal.\n\n
-Du bist mindestens im 4. Semester Informatik und hast schon gewisse Programmiererfahrung (idealerweise Web Technologien & React). Weiter solltest du Freude an Kommunikation mit Instituts-Mitarbeiter und Teamfähigkeit mitbringen und an einer längerfristigen Zusammenarbeit interessiert sein.`,
+                  description: `Du arbeitest mit dem IBF Web Team an der Weiterentwicklung der Instituts-Website, um eine moderne benutzerorientierte Präsenz zu schaffen. Die Website basiert auf decoupled React-Komponenten, die Daten aus einem Drupal (PHP) CMS beziehen. Du unterstützt das Team sowohl in der Programmierung der Komponenten als auch in der Wartung & Anpassung des Content Management Frameworks Drupal.\n\n
+Du bist mindestens im 4. Semester Informatik und hast schon gewisse Programmiererfahrung (idealerweise Web Technologien & React). Weiter bringst du Freude an Kommunikation mit Instituts-Mitarbeitern sowie Teamfähigkeit mit und bist an einer längerfristigen Zusammenarbeit mit uns interessiert.`,
                   tags: ['Drupal', 'Web Development', 'React', 'PHP'],
               },
           ]}

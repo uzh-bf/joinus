@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.5](https://github.com/uzh-bf/joinus/compare/v3.0.4...v3.0.5) (2022-01-21)
+
+
+### Enhancements
+
+* add 20-40% workload to junior position ([9b801c2](https://github.com/uzh-bf/joinus/commit/9b801c2a6dd8db658a059a666889c67a886ea626))
+
 ### [3.0.4](https://github.com/uzh-bf/joinus/compare/v3.0.3...v3.0.4) (2022-01-21)
 
 

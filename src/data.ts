@@ -47,10 +47,10 @@ export const employees = [
     time: '04.2019',
   },
   {
-    name: 'Rémy',
+    name: 'Remy',
     team: 'Kommunikation',
     picture: 'remy.jpg',
-    study: 'Bachelor Informatik',
+    study: 'Master Software Systems',
     tasklist: [
       'Mitarbeit im Team Kommunikation',
       'Migration des Management Information System auf Drupal',

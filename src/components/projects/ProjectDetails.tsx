@@ -21,9 +21,15 @@ function ProjectDetails({
       <div className="flex-1">
         <p className="prose prose-lg max-w-none">{desc}</p>
 
-        <blockquote className="mt-0 mb-2 rounded">{cite}</blockquote>
+        {cite && (
+          <>
+            <blockquote className="mt-0 mb-2 rounded">{cite}</blockquote>
 
-        <div className="text-lg text-right font-thesans-plain">{citeName}</div>
+            <div className="text-lg text-right font-thesans-plain">
+              {citeName}
+            </div>
+          </>
+        )}
 
         {cite2 && (
           <>

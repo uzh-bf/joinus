@@ -94,7 +94,7 @@ function PositionSegment({ backgroundColor }: Props) {
               description: `Du arbeitest mit unserem eigenentwickelten Kurs-CMS (React, Strapi), um die bestmöglichen eLearning-Kurse für unsere Studierenden bereitzustellen.
                 Du arbeitest dich in die Web-Entwicklung mit HTML/CSS/JS und React ein und gestaltest/entwickelst mit, wenn wir unser eLearning/CMS weiter ausbauen.
                 Im Bereich eAssessment unterstützt du uns bei der automatisierten Prüfungserstellung und -korrektur mit Python und übernimmst längerfristig auch Verantwortung bezüglich Weiterentwicklung unserer Korrektursoftware.
-                Diese Stelle ist gut für dich geeignet, wenn du wenig Praxiserfahrung mitbringst, aber einen grossen Lernwillen und Interesse an einer längerfristigen Zusammenarbeit hast.`,
+                Diese Stelle ist gut für dich geeignet, wenn du erste Praxiserfahrungen sammeln möchtest und einen grossen Lernwillen und Interesse an einer längerfristigen Zusammenarbeit hast.`,
               tags: ['eLearning', 'Web Development', 'Python', '20-40%'],
             },
           ]}

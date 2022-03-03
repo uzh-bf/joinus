@@ -129,7 +129,7 @@ Du bist mindestens im 4. Semester Informatik und hast schon gewisse Programmiere
                 'Projektmitarbeiter:in für innovative Lehrprojekte (Teaching Center)',
               description: `Du arbeitest an Projekten mit, in denen wir innovative Lehrmethoden entwickeln und in der Lehre an der UZH einsetzen und auswerten.
               Zum Beispiel entwickelst du mit am KlickerUZH, den wir im Bereich Gamification erweitern, um die Studierenden vertieft in den Unterricht einzubinden.
-              Oder du arbeitest an unserem Projekt zur automatisierten Prüfungskorrektur, in dem wir Tools und Methoden entwickeln und auswerten,
+              Du arbeitest an unserem Projekt zur automatisierten Prüfungskorrektur, in dem wir Tools und Methoden entwickeln und auswerten,
               die den Korrekturprozess von offenen Prüfungsaufgaben mittels Statistiken und Machine Learning unterstützen.
               Natürlich gibt es bei uns immer die Möglichkeit, in Abhängigkeit der eigenen Interessen bei mehreren Projekten zu unterstützen, und stetig dazuzulernen.
               Diese Stelle eignet sich für dich, wenn du bereits Erfahrungen in den Bereichen Web Development (React) oder Data Science (Python) mitbringst, und diese Erfahrungen in die Lehre einbringen möchtest.`,

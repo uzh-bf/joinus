@@ -362,7 +362,7 @@ export const projects = {
     subtitle:
       'Entwicklung von innovativen Methoden zur automatisierten Korrektur von offenen Prüfungsaufgaben',
     desc: `Studierende können in offenen Prüfungsaufgaben wie Freitext und Zeichnungen demonstrieren, dass sie ein Thema verstanden haben, und nicht nur Definitionen auswendig kennen.
-    Offene Prüfungsaufgaben sind jedoch schwierig und aufwändig umtzusetzen, da sie einen grossen Korrekturaufwand mit sich bringen, und eine faire und einheitliche Korrektur sichergestellt werden muss.
+    Offene Prüfungsaufgaben sind jedoch schwierig und aufwändig umzusetzen, da sie einen grossen Korrekturaufwand mit sich bringen, und eine faire und einheitliche Korrektur sichergestellt werden muss.
     Im Rahmen eines innovativen Lehrprojektes evaluieren und entwickeln wir Tools und Methoden, die den Korrekturprozess von solchen Aufgaben
     mittels Statistik/Machine Learning unterstützen können (z.B. mittels Korrekturvorschlägen basierend auf maschinellem Verständnis von Freitext).`,
     tags: ['Python', 'Data Science'],

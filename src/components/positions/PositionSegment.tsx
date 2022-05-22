@@ -88,16 +88,18 @@ function PositionSegment({ backgroundColor }: Props) {
           description="IT-Fachkraft für technische Unterstützung und Umsetzung von neuen
           Inhalten"
           imgSrc={CodeImage}
-          openPositions={[
-            {
-              title: 'Junior eLearning und eAssessment (Teaching Center)',
-              description: `Du arbeitest mit unserem eigenentwickelten Kurs-CMS (React, Strapi), um die bestmöglichen eLearning-Kurse für unsere Studierenden bereitzustellen.
-                Du arbeitest dich in die Web-Entwicklung mit HTML/CSS/JS und React ein und gestaltest/entwickelst mit, wenn wir unser eLearning/CMS weiter ausbauen.
-                Im Bereich eAssessment unterstützt du uns bei der automatisierten Prüfungserstellung und -korrektur mit Python und übernimmst längerfristig auch Verantwortung bezüglich Weiterentwicklung unserer Korrektursoftware.
-                Diese Stelle ist gut für dich geeignet, wenn du erste Praxiserfahrungen sammeln möchtest und einen grossen Lernwillen und Interesse an einer längerfristigen Zusammenarbeit hast.`,
-              tags: ['eLearning', 'Web Development', 'Python', '20-40%'],
-            },
-          ]}
+          openPositions={
+            [
+              // {
+              //   title: 'Junior eLearning und eAssessment (Teaching Center)',
+              //   description: `Du arbeitest mit unserem eigenentwickelten Kurs-CMS (React, Strapi), um die bestmöglichen eLearning-Kurse für unsere Studierenden bereitzustellen.
+              //     Du arbeitest dich in die Web-Entwicklung mit HTML/CSS/JS und React ein und gestaltest/entwickelst mit, wenn wir unser eLearning/CMS weiter ausbauen.
+              //     Im Bereich eAssessment unterstützt du uns bei der automatisierten Prüfungserstellung und -korrektur mit Python und übernimmst längerfristig auch Verantwortung bezüglich Weiterentwicklung unserer Korrektursoftware.
+              //     Diese Stelle ist gut für dich geeignet, wenn du erste Praxiserfahrungen sammeln möchtest und einen grossen Lernwillen und Interesse an einer längerfristigen Zusammenarbeit hast.`,
+              //   tags: ['eLearning', 'Web Development', 'Python', '20-40%'],
+              // },
+            ]
+          }
         >
           <p>
             Diese Position ist für Studierende, welche ca. im 3. Semester
@@ -124,23 +126,23 @@ function PositionSegment({ backgroundColor }: Props) {
 Du bist mindestens im 4. Semester Informatik und hast schon gewisse Programmiererfahrung (idealerweise Web Technologien & React). Weiter bringst du Freude an Kommunikation mit Instituts-Mitarbeitern sowie Teamfähigkeit mit und bist an einer längerfristigen Zusammenarbeit mit uns interessiert.`,
               tags: ['Drupal', 'Web Development', 'React', 'PHP'],
             },
-            {
-              title:
-                'Projektmitarbeiter:in für innovative Lehrprojekte (Teaching Center)',
-              description: `Du arbeitest an Projekten mit, in denen wir innovative Lehrmethoden entwickeln und in der Lehre an der UZH einsetzen und auswerten.
-              Zum Beispiel entwickelst du mit am KlickerUZH, den wir im Bereich Gamification erweitern, um die Studierenden vertieft in den Unterricht einzubinden.
-              Du arbeitest an unserem Projekt zur automatisierten Prüfungskorrektur, in dem wir Tools und Methoden entwickeln und auswerten,
-              die den Korrekturprozess von offenen Prüfungsaufgaben mittels Statistiken und Machine Learning unterstützen.
-              Natürlich gibt es bei uns immer die Möglichkeit, in Abhängigkeit der eigenen Interessen bei mehreren Projekten zu unterstützen, und stetig dazuzulernen.
-              Diese Stelle eignet sich für dich, wenn du bereits Erfahrungen in den Bereichen Web Development (React) oder Data Science (Python) mitbringst, und diese Erfahrungen in die Lehre einbringen möchtest.`,
-              tags: [
-                'Web Development',
-                'React',
-                'Python',
-                'Data Science',
-                '20-40%',
-              ],
-            },
+            // {
+            //   title:
+            //     'Projektmitarbeiter:in für innovative Lehrprojekte (Teaching Center)',
+            //   description: `Du arbeitest an Projekten mit, in denen wir innovative Lehrmethoden entwickeln und in der Lehre an der UZH einsetzen und auswerten.
+            //   Zum Beispiel entwickelst du mit am KlickerUZH, den wir im Bereich Gamification erweitern, um die Studierenden vertieft in den Unterricht einzubinden.
+            //   Du arbeitest an unserem Projekt zur automatisierten Prüfungskorrektur, in dem wir Tools und Methoden entwickeln und auswerten,
+            //   die den Korrekturprozess von offenen Prüfungsaufgaben mittels Statistiken und Machine Learning unterstützen.
+            //   Natürlich gibt es bei uns immer die Möglichkeit, in Abhängigkeit der eigenen Interessen bei mehreren Projekten zu unterstützen, und stetig dazuzulernen.
+            //   Diese Stelle eignet sich für dich, wenn du bereits Erfahrungen in den Bereichen Web Development (React) oder Data Science (Python) mitbringst, und diese Erfahrungen in die Lehre einbringen möchtest.`,
+            //   tags: [
+            //     'Web Development',
+            //     'React',
+            //     'Python',
+            //     'Data Science',
+            //     '20-40%',
+            //   ],
+            // },
           ]}
         >
           <p>

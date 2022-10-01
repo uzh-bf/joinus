@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "0.4.0",
-    "@tailwindcss/forms": "0.4.0",
+    "@tailwindcss/forms": "0.5.3",
     "@tailwindcss/typography": "0.5.0",
     "@types/react": "17.0.38",
     "@uzh-bf/code-style-react-ts": "0.0.13",

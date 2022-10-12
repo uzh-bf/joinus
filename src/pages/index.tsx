@@ -28,19 +28,22 @@ function Home() {
 
       <AdvantagesSegment backgroundColor="white" />
 
-      <ProjectSegment backgroundColor="white" />
-
-      <PositionSegment backgroundColor="white" />
-
-      <FrameworkSegment backgroundColor="white" />
-
       <RequirementSegment backgroundColor="white" />
 
       <TeamSegment backgroundColor="white" />
 
-      <DepartmentSegment backgroundColor="white" />
+      <PositionSegment backgroundColor="white" />
 
       <ApplicationFormSegment backgroundColor="white" />
+
+
+        <FrameworkSegment backgroundColor="white" />
+
+        <ProjectSegment backgroundColor="white" />
+
+      {/*
+      <DepartmentSegment backgroundColor="white" />
+      */}
 
       <Footer />
     </>

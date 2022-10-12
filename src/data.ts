@@ -443,11 +443,12 @@ export const teams = [
   },
   {
     teamName: 'Weiterbildung',
-    imageSrc: 'beni.jpg',
-    leaderName: 'Benjamin Wilding',
-    leaderPosition: 'Geschäftsführer IBF, Leitung Lehre & Weiterbildung',
+    imageSrc: 'mk.jpg',
+    leaderName: 'Manuel Keller',
+    leaderPosition: 'IT Leitung der Weiterbildung und Programmleiter CAS FinTech',
     teamDescription: `Als Weiterbildungsanbieter brauchen wir kreative Informatiker:innen, die die User
       Experience mit innovativen Tools verbessern und die Kundenverwaltung mit
-      Automatisierungen effizienter gestalten.`,
+      Automatisierungen effizienter gestalten. Bei uns ändert sich gerade vieles, wir wollen in Sachen Marketing einen grossen Sprung nach vorne machen und unsere Sales Funnel optimieren.
+      In all diesen Feldern brauchen wir Verstärkung, Somit können wir gut auf deine inhaltlichen Wünsche eingehen.`,
   },
 ]

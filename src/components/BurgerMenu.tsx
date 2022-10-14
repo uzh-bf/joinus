@@ -8,7 +8,7 @@ function BurgerMenu() {
   return (
     <div>
       <Button
-        className="absolute md:fixed !bg-[#00023e] top-8 md:top-auto md:bottom-8 right-4 !text-white !z-10"
+        className="animate-bounce  fixed !bg-[#00023e] top-8 md:top-auto md:bottom-8 right-4 !text-white !z-10"
         onClick={() => animateScrollTo(document.querySelector('#application'))}
       >
         Jetzt bewerben!

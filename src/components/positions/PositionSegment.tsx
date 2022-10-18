@@ -46,11 +46,11 @@ function Position({ title, description, children, imgSrc, openPositions }) {
               </h5>
               <p>{position.description}</p>
               <div className="flex flex-row flex-wrap items-end justify-between gap-2">
-                <div className="flex flex-row gap-2">
+                <div className="flex flex-row flex-wrap gap-2">
                   {position.tags.map((tag) => (
                     <div
                       key={tag}
-                      className="px-2 py-1 mt-2 text-gray-600 bg-gray-200 rounded-lg md:mt-0"
+                      className="px-2 py-1 mt-1 text-gray-600 bg-gray-200 rounded-lg md:mt-0"
                     >
                       {tag}
                     </div>

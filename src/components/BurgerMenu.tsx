@@ -8,7 +8,7 @@ function BurgerMenu() {
   return (
     <div>
       <Button
-        className="animate-bounce  fixed !bg-[#00023e] top-8 md:top-auto md:bottom-8 right-4 !text-white !z-10"
+        className="animate-bounce fixed !bg-[#00023e] top-8 md:top-auto md:bottom-8 right-4 !text-white !z-10"
         onClick={() => animateScrollTo(document.querySelector('#application'))}
       >
         Jetzt bewerben!
@@ -25,6 +25,7 @@ function BurgerMenu() {
         </a>
         <br />
         <br />
+
         <a
           href="#"
           onClick={() => animateScrollTo(document.querySelector('#citations'))}
@@ -32,6 +33,7 @@ function BurgerMenu() {
           <Icon name="comment" /> Was sagen unsere Mitarbeiter
         </a>
         <br />
+
         <a
           href="#"
           onClick={() => animateScrollTo(document.querySelector('#advantages'))}
@@ -39,13 +41,25 @@ function BurgerMenu() {
           <Icon name="thumbs up" /> Was wir dir bieten
         </a>
         <br />
+
         <a
-          href="#"
-          onClick={() => animateScrollTo(document.querySelector('#projects'))}
+            href="#"
+            onClick={() =>
+                animateScrollTo(document.querySelector('#requirements'))
+            }
         >
-          <Icon name="code" /> Unsere Projekte
+          <Icon name="clipboard list" /> Was du mitbringen solltest
         </a>
         <br />
+
+        <a
+            href="#"
+            onClick={() => animateScrollTo(document.querySelector('#teams'))}
+        >
+          <Icon name="id badge" /> Unsere Teams
+        </a>
+        <br />
+
         <a
           href="#"
           onClick={() => animateScrollTo(document.querySelector('#positions'))}
@@ -53,6 +67,17 @@ function BurgerMenu() {
           <Icon name="user" /> Positionen am IBF
         </a>
         <br />
+
+        <a
+            href="#"
+            onClick={() =>
+                animateScrollTo(document.querySelector('#application'))
+            }
+        >
+          <Icon name="street view" /> Jetzt bewerben!
+        </a>
+        <br />
+
         <a
           href="#"
           onClick={() =>
@@ -62,38 +87,20 @@ function BurgerMenu() {
           <Icon name="cog" /> Unsere Lieblingstechnologien
         </a>
         <br />
-        <a
-          href="#"
-          onClick={() =>
-            animateScrollTo(document.querySelector('#requirements'))
-          }
-        >
-          <Icon name="clipboard list" /> Was du mitbringen solltest
-        </a>
-        <br />
 
         <a
-          href="#"
-          onClick={() => animateScrollTo(document.querySelector('#teams'))}
+            href="#"
+            onClick={() => animateScrollTo(document.querySelector('#projects'))}
         >
-          <Icon name="id badge" /> Unsere Teams
+          <Icon name="code" /> Unsere Projekte
         </a>
-        <br />
-        <a
-          href="#"
-          onClick={() => animateScrollTo(document.querySelector('#department'))}
+
+        {/*<a
+            href="#"
+            onClick={() => animateScrollTo(document.querySelector('#department'))}
         >
-          <Icon name="building" /> Unser Institut
-        </a>
-        <br />
-        <a
-          href="#"
-          onClick={() =>
-            animateScrollTo(document.querySelector('#application'))
-          }
-        >
-          <Icon name="street view" /> Jetzt bewerben!
-        </a>
+          <Icon name="building"/> Unser Institut
+        </a>*/}
       </Menu>
     </div>
   )

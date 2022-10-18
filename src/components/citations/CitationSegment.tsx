@@ -22,7 +22,7 @@ function CitationSegment({ backgroundColor }: Props) {
             title="Flexibilität ist Trumpf"
             author="Manuel Keller, studierte Information Systems und leitet jetzt das IT Team der Weiterbildung"
           >
-            Mir gefiell am besten, dass ich sehr flexible Arbeitszeiten hattee. Vor
+            Mir gefiel am besten, dass ich sehr flexible Arbeitszeiten hatte. Vor
             Prüfungen konnte ich problemlos reduzieren oder aussetzen; während den
             Semesterferien wiederum mein Budget aufbessern.
           </Citation>
@@ -57,10 +57,10 @@ function CitationSegment({ backgroundColor }: Props) {
             title="Abwechslung und Eigenverantwortung"
             author="Pascal Zehnder, studierte Information Systems"
           >
-            Mir gefällt, dass ich in meiner Arbeit am Institut selbst die
-            Verantwortung für meine Projekte trage. Dadurch kann ich selber
-            entscheiden, welche Technologien ich einsetzen will und lerne viel
-            dabei.
+            Mir gefiel, dass ich in meiner Arbeit am Institut selbst die
+            Verantwortung für meine Projekte trug. Dadurch konnte ich selber
+            entscheiden, welche Technologien ich einsetzen wollte und konnte viel Neues
+            lernen.
           </Citation>
         </div>
       </div>

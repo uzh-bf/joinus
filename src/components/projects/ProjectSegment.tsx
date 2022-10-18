@@ -15,7 +15,6 @@ function ProjectSegment({ backgroundColor }: Props) {
     <SegmentContainer
       id="projects"
       title="Hilf uns bei diesen oder ähnlichen Projekten"
-      nextUp="#positions"
       backgroundColor={backgroundColor}
     >
       <div className="flex flex-col w-full gap-4">

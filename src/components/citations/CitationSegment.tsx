@@ -20,7 +20,7 @@ function CitationSegment({ backgroundColor }: Props) {
         <div className="flex-1 order-2 md:order-1">
           <Citation
             title="Flexibilität ist Trumpf"
-            author="Manuel Keller, studierte Information Systems und leitet jetzt das Team Weiterbildung"
+            author="Manuel Keller, studierte Information Systems und leitet jetzt das IT Team der Weiterbildung"
           >
             Mir gefiell am besten, dass ich sehr flexible Arbeitszeiten hattee. Vor
             Prüfungen konnte ich problemlos reduzieren oder aussetzen; während den

@@ -10,14 +10,9 @@ interface Props {
 
 function ScrollDown({ scrollTo, inverted }: Props) {
   return (
-    <a
-      href="#"
-      onClick={() => animateScrollTo(document.querySelector(scrollTo))}
-    >
       <div className={styles.downArrow}>
         <Icon inverted={inverted} name="chevron down" size="huge" />
       </div>
-    </a>
   )
 }
 

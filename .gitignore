@@ -1,6 +1,7 @@
 node_modules/
 .next/
-src/semantic/dist/
+src/semantic/dist/components/
+src/semantic/dist/themes/
 out/
 
 .vercel

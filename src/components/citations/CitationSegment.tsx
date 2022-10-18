@@ -20,11 +20,11 @@ function CitationSegment({ backgroundColor }: Props) {
         <div className="flex-1 order-2 md:order-1">
           <Citation
             title="Flexibilität ist Trumpf"
-            author="Manuel Keller, studiert Information Systems"
+            author="Manuel Keller, studierte Information Systems und leitet jetzt das Team Weiterbildung"
           >
-            Mir gefällt, dass ich sehr flexible Arbeitszeiten habe. Vor
-            Prüfungen kann man problemlos reduzieren oder aussetzen; während den
-            Semesterferien wiederum sein Budget aufbessern.
+            Mir gefiell am besten, dass ich sehr flexible Arbeitszeiten hattee. Vor
+            Prüfungen konnte ich problemlos reduzieren oder aussetzen; während den
+            Semesterferien wiederum mein Budget aufbessern.
           </Citation>
         </div>
         <div className="flex-initial order-1 md:order-2 w-[330px]">
@@ -55,7 +55,7 @@ function CitationSegment({ backgroundColor }: Props) {
         <div className="flex-1">
           <Citation
             title="Abwechslung und Eigenverantwortung"
-            author="Pascal Zehnder, studiert Information Systems"
+            author="Pascal Zehnder, studierte Information Systems"
           >
             Mir gefällt, dass ich in meiner Arbeit am Institut selbst die
             Verantwortung für meine Projekte trage. Dadurch kann ich selber

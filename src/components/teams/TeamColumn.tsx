@@ -18,7 +18,7 @@ function TeamColumn({
 }: Props) {
   const ImageSrc = require(`../../../public/images/people/${imageSrc}`)
   return (
-    <div className="text-center">
+    <div className="text-center w-1/3">
       <h4 className="text-2xl font-normal md:text-3xl font-thesans-bold">
         {teamName}
       </h4>

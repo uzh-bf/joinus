@@ -314,61 +314,61 @@ export const projects = {
     href: null,
     team: 'Team Kommunikation',
   },
-  tools: {
-    img: 'projects/attendance.png',
-    title: 'Intranet',
-    subtitle: 'Intranet mit Management-Tools',
-    desc: `Unser Institut besteht aus über 50 Teams an vier verschiedenen Standorten welche im aktuellen Umfeld immer mehr auf
-      IT-Tools wie Zoom und ähnliches angewiesen sind. Deswegen ist geplant, ein Intranet zu entwickeln, wo man sich
-      über die aktuellsten Tools und deren Einsatzgebiete informieren kann. Dazu kommt, dass das Institut diverse
-      Management-Informations-Tools einsetzt, wie zum Beispiel eine eigene Mitarbeiter-Verwaltung. Auch diese Tools müssen weiterentwickelt und ins Intranet
-      eingegliedert werden.`,
-    cite: `Die Anwesenheits-Web Applikation war für mich das erste Projekt am Institut und die optimale Gelegenheit mich
-      einzuarbeiten und das Institut und seine Mitarbeiter kennenzulernen. Bei der Implementierung hatte ich
-      grosse gestalterische Freiheiten und konnte meine Web Development Skills deutlich erweitern. Es freut mich besonders,
-      dass das Endresultat nun von so vielen Mitarbeitern aktiv benutzt wird.`,
-    citeName: 'Flo',
-    cite2: `Das Management Information System ist ein Business Intelligence Tool. Es zieht aus verschiedenen Quellen Daten und
-      veranschaulicht die darin enthaltenen Informationen. Als Data Science Masterstudent kann ich hier mein Wissen voll nutzen
-      und so die Institutsleitung unterstützen. Daneben lerne ich viel über Visualisierungen und Web Development.`,
-    cite2Name: 'Pascal',
-    tags: ['React', 'PHP', 'Data Modelling'],
-    href: null,
-    team: 'Team Kommunikation',
-  },
-  lehre: {
-    img: 'projects/elearning.png',
-    title: 'eLearning',
-    subtitle:
-      'Digitale Lerninhalte in Form von Kursen, eSkripten, und eAssessment',
-    desc: `Wer Lehrveranstaltungen von unserem Institut besucht, weiss, dass wir Innovation und Interaktivität fördern.
-      Für einige Vorlesungen bieten wir beispielsweise elektronische Skripts an, mit welchen die Studenten lernen können.
-      Wir fördern den Einsatz von eAssessment Prüfungen, stellen auf OLAT eLearning Inhalte mit einem innovativen CMS bereit und bieten den
-      Dozenten interaktive Möglichkeiten wie Klicker. Auch die Übungen während dem Semester sind digital und können
-      mit clever implementierten Excels erarbeitet werden und werden automatisiert mit Python ausgewertet.`,
-    cite: `Aus den Feedbacks der Studenten wissen wir, dass diese die zur Verfügung gestellten Materialien sehr schätzen.
-      Wir sind stets daran, die Inhalte auf dem aktuellsten Stand zu halten und entwickeln neue Unterstützungsmöglichkeiten.`,
-    citeName: 'Christian',
-    cite2: `Unser neu entwickeltes Strapi Kurs-CMS erlaubt es jedem, Änderungen an Kursinhalten vorzunehmen, ohne sich mit HTML auszukennen.
-      Die Inhalte werden danach als React.js Applikation exportiert und in ein LMS wie OLAT eingebunden.`,
-    cite2Name: 'Roli',
-    tags: ['React', 'Next.js', 'Strapi CMS', 'Python'],
-    href: null,
-    team: 'Team Teaching Center',
-  },
-  grading: {
-    img: 'projects/handwriting.png',
-    title: 'Automatisierte Prüfungskorrektur',
-    subtitle:
-      'Entwicklung von innovativen Methoden zur automatisierten Korrektur von offenen Prüfungsaufgaben',
-    desc: `Studierende können in offenen Prüfungsaufgaben wie Freitext und Zeichnungen demonstrieren, dass sie ein Thema verstanden haben, und nicht nur Definitionen auswendig kennen.
-    Offene Prüfungsaufgaben sind jedoch schwierig und aufwändig umzusetzen, da sie einen grossen Korrekturaufwand mit sich bringen, und eine faire und einheitliche Korrektur sichergestellt werden muss.
-    Im Rahmen eines innovativen Lehrprojektes evaluieren und entwickeln wir Tools und Methoden, die den Korrekturprozess von solchen Aufgaben
-    mittels Statistik/Machine Learning unterstützen können (z.B. mittels Korrekturvorschlägen basierend auf maschinellem Verständnis von Freitext).`,
-    tags: ['Python', 'Data Science'],
-    href: null,
-    team: 'Team Teaching Center',
-  },
+   tools: {
+      img: 'projects/attendance.png',
+      title: 'Intranet',
+      subtitle: 'Intranet mit Management-Tools',
+      desc: `Unser Institut besteht aus über 50 Teams an vier verschiedenen Standorten welche im aktuellen Umfeld immer mehr auf
+        IT-Tools wie Zoom und ähnliches angewiesen sind. Deswegen ist geplant, ein Intranet zu entwickeln, wo man sich
+        über die aktuellsten Tools und deren Einsatzgebiete informieren kann. Dazu kommt, dass das Institut diverse
+        Management-Informations-Tools einsetzt, wie zum Beispiel eine eigene Mitarbeiter-Verwaltung. Auch diese Tools müssen weiterentwickelt und ins Intranet
+        eingegliedert werden.`,
+      cite: `Die Anwesenheits-Web Applikation war für mich das erste Projekt am Institut und die optimale Gelegenheit mich
+        einzuarbeiten und das Institut und seine Mitarbeiter kennenzulernen. Bei der Implementierung hatte ich
+        grosse gestalterische Freiheiten und konnte meine Web Development Skills deutlich erweitern. Es freut mich besonders,
+        dass das Endresultat nun von so vielen Mitarbeitern aktiv benutzt wird.`,
+      citeName: 'Flo',
+      cite2: `Das Management Information System ist ein Business Intelligence Tool. Es zieht aus verschiedenen Quellen Daten und
+        veranschaulicht die darin enthaltenen Informationen. Als Data Science Masterstudent kann ich hier mein Wissen voll nutzen
+        und so die Institutsleitung unterstützen. Daneben lerne ich viel über Visualisierungen und Web Development.`,
+      cite2Name: 'Pascal',
+      tags: ['React', 'PHP', 'Data Modelling'],
+      href: null,
+      team: 'Team Kommunikation',
+    },
+    lehre: {
+      img: 'projects/elearning.png',
+      title: 'eLearning',
+      subtitle:
+        'Digitale Lerninhalte in Form von Kursen, eSkripten, und eAssessment',
+      desc: `Wer Lehrveranstaltungen von unserem Institut besucht, weiss, dass wir Innovation und Interaktivität fördern.
+        Für einige Vorlesungen bieten wir beispielsweise elektronische Skripts an, mit welchen die Studenten lernen können.
+        Wir fördern den Einsatz von eAssessment Prüfungen, stellen auf OLAT eLearning Inhalte mit einem innovativen CMS bereit und bieten den
+        Dozenten interaktive Möglichkeiten wie Klicker. Auch die Übungen während dem Semester sind digital und können
+        mit clever implementierten Excels erarbeitet werden und werden automatisiert mit Python ausgewertet.`,
+      cite: `Aus den Feedbacks der Studenten wissen wir, dass diese die zur Verfügung gestellten Materialien sehr schätzen.
+        Wir sind stets daran, die Inhalte auf dem aktuellsten Stand zu halten und entwickeln neue Unterstützungsmöglichkeiten.`,
+      citeName: 'Christian',
+      cite2: `Unser neu entwickeltes Strapi Kurs-CMS erlaubt es jedem, Änderungen an Kursinhalten vorzunehmen, ohne sich mit HTML auszukennen.
+        Die Inhalte werden danach als React.js Applikation exportiert und in ein LMS wie OLAT eingebunden.`,
+      cite2Name: 'Roli',
+      tags: ['React', 'Next.js', 'Strapi CMS', 'Python'],
+      href: null,
+      team: 'Team Teaching Center',
+    },
+    grading: {
+      img: 'projects/handwriting.png',
+      title: 'Automatisierte Prüfungskorrektur',
+      subtitle:
+        'Entwicklung von innovativen Methoden zur automatisierten Korrektur von offenen Prüfungsaufgaben',
+      desc: `Studierende können in offenen Prüfungsaufgaben wie Freitext und Zeichnungen demonstrieren, dass sie ein Thema verstanden haben, und nicht nur Definitionen auswendig kennen.
+      Offene Prüfungsaufgaben sind jedoch schwierig und aufwändig umzusetzen, da sie einen grossen Korrekturaufwand mit sich bringen, und eine faire und einheitliche Korrektur sichergestellt werden muss.
+      Im Rahmen eines innovativen Lehrprojektes evaluieren und entwickeln wir Tools und Methoden, die den Korrekturprozess von solchen Aufgaben
+      mittels Statistik/Machine Learning unterstützen können (z.B. mittels Korrekturvorschlägen basierend auf maschinellem Verständnis von Freitext).`,
+      tags: ['Python', 'Data Science'],
+      href: null,
+      team: 'Team Teaching Center',
+    },
   gbl: {
     img: 'projects/pfm_game.png',
     title: 'Game-Based Learning',
@@ -425,20 +425,18 @@ export const requirements = [
 export const teams = [
   {
     teamName: 'Kommunikation',
-    imageSrc: 'lisa.jpg',
-    leaderName: 'Lisa Liechti',
-    leaderPosition: 'Leitung Kommunikation IBF',
-    teamDescription: `Bei mir stehen viele Data Science Projekte an, bei welchen ich eure
-      Unterstützung brauche. Dazu kommen immer wieder Aufgaben im Web-Design und der Gestaltung von
-      Magazinen und Newslettern. Ich suche also kreative Data Scientists!`,
+    imageSrc: 'claudine2.jpg',
+    leaderName: 'Claudine Brändle',
+    leaderPosition: 'IT Leitung Kommunikation und Leitung des Web Teams IBF',
+    teamDescription: `Bei mir steht ein grosses Update der Institut Website an, mit decoupled Komponenten in React, die alle neu konzipiert werden müssen. Zudem brauche ich immer Verstärkung in Support.`,
   },
   {
     teamName: 'Teaching Center',
-    imageSrc: 'johanna.jpg',
-    leaderName: 'Johanna Braun',
-    leaderPosition: 'Leitung Teaching Center IBF',
+    imageSrc: 'roland2.jpg',
+    leaderName: 'Roland Schläfli',
+    leaderPosition: 'IT Leitung Teaching Center IBF',
     teamDescription: `Wir wollen die Lehrveranstaltungen unseres Instituts innovativ und interaktiv
-      gestalten. Deshalb brauchen wir IT-Support für die digital unterstützten Kurse, für Projekte wir Klicker und
+      gestalten. Deshalb brauchen wir IT-Support für die digital unterstützten Kurse, für Projekte wie Klicker und
       Jobeye, oder eine neue Idee von dir!`,
   },
   {

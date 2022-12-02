@@ -90,20 +90,20 @@ function PositionSegment({ backgroundColor }: Props) {
           imgSrc={CodeImage}
           openPositions={
             [
-              {
-                title: 'Junior in IT Support, Webdesign und / oder Prozessautomatisierung (Weiterbildung)',
-                description: `Du arbeitest mit unserem Customer Relationship Management (CRM), um die Prozesse in der Weiterbildung zu vereinfachen und zu automatisieren.
-                   Du arbeitest dich in die Web-Entwicklung mit HTML/CSS/JS und React ein und gestaltest/entwickelst mit, wie wir unsere Websites gestalten und verbessern.
-                   In Sachen Marketing könntest du Marketingmaterialien wie Vorlagen, Präsentationen und weiteres mitgestalten. 
-                   Diese Stelle ist gut für dich geeignet, wenn du erste Praxiserfahrungen sammeln möchtest und einen grossen Lernwillen und Interesse an einer längerfristigen Zusammenarbeit hast.`,
-                tags: ['eLearning', 'Web Development', 'React', "Prozessautomatisierung", '20-40%'],
-              },
-              {
-                  title: 'Junior in IT Support, Web Development (Kommunikationsteam)',
-                  description: `Du arbeitest mit dem IBF Web Team an der Weiterentwicklung der Instituts-Website, um eine moderne benutzerorientierte Präsenz zu schaffen. Die Website basiert auf decoupled React-Komponenten, die Daten aus einem Drupal (PHP) CMS beziehen. Du unterstützt das Team sowohl in der Programmierung der Komponenten als auch in der Wartung & Anpassung des Content Management Frameworks Drupal.\n\n
-                           Du hast schon gewisse Programmiererfahrung (idealerweise Web Technologien & React). Weiter bringst du Freude an Kommunikation mit Instituts-Mitarbeitern sowie Teamfähigkeit mit und bist an einer längerfristigen Zusammenarbeit mit uns interessiert.`,
-                  tags: ['Drupal', 'Web Development', 'React', 'PHP'],
-              },
+              // {
+              //   title: 'Junior in IT Support, Webdesign und / oder Prozessautomatisierung (Weiterbildung)',
+              //   description: `Du arbeitest mit unserem Customer Relationship Management (CRM), um die Prozesse in der Weiterbildung zu vereinfachen und zu automatisieren.
+              //      Du arbeitest dich in die Web-Entwicklung mit HTML/CSS/JS und React ein und gestaltest/entwickelst mit, wie wir unsere Websites gestalten und verbessern.
+              //      In Sachen Marketing könntest du Marketingmaterialien wie Vorlagen, Präsentationen und weiteres mitgestalten.
+              //      Diese Stelle ist gut für dich geeignet, wenn du erste Praxiserfahrungen sammeln möchtest und einen grossen Lernwillen und Interesse an einer längerfristigen Zusammenarbeit hast.`,
+              //   tags: ['eLearning', 'Web Development', 'React', "Prozessautomatisierung", '20-40%'],
+              // },
+              // {
+              //     title: 'Junior in IT Support, Web Development (Kommunikationsteam)',
+              //     description: `Du arbeitest mit dem IBF Web Team an der Weiterentwicklung der Instituts-Website, um eine moderne benutzerorientierte Präsenz zu schaffen. Die Website basiert auf decoupled React-Komponenten, die Daten aus einem Drupal (PHP) CMS beziehen. Du unterstützt das Team sowohl in der Programmierung der Komponenten als auch in der Wartung & Anpassung des Content Management Frameworks Drupal.\n\n
+              //              Du hast schon gewisse Programmiererfahrung (idealerweise Web Technologien & React). Weiter bringst du Freude an Kommunikation mit Instituts-Mitarbeitern sowie Teamfähigkeit mit und bist an einer längerfristigen Zusammenarbeit mit uns interessiert.`,
+              //     tags: ['Drupal', 'Web Development', 'React', 'PHP'],
+              // },
 
               // {
               //   title: 'Junior eLearning und eAssessment (Teaching Center)',
@@ -136,12 +136,12 @@ function PositionSegment({ backgroundColor }: Props) {
           imgSrc={KlickerImg}
           openPositions={[
 
-            {
-              title: "Mid-Level in Web Development und IT Projekte (Weiterbildung)",
-              description: `Du arbeitest mit dem Weiterbildungs-Team an der Weiterentwicklung der Executive Education Website sowie dessen CMS, um eine moderne, kundenorientierte webpräsenz zu schaffen. Ausserdem entwickelst du den Sales Funnel zusammen mit unseren Marketing-Personal weiter und integrierst CRM und Website wo immer möglich. Ausserdem hilfst du mit, das Kubernetes-Cluster der Executive Education zu pflegen und Apps darauf zu hosten (bspw.: getoutline, Cal.com, Marketing-Dashboards, ...)
-                             Du bist mindestens im 4. Semester Informatik und hast schon gewisse Programmiererfahrung (idealerweise React und allgemeine Webtechnologien). Weiter bringst du Freude an der Kommunikation mit Mitarbeitern sowie Teamfähigkeit mit und bist an einer längerfristigen Zusammenarbeit mit uns interessiert.`,
-              tags: ['Web Development', "WebDesign", "Marketingautomation", 'React', ]
-            },
+            // {
+            //   title: "Mid-Level in Web Development und IT Projekte (Weiterbildung)",
+            //   description: `Du arbeitest mit dem Weiterbildungs-Team an der Weiterentwicklung der Executive Education Website sowie dessen CMS, um eine moderne, kundenorientierte webpräsenz zu schaffen. Ausserdem entwickelst du den Sales Funnel zusammen mit unseren Marketing-Personal weiter und integrierst CRM und Website wo immer möglich. Ausserdem hilfst du mit, das Kubernetes-Cluster der Executive Education zu pflegen und Apps darauf zu hosten (bspw.: getoutline, Cal.com, Marketing-Dashboards, ...)
+            //                  Du bist mindestens im 4. Semester Informatik und hast schon gewisse Programmiererfahrung (idealerweise React und allgemeine Webtechnologien). Weiter bringst du Freude an der Kommunikation mit Mitarbeitern sowie Teamfähigkeit mit und bist an einer längerfristigen Zusammenarbeit mit uns interessiert.`,
+            //   tags: ['Web Development', "WebDesign", "Marketingautomation", 'React', ]
+            // },
             // {
             //   title:
             //     'Projektmitarbeiter:in für innovative Lehrprojekte (Teaching Center)',

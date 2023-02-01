@@ -31,7 +31,7 @@
     "release": "standard-version"
   },
   "dependencies": {
-    "@heroicons/react": "2.0.11",
+    "@heroicons/react": "2.0.14",
     "@popperjs/core": "2.11.6",
     "animated-scroll-to": "2.3.0",
     "fomantic-ui": "2.8.8",
